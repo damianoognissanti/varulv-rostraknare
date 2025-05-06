@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rösträknare Varulvsspel</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; background: #f9f9f9; color: #333; }
+    table { border-collapse: collapse; width: 100%; max-width: 800px; margin: 2em auto; background: #fff; border: 2px solid #333; }
+    th, td { border: 1px solid #333; padding: 8px; text-align: center; }
+    th { background: #3c8dbc; color: white; }
+    .summary { text-align: center; font-size: 20px; font-weight: bold; margin: 1em; color: #d9534f; }
+  </style>
+</head>
+<body>
+  <h1>Rösträknare för Varulvsspel</h1>
+  <p>Analyserar sparade sidor från <a href="https://www.rollspel.nu" target="_blank">rollspel.nu</a>.</p>
+  <div class="summary" id="summary"></div>
+  <table id="voteTable"><thead><tr><th>Röstgivare</th><th>Röst</th></tr></thead><tbody></tbody></table>
+
+  <script>
+    const voteRegex = /Röst:\s*@?([\wåäöÅÄÖ_\- ]+)/i;
+    const votes = [];
+
+    async function loadAllPages() {
+      let page = 1;
+      while (true) {
+        try {
+          const res = await fetch(`data/page${page}.html`);
+          if (!res.ok) break;
+          const html = await res.text();
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(html, 'text/html');
+          doc.querySelectorAll('article[data-author]').forEach(post => {
+            const user = post.getAttribute('data-author');
+            const postId = post.id?.replace('js-post-', '');
+            post.querySelectorAll('blockquote').forEach(bq => bq.remove());
+            const text = post.querySelector('.message-content')?.textContent || '';
+            text.split('\n').forEach(line => {
+              const match = line.match(voteRegex);
+              if (match && postId) {
+                votes.push({ from: user, to: match[1].trim(), postId });
+              }
+            });
+          });
+          page++;
+        } catch (err) { break; }
+      }
+
+      const latestVotes = {};
+      votes.forEach(v => latestVotes[v.from] = v);
+      const counts = {};
+      Object.values(latestVotes).forEach(v => {
+        counts[v.to] = (counts[v.to] || 0) + 1;
+      });
+
+      const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+      const [mostVoted, mostVotes] = sorted[0] || ['Ingen', 0];
+      const tableBody = document.querySelector('#voteTable tbody');
+      tableBody.innerHTML = '';
+      Object.values(latestVotes).forEach(({ from, to, postId }) => {
+        const row = document.createElement('tr');
+        row.innerHTML = `<td>${from}</td><td><a href="https://www.rollspel.nu/threads/bh-ii-r1.85315/post-${postId}" target="_blank">${to}</a></td>`;
+        tableBody.appendChild(row);
+      });
+      document.getElementById('summary').textContent = `⚠️ Risk för utröstning: ${mostVoted} (${mostVotes} röster)`;
+    }
+
+    loadAllPages();
+  </script>
+</body>
+</html>

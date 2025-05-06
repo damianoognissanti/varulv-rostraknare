@@ -1,0 +1,28 @@
+name: Fetch and Deploy
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Create data directory
+        run: mkdir -p data
+      - name: Run fetch script
+        run: |
+          node fetch.js
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add data/
+          git commit -m "Automatisk uppdatering" || echo "Inget nytt"
+          git push
