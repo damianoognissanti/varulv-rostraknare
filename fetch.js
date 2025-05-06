@@ -1,7 +1,7 @@
 const fs = require('fs');
 const https = require('https');
 const base = 'https://www.rollspel.nu/threads/bh-ii-r2.85331/';
-const maxPages = 10;
+const maxPages = 50;
 
 function fetchPage(page, callback) {
   const url = page === 1 ? base : `${base}page-${page}`;
