@@ -59,7 +59,7 @@
       tableBody.innerHTML = '';
       Object.values(latestVotes).forEach(({ from, to, postId }) => {
         const row = document.createElement('tr');
-        row.innerHTML = `<td>${from}</td><td><a href="https://www.rollspel.nu/threads/bh-ii-r1.85315/post-${postId}" target="_blank">${to}</a></td>`;
+        row.innerHTML = `<td>${from}</td><td><a href="https://www.rollspel.nu/threads/bh-ii-r2.85331/post-${postId}" target="_blank">${to}</a></td>`;
         tableBody.appendChild(row);
       });
       document.getElementById('summary').textContent = `⚠️ Risk för utröstning: ${mostVoted} (${mostVotes} röster)`;
