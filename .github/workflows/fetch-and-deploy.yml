@@ -2,7 +2,7 @@ name: Fetch and Deploy
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '*/5 * * * *'  # var 5:e minut
   workflow_dispatch:
 
 jobs:
