@@ -14,8 +14,12 @@
 <body>
   <h1>Rösträknare för Varulvsspel</h1>
   <div class="summary" id="summary"></div>
-  <table id="voteTable"><thead><tr><th>Röstgivare</th><th>Röst</th><th>Tidpunkt</th></tr></thead><tbody></tbody></table>
-  
+  <table id="voteTable">
+    <thead>
+      <tr><th>Röstgivare</th><th>Röst</th><th>Tidpunkt</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
 
 <script>
   const voteRegex = /Röst:\s*@?([\wåäöÅÄÖ_\- ]+)/i;
@@ -44,7 +48,10 @@
           });
         });
         page++;
-      } catch (err) { break; }
+      } catch (err) {
+        console.error('Fel vid laddning:', err);
+        break;
+      }
     }
 
     // Hämta senaste röst per användare
@@ -64,16 +71,19 @@
     // Sortera: mest röster, sedan tidigast först
     const sorted = Object.entries(counts).sort((a, b) => {
       if (b[1] !== a[1]) return b[1] - a[1]; // flest röster först
-      return firstVoteTime[a[0]] < firstVoteTime[b[0]] ? -1 : 1; // äldsta först
+      return firstVoteTime[a[0]] < firstVoteTime[b[0]] ? -1 : 1; // äldsta röst vinner
     });
 
     const [mostVoted, mostVotes] = sorted[0] || ['Ingen', 0];
 
     const tableBody = document.querySelector('#voteTable tbody');
     tableBody.innerHTML = '';
-    Object.values(latestVotes).forEach(({ from, to, postId }) => {
+    Object.values(latestVotes).forEach(({ from, to, postId, timestamp }) => {
       const row = document.createElement('tr');
-      row.innerHTML = `<td>${from}</td><td><a href="https://www.rollspel.nu/threads/bh-ii-r2.85331/post-${postId}" target="_blank">${to}</a></td><td>${new Date(timestamp).toLocaleString('sv-SE')}</td>`;
+      row.innerHTML = `
+        <td>${from}</td>
+        <td><a href="https://www.rollspel.nu/threads/bh-ii-r2.85331/post-${postId}" target="_blank">${to}</a></td>
+        <td>${new Date(timestamp).toLocaleString('sv-SE')}</td>`;
       tableBody.appendChild(row);
     });
 
