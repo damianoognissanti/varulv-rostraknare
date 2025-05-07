@@ -19,7 +19,7 @@ jobs:
 
       - name: Hämta tråd
         env:
-          THREAD_URL: https://www.rollspel.nu/threads/bh-ii-r2.85331
+          THREAD_URL: https://www.rollspel.nu/threads/bh-ii-r3.85336
         run: |
           python fetch_thread.py
 
