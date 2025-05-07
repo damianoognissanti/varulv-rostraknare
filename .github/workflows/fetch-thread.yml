@@ -15,7 +15,7 @@ jobs:
 
       - name: Installera beroenden
         run: |
-          pip install requests
+          pip install requests beautifulsoup4
 
       - name: Hämta tråd
         env:
