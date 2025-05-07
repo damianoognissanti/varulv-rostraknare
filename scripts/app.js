@@ -43,10 +43,11 @@ async function loadSelected() {
     } catch { break; }
   }
 
-  displayVotes(votes);
+  window.allVotes = votes; // för full CSV-export
+  displayVotes(votes, thread);
 }
 
-function displayVotes(votes) {
+function displayVotes(votes, thread) {
   const latestVotes = {};
   votes.forEach(v => latestVotes[v.from] = v);
 
@@ -88,6 +89,8 @@ function displayVotes(votes) {
     playerFilter.innerHTML += `<option value="${p}">${p}</option>`;
   });
 
+  playerFilter.onchange = filterVotes;
+
   showChart(counts);
   window.currentVotes = Object.values(latestVotes);
 }
@@ -109,15 +112,18 @@ function showChart(counts) {
 }
 
 function filterVotes() {
-  const selected = document.getElementById("playerFilter").value;
+  const selectedOptions = Array.from(document.getElementById("playerFilter").selectedOptions);
+  const selected = selectedOptions.map(opt => opt.value);
   const rows = document.querySelectorAll("#voteTable tbody tr");
+
   rows.forEach(row => {
-    row.style.display = selected && row.getAttribute("data-from") !== selected ? "none" : "";
+    const from = row.getAttribute("data-from");
+    row.style.display = selected.length === 0 || selected.includes(from) ? "" : "none";
   });
 }
 
 function exportCSV() {
-  const rows = window.currentVotes || [];
+  const rows = window.allVotes || [];
   const csv = ["Röstgivare,Röst,Tidpunkt"];
   rows.forEach(v => {
     csv.push(`"${v.from}","${v.to}","${v.timestamp}"`);
