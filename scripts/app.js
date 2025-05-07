@@ -47,52 +47,67 @@ async function loadSelected() {
   displayVotes(votes, thread);
 }
 
+function toggleVoteView() {
+      const mode = document.querySelector('input[name="voteView"]:checked').value;
+      const thread = document.getElementById("threadSelect").value;
+      if (!window.allVotes || !thread) return;
+
+      const votesToShow = mode === "all" ? window.allVotes : getLatestVotes(window.allVotes);
+      renderVotes(votesToShow, thread);
+}
+
+function getLatestVotes(votes) {
+      const latest = {};
+      votes.forEach(v => latest[v.from] = v);
+      return Object.values(latest);
+}
+
 function displayVotes(votes, thread) {
-  const latestVotes = {};
-  votes.forEach(v => latestVotes[v.from] = v);
+      window.allVotes = votes;
+      toggleVoteView(); // initial vy
+}
 
-  const counts = {};
-  const firstVoteTime = {};
-  Object.values(latestVotes).forEach(v => {
-    counts[v.to] = (counts[v.to] || 0) + 1;
-    if (!firstVoteTime[v.to] || v.timestamp < firstVoteTime[v.to]) {
-      firstVoteTime[v.to] = v.timestamp;
-    }
-  });
+function renderVotes(votes, thread) {
+      const counts = {};
+      const firstVoteTime = {};
+      votes.forEach(v => {
+              counts[v.to] = (counts[v.to] || 0) + 1;
+              if (!firstVoteTime[v.to] || v.timestamp < firstVoteTime[v.to]) {
+                        firstVoteTime[v.to] = v.timestamp;
+                      }
+            });
 
-  const sorted = Object.entries(counts).sort((a, b) => {
-    if (b[1] !== a[1]) return b[1] - a[1];
-    return firstVoteTime[a[0]] < firstVoteTime[b[0]] ? -1 : 1;
-  });
+      const sorted = Object.entries(counts).sort((a, b) => {
+              if (b[1] !== a[1]) return b[1] - a[1];
+              return firstVoteTime[a[0]] < firstVoteTime[b[0]] ? -1 : 1;
+            });
 
-  const [mostVoted, mostVotes] = sorted[0] || ['Ingen', 0];
-  document.getElementById("summary").textContent =
-    `⚠️ Risk för utröstning: ${mostVoted} (${mostVotes} röster)`;
+      const [mostVoted, mostVotes] = sorted[0] || ['Ingen', 0];
+      document.getElementById("summary").textContent =
+            `⚠️ Risk för utröstning: ${mostVoted} (${mostVotes} röster)`;
 
-  const tableBody = document.querySelector("#voteTable tbody");
-  tableBody.innerHTML = '';
-  const playerSet = new Set();
-  Object.values(latestVotes).forEach(({ from, to, postId, timestamp }) => {
-    playerSet.add(from);
-    const row = document.createElement("tr");
-    row.setAttribute("data-from", from);
-    row.innerHTML = `
-      <td>${from}</td>
-      <td><a href="https://www.rollspel.nu/threads/${thread}/post-${postId}" target="_blank">${to}</a></td>
-      <td>${new Date(timestamp).toLocaleString("sv-SE")}</td>`;
-    tableBody.appendChild(row);
-  });
+      const tableBody = document.querySelector("#voteTable tbody");
+      tableBody.innerHTML = '';
+      const playerSet = new Set();
+      votes.forEach(({ from, to, postId, timestamp }) => {
+              playerSet.add(from);
+              const row = document.createElement("tr");
+              row.setAttribute("data-from", from);
+              row.innerHTML = `
+                <td>${from}</td>
+                    <td><a href="https://www.rollspel.nu/threads/${thread}/post-${postId}" target="_blank">${to}</a></td>
+                    <td>${new Date(timestamp).toLocaleString("sv-SE")}</td>`;
+              tableBody.appendChild(row);
+            });
 
-  const playerFilter = document.getElementById("playerFilter");
-  playerFilter.innerHTML = '<option value="">Alla</option>';
-  [...playerSet].sort().forEach(p => {
-    playerFilter.innerHTML += `<option value="${p}">${p}</option>`;
-  });
+      const playerFilter = document.getElementById("playerFilter");
+      playerFilter.innerHTML = '<option value="">Alla</option>';
+      [...playerSet].sort().forEach(p => {
+              playerFilter.innerHTML += `<option value="${p}">${p}</option>`;
+            });
 
-  playerFilter.onchange = filterVotes;
-
-  showChart(counts);
-  window.currentVotes = Object.values(latestVotes);
+      filterVotes();
+      showChart(counts);
 }
 
 function showChart(counts) {
@@ -135,3 +150,22 @@ function exportCSV() {
   a.download = "rostdata.csv";
   a.click();
 }
+
+function sortTable(columnIndex) {
+      const tbody = document.querySelector("#voteTable tbody");
+      const rows = Array.from(tbody.querySelectorAll("tr"));
+      const ascending = tbody.getAttribute("data-sort") !== `${columnIndex}-asc`;
+
+      rows.sort((a, b) => {
+              const aText = a.children[columnIndex].textContent.trim();
+              const bText = b.children[columnIndex].textContent.trim();
+              return ascending
+                ? aText.localeCompare(bText, 'sv')
+                : bText.localeCompare(aText, 'sv');
+            });
+
+      tbody.innerHTML = '';
+      rows.forEach(row => tbody.appendChild(row));
+      tbody.setAttribute("data-sort", `${columnIndex}-${ascending ? "asc" : "desc"}`);
+}
+

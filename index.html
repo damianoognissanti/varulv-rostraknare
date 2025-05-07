@@ -20,12 +20,27 @@
   <select id="threadSelect"></select>
   <button onclick="loadSelected()">Ladda</button>
   <button onclick="exportCSV()">Exportera CSV</button>
+  <label>
+        <input type="radio" name="voteView" value="latest" checked onchange="toggleVoteView()"> Endast senaste röst
+  </label>
+  <label>
+        <input type="radio" name="voteView" value="all" onchange="toggleVoteView()"> Alla röster
+  </label>
 
   <div class="summary" id="summary"></div>
   <canvas id="chart" width="400" height="150"></canvas>
 
   <h2>Röster</h2>
-  <table id="voteTable"><thead><tr><th>Röstgivare</th><th>Röst</th><th>Tidpunkt</th></tr></thead><tbody></tbody></table>
+  <table id="voteTable">
+    <thead>
+      <tr>
+        <th onclick="sortTable(0)">Röstgivare ⬍</th>
+        <th onclick="sortTable(1)">Röst ⬍</th>
+        <th onclick="sortTable(2)">Tidpunkt ⬍</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
 
   <h2>Filtrera per spelare</h2>
   <select id="playerFilter" onchange="filterVotes()"><option value="">Alla</option></select>
