@@ -120,7 +120,6 @@ function filterVotes() {
               const from = row.getAttribute("data-from");
               row.style.display = selected.length === 0 || selected.includes(from) ? "" : "none";
             });
-});
 }
 
 function exportCSV() {
