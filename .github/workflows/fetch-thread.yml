@@ -1,32 +1,32 @@
-name: Hämta Rollspelstråd
+name: Automatisk hämtning av tråd
 
 on:
-  workflow_dispatch:
-    inputs:
-      thread_url:
-        description: 'URL till tråden'
-        required: true
+  schedule:
+    - cron: '*/5 * * * *'  # var femte minut
+  workflow_dispatch:     # valfritt: för manuell körning
 
-        jobs:
-          download-thread:
-            runs-on: ubuntu-latest
-            steps:
-              - name: Klona repo
-                uses: actions/checkout@v3
+jobs:
+  download-thread:
+    runs-on: ubuntu-latest
 
-              - name: Installera beroenden
-                run: |
-                  python -m pip install --upgrade pip
-                  pip install beautifulsoup4 requests
+    steps:
+      - name: Klona repo
+        uses: actions/checkout@v3
 
-              - name: Hämta tråd
-                run: |
-                  python fetch_thread.py "${{ github.event.inputs.thread_url }}"
+      - name: Installera beroenden
+        run: |
+          pip install requests
 
-              - name: Spara ändringar i repo
-                run: |
-                  git config user.name "GitHub Action"
-                  git config user.email "actions@github.com"
-                  git add data/
-                  git commit -m "Laddade ner tråd ${{ github.event.inputs.thread_url }}" || echo "Inga ändringar"
-                  git push
+      - name: Hämta tråd
+        env:
+          THREAD_URL: https://www.rollspel.nu/threads/bh-ii-r2.85331
+        run: |
+          python fetch_thread.py
+
+      - name: Committa ändringar
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "actions@github.com"
+          git add data/
+          git commit -m "Automatiskt uppdaterad tråd bh-ii-r2.85331" || echo "Inga ändringar"
+          git push
