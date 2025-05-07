@@ -32,9 +32,10 @@ async function loadSelected() {
         const postId = post.id?.replace("js-post-", "");
         const timestamp = post.querySelector("time")?.getAttribute("datetime") || "";
         post.querySelectorAll("blockquote").forEach(bq => bq.remove());
-        const content = post.querySelector(".message-content")?.textContent || "";
+        const content = post.querySelector(".message-content")?.innerHTML || "";
         content.split('\n').forEach(line => {
-          const match = line.match(/Röst:\s*(?:<a[^>]+>)?@([^<\n]+?)(?:<\/a>)?(?:\s|$)/i);
+          console.log(line);
+          const match = line.match(/Röst:\s*(?:<a [^>]*>@([^<]+)<\/a>)/i);
           if (match && postId) {
             votes.push({ from: user, to: match[1].trim(), postId, timestamp });
           }
