@@ -34,7 +34,7 @@ async function loadSelected() {
         post.querySelectorAll("blockquote").forEach(bq => bq.remove());
         const content = post.querySelector(".message-content")?.textContent || "";
         content.split('\n').forEach(line => {
-          const match = line.match(/Röst:\s*(?:<a[^>]+>)?@([\wåäöÅÄÖ_\- ]+)(?:<\/a>)?/i);
+          const match = line.match(/Röst:\s*(?:<a[^>]+>)?@([^<\n]+?)(?:<\/a>)?(?:\s|$)/i);
           if (match && postId) {
             votes.push({ from: user, to: match[1].trim(), postId, timestamp });
           }
