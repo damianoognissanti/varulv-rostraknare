@@ -35,7 +35,7 @@ async function loadSelected() {
         const content = post.querySelector(".message-content")?.innerHTML || "";
         content.split('\n').forEach(line => {
           console.log(line);
-          const match = line.match(/Röst:\s*(?:<a [^>]*>@([^<]+)<\/a>)/i);
+          const match = line.match(/Röst:.*<a [^>]*>@([^<]+)<\/a>/i);
           if (match && postId) {
             votes.push({ from: user, to: match[1].trim(), postId, timestamp });
           }
@@ -85,7 +85,7 @@ function displayVotes(votes, thread) {
   });
 
   const playerFilter = document.getElementById("playerFilter");
-  playerFilter.innerHTML = '<option value="">Alla</option>';
+  playerFilter.innerHTML = '<option value="*">Alla</option>';
   [...playerSet].sort().forEach(p => {
     playerFilter.innerHTML += `<option value="${p}">${p}</option>`;
   });
