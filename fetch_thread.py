@@ -1,7 +1,6 @@
 # fetch_thread.py
 import os
 import requests
-from bs4 import BeautifulSoup
 import sys
 
 def download_thread(base_url):
@@ -9,7 +8,7 @@ def download_thread(base_url):
     folder = f"data/{thread_id}"
     os.makedirs(folder, exist_ok=True)
 
-    for page in range(1, 100):  # max 99 sidor
+    for page in range(1, 100):  # Max 99 sidor
         url = base_url if page == 1 else f"{base_url}/page-{page}"
         print(f"Laddar: {url}")
         res = requests.get(url)
@@ -19,8 +18,8 @@ def download_thread(base_url):
             f.write(res.text)
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("Användning: python fetch_thread.py <tråd-URL>")
+    THREAD_URL = os.getenv("THREAD_URL")
+    if not THREAD_URL:
+        print("THREAD_URL måste anges som miljövariabel.")
         sys.exit(1)
-    download_thread(sys.argv[1])
-
+    download_thread(THREAD_URL)
