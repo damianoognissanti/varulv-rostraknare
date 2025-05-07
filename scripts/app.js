@@ -77,7 +77,7 @@ function displayVotes(votes) {
     row.setAttribute("data-from", from);
     row.innerHTML = `
       <td>${from}</td>
-      <td><a href="https://www.rollspel.nu/threads/x/post-${postId}" target="_blank">${to}</a></td>
+      <td><a href="https://www.rollspel.nu/threads/${thread}/post-${postId}" target="_blank">${to}</a></td>
       <td>${new Date(timestamp).toLocaleString("sv-SE")}</td>`;
     tableBody.appendChild(row);
   });
