@@ -34,7 +34,6 @@ async function loadSelected() {
         post.querySelectorAll("blockquote").forEach(bq => bq.remove());
         const content = post.querySelector(".message-content")?.innerHTML || "";
         content.split('\n').forEach(line => {
-          console.log(line);
           const match = line.match(/Röst:.*<a [^>]*>@([^<]+)<\/a>/i);
           if (match && postId) {
             votes.push({ from: user, to: match[1].trim(), postId, timestamp });
@@ -85,7 +84,7 @@ function displayVotes(votes, thread) {
   });
 
   const playerFilter = document.getElementById("playerFilter");
-  playerFilter.innerHTML = '<option value="*">Alla</option>';
+  playerFilter.innerHTML = '<option value="">Alla</option>';
   [...playerSet].sort().forEach(p => {
     playerFilter.innerHTML += `<option value="${p}">${p}</option>`;
   });
@@ -113,14 +112,15 @@ function showChart(counts) {
 }
 
 function filterVotes() {
-  const selectedOptions = Array.from(document.getElementById("playerFilter").selectedOptions);
-  const selected = selectedOptions.map(opt => opt.value);
-  const rows = document.querySelectorAll("#voteTable tbody tr");
+      const selectedOptions = Array.from(document.getElementById("playerFilter").selectedOptions);
+      const selected = selectedOptions.map(opt => opt.value).filter(Boolean); // ta bort tomma strängar
+      const rows = document.querySelectorAll("#voteTable tbody tr");
 
-  rows.forEach(row => {
-    const from = row.getAttribute("data-from");
-    row.style.display = selected.length === 0 || selected.includes(from) ? "" : "none";
-  });
+      rows.forEach(row => {
+              const from = row.getAttribute("data-from");
+              row.style.display = selected.length === 0 || selected.includes(from) ? "" : "none";
+            });
+});
 }
 
 function exportCSV() {
