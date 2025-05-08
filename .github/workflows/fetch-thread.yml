@@ -28,5 +28,5 @@ jobs:
           git config user.name "GitHub Action"
           git config user.email "actions@github.com"
           git add data/
-          git commit -m "Automatiskt uppdaterad tråd bh-ii-r2.85331" || echo "Inga ändringar"
+          git commit -m "Automatiskt uppdaterad tråd" || echo "Inga ändringar"
           git push
