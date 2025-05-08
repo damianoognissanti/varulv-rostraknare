@@ -63,21 +63,22 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 async function loadSelected() {
-    const rawThread = document.getElementById("threadSelect").value;
-    const thread = encodeURIComponent(rawThread);
+    const thread = document.getElementById("threadSelect").value;
     if (!thread) return;
     const showLiveVotes = document.getElementById("liveModeToggle")?.checked;
     let liveVotesTime = parseInt(document.getElementById("liveDelayInput")?.value || "30", 10);
     if (isNaN(liveVotesTime)) liveVotesTime = 30;
     document.getElementById("timeSlider").value = 100;
     document.getElementById("sliderTimeLabel").textContent = "–";
+    window.sliderTimeLimit = null;
     const timeLimit = window.sliderTimeLimit || null;
 
     const votes = [];
+    window.allVotes = votes; // för full CSV-export
 
     for (let page = 1; page < 100; page++) {
         try {
-            const res = await fetch(`data/${thread}/page${page}.html`);
+            const res = await fetch(`data/${encodeURIComponent(thread)}/page${page}.html`);
             if (!res.ok) break;
             const text = await res.text();
             const parser = new DOMParser();
@@ -97,7 +98,6 @@ async function loadSelected() {
                     }
                 });
             });
-            renderVotes(getVoteSubset(), rawThread);
             if(showLiveVotes){
                 await new Promise(resolve => setTimeout(resolve, liveVotesTime)); // liten paus för UI
             }
@@ -110,7 +110,6 @@ async function loadSelected() {
         }
     }
 
-    window.allVotes = votes; // för full CSV-export
     displayVotes(votes, thread);
 }
 
@@ -122,8 +121,7 @@ function getVoteSubset() {
 
 function toggleVoteView() {
     const mode = document.querySelector('input[name="voteView"]:checked').value;
-    const rawThread = document.getElementById("threadSelect").value;
-    const thread = encodeURIComponent(rawThread);
+    const thread = document.getElementById("threadSelect").value;
     if (!window.allVotes || !thread) return;
 
     const votesToShow = mode === "all" ? window.allVotes : getLatestVotes(window.allVotes);
@@ -173,7 +171,7 @@ function renderVotes(votes, thread) {
         : "okänd tid";
 
     const latestVoteTime = votes.reduce((acc, v) => {
-        return !acc || v.timestamp > acc ? v.timestamp : acc;
+            return !acc || new Date(v.timestamp) > new Date(acc) ? v.timestamp : acc;
     }, null);
 
     const updateDateStr = latestVoteTime
@@ -209,7 +207,7 @@ function renderVotes(votes, thread) {
         row.setAttribute("data-from", from);
         row.innerHTML = `
                 <td>${from}</td>
-                <td><a href="https://www.rollspel.nu/threads/${encodeURIComponent(thread)}/post-${postId}" target="_blank">${to}</a></td>
+                <td><a href="https://www.rollspel.nu/threads/${thread}/post-${postId}" target="_blank">${to}</a></td>
                 <td>${new Date(timestamp).toLocaleString("sv-SE")}</td>
                 <td>${currentLeader} (${runningVotes[currentLeader]})</td>`;
         voteRows.push(row);
@@ -304,7 +302,7 @@ function sortTable(columnIndex) {
 
 function getThreadFromURL() {
     const params = new URLSearchParams(window.location.search);
-    return decodeURIComponent(params.get("thread") || "");
+    return params.get("thread") || "";
 }
 
 function playVoteAnimation() {
@@ -321,7 +319,7 @@ function playVoteAnimation() {
 
     let i = 0;
     function animateStep() {
-        if (i >= votes.length) {
+        if (i > votes.length) {
             window.isAnimating = false;
             return;
         }
