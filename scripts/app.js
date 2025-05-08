@@ -91,7 +91,8 @@ async function loadSelected() {
                 post.querySelectorAll("blockquote").forEach(bq => bq.remove());
                 const content = post.querySelector(".message-content")?.innerHTML || "";
                 content.split('\n').forEach(line => {
-                    const match = line.match(/Röst:.*<a [^>]*>@([^<]+)<\/a>/i);
+                    line = line.replace(/<[\/]?(b|i|em|strong)>/gi, ''); // remove formatting <b>, <i>, etc.
+                    const match = line.match(/Röst\s*:\s*<a [^>]*>@([^<]+)<\/a>/i);
                     if (match && postId) {
                         const voteTime = new Date(timestamp);
                         votes.push({ from: user, to: match[1].trim(), postId, timestamp });
