@@ -17,8 +17,9 @@
   <h1>📊 Varulv Rösträknare</h1>
 
   <label for="threadSelect">Välj speltråd:</label>
-  <select id="threadSelect"></select>
-  <button onclick="loadSelected()">Ladda</button>
+  <select id="threadSelect" onchange="loadSelected();">
+                              <option value="">Välj speltråd</option>
+  </select>
   <button onclick="exportCSV()">Exportera CSV</button>
   <br>
   <label>
@@ -27,6 +28,19 @@
   <label>
         <input type="radio" name="voteView" value="all" onchange="toggleVoteView()"> Alla röster
   </label>
+  <br>
+  <label>
+        <input type="checkbox" id="liveModeToggle"> Visa animation av röster
+  </label>
+  <label>
+        Uppdateringsintervall:
+          <input type="number" id="liveDelayInput" value="30" min="0" style="width: 60px;"> ms
+  </label>
+  <br>
+  <label for="timeSlider">Visa röster fram till:</label>
+  <input type="range" id="timeSlider" min="0" max="100" value="100" />
+  <span id="sliderTimeLabel">–</span>
+
 
   <div class="summary" id="summary"></div>
   <canvas id="chart" width="400" height="150"></canvas>
@@ -38,6 +52,7 @@
         <th onclick="sortTable(0)">Röstgivare ⬍</th>
         <th onclick="sortTable(1)">Röst ⬍</th>
         <th onclick="sortTable(2)">Tidpunkt ⬍</th>
+        <th onclick="sortTable(3)">Riskerade åka ut ⬍</th>
       </tr>
     </thead>
     <tbody></tbody>

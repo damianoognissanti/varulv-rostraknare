@@ -4,26 +4,65 @@ document.addEventListener("DOMContentLoaded", async () => {
         const res = await fetch("data/threads.json");
         const threads = await res.json();
         threads.forEach(t => {
-            const opt = document.createElement("option");
-            opt.value = t;
-            opt.textContent = t;
-            select.appendChild(opt);
+                const opt = document.createElement("option");
+                opt.value = t.slug;
+                opt.textContent = t.name;
+                select.appendChild(opt);
         });
 
         const urlThread = getThreadFromURL();
-        if (urlThread && threads.includes(urlThread)) {
-            select.value = urlThread;
-            loadSelected();
+        if (urlThread && threads.some(t => t.slug === urlThread)) {
+                select.value = urlThread;
+                loadSelected();
         }
 
     } catch {
         select.innerHTML = '<option>Inga trådar hittades</option>';
     }
+    document.getElementById("timeSlider").addEventListener("input", function () {
+          const percent = parseInt(this.value, 10);
+          const { minTime, maxTime } = window.timeSliderRange || {};
+          if (!minTime || !maxTime) return;
+
+          const timeSpan = maxTime - minTime;
+          const limitTime = new Date(minTime.getTime() + (timeSpan * percent / 100));
+
+          document.getElementById("sliderTimeLabel").textContent =
+                limitTime.toLocaleString("sv-SE", {
+                          dateStyle: "short",
+                          timeStyle: "short"
+                        });
+
+          // 💾 Spara globalt
+          window.sliderTimeLimit = limitTime;
+        
+          // 🔁 UPPDATERA vy direkt
+          const thread = document.getElementById("threadSelect").value;
+          if (!thread || !window.allVotes) return;
+
+          const filteredVotes = window.allVotes.filter(v => {
+                  return !window.sliderTimeLimit || new Date(v.timestamp) <= window.sliderTimeLimit;
+                });
+
+          const mode = document.querySelector('input[name="voteView"]:checked').value;
+          const subset = mode === "all"
+          ? filteredVotes
+          : getLatestVotes(filteredVotes);
+
+          renderVotes(subset, thread);
+    });
 });
 
 async function loadSelected() {
-    const thread = document.getElementById("threadSelect").value;
+    const rawThread = document.getElementById("threadSelect").value;
+    const thread = encodeURIComponent(rawThread);
     if (!thread) return;
+    const showLiveVotes = document.getElementById("liveModeToggle")?.checked;
+    const liveVotesTime = parseInt(document.getElementById("liveDelayInput")?.value || "30", 10);
+    const timeLimit = window.sliderTimeLimit || null;
+
+    let liveVotes = [];
+    window.allVotes = liveVotes;
 
     const votes = [];
     for (let page = 1; page < 100; page++) {
@@ -43,10 +82,20 @@ async function loadSelected() {
                 content.split('\n').forEach(line => {
                     const match = line.match(/Röst:.*<a [^>]*>@([^<]+)<\/a>/i);
                     if (match && postId) {
-                        votes.push({ from: user, to: match[1].trim(), postId, timestamp });
+                            const voteTime = new Date(timestamp);
+                            if (!timeLimit || new Date(timestamp) <= timeLimit) {
+                                if(showLiveVotes){
+                                    liveVotes.push({ from: user, to: match[1].trim(), postId, timestamp });
+                                }
+                                votes.push({ from: user, to: match[1].trim(), postId, timestamp });
+                            }
                     }
                 });
             });
+            renderVotes(getVoteSubset(), rawThread);
+            if(showLiveVotes){
+                await new Promise(resolve => setTimeout(resolve, liveVotesTime)); // liten paus för UI
+            }
             const newUrl = new URL(window.location);
             newUrl.searchParams.set("thread", thread);
             history.replaceState(null, "", newUrl.toString());
@@ -57,9 +106,15 @@ async function loadSelected() {
     displayVotes(votes, thread);
 }
 
+function getVoteSubset() {
+        const mode = document.querySelector('input[name="voteView"]:checked')?.value || "latest";
+        return mode === "all" ? window.allVotes : getLatestVotes(window.allVotes);
+}
+
 function toggleVoteView() {
     const mode = document.querySelector('input[name="voteView"]:checked').value;
-    const thread = document.getElementById("threadSelect").value;
+    const rawThread = document.getElementById("threadSelect").value;
+    const thread = encodeURIComponent(rawThread);
     if (!window.allVotes || !thread) return;
 
     const votesToShow = mode === "all" ? window.allVotes : getLatestVotes(window.allVotes);
@@ -74,12 +129,23 @@ function getLatestVotes(votes) {
 
 function displayVotes(votes, thread) {
     window.allVotes = votes;
+
+    //sätt slider-intervall från alla röster, inte filtrerade
+    const timestamps = votes.map(v => new Date(v.timestamp)).sort((a, b) => a - b);
+    window.timeSliderRange = {
+        minTime: timestamps[0],
+        maxTime: timestamps[timestamps.length - 1]
+    };
     toggleVoteView(); // initial vy
 }
 
 function renderVotes(votes, thread) {
+    const timestamps = votes.map(v => new Date(v.timestamp)).sort((a, b) => a - b);
+
     const counts = {};
     const firstVoteTime = {};
+    votes.sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
+
     votes.forEach(v => {
         counts[v.to] = (counts[v.to] || 0) + 1;
         if (!firstVoteTime[v.to] || v.timestamp < firstVoteTime[v.to]) {
@@ -93,22 +159,46 @@ function renderVotes(votes, thread) {
     });
 
     const [mostVoted, mostVotes] = sorted[0] || ['Ingen', 0];
+    const riskTime = firstVoteTime[mostVoted];
+    const riskDateStr = riskTime
+      ? new Date(riskTime).toLocaleString("sv-SE", { dateStyle: "short", timeStyle: "short" })
+      : "okänd tid";
+
+    const latestVoteTime = votes.reduce((acc, v) => {
+          return !acc || v.timestamp > acc ? v.timestamp : acc;
+    }, null);
+
+    const updateDateStr = latestVoteTime
+      ? new Date(latestVoteTime).toLocaleString("sv-SE", { dateStyle: "short", timeStyle: "short" })
+      : "okänd tid";
+    
     document.getElementById("summary").textContent =
-        `⚠️ Risk för utröstning: ${mostVoted} (${mostVotes} röster)`;
+          `⚠️ Risk för utröstning: ${mostVoted} (${mostVotes} röster, sedan ${riskDateStr}). Senast röst lagd ${updateDateStr}.`;
 
     const tableBody = document.querySelector("#voteTable tbody");
     tableBody.innerHTML = '';
     const playerSet = new Set();
+    const runningVotes = {};
+    const voteRows = [];
+
     votes.forEach(({ from, to, postId, timestamp }) => {
-        playerSet.add(from);
-        const row = document.createElement("tr");
-        row.setAttribute("data-from", from);
-        row.innerHTML = `
+            runningVotes[to] = (runningVotes[to] || 0) + 1;
+
+            // Hitta vem som leder just nu
+            const sorted = Object.entries(runningVotes).sort((a, b) => b[1] - a[1]);
+            const currentLeader = sorted[0]?.[0] || "–";
+             
+            playerSet.add(from);
+            const row = document.createElement("tr");
+            row.setAttribute("data-from", from);
+            row.innerHTML = `
                 <td>${from}</td>
-                    <td><a href="https://www.rollspel.nu/threads/${thread}/post-${postId}" target="_blank">${to}</a></td>
-                    <td>${new Date(timestamp).toLocaleString("sv-SE")}</td>`;
-        tableBody.appendChild(row);
+                <td><a href="https://www.rollspel.nu/threads/${encodeURIComponent(thread)}/post-${postId}" target="_blank">${to}</a></td>
+                <td>${new Date(timestamp).toLocaleString("sv-SE")}</td>
+                <td>${currentLeader} (${runningVotes[currentLeader]})</td>`;
+            voteRows.push(row);
     });
+    voteRows.forEach(row => tableBody.appendChild(row)); 
 
     const playerFilter = document.getElementById("playerFilter");
     playerFilter.innerHTML = '<option value="">Alla</option>';
@@ -121,19 +211,36 @@ function renderVotes(votes, thread) {
 }
 
 function showChart(counts) {
-    const ctx = document.getElementById("chart").getContext("2d");
-    if (window.voteChart) window.voteChart.destroy();
-    window.voteChart = new Chart(ctx, {
-        type: "bar",
-        data: {
-            labels: Object.keys(counts),
-            datasets: [{
-                label: "Antal röster",
-                data: Object.values(counts),
-                backgroundColor: "#3c8dbc"
-            }]
-        }
-    });
+    const labels = Object.keys(counts);
+    const data = Object.values(counts);
+
+    if (!window.voteChart) {
+        const ctx = document.getElementById("chart").getContext("2d");
+        window.voteChart = new Chart(ctx, {
+            type: "bar",
+            data: {
+                labels,
+                datasets: [{
+                    label: "Antal röster",
+                    data,
+                    backgroundColor: "#3c8dbc"
+                }]
+            },
+            options: {
+                animation: { duration: 300 },
+                responsive: true,
+                scales: {
+                    y: { beginAtZero: true },
+                    x: { ticks: { font: { size: 22 } } }
+                }
+            }
+        });
+    } else {
+        // 🧠 Uppdatera befintligt diagram:
+        window.voteChart.data.labels = labels;
+        window.voteChart.data.datasets[0].data = data;
+        window.voteChart.update();
+    }
 }
 
 function filterVotes() {
@@ -180,6 +287,6 @@ function sortTable(columnIndex) {
 }
 
 function getThreadFromURL() {
-    const params = new URLSearchParams(window.location.search);
-    return params.get("thread");
+      const params = new URLSearchParams(window.location.search);
+      return decodeURIComponent(params.get("thread") || "");
 }
