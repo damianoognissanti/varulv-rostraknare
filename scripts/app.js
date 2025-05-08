@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     } catch {
         select.innerHTML = '<option>Inga trådar hittades</option>';
     }
+
     document.getElementById("timeSlider").addEventListener("input", function () {
         const percent = parseInt(this.value, 10);
         const { minTime, maxTime } = window.timeSliderRange || {};
@@ -52,11 +53,13 @@ document.addEventListener("DOMContentLoaded", async () => {
             renderVotes(subset, thread);
         }
     });
+
     document.getElementById("liveModeToggle").addEventListener("change", function () {
         if (this.checked) {
             playVoteAnimation();
         }
     });
+
 });
 
 async function loadSelected() {
@@ -64,13 +67,14 @@ async function loadSelected() {
     const thread = encodeURIComponent(rawThread);
     if (!thread) return;
     const showLiveVotes = document.getElementById("liveModeToggle")?.checked;
-    const liveVotesTime = parseInt(document.getElementById("liveDelayInput")?.value || "30", 10);
+    let liveVotesTime = parseInt(document.getElementById("liveDelayInput")?.value || "30", 10);
+    if (isNaN(liveVotesTime)) liveVotesTime = 30;
+    document.getElementById("timeSlider").value = 100;
+    document.getElementById("sliderTimeLabel").textContent = "–";
     const timeLimit = window.sliderTimeLimit || null;
 
-    let liveVotes = [];
-    window.allVotes = liveVotes;
-
     const votes = [];
+
     for (let page = 1; page < 100; page++) {
         try {
             const res = await fetch(`data/${thread}/page${page}.html`);
@@ -89,12 +93,7 @@ async function loadSelected() {
                     const match = line.match(/Röst:.*<a [^>]*>@([^<]+)<\/a>/i);
                     if (match && postId) {
                         const voteTime = new Date(timestamp);
-                        if (!timeLimit || new Date(timestamp) <= timeLimit) {
-                            if(showLiveVotes){
-                                liveVotes.push({ from: user, to: match[1].trim(), postId, timestamp });
-                            }
-                            votes.push({ from: user, to: match[1].trim(), postId, timestamp });
-                        }
+                        votes.push({ from: user, to: match[1].trim(), postId, timestamp });
                     }
                 });
             });
@@ -105,7 +104,10 @@ async function loadSelected() {
             const newUrl = new URL(window.location);
             newUrl.searchParams.set("thread", thread);
             history.replaceState(null, "", newUrl.toString());
-        } catch { break; }
+        } catch (e) {
+                console.error(`Fel vid hämtning av sida ${page} för ${thread}:`, e);
+                break;
+        }
     }
 
     window.allVotes = votes; // för full CSV-export
@@ -114,6 +116,7 @@ async function loadSelected() {
 
 function getVoteSubset() {
     const mode = document.querySelector('input[name="voteView"]:checked')?.value || "latest";
+    if (!window.allVotes) return [];
     return mode === "all" ? window.allVotes : getLatestVotes(window.allVotes);
 }
 
@@ -128,9 +131,10 @@ function toggleVoteView() {
 }
 
 function getLatestVotes(votes) {
-    const latest = {};
-    votes.forEach(v => latest[v.from] = v);
-    return Object.values(latest);
+        const sortedVotes = [...votes].sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
+        const latest = {};
+        sortedVotes.forEach(v => latest[v.from] = v);
+        return Object.values(latest);
 }
 
 function displayVotes(votes, thread) {
@@ -152,14 +156,14 @@ function renderVotes(votes, thread) {
 
     votes.forEach(v => {
         counts[v.to] = (counts[v.to] || 0) + 1;
-        if (!firstVoteTime[v.to] || v.timestamp < firstVoteTime[v.to]) {
+        if (!firstVoteTime[v.to] || new Date(v.timestamp) < new Date(firstVoteTime[v.to])) {
             firstVoteTime[v.to] = v.timestamp;
         }
     });
 
     const sorted = Object.entries(counts).sort((a, b) => {
         if (b[1] !== a[1]) return b[1] - a[1];
-        return firstVoteTime[a[0]] < firstVoteTime[b[0]] ? -1 : 1;
+        return new Date(firstVoteTime[a[0]]) < new Date(firstVoteTime[b[0]]) ? -1 : 1;
     });
 
     const [mostVoted, mostVotes] = sorted[0] || ['Ingen', 0];
@@ -189,7 +193,15 @@ function renderVotes(votes, thread) {
         runningVotes[to] = (runningVotes[to] || 0) + 1;
 
         // Hitta vem som leder just nu
-        const sorted = Object.entries(runningVotes).sort((a, b) => b[1] - a[1]);
+        const sorted = Object.entries(runningVotes).sort((a, b) => {
+            const diff = b[1] - a[1];
+            if (diff !== 0) return diff;
+
+            // Tiebreaker: vem fick första rösten först?
+            const timeA = votes.find(v => v.to === a[0])?.timestamp;
+            const timeB = votes.find(v => v.to === b[0])?.timestamp;
+            return new Date(timeA) - new Date(timeB);
+        });
         const currentLeader = sorted[0]?.[0] || "–";
 
         playerSet.add(from);
@@ -309,17 +321,14 @@ function playVoteAnimation() {
 
     let i = 0;
     function animateStep() {
-        if (i > votes.length) {
+        if (i >= votes.length) {
             window.isAnimating = false;
             return;
         }
         const subset = votes.slice(0, i);
-        renderVotes(
-            document.querySelector('input[name="voteView"]:checked').value === "all"
-            ? subset
-            : getLatestVotes(subset),
-            thread
-        );
+        const viewInput = document.querySelector('input[name="voteView"]:checked');
+        const mode = viewInput ? viewInput.value : "latest";
+        renderVotes(mode === "all" ? subset : getLatestVotes(subset), thread);
         i++;
         setTimeout(animateStep, delay);
     }
