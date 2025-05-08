@@ -1,55 +1,61 @@
 document.addEventListener("DOMContentLoaded", async () => {
+    window.isAnimating = false;
     const select = document.getElementById("threadSelect");
     try {
         const res = await fetch("data/threads.json");
         const threads = await res.json();
         threads.forEach(t => {
-                const opt = document.createElement("option");
-                opt.value = t.slug;
-                opt.textContent = t.name;
-                select.appendChild(opt);
+            const opt = document.createElement("option");
+            opt.value = t.slug;
+            opt.textContent = t.name;
+            select.appendChild(opt);
         });
 
         const urlThread = getThreadFromURL();
         if (urlThread && threads.some(t => t.slug === urlThread)) {
-                select.value = urlThread;
-                loadSelected();
+            select.value = urlThread;
+            loadSelected();
         }
 
     } catch {
         select.innerHTML = '<option>Inga trådar hittades</option>';
     }
     document.getElementById("timeSlider").addEventListener("input", function () {
-          const percent = parseInt(this.value, 10);
-          const { minTime, maxTime } = window.timeSliderRange || {};
-          if (!minTime || !maxTime) return;
+        const percent = parseInt(this.value, 10);
+        const { minTime, maxTime } = window.timeSliderRange || {};
+        if (!minTime || !maxTime) return;
 
-          const timeSpan = maxTime - minTime;
-          const limitTime = new Date(minTime.getTime() + (timeSpan * percent / 100));
+        const timeSpan = maxTime - minTime;
+        const limitTime = new Date(minTime.getTime() + (timeSpan * percent / 100));
+        document.getElementById("sliderTimeLabel").textContent =
+            limitTime.toLocaleString("sv-SE", {
+                dateStyle: "short",
+                timeStyle: "short"
+            });
+        window.sliderTimeLimit = limitTime;
 
-          document.getElementById("sliderTimeLabel").textContent =
-                limitTime.toLocaleString("sv-SE", {
-                          dateStyle: "short",
-                          timeStyle: "short"
-                        });
+        const thread = document.getElementById("threadSelect").value;
+        if (!thread || !window.allVotes) return;
 
-          // 💾 Spara globalt
-          window.sliderTimeLimit = limitTime;
-        
-          // 🔁 UPPDATERA vy direkt
-          const thread = document.getElementById("threadSelect").value;
-          if (!thread || !window.allVotes) return;
+        if (document.getElementById("liveModeToggle").checked) {
+            playVoteAnimation(); // 🔁 starta animation mot nya tidpunkten
+        } else {
+            const filteredVotes = window.allVotes.filter(v => {
+                return !window.sliderTimeLimit || new Date(v.timestamp) <= window.sliderTimeLimit;
+            });
 
-          const filteredVotes = window.allVotes.filter(v => {
-                  return !window.sliderTimeLimit || new Date(v.timestamp) <= window.sliderTimeLimit;
-                });
+            const mode = document.querySelector('input[name="voteView"]:checked').value;
+            const subset = mode === "all"
+                ? filteredVotes
+                : getLatestVotes(filteredVotes);
 
-          const mode = document.querySelector('input[name="voteView"]:checked').value;
-          const subset = mode === "all"
-          ? filteredVotes
-          : getLatestVotes(filteredVotes);
-
-          renderVotes(subset, thread);
+            renderVotes(subset, thread);
+        }
+    });
+    document.getElementById("liveModeToggle").addEventListener("change", function () {
+        if (this.checked) {
+            playVoteAnimation();
+        }
     });
 });
 
@@ -82,13 +88,13 @@ async function loadSelected() {
                 content.split('\n').forEach(line => {
                     const match = line.match(/Röst:.*<a [^>]*>@([^<]+)<\/a>/i);
                     if (match && postId) {
-                            const voteTime = new Date(timestamp);
-                            if (!timeLimit || new Date(timestamp) <= timeLimit) {
-                                if(showLiveVotes){
-                                    liveVotes.push({ from: user, to: match[1].trim(), postId, timestamp });
-                                }
-                                votes.push({ from: user, to: match[1].trim(), postId, timestamp });
+                        const voteTime = new Date(timestamp);
+                        if (!timeLimit || new Date(timestamp) <= timeLimit) {
+                            if(showLiveVotes){
+                                liveVotes.push({ from: user, to: match[1].trim(), postId, timestamp });
                             }
+                            votes.push({ from: user, to: match[1].trim(), postId, timestamp });
+                        }
                     }
                 });
             });
@@ -107,8 +113,8 @@ async function loadSelected() {
 }
 
 function getVoteSubset() {
-        const mode = document.querySelector('input[name="voteView"]:checked')?.value || "latest";
-        return mode === "all" ? window.allVotes : getLatestVotes(window.allVotes);
+    const mode = document.querySelector('input[name="voteView"]:checked')?.value || "latest";
+    return mode === "all" ? window.allVotes : getLatestVotes(window.allVotes);
 }
 
 function toggleVoteView() {
@@ -140,8 +146,6 @@ function displayVotes(votes, thread) {
 }
 
 function renderVotes(votes, thread) {
-    const timestamps = votes.map(v => new Date(v.timestamp)).sort((a, b) => a - b);
-
     const counts = {};
     const firstVoteTime = {};
     votes.sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
@@ -161,19 +165,19 @@ function renderVotes(votes, thread) {
     const [mostVoted, mostVotes] = sorted[0] || ['Ingen', 0];
     const riskTime = firstVoteTime[mostVoted];
     const riskDateStr = riskTime
-      ? new Date(riskTime).toLocaleString("sv-SE", { dateStyle: "short", timeStyle: "short" })
-      : "okänd tid";
+        ? new Date(riskTime).toLocaleString("sv-SE", { dateStyle: "short", timeStyle: "short" })
+        : "okänd tid";
 
     const latestVoteTime = votes.reduce((acc, v) => {
-          return !acc || v.timestamp > acc ? v.timestamp : acc;
+        return !acc || v.timestamp > acc ? v.timestamp : acc;
     }, null);
 
     const updateDateStr = latestVoteTime
-      ? new Date(latestVoteTime).toLocaleString("sv-SE", { dateStyle: "short", timeStyle: "short" })
-      : "okänd tid";
-    
+        ? new Date(latestVoteTime).toLocaleString("sv-SE", { dateStyle: "short", timeStyle: "short" })
+        : "okänd tid";
+
     document.getElementById("summary").textContent =
-          `⚠️ Risk för utröstning: ${mostVoted} (${mostVotes} röster, sedan ${riskDateStr}). Senast röst lagd ${updateDateStr}.`;
+        `⚠️ Risk för utröstning: ${mostVoted} (${mostVotes} röster, sedan ${riskDateStr}). Senast röst lagd ${updateDateStr}.`;
 
     const tableBody = document.querySelector("#voteTable tbody");
     tableBody.innerHTML = '';
@@ -182,21 +186,21 @@ function renderVotes(votes, thread) {
     const voteRows = [];
 
     votes.forEach(({ from, to, postId, timestamp }) => {
-            runningVotes[to] = (runningVotes[to] || 0) + 1;
+        runningVotes[to] = (runningVotes[to] || 0) + 1;
 
-            // Hitta vem som leder just nu
-            const sorted = Object.entries(runningVotes).sort((a, b) => b[1] - a[1]);
-            const currentLeader = sorted[0]?.[0] || "–";
-             
-            playerSet.add(from);
-            const row = document.createElement("tr");
-            row.setAttribute("data-from", from);
-            row.innerHTML = `
+        // Hitta vem som leder just nu
+        const sorted = Object.entries(runningVotes).sort((a, b) => b[1] - a[1]);
+        const currentLeader = sorted[0]?.[0] || "–";
+
+        playerSet.add(from);
+        const row = document.createElement("tr");
+        row.setAttribute("data-from", from);
+        row.innerHTML = `
                 <td>${from}</td>
                 <td><a href="https://www.rollspel.nu/threads/${encodeURIComponent(thread)}/post-${postId}" target="_blank">${to}</a></td>
                 <td>${new Date(timestamp).toLocaleString("sv-SE")}</td>
                 <td>${currentLeader} (${runningVotes[currentLeader]})</td>`;
-            voteRows.push(row);
+        voteRows.push(row);
     });
     voteRows.forEach(row => tableBody.appendChild(row)); 
 
@@ -287,6 +291,37 @@ function sortTable(columnIndex) {
 }
 
 function getThreadFromURL() {
-      const params = new URLSearchParams(window.location.search);
-      return decodeURIComponent(params.get("thread") || "");
+    const params = new URLSearchParams(window.location.search);
+    return decodeURIComponent(params.get("thread") || "");
+}
+
+function playVoteAnimation() {
+    if (window.isAnimating) return; // förhindra att flera animationer kör samtidigt
+    window.isAnimating = true;
+
+    const thread = document.getElementById("threadSelect").value;
+    const delay = parseInt(document.getElementById("liveDelayInput").value, 10);
+    const limitTime = window.sliderTimeLimit || null;
+
+    const votes = (window.allVotes || []).filter(v =>
+        !limitTime || new Date(v.timestamp) <= limitTime
+    );
+
+    let i = 0;
+    function animateStep() {
+        if (i > votes.length) {
+            window.isAnimating = false;
+            return;
+        }
+        const subset = votes.slice(0, i);
+        renderVotes(
+            document.querySelector('input[name="voteView"]:checked').value === "all"
+            ? subset
+            : getLatestVotes(subset),
+            thread
+        );
+        i++;
+        setTimeout(animateStep, delay);
+    }
+    animateStep();
 }
