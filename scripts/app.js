@@ -91,8 +91,7 @@ async function loadSelected() {
                 post.querySelectorAll("blockquote").forEach(bq => bq.remove());
                 const content = post.querySelector(".message-content")?.innerHTML || "";
                 content.split('\n').forEach(line => {
-                    line = line.replace(/<[\/]?(b|i|em|strong)>/gi, ''); // remove formatting <b>, <i>, etc.
-                    const match = line.match(/Röst\s*:\s*<a [^>]*>@([^<]+)<\/a>/i);
+                    const match = line.match(/Röst:.*<a [^>]*>@([^<]+)<\/a>/i);
                     if (match && postId) {
                         const voteTime = new Date(timestamp);
                         votes.push({ from: user, to: match[1].trim(), postId, timestamp });
@@ -106,8 +105,8 @@ async function loadSelected() {
             newUrl.searchParams.set("thread", thread);
             history.replaceState(null, "", newUrl.toString());
         } catch (e) {
-                console.error(`Fel vid hämtning av sida ${page} för ${thread}:`, e);
-                break;
+            console.error(`Fel vid hämtning av sida ${page} för ${thread}:`, e);
+            break;
         }
     }
 
@@ -130,10 +129,10 @@ function toggleVoteView() {
 }
 
 function getLatestVotes(votes) {
-        const sortedVotes = [...votes].sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
-        const latest = {};
-        sortedVotes.forEach(v => latest[v.from] = v);
-        return Object.values(latest);
+    const sortedVotes = [...votes].sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
+    const latest = {};
+    sortedVotes.forEach(v => latest[v.from] = v);
+    return Object.values(latest);
 }
 
 function displayVotes(votes, thread) {
@@ -152,6 +151,10 @@ function renderVotes(votes, thread) {
     const counts = {};
     const firstVoteTime = {};
     votes.sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
+
+    // Compute color map early
+    const uniquePlayers = [...new Set(votes.map(v => v.to))];
+    window.playerColors = computePlayerColors(uniquePlayers);
 
     votes.forEach(v => {
         counts[v.to] = (counts[v.to] || 0) + 1;
@@ -172,7 +175,7 @@ function renderVotes(votes, thread) {
         : "okänd tid";
 
     const latestVoteTime = votes.reduce((acc, v) => {
-            return !acc || new Date(v.timestamp) > new Date(acc) ? v.timestamp : acc;
+        return !acc || new Date(v.timestamp) > new Date(acc) ? v.timestamp : acc;
     }, null);
 
     const updateDateStr = latestVoteTime
@@ -187,6 +190,7 @@ function renderVotes(votes, thread) {
     const playerSet = new Set();
     const runningVotes = {};
     const voteRows = [];
+    const voteHistory = {}; // from -> [to1, to2, ...]
 
     votes.forEach(({ from, to, postId, timestamp }) => {
         runningVotes[to] = (runningVotes[to] || 0) + 1;
@@ -197,20 +201,27 @@ function renderVotes(votes, thread) {
             if (diff !== 0) return diff;
 
             // Tiebreaker: vem fick första rösten först?
-            const timeA = votes.find(v => v.to === a[0])?.timestamp;
-            const timeB = votes.find(v => v.to === b[0])?.timestamp;
+            const timeA = firstVoteTime[a[0]];
+            const timeB = firstVoteTime[b[0]];
             return new Date(timeA) - new Date(timeB);
         });
         const currentLeader = sorted[0]?.[0] || "–";
 
         playerSet.add(from);
+
+        const voteHistory = buildVoteHistory(votes);
+        const voteChain = voteHistory[from]
+            .map((name, i, arr) => i === arr.length - 1 ? `<strong>${name}</strong>` : name)
+            .join(" → ");
+
         const row = document.createElement("tr");
+        const playerColor = window.playerColors?.[from] || "#000"; // fallback color
         row.setAttribute("data-from", from);
         row.innerHTML = `
-                <td>${from}</td>
-                <td><a href="https://www.rollspel.nu/threads/${thread}/post-${postId}" target="_blank">${to}</a></td>
-                <td>${new Date(timestamp).toLocaleString("sv-SE")}</td>
-                <td>${currentLeader} (${runningVotes[currentLeader]})</td>`;
+            <td style="color: ${playerColor}; font-weight: bold">${from}</td>
+            <td><a href="https://www.rollspel.nu/threads/${thread}/post-${postId}" target="_blank">${voteChain}</a></td>
+            <td>${new Date(timestamp).toLocaleString("sv-SE")}</td>
+            <td>${currentLeader} (${runningVotes[currentLeader]})</td>`;
         voteRows.push(row);
     });
     voteRows.forEach(row => tableBody.appendChild(row)); 
@@ -218,7 +229,8 @@ function renderVotes(votes, thread) {
     const playerFilter = document.getElementById("playerFilter");
     playerFilter.innerHTML = '<option value="">Alla</option>';
     [...playerSet].sort().forEach(p => {
-        playerFilter.innerHTML += `<option value="${p}">${p}</option>`;
+        const color = window.playerColors?.[p] || "#000";
+        playerFilter.innerHTML += `<option value="${p}" style="color: ${color}; font-weight: bold">${p}</option>`;
     });
 
     filterVotes();
@@ -229,6 +241,9 @@ function showChart(counts) {
     const labels = Object.keys(counts);
     const data = Object.values(counts);
 
+    const colorMap = window.playerColors;
+    const backgroundColors = labels.map(label => colorMap[label]);
+
     if (!window.voteChart) {
         const ctx = document.getElementById("chart").getContext("2d");
         window.voteChart = new Chart(ctx, {
@@ -238,7 +253,7 @@ function showChart(counts) {
                 datasets: [{
                     label: "Antal röster",
                     data,
-                    backgroundColor: "#3c8dbc"
+                    backgroundColor: backgroundColors
                 }]
             },
             options: {
@@ -251,9 +266,9 @@ function showChart(counts) {
             }
         });
     } else {
-        // 🧠 Uppdatera befintligt diagram:
         window.voteChart.data.labels = labels;
         window.voteChart.data.datasets[0].data = data;
+        window.voteChart.data.datasets[0].backgroundColor = backgroundColors;
         window.voteChart.update();
     }
 }
@@ -332,4 +347,22 @@ function playVoteAnimation() {
         setTimeout(animateStep, delay);
     }
     animateStep();
+}
+
+function computePlayerColors(players) {
+    const colorMap = {};
+    players.forEach((player, i) => {
+        colorMap[player] = `hsl(${i * 360 / players.length}, 70%, 60%)`;
+    });
+    return colorMap;
+}
+
+function buildVoteHistory(votes) {
+        const history = {};
+        votes.forEach(({ from, to }) => {
+                    if (!history[from]) history[from] = [];
+                    const last = history[from][history[from].length - 1];
+                    if (last !== to) history[from].push(to);
+                });
+        return history;
 }
