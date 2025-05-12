@@ -209,9 +209,22 @@ function renderVotes(votes, thread) {
 
         playerSet.add(from);
 
-        const voteHistory = buildVoteHistory(votes);
+        if (!voteHistory[from]) voteHistory[from] = [];
+        const prevVotes = voteHistory[from];
+        const lastVote = prevVotes[prevVotes.length - 1];
+        if (lastVote !== to) voteHistory[from].push(to);
+
         const voteChain = voteHistory[from]
-            .map((name, i, arr) => i === arr.length - 1 ? `<strong>${name}</strong>` : name)
+            .map((name, i, arr) => {
+                const color = window.playerColors?.[name] || "#000";
+                const safeName = name.replace(/</g, "&lt;").replace(/>/g, "&gt;"); // just in case
+
+                if (i === arr.length - 1) {
+                    return `<a href="https://www.rollspel.nu/threads/${thread}/post-${postId}" target="_blank" style="color: ${color}; font-weight: bold">${safeName}</a>`;
+                } else {
+                    return `<span style="color: ${color}">${safeName}</span>`;
+                }
+            })
             .join(" → ");
 
         const row = document.createElement("tr");
@@ -219,7 +232,7 @@ function renderVotes(votes, thread) {
         row.setAttribute("data-from", from);
         row.innerHTML = `
             <td style="color: ${playerColor}; font-weight: bold">${from}</td>
-            <td><a href="https://www.rollspel.nu/threads/${thread}/post-${postId}" target="_blank">${voteChain}</a></td>
+            <td title="Senaste röst: ${new Date(timestamp).toLocaleString()}">${voteChain}</td>
             <td>${new Date(timestamp).toLocaleString("sv-SE")}</td>
             <td>${currentLeader} (${runningVotes[currentLeader]})</td>`;
         voteRows.push(row);
@@ -355,14 +368,4 @@ function computePlayerColors(players) {
         colorMap[player] = `hsl(${i * 360 / players.length}, 70%, 60%)`;
     });
     return colorMap;
-}
-
-function buildVoteHistory(votes) {
-        const history = {};
-        votes.forEach(({ from, to }) => {
-                    if (!history[from]) history[from] = [];
-                    const last = history[from][history[from].length - 1];
-                    if (last !== to) history[from].push(to);
-                });
-        return history;
 }
