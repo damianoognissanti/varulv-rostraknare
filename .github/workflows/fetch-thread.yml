@@ -2,7 +2,8 @@ name: Automatisk hämtning av tråd
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # var 30:e minut
+    #- cron: '*/30 * * * *'  # var 30:e minut
+    - cron: '0 0 1 1 *'  # en gång per år (stoppa temporärt)
   workflow_dispatch:     # valfritt: för manuell körning
 
 jobs:
