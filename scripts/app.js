@@ -174,7 +174,7 @@ async function loadSelected(){
     // array av fabriker så vi kan köra sekventiellt
     const factories=[];
     for(let p=1;p<=pages;p++) factories.push(()=>fetchPage(slug,p));
-    const pagesHtml=live?await simulateLiveFetches(factories,delay):await Promise.all(factories.map(fn=>fn()));
+    const pagesHtml=await Promise.all(factories.map(fn=>fn()));
     const valid=pagesHtml.filter(Boolean);
     if(!valid.length){console.warn("Inga sidor"); return;}
 
@@ -196,15 +196,6 @@ async function fetchPage(thread,page){
     const res=await fetch(`data/${encodeURIComponent(thread)}/page${page}.html`);
     if(!res.ok) return null;
     return{page,text:await res.text()};
-}
-
-async function simulateLiveFetches(factories,delay){
-    const out=[];
-    for(const fn of factories){
-        const r=await fn(); if(r) out.push(r);
-        await new Promise(ok=>setTimeout(ok,delay));
-    }
-    return out;
 }
 
 function parseVotesFromPages(pages,thread){
