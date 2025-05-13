@@ -1,1382 +1,1727 @@
 [
   {
     "name": "Ålderdomshemmet - Runda 1",
-    "slug": "%C3%85lderdomshemmet-runda-1.63435"
+    "slug": "%C3%85lderdomshemmet-runda-1.63435",
+    "pages": 3
   },
   {
     "name": "Ålderdomshemmet - runda 2",
-    "slug": "%C3%85lderdomshemmet-runda-2.63436"
+    "slug": "%C3%85lderdomshemmet-runda-2.63436",
+    "pages": 3
   },
   {
     "name": "Ålderdomshemmet - slut",
-    "slug": "%C3%85lderdomshemmet-slut.63437"
+    "slug": "%C3%85lderdomshemmet-slut.63437",
+    "pages": 1
   },
   {
     "name": "[ABDitC] Runda 1",
-    "slug": "abditc-runda-1.81321"
+    "slug": "abditc-runda-1.81321",
+    "pages": 19
   },
   {
     "name": "[ABDitC] Runda 2",
-    "slug": "abditc-runda-2.81330"
+    "slug": "abditc-runda-2.81330",
+    "pages": 14
   },
   {
     "name": "[ABDitC] Runda 3",
-    "slug": "abditc-runda-3.81340"
+    "slug": "abditc-runda-3.81340",
+    "pages": 9
   },
   {
     "name": "[ABDitC] Runda 4",
-    "slug": "abditc-runda-4.81344"
+    "slug": "abditc-runda-4.81344",
+    "pages": 5
   },
   {
     "name": "[ABDitC] Spelet är slut",
-    "slug": "abditc-spelet-%C3%A4r-slut.81346"
+    "slug": "abditc-spelet-%C3%A4r-slut.81346",
+    "pages": 3
   },
   {
     "name": "Among Us",
-    "slug": "among-us.75933"
+    "slug": "among-us.75933",
+    "pages": 1
   },
   {
     "name": "Avgångsklassen R2",
-    "slug": "avg%C3%A5ngsklassen-r2.81170"
+    "slug": "avg%C3%A5ngsklassen-r2.81170",
+    "pages": 17
   },
   {
     "name": "Avgångsklassen - spelet är slut",
-    "slug": "avg%C3%A5ngsklassen-spelet-%C3%A4r-slut.81188"
+    "slug": "avg%C3%A5ngsklassen-spelet-%C3%A4r-slut.81188",
+    "pages": 3
   },
   {
     "name": "Avgångsklassen",
-    "slug": "avg%C3%A5ngsklassen.81151"
+    "slug": "avg%C3%A5ngsklassen.81151",
+    "pages": 23
   },
   {
     "name": "Avslutningsklassen R3",
-    "slug": "avslutningsklassen-r3.81186"
+    "slug": "avslutningsklassen-r3.81186",
+    "pages": 3
   },
   {
     "name": "[BH II] - R1",
-    "slug": "bh-ii-r1.85315"
+    "slug": "bh-ii-r1.85315",
+    "pages": 32
   },
   {
     "name": "[BH II] - R2",
-    "slug": "bh-ii-r2.85331"
+    "slug": "bh-ii-r2.85331",
+    "pages": 14
   },
   {
     "name": "[BH II] - R3",
-    "slug": "bh-ii-r3.85336"
+    "slug": "bh-ii-r3.85336",
+    "pages": 22
   },
   {
     "name": "[BH II] - R4",
-    "slug": "bh-ii-r4.85339"
+    "slug": "bh-ii-r4.85339",
+    "pages": 14
   },
   {
     "name": "[BH II] - R5",
-    "slug": "bh-ii-r5.85345"
+    "slug": "bh-ii-r5.85345",
+    "pages": 10
   },
   {
     "name": "[BH II] - R6",
-    "slug": "bh-ii-r6.85349"
+    "slug": "bh-ii-r6.85349",
+    "pages": 3
   },
   {
     "name": "[BH II] - R7",
-    "slug": "bh-ii-r7.85356"
+    "slug": "bh-ii-r7.85356",
+    "pages": 4
   },
   {
     "name": "[BH II] - Spelet är slut",
-    "slug": "bh-ii-spelet-%C3%A4r-slut.85362"
+    "slug": "bh-ii-spelet-%C3%A4r-slut.85362",
+    "pages": 4
   },
   {
     "name": "BUNKERBOMBER BOSS BATTLE",
-    "slug": "bunkerbomber-boss-battle.80949"
+    "slug": "bunkerbomber-boss-battle.80949",
+    "pages": 3
   },
   {
     "name": "BUNKERBOMBER: GAME OVER",
-    "slug": "bunkerbomber-game-over.80953"
+    "slug": "bunkerbomber-game-over.80953",
+    "pages": 2
   },
   {
     "name": "BUNKERBOMBER R1",
-    "slug": "bunkerbomber-r1.80900"
+    "slug": "bunkerbomber-r1.80900",
+    "pages": 8
   },
   {
     "name": "BUNKERBOMBER R2",
-    "slug": "bunkerbomber-r2.80910"
+    "slug": "bunkerbomber-r2.80910",
+    "pages": 10
   },
   {
     "name": "BUNKERBOMBER R3",
-    "slug": "bunkerbomber-r3.80924"
+    "slug": "bunkerbomber-r3.80924",
+    "pages": 5
   },
   {
     "name": "BUNKERBOMBER R4",
-    "slug": "bunkerbomber-r4.80929"
+    "slug": "bunkerbomber-r4.80929",
+    "pages": 4
   },
   {
     "name": "BUNKERBOMBER R5",
-    "slug": "bunkerbomber-r5.80938"
+    "slug": "bunkerbomber-r5.80938",
+    "pages": 4
   },
   {
     "name": "BUNKERBOMBER R6",
-    "slug": "bunkerbomber-r6.80945"
+    "slug": "bunkerbomber-r6.80945",
+    "pages": 3
   },
   {
     "name": "Bybornas hövding - R1",
-    "slug": "bybornas-h%C3%B6vding-r1.84472"
+    "slug": "bybornas-h%C3%B6vding-r1.84472",
+    "pages": 25
   },
   {
     "name": "Bybornas hövding - R2",
-    "slug": "bybornas-h%C3%B6vding-r2.84486"
+    "slug": "bybornas-h%C3%B6vding-r2.84486",
+    "pages": 18
   },
   {
     "name": "Bybornas hövding - R3",
-    "slug": "bybornas-h%C3%B6vding-r3.84491"
+    "slug": "bybornas-h%C3%B6vding-r3.84491",
+    "pages": 16
   },
   {
     "name": "Bybornas hövding - Spelet slut",
-    "slug": "bybornas-h%C3%B6vding-spelet-slut.84498"
+    "slug": "bybornas-h%C3%B6vding-spelet-slut.84498",
+    "pages": 5
   },
   {
     "name": "Carmilla vs. Dracula - Runda 1",
-    "slug": "carmilla-vs-dracula-runda-1.84792"
+    "slug": "carmilla-vs-dracula-runda-1.84792",
+    "pages": 25
   },
   {
     "name": "Carmilla vs. Dracula - Runda 2",
-    "slug": "carmilla-vs-dracula-runda-2.84808"
+    "slug": "carmilla-vs-dracula-runda-2.84808",
+    "pages": 13
   },
   {
     "name": "Carmilla vs. Dracula - Runda 3",
-    "slug": "carmilla-vs-dracula-runda-3.84819"
+    "slug": "carmilla-vs-dracula-runda-3.84819",
+    "pages": 12
   },
   {
     "name": "Carmilla vs. Dracula - Runda 4",
-    "slug": "carmilla-vs-dracula-runda-4.84831"
+    "slug": "carmilla-vs-dracula-runda-4.84831",
+    "pages": 18
   },
   {
     "name": "Carmilla vs. Dracula - Spelet är slut",
-    "slug": "carmilla-vs-dracula-spelet-%C3%A4r-slut.84836"
+    "slug": "carmilla-vs-dracula-spelet-%C3%A4r-slut.84836",
+    "pages": 10
   },
   {
     "name": "Deception, murder in Hong Kong – Runda 1/3",
-    "slug": "deception-murder-in-hong-kong-%E2%80%93-runda-1-3.72159"
+    "slug": "deception-murder-in-hong-kong-%E2%80%93-runda-1-3.72159",
+    "pages": 2
   },
   {
     "name": "Deception, murder in Hong Kong – Runda 2/3",
-    "slug": "deception-murder-in-hong-kong-%E2%80%93-runda-2-3.72160"
+    "slug": "deception-murder-in-hong-kong-%E2%80%93-runda-2-3.72160",
+    "pages": 50
   },
   {
     "name": "?Deception: Murder in Hong Kong. 20-22 augusti.",
-    "slug": "deception-murder-in-hong-kong-20-22-augusti.72162"
+    "slug": "deception-murder-in-hong-kong-20-22-augusti.72162",
+    "pages": 1
   },
   {
     "name": "Det dolda ger kaos R1",
-    "slug": "det-dolda-ger-kaos-r1.85092"
+    "slug": "det-dolda-ger-kaos-r1.85092",
+    "pages": 15
   },
   {
     "name": "Det dolda ger Kaos R2",
-    "slug": "det-dolda-ger-kaos-r2.85095"
+    "slug": "det-dolda-ger-kaos-r2.85095",
+    "pages": 19
   },
   {
     "name": "Det Dolda Ger Kaos R3",
-    "slug": "det-dolda-ger-kaos-r3.85103"
+    "slug": "det-dolda-ger-kaos-r3.85103",
+    "pages": 13
   },
   {
     "name": "Det Dolda Ger Kaos SLUT * Varulvsseger* och eftersnack",
-    "slug": "det-dolda-ger-kaos-slut-varulvsseger-och-eftersnack.85110"
+    "slug": "det-dolda-ger-kaos-slut-varulvsseger-och-eftersnack.85110",
+    "pages": 7
   },
   {
     "name": "Dr Whowolf (runda 1)",
-    "slug": "dr-whowolf-runda-1.59176"
+    "slug": "dr-whowolf-runda-1.59176",
+    "pages": 27
   },
   {
     "name": "Dr Whowolf (runda 2)",
-    "slug": "dr-whowolf-runda-2.59191"
+    "slug": "dr-whowolf-runda-2.59191",
+    "pages": 16
   },
   {
     "name": "Dr Whowolf (runda 3)",
-    "slug": "dr-whowolf-runda-3.59219"
+    "slug": "dr-whowolf-runda-3.59219",
+    "pages": 17
   },
   {
     "name": "Dr Whowolf (runda 4)",
-    "slug": "dr-whowolf-runda-4.59243"
+    "slug": "dr-whowolf-runda-4.59243",
+    "pages": 11
   },
   {
     "name": "Dr Whowolf - runda 5",
-    "slug": "dr-whowolf-runda-5.59257"
+    "slug": "dr-whowolf-runda-5.59257",
+    "pages": 4
   },
   {
     "name": "Dune: ökenplaneten - Runda 1",
-    "slug": "dune-%C3%B6kenplaneten-runda-1.82982"
+    "slug": "dune-%C3%B6kenplaneten-runda-1.82982",
+    "pages": 12
   },
   {
     "name": "Dune: ökenplaneten - Runda 2",
-    "slug": "dune-%C3%B6kenplaneten-runda-2.83003"
+    "slug": "dune-%C3%B6kenplaneten-runda-2.83003",
+    "pages": 16
   },
   {
     "name": "Dune: ökenplaneten - Runda 3",
-    "slug": "dune-%C3%B6kenplaneten-runda-3.83010"
+    "slug": "dune-%C3%B6kenplaneten-runda-3.83010",
+    "pages": 7
   },
   {
     "name": "Dune: ökenplaneten - Runda 4",
-    "slug": "dune-%C3%B6kenplaneten-runda-4.83022"
+    "slug": "dune-%C3%B6kenplaneten-runda-4.83022",
+    "pages": 5
   },
   {
     "name": "Dune: Part 2 - Runda 5",
-    "slug": "dune-part-2-runda-5.83030"
+    "slug": "dune-part-2-runda-5.83030",
+    "pages": 1
   },
   {
     "name": "Dune - Spelet är slut",
-    "slug": "dune-spelet-%C3%A4r-slut.83037"
+    "slug": "dune-spelet-%C3%A4r-slut.83037",
+    "pages": 4
   },
   {
     "name": "Expedition Varulvsson - Det sista örådet",
-    "slug": "expedition-varulvsson-det-sista-%C3%B6r%C3%A5det.60935"
+    "slug": "expedition-varulvsson-det-sista-%C3%B6r%C3%A5det.60935",
+    "pages": 3
   },
   {
     "name": "Expedition Varulvsson - Runda 1 - På riktigt",
-    "slug": "expedition-varulvsson-runda-1-p%C3%A5-riktigt.60779"
+    "slug": "expedition-varulvsson-runda-1-p%C3%A5-riktigt.60779",
+    "pages": 10
   },
   {
     "name": "Expedition Varulvsson - Runda 2 - Äkta TV",
-    "slug": "expedition-varulvsson-runda-2-%C3%84kta-tv.60825"
+    "slug": "expedition-varulvsson-runda-2-%C3%84kta-tv.60825",
+    "pages": 8
   },
   {
     "name": "Expedition Varulvsson - Runda 3 - Efter reklamen",
-    "slug": "expedition-varulvsson-runda-3-efter-reklamen.60854"
+    "slug": "expedition-varulvsson-runda-3-efter-reklamen.60854",
+    "pages": 6
   },
   {
     "name": "Expedition Varulvsson - Runda 4 - Samlings-DVDn",
-    "slug": "expedition-varulvsson-runda-4-samlings-dvdn.60885"
+    "slug": "expedition-varulvsson-runda-4-samlings-dvdn.60885",
+    "pages": 5
   },
   {
     "name": "Expedition Varulvsson - Runda 5 - Tittarrekord",
-    "slug": "expedition-varulvsson-runda-5-tittarrekord.60902"
+    "slug": "expedition-varulvsson-runda-5-tittarrekord.60902",
+    "pages": 3
   },
   {
     "name": "Expedition Varulvsson - Runda 6 - Nakenchocken",
-    "slug": "expedition-varulvsson-runda-6-nakenchocken.60918"
+    "slug": "expedition-varulvsson-runda-6-nakenchocken.60918",
+    "pages": 3
   },
   {
     "name": "Fight Club - Runda 1",
-    "slug": "fight-club-runda-1.82473"
+    "slug": "fight-club-runda-1.82473",
+    "pages": 13
   },
   {
     "name": "Fight Club - Runda 2",
-    "slug": "fight-club-runda-2.82478"
+    "slug": "fight-club-runda-2.82478",
+    "pages": 8
   },
   {
     "name": "Fight Club - Runda 3",
-    "slug": "fight-club-runda-3.82483"
+    "slug": "fight-club-runda-3.82483",
+    "pages": 1
   },
   {
     "name": "Fight Club - Runda 4",
-    "slug": "fight-club-runda-4.82484"
+    "slug": "fight-club-runda-4.82484",
+    "pages": 1
   },
   {
     "name": "Fight Club - Spelet är slut",
-    "slug": "fight-club-spelet-%C3%A4r-slut.82486"
+    "slug": "fight-club-spelet-%C3%A4r-slut.82486",
+    "pages": 2
   },
   {
     "name": "Forumspel - oklart parlamentariskt läge!",
-    "slug": "forumspel-oklart-parlamentariskt-l%C3%A4ge.66248"
+    "slug": "forumspel-oklart-parlamentariskt-l%C3%A4ge.66248",
+    "pages": 4
   },
   {
     "name": "[Häxmästarnas rådslag] Andra rundan",
-    "slug": "h%C3%A4xm%C3%A4starnas-r%C3%A5dslag-andra-rundan.77124"
+    "slug": "h%C3%A4xm%C3%A4starnas-r%C3%A5dslag-andra-rundan.77124",
+    "pages": 22
   },
   {
     "name": "[Häxmästarnas rådslag] Första rundan",
-    "slug": "h%C3%A4xm%C3%A4starnas-r%C3%A5dslag-f%C3%B6rsta-rundan.77109"
+    "slug": "h%C3%A4xm%C3%A4starnas-r%C3%A5dslag-f%C3%B6rsta-rundan.77109",
+    "pages": 15
   },
   {
     "name": "[Häxmästarnas rådslag] Fjärde rundan",
-    "slug": "h%C3%A4xm%C3%A4starnas-r%C3%A5dslag-fj%C3%A4rde-rundan.77144"
+    "slug": "h%C3%A4xm%C3%A4starnas-r%C3%A5dslag-fj%C3%A4rde-rundan.77144",
+    "pages": 11
   },
   {
     "name": "[Häxmästarnas rådslag] Spelet slut",
-    "slug": "h%C3%A4xm%C3%A4starnas-r%C3%A5dslag-spelet-slut.77154"
+    "slug": "h%C3%A4xm%C3%A4starnas-r%C3%A5dslag-spelet-slut.77154",
+    "pages": 3
   },
   {
     "name": "[Häxmästarnas rådslag] Tredje rundan",
-    "slug": "h%C3%A4xm%C3%A4starnas-r%C3%A5dslag-tredje-rundan.77133"
+    "slug": "h%C3%A4xm%C3%A4starnas-r%C3%A5dslag-tredje-rundan.77133",
+    "pages": 17
   },
   {
     "name": "Haunted House - GAME OVER",
-    "slug": "haunted-house-game-over.65199"
+    "slug": "haunted-house-game-over.65199",
+    "pages": 2
   },
   {
     "name": "Haunted House - runda 1",
-    "slug": "haunted-house-runda-1.65196"
+    "slug": "haunted-house-runda-1.65196",
+    "pages": 10
   },
   {
     "name": "Haunted House - runda 2",
-    "slug": "haunted-house-runda-2.65197"
+    "slug": "haunted-house-runda-2.65197",
+    "pages": 5
   },
   {
     "name": "Haunted House - runda 3",
-    "slug": "haunted-house-runda-3.65198"
+    "slug": "haunted-house-runda-3.65198",
+    "pages": 2
   },
   {
     "name": "Hitta Jesus - Runda 1",
-    "slug": "hitta-jesus-runda-1.81611"
+    "slug": "hitta-jesus-runda-1.81611",
+    "pages": 17
   },
   {
     "name": "Hitta Jesus - Runda 2",
-    "slug": "hitta-jesus-runda-2.81621"
+    "slug": "hitta-jesus-runda-2.81621",
+    "pages": 14
   },
   {
     "name": "Hitta Jesus - Spelet är över",
-    "slug": "hitta-jesus-spelet-%C3%A4r-%C3%B6ver.81634"
+    "slug": "hitta-jesus-spelet-%C3%A4r-%C3%B6ver.81634",
+    "pages": 5
   },
   {
     "name": "Inbjudan till Maffia/Varulvs VM",
-    "slug": "inbjudan-till-maffia-varulvs-vm.83048"
+    "slug": "inbjudan-till-maffia-varulvs-vm.83048",
+    "pages": 1
   },
   {
     "name": "Inbjudan till Maffia VM, igen!",
-    "slug": "inbjudan-till-maffia-vm-igen.80894"
+    "slug": "inbjudan-till-maffia-vm-igen.80894",
+    "pages": 1
   },
   {
     "name": "Inbjudan till Maffia-VM!",
-    "slug": "inbjudan-till-maffia-vm.77303"
+    "slug": "inbjudan-till-maffia-vm.77303",
+    "pages": 1
   },
   {
     "name": "Inbjudan till Maffia VM!",
-    "slug": "inbjudan-till-maffia-vm.78932"
+    "slug": "inbjudan-till-maffia-vm.78932",
+    "pages": 2
   },
   {
     "name": "Incidentkommissionen [Andra Rundan]",
-    "slug": "incidentkommissionen-andra-rundan.77807"
+    "slug": "incidentkommissionen-andra-rundan.77807",
+    "pages": 4
   },
   {
     "name": "Incidentkommissionen [Första Rundan]",
-    "slug": "incidentkommissionen-f%C3%B6rsta-rundan.77786"
+    "slug": "incidentkommissionen-f%C3%B6rsta-rundan.77786",
+    "pages": 7
   },
   {
     "name": "Incidentkommissionen [Slut på spelet]",
-    "slug": "incidentkommissionen-slut-p%C3%A5-spelet.77835"
+    "slug": "incidentkommissionen-slut-p%C3%A5-spelet.77835",
+    "pages": 2
   },
   {
     "name": "Incidentkommissionen [Tredje Rundan]",
-    "slug": "incidentkommissionen-tredje-rundan.77821"
+    "slug": "incidentkommissionen-tredje-rundan.77821",
+    "pages": 6
   },
   {
     "name": "Invitation to the werewolf championship",
-    "slug": "invitation-to-the-werewolf-championship.72296"
+    "slug": "invitation-to-the-werewolf-championship.72296",
+    "pages": 50
   },
   {
     "name": "Invitation to Werewolf World Championship",
-    "slug": "invitation-to-werewolf-world-championship.74423"
+    "slug": "invitation-to-werewolf-world-championship.74423",
+    "pages": 3
   },
   {
     "name": "Klassåterträff i Nora - Runda 1",
-    "slug": "klass%C3%A5tertr%C3%A4ff-i-nora-runda-1.83328"
+    "slug": "klass%C3%A5tertr%C3%A4ff-i-nora-runda-1.83328",
+    "pages": 15
   },
   {
     "name": "Klassåterträff i Nora - Runda 2",
-    "slug": "klass%C3%A5tertr%C3%A4ff-i-nora-runda-2.83336"
+    "slug": "klass%C3%A5tertr%C3%A4ff-i-nora-runda-2.83336",
+    "pages": 11
   },
   {
     "name": "Klassåterträff i Nora - Runda 3",
-    "slug": "klass%C3%A5tertr%C3%A4ff-i-nora-runda-3.83342"
+    "slug": "klass%C3%A5tertr%C3%A4ff-i-nora-runda-3.83342",
+    "pages": 4
   },
   {
     "name": "Klassåterträff i Nora - Spelet är slut - ULVVINST!",
-    "slug": "klass%C3%A5tertr%C3%A4ff-i-nora-spelet-%C3%A4r-slut-ulvvinst.83347"
+    "slug": "klass%C3%A5tertr%C3%A4ff-i-nora-spelet-%C3%A4r-slut-ulvvinst.83347",
+    "pages": 5
   },
   {
     "name": "Kungens råd - andra mötet",
-    "slug": "kungens-r%C3%A5d-andra-m%C3%B6tet.75244"
+    "slug": "kungens-r%C3%A5d-andra-m%C3%B6tet.75244",
+    "pages": 4
   },
   {
     "name": "Kungens råd - första mötet",
-    "slug": "kungens-r%C3%A5d-f%C3%B6rsta-m%C3%B6tet.65202"
+    "slug": "kungens-r%C3%A5d-f%C3%B6rsta-m%C3%B6tet.65202",
+    "pages": 18
   },
   {
     "name": "Kungens råd - GAME OVER",
-    "slug": "kungens-r%C3%A5d-game-over.75250"
+    "slug": "kungens-r%C3%A5d-game-over.75250",
+    "pages": 2
   },
   {
     "name": "Mäster Bybo: Byrådet - Runda 1",
-    "slug": "m%C3%A4ster-bybo-byr%C3%A5det-runda-1.80362"
+    "slug": "m%C3%A4ster-bybo-byr%C3%A5det-runda-1.80362",
+    "pages": 7
   },
   {
     "name": "Mäster Bybo: Byrådet - Runda 2",
-    "slug": "m%C3%A4ster-bybo-byr%C3%A5det-runda-2.80372"
+    "slug": "m%C3%A4ster-bybo-byr%C3%A5det-runda-2.80372",
+    "pages": 6
   },
   {
     "name": "Mäster Bybo: Byrådet - Runda 3",
-    "slug": "m%C3%A4ster-bybo-byr%C3%A5det-runda-3.80382"
+    "slug": "m%C3%A4ster-bybo-byr%C3%A5det-runda-3.80382",
+    "pages": 3
   },
   {
     "name": "Mäster Bybo: Byrådet - Spelet över",
-    "slug": "m%C3%A4ster-bybo-byr%C3%A5det-spelet-%C3%B6ver.80389"
+    "slug": "m%C3%A4ster-bybo-byr%C3%A5det-spelet-%C3%B6ver.80389",
+    "pages": 2
   },
   {
     "name": "[Mäster Ulv 5] - Runda 1",
-    "slug": "m%C3%A4ster-ulv-5-runda-1.82082"
+    "slug": "m%C3%A4ster-ulv-5-runda-1.82082",
+    "pages": 27
   },
   {
     "name": "[Mäster Ulv 5] - Runda 2",
-    "slug": "m%C3%A4ster-ulv-5-runda-2.82096"
+    "slug": "m%C3%A4ster-ulv-5-runda-2.82096",
+    "pages": 19
   },
   {
     "name": "[Mäster Ulv 5] - Runda 3",
-    "slug": "m%C3%A4ster-ulv-5-runda-3.82102"
+    "slug": "m%C3%A4ster-ulv-5-runda-3.82102",
+    "pages": 22
   },
   {
     "name": "[Mäster Ulv 5] - Runda 4",
-    "slug": "m%C3%A4ster-ulv-5-runda-4.82112"
+    "slug": "m%C3%A4ster-ulv-5-runda-4.82112",
+    "pages": 20
   },
   {
     "name": "[Mäster Ulv 5] - Runda 5",
-    "slug": "m%C3%A4ster-ulv-5-runda-5.82126"
+    "slug": "m%C3%A4ster-ulv-5-runda-5.82126",
+    "pages": 50
   },
   {
     "name": "[Mäster Ulv 5] - Spelet är över",
-    "slug": "m%C3%A4ster-ulv-5-spelet-%C3%A4r-%C3%B6ver.82139"
+    "slug": "m%C3%A4ster-ulv-5-spelet-%C3%A4r-%C3%B6ver.82139",
+    "pages": 8
   },
   {
     "name": "[Mäster Ulv] - Game over!",
-    "slug": "m%C3%A4ster-ulv-game-over.78045"
+    "slug": "m%C3%A4ster-ulv-game-over.78045",
+    "pages": 4
   },
   {
     "name": "[Mäster Ulv] - Runda 1",
-    "slug": "m%C3%A4ster-ulv-runda-1.66226"
+    "slug": "m%C3%A4ster-ulv-runda-1.66226",
+    "pages": 17
   },
   {
     "name": "[Mäster Ulv] - Runda 1",
-    "slug": "m%C3%A4ster-ulv-runda-1.78000"
+    "slug": "m%C3%A4ster-ulv-runda-1.78000",
+    "pages": 14
   },
   {
     "name": "[Mäster Ulv] - Runda 2",
-    "slug": "m%C3%A4ster-ulv-runda-2.66229"
+    "slug": "m%C3%A4ster-ulv-runda-2.66229",
+    "pages": 20
   },
   {
     "name": "[Mäster Ulv] - Runda 2",
-    "slug": "m%C3%A4ster-ulv-runda-2.78018"
+    "slug": "m%C3%A4ster-ulv-runda-2.78018",
+    "pages": 10
   },
   {
     "name": "Mäster Ulv - Runda 3",
-    "slug": "m%C3%A4ster-ulv-runda-3.66230"
+    "slug": "m%C3%A4ster-ulv-runda-3.66230",
+    "pages": 8
   },
   {
     "name": "[Mäster Ulv] - Runda 3",
-    "slug": "m%C3%A4ster-ulv-runda-3.78028"
+    "slug": "m%C3%A4ster-ulv-runda-3.78028",
+    "pages": 6
   },
   {
     "name": "Mäster Ulv - Runda 4",
-    "slug": "m%C3%A4ster-ulv-runda-4.66231"
+    "slug": "m%C3%A4ster-ulv-runda-4.66231",
+    "pages": 18
   },
   {
     "name": "[Mäster Ulv] - Runda 4",
-    "slug": "m%C3%A4ster-ulv-runda-4.78037"
+    "slug": "m%C3%A4ster-ulv-runda-4.78037",
+    "pages": 5
   },
   {
     "name": "Mäster Ulv - Runda 5",
-    "slug": "m%C3%A4ster-ulv-runda-5.66232"
+    "slug": "m%C3%A4ster-ulv-runda-5.66232",
+    "pages": 9
   },
   {
     "name": "Mäster Ulv -Runda 6",
-    "slug": "m%C3%A4ster-ulv-runda-6.66233"
+    "slug": "m%C3%A4ster-ulv-runda-6.66233",
+    "pages": 7
   },
   {
     "name": "Mäster Ulv - Spelet slut",
-    "slug": "m%C3%A4ster-ulv-spelet-slut.66235"
+    "slug": "m%C3%A4ster-ulv-spelet-slut.66235",
+    "pages": 3
   },
   {
     "name": "Mörket mellan Stjärnorna [R7] Runda sju",
-    "slug": "m%C3%B6rket-mellan-stj%C3%A4rnorna-r7-runda-sju.78267"
+    "slug": "m%C3%B6rket-mellan-stj%C3%A4rnorna-r7-runda-sju.78267",
+    "pages": 2
   },
   {
     "name": "Mörkret Mellan Stjärnorna: Avslutning och guldfest",
-    "slug": "m%C3%B6rkret-mellan-stj%C3%A4rnorna-avslutning-och-guldfest.78273"
+    "slug": "m%C3%B6rkret-mellan-stj%C3%A4rnorna-avslutning-och-guldfest.78273",
+    "pages": 2
   },
   {
     "name": "Mörkret Mellan Stjärnorna [R1] Första rundan",
-    "slug": "m%C3%B6rkret-mellan-stj%C3%A4rnorna-r1-f%C3%B6rsta-rundan.78217"
+    "slug": "m%C3%B6rkret-mellan-stj%C3%A4rnorna-r1-f%C3%B6rsta-rundan.78217",
+    "pages": 10
   },
   {
     "name": "Mörkret mellan stjärnorna {R2] Andra rundan",
-    "slug": "m%C3%B6rkret-mellan-stj%C3%A4rnorna-r2-andra-rundan.78229"
+    "slug": "m%C3%B6rkret-mellan-stj%C3%A4rnorna-r2-andra-rundan.78229",
+    "pages": 10
   },
   {
     "name": "Mörkret Mellan Stjärnorna [R3] Tredje rundan",
-    "slug": "m%C3%B6rkret-mellan-stj%C3%A4rnorna-r3-tredje-rundan.78234"
+    "slug": "m%C3%B6rkret-mellan-stj%C3%A4rnorna-r3-tredje-rundan.78234",
+    "pages": 9
   },
   {
     "name": "Mörkret Mellan Stjärnorna [R4] Fjärde rundan",
-    "slug": "m%C3%B6rkret-mellan-stj%C3%A4rnorna-r4-fj%C3%A4rde-rundan.78242"
+    "slug": "m%C3%B6rkret-mellan-stj%C3%A4rnorna-r4-fj%C3%A4rde-rundan.78242",
+    "pages": 4
   },
   {
     "name": "Mörkret Mellan Stjärnorna [R5] Femte rundan",
-    "slug": "m%C3%B6rkret-mellan-stj%C3%A4rnorna-r5-femte-rundan.78252"
+    "slug": "m%C3%B6rkret-mellan-stj%C3%A4rnorna-r5-femte-rundan.78252",
+    "pages": 2
   },
   {
     "name": "Mörkret Mellan Stjärnorna [R6] Sjätte rundan",
-    "slug": "m%C3%B6rkret-mellan-stj%C3%A4rnorna-r6-sj%C3%A4tte-rundan.78257"
+    "slug": "m%C3%B6rkret-mellan-stj%C3%A4rnorna-r6-sj%C3%A4tte-rundan.78257",
+    "pages": 3
   },
   {
     "name": "Mörkret mellan stjärnorna, runda 1",
-    "slug": "m%C3%B6rkret-mellan-stj%C3%A4rnorna-runda-1.78206"
+    "slug": "m%C3%B6rkret-mellan-stj%C3%A4rnorna-runda-1.78206",
+    "pages": 3
   },
   {
     "name": "M E S T E R U L V 2 0 2 0: Andra rundan",
-    "slug": "m-e-s-t-e-r-u-l-v-2-0-2-0-andra-rundan.75426"
+    "slug": "m-e-s-t-e-r-u-l-v-2-0-2-0-andra-rundan.75426",
+    "pages": 8
   },
   {
     "name": "M E S T E R U L V 2 0 2 0 Första rundan",
-    "slug": "m-e-s-t-e-r-u-l-v-2-0-2-0-f%C3%B6rsta-rundan.75405"
+    "slug": "m-e-s-t-e-r-u-l-v-2-0-2-0-f%C3%B6rsta-rundan.75405",
+    "pages": 9
   },
   {
     "name": "M E S T E R U L V 2 0 2 0: GAME OVER",
-    "slug": "m-e-s-t-e-r-u-l-v-2-0-2-0-game-over.75435"
+    "slug": "m-e-s-t-e-r-u-l-v-2-0-2-0-game-over.75435",
+    "pages": 2
   },
   {
     "name": "M E S T E R U L V 2 0 2 0: Tredje rundan",
-    "slug": "m-e-s-t-e-r-u-l-v-2-0-2-0-tredje-rundan.75431"
+    "slug": "m-e-s-t-e-r-u-l-v-2-0-2-0-tredje-rundan.75431",
+    "pages": 4
   },
   {
     "name": "Marinbiologkonferensen vid Devil Reef [R1]",
-    "slug": "marinbiologkonferensen-vid-devil-reef-r1.85212"
+    "slug": "marinbiologkonferensen-vid-devil-reef-r1.85212",
+    "pages": 10
   },
   {
     "name": "Marinbiologkonferensen vid Devil Reef [R2]",
-    "slug": "marinbiologkonferensen-vid-devil-reef-r2.85216"
+    "slug": "marinbiologkonferensen-vid-devil-reef-r2.85216",
+    "pages": 6
   },
   {
     "name": "Marinbiologkonferensen vid Devil Reef [R3]",
-    "slug": "marinbiologkonferensen-vid-devil-reef-r3.85218"
+    "slug": "marinbiologkonferensen-vid-devil-reef-r3.85218",
+    "pages": 9
   },
   {
     "name": "Marinbiologkonferensen vid Devil Reef [R4]",
-    "slug": "marinbiologkonferensen-vid-devil-reef-r4.85222"
+    "slug": "marinbiologkonferensen-vid-devil-reef-r4.85222",
+    "pages": 5
   },
   {
     "name": "Marinbiologkonferensen vid Devil Reef [R5]",
-    "slug": "marinbiologkonferensen-vid-devil-reef-r5.85225"
+    "slug": "marinbiologkonferensen-vid-devil-reef-r5.85225",
+    "pages": 4
   },
   {
     "name": "Marinbiologkonferensen vid Devil Reef [R6]",
-    "slug": "marinbiologkonferensen-vid-devil-reef-r6.85229"
+    "slug": "marinbiologkonferensen-vid-devil-reef-r6.85229",
+    "pages": 5
   },
   {
     "name": "Marinbiologkonferensen vid Devil Reef - Spelet är slut",
-    "slug": "marinbiologkonferensen-vid-devil-reef-spelet-%C3%A4r-slut.85232"
+    "slug": "marinbiologkonferensen-vid-devil-reef-spelet-%C3%A4r-slut.85232",
+    "pages": 8
   },
   {
     "name": "Minioner - Runda 1",
-    "slug": "minioner-runda-1.78574"
+    "slug": "minioner-runda-1.78574",
+    "pages": 13
   },
   {
     "name": "Minioner - Runda 2",
-    "slug": "minioner-runda-2.78585"
+    "slug": "minioner-runda-2.78585",
+    "pages": 50
   },
   {
     "name": "Minioner - Runda 3",
-    "slug": "minioner-runda-3.78593"
+    "slug": "minioner-runda-3.78593",
+    "pages": 7
   },
   {
     "name": "Minioner - Spelet slut",
-    "slug": "minioner-spelet-slut.78598"
+    "slug": "minioner-spelet-slut.78598",
+    "pages": 2
   },
   {
     "name": "Mordet på Glockenspiel - Game over",
-    "slug": "mordet-p%C3%A5-glockenspiel-game-over.75573"
+    "slug": "mordet-p%C3%A5-glockenspiel-game-over.75573",
+    "pages": 2
   },
   {
     "name": "[Mordet på Glockenspiel] - Speltråd",
-    "slug": "mordet-p%C3%A5-glockenspiel-speltr%C3%A5d.75540"
+    "slug": "mordet-p%C3%A5-glockenspiel-speltr%C3%A5d.75540",
+    "pages": 16
   },
   {
     "name": "MORTAL KOMBAT (R1)",
-    "slug": "mortal-kombat-r1.84318"
+    "slug": "mortal-kombat-r1.84318",
+    "pages": 35
   },
   {
     "name": "MORTAL KOMBAT R2",
-    "slug": "mortal-kombat-r2.84331"
+    "slug": "mortal-kombat-r2.84331",
+    "pages": 5
   },
   {
     "name": "MORTAL KOMBAT (R3)",
-    "slug": "mortal-kombat-r3.84335"
+    "slug": "mortal-kombat-r3.84335",
+    "pages": 9
   },
   {
     "name": "MORTAL KOMBAT: spelet slut, bybovinst!",
-    "slug": "mortal-kombat-spelet-slut-bybovinst.84342"
+    "slug": "mortal-kombat-spelet-slut-bybovinst.84342",
+    "pages": 5
   },
   {
     "name": "[MU4] - Runda 1",
-    "slug": "mu4-runda-1.80090"
+    "slug": "mu4-runda-1.80090",
+    "pages": 9
   },
   {
     "name": "[MU4] - Runda 2",
-    "slug": "mu4-runda-2.80106"
+    "slug": "mu4-runda-2.80106",
+    "pages": 12
   },
   {
     "name": "[MU4] - Runda 3",
-    "slug": "mu4-runda-3.80120"
+    "slug": "mu4-runda-3.80120",
+    "pages": 9
   },
   {
     "name": "[MU4] - Runda 4",
-    "slug": "mu4-runda-4.80128"
+    "slug": "mu4-runda-4.80128",
+    "pages": 3
   },
   {
     "name": "[MU4] - Runda 5",
-    "slug": "mu4-runda-5.80134"
+    "slug": "mu4-runda-5.80134",
+    "pages": 4
   },
   {
     "name": "[MU4] - Runda 6",
-    "slug": "mu4-runda-6.80138"
+    "slug": "mu4-runda-6.80138",
+    "pages": 3
   },
   {
     "name": "[MU4] - Spelet är över.",
-    "slug": "mu4-spelet-%C3%A4r-%C3%B6ver.80146"
+    "slug": "mu4-spelet-%C3%A4r-%C3%B6ver.80146",
+    "pages": 5
   },
   {
     "name": "[MU6] - R1",
-    "slug": "mu6-r1.84211"
+    "slug": "mu6-r1.84211",
+    "pages": 30
   },
   {
     "name": "[MU6] - R2",
-    "slug": "mu6-r2.84224"
+    "slug": "mu6-r2.84224",
+    "pages": 24
   },
   {
     "name": "[MU6] - R3",
-    "slug": "mu6-r3.84231"
+    "slug": "mu6-r3.84231",
+    "pages": 18
   },
   {
     "name": "[MU6] - R4",
-    "slug": "mu6-r4.84238"
+    "slug": "mu6-r4.84238",
+    "pages": 18
   },
   {
     "name": "[MU6] - R5",
-    "slug": "mu6-r5.84242"
+    "slug": "mu6-r5.84242",
+    "pages": 8
   },
   {
     "name": "Paradise Ulvtell (18+) - Kulceremonin",
-    "slug": "paradise-ulvtell-18-kulceremonin.81842"
+    "slug": "paradise-ulvtell-18-kulceremonin.81842",
+    "pages": 5
   },
   {
     "name": "Paradise Ulvtell (18+) - Parceremoni R1",
-    "slug": "paradise-ulvtell-18-parceremoni-r1.81777"
+    "slug": "paradise-ulvtell-18-parceremoni-r1.81777",
+    "pages": 1
   },
   {
     "name": "Paradise Ulvtell (18+) - Parceremoni R2",
-    "slug": "paradise-ulvtell-18-parceremoni-r2.81789"
+    "slug": "paradise-ulvtell-18-parceremoni-r2.81789",
+    "pages": 1
   },
   {
     "name": "Paradise Ulvtell (18+) - Parceremoni R3",
-    "slug": "paradise-ulvtell-18-parceremoni-r3.81803"
+    "slug": "paradise-ulvtell-18-parceremoni-r3.81803",
+    "pages": 1
   },
   {
     "name": "Paradise Ulvtell (18+) - Parceremoni R4",
-    "slug": "paradise-ulvtell-18-parceremoni-r4.81811"
+    "slug": "paradise-ulvtell-18-parceremoni-r4.81811",
+    "pages": 2
   },
   {
     "name": "Paradise Ulvtell (18+) - Parceremoni R5",
-    "slug": "paradise-ulvtell-18-parceremoni-r5.81818"
+    "slug": "paradise-ulvtell-18-parceremoni-r5.81818",
+    "pages": 2
   },
   {
     "name": "Paradise Ulvtell (18+) - Runda 1",
-    "slug": "paradise-ulvtell-18-runda-1.81769"
+    "slug": "paradise-ulvtell-18-runda-1.81769",
+    "pages": 4
   },
   {
     "name": "Paradise Ulvtell (18+) - Runda 2",
-    "slug": "paradise-ulvtell-18-runda-2.81782"
+    "slug": "paradise-ulvtell-18-runda-2.81782",
+    "pages": 4
   },
   {
     "name": "Paradise Ulvtell (18+) - Runda 3",
-    "slug": "paradise-ulvtell-18-runda-3.81793"
+    "slug": "paradise-ulvtell-18-runda-3.81793",
+    "pages": 4
   },
   {
     "name": "Paradise Ulvtell (18+) - Runda 4",
-    "slug": "paradise-ulvtell-18-runda-4.81805"
+    "slug": "paradise-ulvtell-18-runda-4.81805",
+    "pages": 8
   },
   {
     "name": "Paradise Ulvtell (18+) - Runda 5",
-    "slug": "paradise-ulvtell-18-runda-5.81813"
+    "slug": "paradise-ulvtell-18-runda-5.81813",
+    "pages": 6
   },
   {
     "name": "Paradise Ulvtell (18+) - Runda 6",
-    "slug": "paradise-ulvtell-18-runda-6.81824"
+    "slug": "paradise-ulvtell-18-runda-6.81824",
+    "pages": 3
   },
   {
     "name": "Paradise Ulvtell (18+) - Runda 7",
-    "slug": "paradise-ulvtell-18-runda-7.81835"
+    "slug": "paradise-ulvtell-18-runda-7.81835",
+    "pages": 7
   },
   {
     "name": "Paradise Ulvtell - Kärleksnästet (Runda 1)",
-    "slug": "paradise-ulvtell-k%C3%A4rleksn%C3%A4stet-runda-1.83624"
+    "slug": "paradise-ulvtell-k%C3%A4rleksn%C3%A4stet-runda-1.83624",
+    "pages": 30
   },
   {
     "name": "Paradise Ulvtell - Kärleksnästet (Runda 2)",
-    "slug": "paradise-ulvtell-k%C3%A4rleksn%C3%A4stet-runda-2.83637"
+    "slug": "paradise-ulvtell-k%C3%A4rleksn%C3%A4stet-runda-2.83637",
+    "pages": 13
   },
   {
     "name": "Paradise Ulvtell - Kärleksnästet | Spelet är slut! - Ulvvinst",
-    "slug": "paradise-ulvtell-k%C3%A4rleksn%C3%A4stet-spelet-%C3%A4r-slut-ulvvinst.83645"
+    "slug": "paradise-ulvtell-k%C3%A4rleksn%C3%A4stet-spelet-%C3%A4r-slut-ulvvinst.83645",
+    "pages": 3
   },
   {
     "name": "Paris - Aftermath...",
-    "slug": "paris-aftermath.80582"
+    "slug": "paris-aftermath.80582",
+    "pages": 2
   },
   {
     "name": "Paris part deux - Runda 1",
-    "slug": "paris-part-deux-runda-1.84631"
+    "slug": "paris-part-deux-runda-1.84631",
+    "pages": 42
   },
   {
     "name": "Paris part deux - Runda 2",
-    "slug": "paris-part-deux-runda-2.84645"
+    "slug": "paris-part-deux-runda-2.84645",
+    "pages": 14
   },
   {
     "name": "Paris part deux - Runda 3",
-    "slug": "paris-part-deux-runda-3.84650"
+    "slug": "paris-part-deux-runda-3.84650",
+    "pages": 10
   },
   {
     "name": "Paris part deux - Runda 4",
-    "slug": "paris-part-deux-runda-4.84655"
+    "slug": "paris-part-deux-runda-4.84655",
+    "pages": 7
   },
   {
     "name": "Paris part deux - Runda 5",
-    "slug": "paris-part-deux-runda-5.84661"
+    "slug": "paris-part-deux-runda-5.84661",
+    "pages": 3
   },
   {
     "name": "Paris part deux - Spelet är le slut nu",
-    "slug": "paris-part-deux-spelet-%C3%A4r-le-slut-nu.84671"
+    "slug": "paris-part-deux-spelet-%C3%A4r-le-slut-nu.84671",
+    "pages": 8
   },
   {
     "name": "Paris - Runda 1",
-    "slug": "paris-runda-1.80530"
+    "slug": "paris-runda-1.80530",
+    "pages": 4
   },
   {
     "name": "Paris - Runda 2",
-    "slug": "paris-runda-2.80537"
+    "slug": "paris-runda-2.80537",
+    "pages": 2
   },
   {
     "name": "Paris - Runda 3",
-    "slug": "paris-runda-3.80556"
+    "slug": "paris-runda-3.80556",
+    "pages": 2
   },
   {
     "name": "Paris - Runda 4",
-    "slug": "paris-runda-4.80563"
+    "slug": "paris-runda-4.80563",
+    "pages": 1
   },
   {
     "name": "Paris - Runda 5 (Final)",
-    "slug": "paris-runda-5-final.80573"
+    "slug": "paris-runda-5-final.80573",
+    "pages": 1
   },
   {
     "name": "#Patterns #Patterns #Patterns - regler",
-    "slug": "patterns-patterns-patterns-regler.79652"
+    "slug": "patterns-patterns-patterns-regler.79652",
+    "pages": 2
   },
   {
     "name": "#Patterns #Patterns #Patterns Runda 1",
-    "slug": "patterns-patterns-patterns-runda-1.79659"
+    "slug": "patterns-patterns-patterns-runda-1.79659",
+    "pages": 7
   },
   {
     "name": "#Patterns #Patterns #Patterns - Runda 2",
-    "slug": "patterns-patterns-patterns-runda-2.79669"
+    "slug": "patterns-patterns-patterns-runda-2.79669",
+    "pages": 6
   },
   {
     "name": "#Patterns #Patterns #Patterns - Runda 3",
-    "slug": "patterns-patterns-patterns-runda-3.79677"
+    "slug": "patterns-patterns-patterns-runda-3.79677",
+    "pages": 8
   },
   {
     "name": "#Patterns #Patterns #Patterns - Runda 4",
-    "slug": "patterns-patterns-patterns-runda-4.79683"
+    "slug": "patterns-patterns-patterns-runda-4.79683",
+    "pages": 7
   },
   {
     "name": "#Patterns #Patterns #Patterns - Spelet slut!",
-    "slug": "patterns-patterns-patterns-spelet-slut.79686"
+    "slug": "patterns-patterns-patterns-spelet-slut.79686",
+    "pages": 2
   },
   {
     "name": "Prins Fiskes följe - Timme 1",
-    "slug": "prins-fiskes-f%C3%B6lje-timme-1.78861"
+    "slug": "prins-fiskes-f%C3%B6lje-timme-1.78861",
+    "pages": 2
   },
   {
     "name": "Prins Fiskes följe - Timme 2",
-    "slug": "prins-fiskes-f%C3%B6lje-timme-2.78868"
+    "slug": "prins-fiskes-f%C3%B6lje-timme-2.78868",
+    "pages": 1
   },
   {
     "name": "Prins Fiskes följe - Timme 3",
-    "slug": "prins-fiskes-f%C3%B6lje-timme-3.78877"
+    "slug": "prins-fiskes-f%C3%B6lje-timme-3.78877",
+    "pages": 2
   },
   {
     "name": "Prins Fiskes följe - Timme 4",
-    "slug": "prins-fiskes-f%C3%B6lje-timme-4.78881"
+    "slug": "prins-fiskes-f%C3%B6lje-timme-4.78881",
+    "pages": 1
   },
   {
     "name": "Prins Fiskes följe - Timme 5",
-    "slug": "prins-fiskes-f%C3%B6lje-timme-5.78892"
+    "slug": "prins-fiskes-f%C3%B6lje-timme-5.78892",
+    "pages": 2
   },
   {
     "name": "Prins Fiskes följe - Timme 6",
-    "slug": "prins-fiskes-f%C3%B6lje-timme-6.78899"
+    "slug": "prins-fiskes-f%C3%B6lje-timme-6.78899",
+    "pages": 1
   },
   {
     "name": "Prins Fiskes följe - Timme 7",
-    "slug": "prins-fiskes-f%C3%B6lje-timme-7.78905"
+    "slug": "prins-fiskes-f%C3%B6lje-timme-7.78905",
+    "pages": 1
   },
   {
     "name": "Prinsessan Magicas följe - Timme 1",
-    "slug": "prinsessan-magicas-f%C3%B6lje-timme-1.78860"
+    "slug": "prinsessan-magicas-f%C3%B6lje-timme-1.78860",
+    "pages": 3
   },
   {
     "name": "Prinsessan Magicas följe - Timme 2",
-    "slug": "prinsessan-magicas-f%C3%B6lje-timme-2.78867"
+    "slug": "prinsessan-magicas-f%C3%B6lje-timme-2.78867",
+    "pages": 2
   },
   {
     "name": "Prinsessan Magicas följe - Timme 3",
-    "slug": "prinsessan-magicas-f%C3%B6lje-timme-3.78878"
+    "slug": "prinsessan-magicas-f%C3%B6lje-timme-3.78878",
+    "pages": 2
   },
   {
     "name": "Prinsessan Magicas följe - Timme 4",
-    "slug": "prinsessan-magicas-f%C3%B6lje-timme-4.78882"
+    "slug": "prinsessan-magicas-f%C3%B6lje-timme-4.78882",
+    "pages": 2
   },
   {
     "name": "Prinsessan Magicas följe - Timme 5",
-    "slug": "prinsessan-magicas-f%C3%B6lje-timme-5.78891"
+    "slug": "prinsessan-magicas-f%C3%B6lje-timme-5.78891",
+    "pages": 2
   },
   {
     "name": "Prinsessan Magicas följe - Timme 6",
-    "slug": "prinsessan-magicas-f%C3%B6lje-timme-6.78900"
+    "slug": "prinsessan-magicas-f%C3%B6lje-timme-6.78900",
+    "pages": 1
   },
   {
     "name": "Prinsessan Magicas följe - Timme 7",
-    "slug": "prinsessan-magicas-f%C3%B6lje-timme-7.78906"
+    "slug": "prinsessan-magicas-f%C3%B6lje-timme-7.78906",
+    "pages": 1
   },
   {
     "name": "Prinsessan Magicas och prins Fiskes följen - Spelet är över",
-    "slug": "prinsessan-magicas-och-prins-fiskes-f%C3%B6ljen-spelet-%C3%A4r-%C3%B6ver.78913"
+    "slug": "prinsessan-magicas-och-prins-fiskes-f%C3%B6ljen-spelet-%C3%A4r-%C3%B6ver.78913",
+    "pages": 2
   },
   {
     "name": "PRISGALA 2024 - Omröstningar",
-    "slug": "prisgala-2024-omr%C3%B6stningar.84527"
+    "slug": "prisgala-2024-omr%C3%B6stningar.84527",
+    "pages": 1
   },
   {
     "name": "[R1] Utkante - en liten by bland drakar och demoner",
-    "slug": "r1-utkante-en-liten-by-bland-drakar-och-demoner.82267"
+    "slug": "r1-utkante-en-liten-by-bland-drakar-och-demoner.82267",
+    "pages": 28
   },
   {
     "name": "[R2] Utkante - en liten by bland drakar och demoner",
-    "slug": "r2-utkante-en-liten-by-bland-drakar-och-demoner.82285"
+    "slug": "r2-utkante-en-liten-by-bland-drakar-och-demoner.82285",
+    "pages": 19
   },
   {
     "name": "[R3] Utkante - en liten by bland drakar och demoner",
-    "slug": "r3-utkante-en-liten-by-bland-drakar-och-demoner.82291"
+    "slug": "r3-utkante-en-liten-by-bland-drakar-och-demoner.82291",
+    "pages": 9
   },
   {
     "name": "[R4] Utkante - en liten by bland drakar och demoner",
-    "slug": "r4-utkante-en-liten-by-bland-drakar-och-demoner.82302"
+    "slug": "r4-utkante-en-liten-by-bland-drakar-och-demoner.82302",
+    "pages": 3
   },
   {
     "name": "[Red X-mas] - 1 - Tipp tipp tapp",
-    "slug": "red-x-mas-1-tipp-tipp-tapp.61320"
+    "slug": "red-x-mas-1-tipp-tipp-tapp.61320",
+    "pages": 5
   },
   {
     "name": "[Red X-mas] - 2 - Julegröt å julegris",
-    "slug": "red-x-mas-2-julegr%C3%B6t-%C3%A5-julegris.61345"
+    "slug": "red-x-mas-2-julegr%C3%B6t-%C3%A5-julegris.61345",
+    "pages": 4
   },
   {
     "name": "[Red X-mas] - 3 - Ute är mörkt och kallt",
-    "slug": "red-x-mas-3-ute-%C3%A4r-m%C3%B6rkt-och-kallt.61368"
+    "slug": "red-x-mas-3-ute-%C3%A4r-m%C3%B6rkt-och-kallt.61368",
+    "pages": 3
   },
   {
     "name": "[Red X-mas] - 4 - En liten tid vi leva här",
-    "slug": "red-x-mas-4-en-liten-tid-vi-leva-h%C3%A4r.61390"
+    "slug": "red-x-mas-4-en-liten-tid-vi-leva-h%C3%A4r.61390",
+    "pages": 2
   },
   {
     "name": "[Red X-mas] - 5 - Hej tomteGUBBAR?",
-    "slug": "red-x-mas-5-hej-tomtegubbar.61413"
+    "slug": "red-x-mas-5-hej-tomtegubbar.61413",
+    "pages": 2
   },
   {
     "name": "[REVOLOUPTION] - R1",
-    "slug": "revolouption-r1.81427"
+    "slug": "revolouption-r1.81427",
+    "pages": 25
   },
   {
     "name": "[REVOLOUPTION] - R2",
-    "slug": "revolouption-r2.81449"
+    "slug": "revolouption-r2.81449",
+    "pages": 11
   },
   {
     "name": "[REVOLOUPTION] - R3",
-    "slug": "revolouption-r3.81457"
+    "slug": "revolouption-r3.81457",
+    "pages": 5
   },
   {
     "name": "[REVOLOUPTION] - R4",
-    "slug": "revolouption-r4.81458"
+    "slug": "revolouption-r4.81458",
+    "pages": 3
   },
   {
     "name": "[REVOLOUPTION] - Spelet är över",
-    "slug": "revolouption-spelet-%C3%A4r-%C3%B6ver.81464"
+    "slug": "revolouption-spelet-%C3%A4r-%C3%B6ver.81464",
+    "pages": 3
   },
   {
     "name": "Revolt emot Ulvimperiet [Andra rundan]",
-    "slug": "revolt-emot-ulvimperiet-andra-rundan.77364"
+    "slug": "revolt-emot-ulvimperiet-andra-rundan.77364",
+    "pages": 7
   },
   {
     "name": "Revolt emot Ulvimperiet [Första rundan]",
-    "slug": "revolt-emot-ulvimperiet-f%C3%B6rsta-rundan.77360"
+    "slug": "revolt-emot-ulvimperiet-f%C3%B6rsta-rundan.77360",
+    "pages": 17
   },
   {
     "name": "Revolt emot Ulvimperiet [Femte rundan]",
-    "slug": "revolt-emot-ulvimperiet-femte-rundan.77385"
+    "slug": "revolt-emot-ulvimperiet-femte-rundan.77385",
+    "pages": 2
   },
   {
     "name": "Revolt emot Ulvimperiet [Fjärde rundan]",
-    "slug": "revolt-emot-ulvimperiet-fj%C3%A4rde-rundan.77381"
+    "slug": "revolt-emot-ulvimperiet-fj%C3%A4rde-rundan.77381",
+    "pages": 4
   },
   {
     "name": "Revolt emot Ulvimperiet [Slut på spelet]",
-    "slug": "revolt-emot-ulvimperiet-slut-p%C3%A5-spelet.77387"
+    "slug": "revolt-emot-ulvimperiet-slut-p%C3%A5-spelet.77387",
+    "pages": 2
   },
   {
     "name": "Revolt emot Ulvimperiet [Tredje rundan]",
-    "slug": "revolt-emot-ulvimperiet-tredje-rundan.77373"
+    "slug": "revolt-emot-ulvimperiet-tredje-rundan.77373",
+    "pages": 11
   },
   {
     "name": "rollspel.du - R1",
-    "slug": "rollspel-du-r1.82825"
+    "slug": "rollspel-du-r1.82825",
+    "pages": 9
   },
   {
     "name": "rollspel.du - R2",
-    "slug": "rollspel-du-r2.82835"
+    "slug": "rollspel-du-r2.82835",
+    "pages": 11
   },
   {
     "name": "rollspel.du - R3",
-    "slug": "rollspel-du-r3.82843"
+    "slug": "rollspel-du-r3.82843",
+    "pages": 9
   },
   {
     "name": "rollspel.du - spelet är slut",
-    "slug": "rollspel-du-spelet-%C3%A4r-slut.82852"
+    "slug": "rollspel-du-spelet-%C3%A4r-slut.82852",
+    "pages": 5
   },
   {
     "name": "Showdown at Bad Pelt Gulch - runda 1",
-    "slug": "showdown-at-bad-pelt-gulch-runda-1.76665"
+    "slug": "showdown-at-bad-pelt-gulch-runda-1.76665",
+    "pages": 7
   },
   {
     "name": "Showdown at Bad Pelt Gulch - runda 2",
-    "slug": "showdown-at-bad-pelt-gulch-runda-2.76678"
+    "slug": "showdown-at-bad-pelt-gulch-runda-2.76678",
+    "pages": 6
   },
   {
     "name": "Showdown at Bad Pelt Gulch - runda 3",
-    "slug": "showdown-at-bad-pelt-gulch-runda-3.76689"
+    "slug": "showdown-at-bad-pelt-gulch-runda-3.76689",
+    "pages": 5
   },
   {
     "name": "Showdown at Bad Pelt Gulch - spelet slut",
-    "slug": "showdown-at-bad-pelt-gulch-spelet-slut.76701"
+    "slug": "showdown-at-bad-pelt-gulch-spelet-slut.76701",
+    "pages": 2
   },
   {
     "name": "[Snapphanarna] Pre-game",
-    "slug": "snapphanarna-pre-game.80726"
+    "slug": "snapphanarna-pre-game.80726",
+    "pages": 2
   },
   {
     "name": "[Snapphanarna] Runda 1.1",
-    "slug": "snapphanarna-runda-1-1.80742"
+    "slug": "snapphanarna-runda-1-1.80742",
+    "pages": 5
   },
   {
     "name": "[Snapphanarna] Runda 1",
-    "slug": "snapphanarna-runda-1.80737"
+    "slug": "snapphanarna-runda-1.80737",
+    "pages": 4
   },
   {
     "name": "[Snapphanarna] Runda 2.1",
-    "slug": "snapphanarna-runda-2-1.80753"
+    "slug": "snapphanarna-runda-2-1.80753",
+    "pages": 5
   },
   {
     "name": "[Snapphanarna] Runda 2.2",
-    "slug": "snapphanarna-runda-2-2.80757"
+    "slug": "snapphanarna-runda-2-2.80757",
+    "pages": 2
   },
   {
     "name": "[Snapphanarna] Runda 2",
-    "slug": "snapphanarna-runda-2.80748"
+    "slug": "snapphanarna-runda-2.80748",
+    "pages": 6
   },
   {
     "name": "[Snapphanarna] Runda 3",
-    "slug": "snapphanarna-runda-3.80761"
+    "slug": "snapphanarna-runda-3.80761",
+    "pages": 10
   },
   {
     "name": "[Snapphanarna] Runda 4",
-    "slug": "snapphanarna-runda-4.80769"
+    "slug": "snapphanarna-runda-4.80769",
+    "pages": 4
   },
   {
     "name": "[Snapphanarna] Spelet är slut!",
-    "slug": "snapphanarna-spelet-%C3%A4r-slut.80777"
+    "slug": "snapphanarna-spelet-%C3%A4r-slut.80777",
+    "pages": 3
   },
   {
     "name": "SpringSmash23 avslutat BYBOVINST",
-    "slug": "springsmash23-avslutat-bybovinst.81065"
+    "slug": "springsmash23-avslutat-bybovinst.81065",
+    "pages": 2
   },
   {
     "name": "SpringSmash23 - Runda 1",
-    "slug": "springsmash23-runda-1.81037"
+    "slug": "springsmash23-runda-1.81037",
+    "pages": 16
   },
   {
     "name": "SpringSmash23 - Runda 2",
-    "slug": "springsmash23-runda-2.81059"
+    "slug": "springsmash23-runda-2.81059",
+    "pages": 12
   },
   {
     "name": "[Tjuv och polis] Runda 1",
-    "slug": "tjuv-och-polis-runda-1.79359"
+    "slug": "tjuv-och-polis-runda-1.79359",
+    "pages": 4
   },
   {
     "name": "[Tjuv och polis] Runda 2",
-    "slug": "tjuv-och-polis-runda-2.79367"
+    "slug": "tjuv-och-polis-runda-2.79367",
+    "pages": 3
   },
   {
     "name": "[Tjuv och polis] Spelet är över",
-    "slug": "tjuv-och-polis-spelet-%C3%A4r-%C3%B6ver.79371"
+    "slug": "tjuv-och-polis-spelet-%C3%A4r-%C3%B6ver.79371",
+    "pages": 3
   },
   {
     "name": "Turnering?",
-    "slug": "turnering.80858"
+    "slug": "turnering.80858",
+    "pages": 1
   },
   {
     "name": "Ulvfellas - Runda 1",
-    "slug": "ulvfellas-runda-1.83203"
+    "slug": "ulvfellas-runda-1.83203",
+    "pages": 15
   },
   {
     "name": "Ulvfellas - Runda 2",
-    "slug": "ulvfellas-runda-2.83206"
+    "slug": "ulvfellas-runda-2.83206",
+    "pages": 11
   },
   {
     "name": "Ulvfellas - Runda 3",
-    "slug": "ulvfellas-runda-3.83210"
+    "slug": "ulvfellas-runda-3.83210",
+    "pages": 18
   },
   {
     "name": "Ulvfellas - Runda 4",
-    "slug": "ulvfellas-runda-4.83218"
+    "slug": "ulvfellas-runda-4.83218",
+    "pages": 4
   },
   {
     "name": "Ulvfellas - Spelet är slut",
-    "slug": "ulvfellas-spelet-%C3%A4r-slut.83223"
+    "slug": "ulvfellas-spelet-%C3%A4r-slut.83223",
+    "pages": 4
   },
   {
     "name": "USCSS OHSHT: Mekanike(r)n på bordet Runda 1",
-    "slug": "uscss-ohsht-mekanike-r-n-p%C3%A5-bordet-runda-1.80241"
+    "slug": "uscss-ohsht-mekanike-r-n-p%C3%A5-bordet-runda-1.80241",
+    "pages": 16
   },
   {
     "name": "USCSS OHSHT: Mekanike(r)n på bordet Runda 2",
-    "slug": "uscss-ohsht-mekanike-r-n-p%C3%A5-bordet-runda-2.80251"
+    "slug": "uscss-ohsht-mekanike-r-n-p%C3%A5-bordet-runda-2.80251",
+    "pages": 9
   },
   {
     "name": "USCSS OHSHT: Mekanike(r)n på bordet Runda 3",
-    "slug": "uscss-ohsht-mekanike-r-n-p%C3%A5-bordet-runda-3.80265"
+    "slug": "uscss-ohsht-mekanike-r-n-p%C3%A5-bordet-runda-3.80265",
+    "pages": 5
   },
   {
     "name": "USCSS OHSHT: Mekanike(r)n på bordet Runda 4",
-    "slug": "uscss-ohsht-mekanike-r-n-p%C3%A5-bordet-runda-4.80274"
+    "slug": "uscss-ohsht-mekanike-r-n-p%C3%A5-bordet-runda-4.80274",
+    "pages": 6
   },
   {
     "name": "USCSS OHSHT: Mekanike(r)n på bordet Runda 5",
-    "slug": "uscss-ohsht-mekanike-r-n-p%C3%A5-bordet-runda-5.80283"
+    "slug": "uscss-ohsht-mekanike-r-n-p%C3%A5-bordet-runda-5.80283",
+    "pages": 2
   },
   {
     "name": "USCSS OHSHT: Mekanike(r)n på bordet Runda 6",
-    "slug": "uscss-ohsht-mekanike-r-n-p%C3%A5-bordet-runda-6.80287"
+    "slug": "uscss-ohsht-mekanike-r-n-p%C3%A5-bordet-runda-6.80287",
+    "pages": 50
   },
   {
     "name": "USCSS OHSHT: Mekanike(r)n på bordet [Spelet är över]",
-    "slug": "uscss-ohsht-mekanike-r-n-p%C3%A5-bordet-spelet-%C3%A4r-%C3%B6ver.80294"
+    "slug": "uscss-ohsht-mekanike-r-n-p%C3%A5-bordet-spelet-%C3%A4r-%C3%B6ver.80294",
+    "pages": 3
   },
   {
     "name": "USCSS OHSHT: Mekanike(r)n på bordet",
-    "slug": "uscss-ohsht-mekanike-r-n-p%C3%A5-bordet.80229"
+    "slug": "uscss-ohsht-mekanike-r-n-p%C3%A5-bordet.80229",
+    "pages": 50
   },
   {
     "name": "[USCSS Wrnu] Runda 0",
-    "slug": "uscss-wrnu-runda-0.79189"
+    "slug": "uscss-wrnu-runda-0.79189",
+    "pages": 50
   },
   {
     "name": "[USCSS Wrnu] Runda 1",
-    "slug": "uscss-wrnu-runda-1.79193"
+    "slug": "uscss-wrnu-runda-1.79193",
+    "pages": 10
   },
   {
     "name": "[USCSS Wrnu] Runda 2",
-    "slug": "uscss-wrnu-runda-2.79202"
+    "slug": "uscss-wrnu-runda-2.79202",
+    "pages": 7
   },
   {
     "name": "[USCSS Wrnu] Runda 3",
-    "slug": "uscss-wrnu-runda-3.79208"
+    "slug": "uscss-wrnu-runda-3.79208",
+    "pages": 7
   },
   {
     "name": "[USCSS Wrnu] Runda 4",
-    "slug": "uscss-wrnu-runda-4.79214"
+    "slug": "uscss-wrnu-runda-4.79214",
+    "pages": 3
   },
   {
     "name": "[USCSS Wrnu] Runda 5",
-    "slug": "uscss-wrnu-runda-5.79218"
+    "slug": "uscss-wrnu-runda-5.79218",
+    "pages": 50
   },
   {
     "name": "[USCSS Wrnu] Spelet avslutat",
-    "slug": "uscss-wrnu-spelet-avslutat.79222"
+    "slug": "uscss-wrnu-spelet-avslutat.79222",
+    "pages": 3
   },
   {
     "name": "[Utkante 2] - R1",
-    "slug": "utkante-2-r1.84006"
+    "slug": "utkante-2-r1.84006",
+    "pages": 26
   },
   {
     "name": "[Utkante 2] - R2",
-    "slug": "utkante-2-r2.84019"
+    "slug": "utkante-2-r2.84019",
+    "pages": 7
   },
   {
     "name": "[Utkante 2] - R3",
-    "slug": "utkante-2-r3.84025"
+    "slug": "utkante-2-r3.84025",
+    "pages": 4
   },
   {
     "name": "[Utkante 2] - R4",
-    "slug": "utkante-2-r4.84030"
+    "slug": "utkante-2-r4.84030",
+    "pages": 1
   },
   {
     "name": "[Utkante 2] - Remi",
-    "slug": "utkante-2-remi.84041"
+    "slug": "utkante-2-remi.84041",
+    "pages": 3
   },
   {
     "name": "Utkante - SPELET SLUT: Ulvvinst!",
-    "slug": "utkante-spelet-slut-ulvvinst.82303"
+    "slug": "utkante-spelet-slut-ulvvinst.82303",
+    "pages": 9
   },
   {
     "name": "Vad är ett varulvsspel - skrivet ursprungligen på gamla forumet, av Mukwa",
-    "slug": "vad-%C3%A4r-ett-varulvsspel-skrivet-ursprungligen-p%C3%A5-gamla-forumet-av-mukwa.71806"
+    "slug": "vad-%C3%A4r-ett-varulvsspel-skrivet-ursprungligen-p%C3%A5-gamla-forumet-av-mukwa.71806",
+    "pages": 1
   },
   {
     "name": "Vad är ett varulvsspel?",
-    "slug": "vad-%C3%A4r-ett-varulvsspel.55056"
+    "slug": "vad-%C3%A4r-ett-varulvsspel.55056",
+    "pages": 4
   },
   {
     "name": "VALulv - Runda 1",
-    "slug": "valulv-runda-1.83832"
+    "slug": "valulv-runda-1.83832",
+    "pages": 32
   },
   {
     "name": "VALulv - Runda 2",
-    "slug": "valulv-runda-2.83842"
+    "slug": "valulv-runda-2.83842",
+    "pages": 24
   },
   {
     "name": "VALulv - Runda 3",
-    "slug": "valulv-runda-3.83850"
+    "slug": "valulv-runda-3.83850",
+    "pages": 11
   },
   {
     "name": "VALulv - runda 4",
-    "slug": "valulv-runda-4.83858"
+    "slug": "valulv-runda-4.83858",
+    "pages": 15
   },
   {
     "name": "VALulv -Runda 5",
-    "slug": "valulv-runda-5.83866"
+    "slug": "valulv-runda-5.83866",
+    "pages": 12
   },
   {
     "name": "Valvular in SPACE! Runda 1",
-    "slug": "valvular-in-space-runda-1.62158"
+    "slug": "valvular-in-space-runda-1.62158",
+    "pages": 21
   },
   {
     "name": "Vampyrernas maskerad - R1",
-    "slug": "vampyrernas-maskerad-r1.82626"
+    "slug": "vampyrernas-maskerad-r1.82626",
+    "pages": 33
   },
   {
     "name": "Vampyrernas maskerad - R2",
-    "slug": "vampyrernas-maskerad-r2.82639"
+    "slug": "vampyrernas-maskerad-r2.82639",
+    "pages": 26
   },
   {
     "name": "Vampyrernas maskerad - R3",
-    "slug": "vampyrernas-maskerad-r3.82645"
+    "slug": "vampyrernas-maskerad-r3.82645",
+    "pages": 17
   },
   {
     "name": "Vampyrernas maskerad - R4",
-    "slug": "vampyrernas-maskerad-r4.82652"
+    "slug": "vampyrernas-maskerad-r4.82652",
+    "pages": 11
   },
   {
     "name": "Vampyrernas maskerad - R5",
-    "slug": "vampyrernas-maskerad-r5.82655"
+    "slug": "vampyrernas-maskerad-r5.82655",
+    "pages": 10
   },
   {
     "name": "Vampyrernas maskerad - R6",
-    "slug": "vampyrernas-maskerad-r6.82659"
+    "slug": "vampyrernas-maskerad-r6.82659",
+    "pages": 5
   },
   {
     "name": "Vampyrernas maskerad - Spelet är slut",
-    "slug": "vampyrernas-maskerad-spelet-%C3%A4r-slut.82668"
+    "slug": "vampyrernas-maskerad-spelet-%C3%A4r-slut.82668",
+    "pages": 6
   },
   {
     "name": "[VaruIvspeI] - Game over",
-    "slug": "varuivspei-game-over.79502"
+    "slug": "varuivspei-game-over.79502",
+    "pages": 1
   },
   {
     "name": "[VaruIvspeI] - R1",
-    "slug": "varuivspei-r1.79461"
+    "slug": "varuivspei-r1.79461",
+    "pages": 7
   },
   {
     "name": "[VaruIvspeI] - R2",
-    "slug": "varuivspei-r2.79478"
+    "slug": "varuivspei-r2.79478",
+    "pages": 7
   },
   {
     "name": "[VaruIvspeI] - R3",
-    "slug": "varuivspei-r3.79495"
+    "slug": "varuivspei-r3.79495",
+    "pages": 3
   },
   {
     "name": "[VaruIvspeI] - R4",
-    "slug": "varuivspei-r4.79498"
+    "slug": "varuivspei-r4.79498",
+    "pages": 2
   },
   {
     "name": "Varulv som app?",
-    "slug": "varulv-som-app.71365"
+    "slug": "varulv-som-app.71365",
+    "pages": 1
   },
   {
     "name": "[Varulvar på en båt] - R1: Istanbul-Aten",
-    "slug": "varulvar-p%C3%A5-en-b%C3%A5t-r1-istanbul-aten.76866"
+    "slug": "varulvar-p%C3%A5-en-b%C3%A5t-r1-istanbul-aten.76866",
+    "pages": 11
   },
   {
     "name": "[Varulvar på en båt] - R2: Aten-Venedig",
-    "slug": "varulvar-p%C3%A5-en-b%C3%A5t-r2-aten-venedig.76871"
+    "slug": "varulvar-p%C3%A5-en-b%C3%A5t-r2-aten-venedig.76871",
+    "pages": 8
   },
   {
     "name": "[Varulvar på en båt] R3: Venedig-Marseille",
-    "slug": "varulvar-p%C3%A5-en-b%C3%A5t-r3-venedig-marseille.76881"
+    "slug": "varulvar-p%C3%A5-en-b%C3%A5t-r3-venedig-marseille.76881",
+    "pages": 7
   },
   {
     "name": "[Varulvar på en båt] R4: Marseille-Gibraltar",
-    "slug": "varulvar-p%C3%A5-en-b%C3%A5t-r4-marseille-gibraltar.76888"
+    "slug": "varulvar-p%C3%A5-en-b%C3%A5t-r4-marseille-gibraltar.76888",
+    "pages": 8
   },
   {
     "name": "[Varulvar på en båt] R5: Gibraltar-London",
-    "slug": "varulvar-p%C3%A5-en-b%C3%A5t-r5-gibraltar-london.76895"
+    "slug": "varulvar-p%C3%A5-en-b%C3%A5t-r5-gibraltar-london.76895",
+    "pages": 7
   },
   {
     "name": "[Varulvar på en båt] - Spelet slut",
-    "slug": "varulvar-p%C3%A5-en-b%C3%A5t-spelet-slut.76901"
+    "slug": "varulvar-p%C3%A5-en-b%C3%A5t-spelet-slut.76901",
+    "pages": 4
   },
   {
     "name": "[Varulvar på ett flygplan] - Game over",
-    "slug": "varulvar-p%C3%A5-ett-flygplan-game-over.79043"
+    "slug": "varulvar-p%C3%A5-ett-flygplan-game-over.79043",
+    "pages": 4
   },
   {
     "name": "[Varulvar på ett flygplan] - R1",
-    "slug": "varulvar-p%C3%A5-ett-flygplan-r1.79023"
+    "slug": "varulvar-p%C3%A5-ett-flygplan-r1.79023",
+    "pages": 7
   },
   {
     "name": "[Varulvar på ett flygplan] - R2",
-    "slug": "varulvar-p%C3%A5-ett-flygplan-r2.79028"
+    "slug": "varulvar-p%C3%A5-ett-flygplan-r2.79028",
+    "pages": 11
   },
   {
     "name": "[Varulvar på ett flygplan] - R3",
-    "slug": "varulvar-p%C3%A5-ett-flygplan-r3.79037"
+    "slug": "varulvar-p%C3%A5-ett-flygplan-r3.79037",
+    "pages": 3
   },
   {
     "name": "[Varulvar på ett tåg] - Game over",
-    "slug": "varulvar-p%C3%A5-ett-t%C3%A5g-game-over.76427"
+    "slug": "varulvar-p%C3%A5-ett-t%C3%A5g-game-over.76427",
+    "pages": 2
   },
   {
     "name": "[Varulvar på ett tåg] - R1",
-    "slug": "varulvar-p%C3%A5-ett-t%C3%A5g-r1.76392"
+    "slug": "varulvar-p%C3%A5-ett-t%C3%A5g-r1.76392",
+    "pages": 9
   },
   {
     "name": "[Varulvar på ett tåg] - R2",
-    "slug": "varulvar-p%C3%A5-ett-t%C3%A5g-r2.76396"
+    "slug": "varulvar-p%C3%A5-ett-t%C3%A5g-r2.76396",
+    "pages": 7
   },
   {
     "name": "[Varulvar på ett tåg] - R3",
-    "slug": "varulvar-p%C3%A5-ett-t%C3%A5g-r3.76404"
+    "slug": "varulvar-p%C3%A5-ett-t%C3%A5g-r3.76404",
+    "pages": 7
   },
   {
     "name": "[Varulvar på ett tåg] - R4",
-    "slug": "varulvar-p%C3%A5-ett-t%C3%A5g-r4.76412"
+    "slug": "varulvar-p%C3%A5-ett-t%C3%A5g-r4.76412",
+    "pages": 9
   },
   {
     "name": "[Varulvar på ett tåg] - R5",
-    "slug": "varulvar-p%C3%A5-ett-t%C3%A5g-r5.76419"
+    "slug": "varulvar-p%C3%A5-ett-t%C3%A5g-r5.76419",
+    "pages": 4
   },
   {
     "name": "Varulvarnas kyrkogård - runda 1",
-    "slug": "varulvarnas-kyrkog%C3%A5rd-runda-1.75921"
+    "slug": "varulvarnas-kyrkog%C3%A5rd-runda-1.75921",
+    "pages": 19
   },
   {
     "name": "Varulvarnas kyrkogård - runda 2",
-    "slug": "varulvarnas-kyrkog%C3%A5rd-runda-2.75936"
+    "slug": "varulvarnas-kyrkog%C3%A5rd-runda-2.75936",
+    "pages": 16
   },
   {
     "name": "Varulvarnas kyrkogård - runda 3",
-    "slug": "varulvarnas-kyrkog%C3%A5rd-runda-3.75956"
+    "slug": "varulvarnas-kyrkog%C3%A5rd-runda-3.75956",
+    "pages": 10
   },
   {
     "name": "Varulvarnas kyrkogård - runda 4",
-    "slug": "varulvarnas-kyrkog%C3%A5rd-runda-4.75970"
+    "slug": "varulvarnas-kyrkog%C3%A5rd-runda-4.75970",
+    "pages": 8
   },
   {
     "name": "Varulvarnas kyrkogård - slutet",
-    "slug": "varulvarnas-kyrkog%C3%A5rd-slutet.75980"
+    "slug": "varulvarnas-kyrkog%C3%A5rd-slutet.75980",
+    "pages": 3
   },
   {
     "name": "Varulvsblixt⚡️2024 R1",
-    "slug": "varulvsblixt%E2%9A%A1%EF%B8%8F2024-r1.83531"
+    "slug": "varulvsblixt%E2%9A%A1%EF%B8%8F2024-r1.83531",
+    "pages": 8
   },
   {
     "name": "Varulvsblixt⚡️2024 R2",
-    "slug": "varulvsblixt%E2%9A%A1%EF%B8%8F2024-r2.83533"
+    "slug": "varulvsblixt%E2%9A%A1%EF%B8%8F2024-r2.83533",
+    "pages": 6
   },
   {
     "name": "Varulvsblixt⚡️2024 R3",
-    "slug": "varulvsblixt%E2%9A%A1%EF%B8%8F2024-r3.83534"
+    "slug": "varulvsblixt%E2%9A%A1%EF%B8%8F2024-r3.83534",
+    "pages": 7
   },
   {
     "name": "Varulvsblixt⚡️2024 Spelet Slut",
-    "slug": "varulvsblixt%E2%9A%A1%EF%B8%8F2024-spelet-slut.83535"
+    "slug": "varulvsblixt%E2%9A%A1%EF%B8%8F2024-spelet-slut.83535",
+    "pages": 3
   },
   {
     "name": "[Varulvsdisco i Nora] - Game over",
-    "slug": "varulvsdisco-i-nora-game-over.60513"
+    "slug": "varulvsdisco-i-nora-game-over.60513",
+    "pages": 3
   },
   {
     "name": "[Varulvsdisco i Nora] - Runda 1",
-    "slug": "varulvsdisco-i-nora-runda-1.60374"
+    "slug": "varulvsdisco-i-nora-runda-1.60374",
+    "pages": 9
   },
   {
     "name": "[Varulvsdisco i Nora] - Runda 2",
-    "slug": "varulvsdisco-i-nora-runda-2.60409"
+    "slug": "varulvsdisco-i-nora-runda-2.60409",
+    "pages": 7
   },
   {
     "name": "[Varulvsdisco i Nora] - Runda 3",
-    "slug": "varulvsdisco-i-nora-runda-3.60434"
+    "slug": "varulvsdisco-i-nora-runda-3.60434",
+    "pages": 5
   },
   {
     "name": "[Varulvsdisco i Nora] - Runda 4",
-    "slug": "varulvsdisco-i-nora-runda-4.60463"
+    "slug": "varulvsdisco-i-nora-runda-4.60463",
+    "pages": 6
   },
   {
     "name": "[Varulvsdisco i Nora] - Runda 5",
-    "slug": "varulvsdisco-i-nora-runda-5.60483"
+    "slug": "varulvsdisco-i-nora-runda-5.60483",
+    "pages": 3
   },
   {
     "name": "Varulvsjägarna R1",
-    "slug": "varulvsj%C3%A4garna-r1.79926"
+    "slug": "varulvsj%C3%A4garna-r1.79926",
+    "pages": 5
   },
   {
     "name": "Varulvsjägarna R2",
-    "slug": "varulvsj%C3%A4garna-r2.79931"
+    "slug": "varulvsj%C3%A4garna-r2.79931",
+    "pages": 3
   },
   {
     "name": "Varulvsjägarna R3",
-    "slug": "varulvsj%C3%A4garna-r3.79939"
+    "slug": "varulvsj%C3%A4garna-r3.79939",
+    "pages": 2
   },
   {
     "name": "Varulvsjägarna R4",
-    "slug": "varulvsj%C3%A4garna-r4.79946"
+    "slug": "varulvsj%C3%A4garna-r4.79946",
+    "pages": 1
   },
   {
     "name": "[Varulvsspel 7] - Runda 1",
-    "slug": "varulvsspel-7-runda-1.78744"
+    "slug": "varulvsspel-7-runda-1.78744",
+    "pages": 12
   },
   {
     "name": "Varulvsspel Evolution - R1",
-    "slug": "varulvsspel-evolution-r1.66204"
+    "slug": "varulvsspel-evolution-r1.66204",
+    "pages": 2
   },
   {
     "name": "Varulvsspel Evolution - regler",
-    "slug": "varulvsspel-evolution-regler.66203"
+    "slug": "varulvsspel-evolution-regler.66203",
+    "pages": 1
   },
   {
     "name": "[Varulvsspel7] - Runda 2",
-    "slug": "varulvsspel7-runda-2.78755"
+    "slug": "varulvsspel7-runda-2.78755",
+    "pages": 5
   },
   {
     "name": "[Varulvsspel7] - Runda 3",
-    "slug": "varulvsspel7-runda-3.78762"
+    "slug": "varulvsspel7-runda-3.78762",
+    "pages": 3
   },
   {
     "name": "[Varulvsspel7] - Spelet är över",
-    "slug": "varulvsspel7-spelet-%C3%A4r-%C3%B6ver.78769"
+    "slug": "varulvsspel7-spelet-%C3%A4r-%C3%B6ver.78769",
+    "pages": 3
   },
   {
     "name": "Varulvsspelet Revolution och tandagnisslan avslutat",
-    "slug": "varulvsspelet-revolution-och-tandagnisslan-avslutat.71809"
+    "slug": "varulvsspelet-revolution-och-tandagnisslan-avslutat.71809",
+    "pages": 1
   }
 ]

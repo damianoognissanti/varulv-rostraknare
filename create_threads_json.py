@@ -23,6 +23,12 @@ def extract_title_cleaned(html_path):
 
     return title
 
+def count_pages(thread_path):
+    return sum(
+        1 for fname in os.listdir(thread_path)
+        if fname.startswith("page") and fname.endswith(".html")
+    )
+
 def main():
     threads = []
 
@@ -30,13 +36,15 @@ def main():
         thread_path = os.path.join(DATA_DIR, folder_name)
         page1_path = os.path.join(thread_path, "page1.html")
 
-        print(f" Läser {thread_path}.")
+        print(f"🔍 Läser {thread_path}.")
         if os.path.isdir(thread_path) and os.path.isfile(page1_path):
             title = extract_title_cleaned(page1_path)
             if title:
+                pages = count_pages(thread_path)
                 threads.append({
                     "name": title,
-                    "slug": folder_name
+                    "slug": folder_name,
+                    "pages": pages
                 })
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:

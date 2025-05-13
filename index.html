@@ -14,7 +14,7 @@
   </style>
 </head>
 <body>
-  <h1>📊 Varulv Rösträknare</h1>
+  <div id="pageTitle"><h1>📊 Varulv Rösträknare</h1></div>
 
   <label for="threadSelect">Välj speltråd:</label>
   <select id="threadSelect" onchange="loadSelected();">
@@ -34,7 +34,7 @@
   </label>
   <label>
           Hastighet:
-          <input type="number" id="liveDelayInput" value="30" min="0" style="width: 60px;"> ms
+          <input type="number" id="liveDelayInput" value="200" min="0" style="width: 60px;"> ms
   </label>
   <br>
   <label for="timeSlider">Visa röster fram till:</label>
@@ -52,7 +52,8 @@
         <th onclick="sortTable(0)">Röstgivare ⬍</th>
         <th onclick="sortTable(1)">Röst ⬍</th>
         <th onclick="sortTable(2)">Tidpunkt ⬍</th>
-        <th onclick="sortTable(3)">Riskerade åka ut ⬍</th>
+        <th onclick="sortTable(3)">Riskerar att åka ut ⬍</th>
+        <th onclick="sortTable(4)">Därefter ⬍</th>
       </tr>
     </thead>
     <tbody></tbody>

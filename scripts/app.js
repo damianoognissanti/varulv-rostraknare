@@ -1,371 +1,392 @@
-document.addEventListener("DOMContentLoaded", async () => {
-    window.isAnimating = false;
-    const select = document.getElementById("threadSelect");
-    try {
-        const res = await fetch("data/threads.json");
-        const threads = await res.json();
-        threads.forEach(t => {
-            const opt = document.createElement("option");
-            opt.value = t.slug;
-            opt.textContent = t.name;
-            select.appendChild(opt);
+document.addEventListener("DOMContentLoaded",async()=>{
+    /* --------------------------------------------------------------
+     * Global application state
+     * --------------------------------------------------------------*/
+    window.state={
+        playerColors:{},
+        isAnimating:false,
+        threads:null,
+        pages:0,
+        name:null,
+        slug:null,
+        allVotes:[],
+        sliderTimeLimit:null,
+        voteChart:null,
+        allPlayerCount:0,
+        timeSliderRange:null,
+        elements:{}
+    };
+
+    /* --------------------------------------------------------------
+     * Cache DOM elements once and reference them through window.state
+     * --------------------------------------------------------------*/
+    const els={
+        pageTitle:document.getElementById("pageTitle"),
+        threadSelect:document.getElementById("threadSelect"),
+        timeSlider:document.getElementById("timeSlider"),
+        sliderTimeLabel:document.getElementById("sliderTimeLabel"),
+        liveToggle:document.getElementById("liveModeToggle"),
+        delayInput:document.getElementById("liveDelayInput"),
+        summary:document.getElementById("summary"),
+        voteTableBody:document.querySelector("#voteTable tbody"),
+        playerFilter:document.getElementById("playerFilter"),
+        viewInputs:document.querySelectorAll('input[name="voteView"]')
+    };
+    window.state.elements=els;
+
+    /* --------------------------------------------------------------
+     * Initialise settings from URL
+     * --------------------------------------------------------------*/
+    const settings=getInitialSettingsFromURL();
+    const selectedViewInput=Array.from(els.viewInputs).find(r=>r.value===settings.view);
+    if(selectedViewInput) selectedViewInput.checked=true;
+    if(!isNaN(settings.delay)) els.delayInput.value=settings.delay;
+
+    /* --------------------------------------------------------------
+     * Load list of threads and populate <select>
+     * --------------------------------------------------------------*/
+    try{
+        const res=await fetch("data/threads.json");
+        const threads=await res.json();
+        window.state.threads=threads;
+        threads.forEach(t=>{
+            const opt=document.createElement("option");
+            opt.value=t.slug;
+            opt.textContent=t.name;
+            els.threadSelect.appendChild(opt);
         });
-
-        const urlThread = getThreadFromURL();
-        if (urlThread && threads.some(t => t.slug === urlThread)) {
-            select.value = urlThread;
-            loadSelected();
+        if(settings.thread){
+            const threadObj=threads.find(t=>t.slug===settings.thread);
+            if(threadObj){
+                els.threadSelect.value=threadObj.slug;
+                window.state.pages=threadObj.pages;
+                window.state.name=threadObj.name;
+                window.state.slug=threadObj.slug;
+                loadSelected();
+            }
         }
-
-    } catch {
-        select.innerHTML = '<option>Inga trådar hittades</option>';
+    }catch{
+        els.threadSelect.innerHTML='<option>Inga trådar hittades</option>';
     }
 
-    document.getElementById("timeSlider").addEventListener("input", function () {
-        const percent = parseInt(this.value, 10);
-        const { minTime, maxTime } = window.timeSliderRange || {};
-        if (!minTime || !maxTime) return;
-
-        const timeSpan = maxTime - minTime;
-        const limitTime = new Date(minTime.getTime() + (timeSpan * percent / 100));
-        document.getElementById("sliderTimeLabel").textContent =
-            limitTime.toLocaleString("sv-SE", {
-                dateStyle: "short",
-                timeStyle: "short"
-            });
-        window.sliderTimeLimit = limitTime;
-
-        const thread = document.getElementById("threadSelect").value;
-        if (!thread || !window.allVotes) return;
-
-        if (document.getElementById("liveModeToggle").checked) {
-            playVoteAnimation(); // 🔁 starta animation mot nya tidpunkten
-        } else {
-            const filteredVotes = window.allVotes.filter(v => {
-                return !window.sliderTimeLimit || new Date(v.timestamp) <= window.sliderTimeLimit;
-            });
-
-            const mode = document.querySelector('input[name="voteView"]:checked').value;
-            const subset = mode === "all"
-                ? filteredVotes
-                : getLatestVotes(filteredVotes);
-
-            renderVotes(subset, thread);
-        }
+    /* --------------------------------------------------------------
+     * UI event listeners
+     * --------------------------------------------------------------*/
+    els.threadSelect.addEventListener("change",()=>{
+        const slug=els.threadSelect.value;
+        const threadObj=window.state.threads.find(t=>t.slug===slug);
+        if(!threadObj) return;
+        window.state.pages=threadObj.pages;
+        window.state.name=threadObj.name;
+        window.state.slug=threadObj.slug;
+        updateURLParams();
+        loadSelected();
     });
 
-    document.getElementById("liveModeToggle").addEventListener("change", function () {
-        if (this.checked) {
-            playVoteAnimation();
-        }
-    });
+    els.delayInput.addEventListener("input",updateURLParams);
 
+    els.viewInputs.forEach(r=>r.addEventListener("change",toggleVoteView));
+
+    els.playerFilter.addEventListener("change",filterVotes);
+
+    els.timeSlider.addEventListener("input",handleSliderInput);
+
+    els.liveToggle.addEventListener("change",()=>{
+        if(els.liveToggle.checked) playVoteAnimation();
+    });
 });
 
-async function loadSelected() {
-    const thread = document.getElementById("threadSelect").value;
-    if (!thread) return;
-    const showLiveVotes = document.getElementById("liveModeToggle")?.checked;
-    let liveVotesTime = parseInt(document.getElementById("liveDelayInput")?.value || "30", 10);
-    if (isNaN(liveVotesTime)) liveVotesTime = 30;
-    document.getElementById("timeSlider").value = 100;
-    document.getElementById("sliderTimeLabel").textContent = "–";
-    window.sliderTimeLimit = null;
-    const timeLimit = window.sliderTimeLimit || null;
-
-    const votes = [];
-    window.allVotes = votes; // för full CSV-export
-
-    for (let page = 1; page < 100; page++) {
-        try {
-            const res = await fetch(`data/${encodeURIComponent(thread)}/page${page}.html`);
-            if (!res.ok) break;
-            const text = await res.text();
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(text, "text/html");
-
-            doc.querySelectorAll("article[data-author]").forEach(post => {
-                const user = post.getAttribute("data-author");
-                const postId = post.id?.replace("js-post-", "");
-                const timestamp = post.querySelector("time")?.getAttribute("datetime") || "";
-                post.querySelectorAll("blockquote").forEach(bq => bq.remove());
-                const content = post.querySelector(".message-content")?.innerHTML || "";
-                content.split('\n').forEach(line => {
-                    const match = line.match(/Röst:.*<a [^>]*>@([^<]+)<\/a>/i);
-                    if (match && postId) {
-                        const voteTime = new Date(timestamp);
-                        votes.push({ from: user, to: match[1].trim(), postId, timestamp });
-                    }
-                });
-            });
-            if(showLiveVotes){
-                await new Promise(resolve => setTimeout(resolve, liveVotesTime)); // liten paus för UI
-            }
-            const newUrl = new URL(window.location);
-            newUrl.searchParams.set("thread", thread);
-            history.replaceState(null, "", newUrl.toString());
-        } catch (e) {
-            console.error(`Fel vid hämtning av sida ${page} för ${thread}:`, e);
-            break;
-        }
+/* =====================================================================
+ * Slider handler
+ * ===================================================================*/
+function handleSliderInput(){
+    const percent=parseInt(this.value,10);
+    const {minTime,maxTime}=window.state.timeSliderRange||{};
+    if(!minTime||!maxTime) return;
+    const timeSpan=maxTime-minTime;
+    const limitTime=new Date(minTime.getTime()+timeSpan*percent/100);
+    window.state.elements.sliderTimeLabel.textContent=limitTime.toLocaleString("sv-SE",{dateStyle:"short",timeStyle:"short"});
+    window.state.sliderTimeLimit=limitTime;
+    const thread=window.state.slug;
+    if(!thread||!window.state.allVotes) return;
+    if(window.state.elements.liveToggle.checked){
+        playVoteAnimation();
+    }else{
+        const filteredVotes=window.state.allVotes.filter(v=>!window.state.sliderTimeLimit||new Date(v.timestamp)<=window.state.sliderTimeLimit);
+        const mode=getCurrentVoteView();
+        const subset=mode==="all"?filteredVotes:getLatestVotes(filteredVotes);
+        renderVotes(subset,thread);
     }
-
-    displayVotes(votes, thread);
 }
 
-function getVoteSubset() {
-    const mode = document.querySelector('input[name="voteView"]:checked')?.value || "latest";
-    if (!window.allVotes) return [];
-    return mode === "all" ? window.allVotes : getLatestVotes(window.allVotes);
-}
-
-function toggleVoteView() {
-    const mode = document.querySelector('input[name="voteView"]:checked').value;
-    const thread = document.getElementById("threadSelect").value;
-    if (!window.allVotes || !thread) return;
-
-    const votesToShow = mode === "all" ? window.allVotes : getLatestVotes(window.allVotes);
-    renderVotes(votesToShow, thread);
-}
-
-function getLatestVotes(votes) {
-    const sortedVotes = [...votes].sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
-    const latest = {};
-    sortedVotes.forEach(v => latest[v.from] = v);
-    return Object.values(latest);
-}
-
-function displayVotes(votes, thread) {
-    window.allVotes = votes;
-
-    //sätt slider-intervall från alla röster, inte filtrerade
-    const timestamps = votes.map(v => new Date(v.timestamp)).sort((a, b) => a - b);
-    window.timeSliderRange = {
-        minTime: timestamps[0],
-        maxTime: timestamps[timestamps.length - 1]
+/* =====================================================================
+ * Load selected thread and parse votes
+ * ===================================================================*/
+async function loadSelected(){
+    const thread=window.state.slug;
+    if(!thread) return;
+    const els=window.state.elements;
+    els.pageTitle.innerHTML=`<h1>${window.state.name}</h1>`
+    els.timeSlider.value=100;
+    els.sliderTimeLabel.textContent="–";
+    window.state.sliderTimeLimit=null;
+    const showLiveVotes=els.liveToggle.checked;
+    let liveVotesTime=parseInt(els.delayInput.value||"200",10);
+    if(isNaN(liveVotesTime)) liveVotesTime=200;
+    const votes=[];
+    window.state.allVotes=votes;
+    const fetchPage=async page=>{
+        const res=await fetch(`data/${encodeURIComponent(thread)}/page${page}.html`);
+        if(!res.ok) return null;
+        return{page,text:await res.text()};
     };
-    toggleVoteView(); // initial vy
+    const pagePromises=[];
+    for(let page=1;page<=window.state.pages;page++) pagePromises.push(fetchPage(page));
+    const results=showLiveVotes?await simulateLiveFetches(pagePromises,liveVotesTime):await Promise.all(pagePromises);
+    const validPages=results.filter(Boolean);
+    if(validPages.length===0){
+        console.warn("Inga sidor kunde laddas.");
+        return;
+    }
+    validPages.forEach(({text})=>{
+        const doc=new DOMParser().parseFromString(text,"text/html");
+        doc.querySelectorAll("article[data-author]").forEach(post=>{
+            const user=post.getAttribute("data-author");
+            const postId=post.id?.replace("js-post-","");
+            const timestamp=post.querySelector("time")?.getAttribute("datetime")||"";
+            post.querySelectorAll("blockquote").forEach(bq=>bq.remove());
+            const content=post.querySelector(".message-content")?.innerHTML||"";
+            content.split('\n').forEach(line=>{
+                const match=line.match(/Röst:.*<a [^>]*>@([^<]+)<\/a>/i);
+                if(match&&postId){
+                    votes.push({from:user,to:match[1].trim(),postId,timestamp});
+                }
+            });
+        });
+    });
+    const allPlayers=[...new Set(votes.flatMap(v=>[v.from,v.to]))];
+    window.state.playerColors=computePlayerColors(allPlayers);
+    window.state.allPlayerCount=allPlayers.length;
+    updateURLParams();
+    displayVotes(votes,thread);
 }
 
-function renderVotes(votes, thread) {
-    const counts = {};
-    const firstVoteTime = {};
-    votes.sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
-
-    // Compute color map early
-    const uniquePlayers = [...new Set(votes.map(v => v.to))];
-    window.playerColors = computePlayerColors(uniquePlayers);
-
-    votes.forEach(v => {
-        counts[v.to] = (counts[v.to] || 0) + 1;
-        if (!firstVoteTime[v.to] || new Date(v.timestamp) < new Date(firstVoteTime[v.to])) {
-            firstVoteTime[v.to] = v.timestamp;
-        }
+/* =====================================================================
+ * Render votes table, summary banner and chart
+ * ===================================================================*/
+function renderVotes(votes,thread){
+    const counts={},firstVoteTime={};
+    const getColor=name=>counts[name]?window.state.playerColors?.[name]:"#000";
+    votes.sort((a,b)=>new Date(a.timestamp)-new Date(b.timestamp));
+    votes.forEach(v=>{
+        counts[v.to]=(counts[v.to]||0)+1;
+        if(!firstVoteTime[v.to]||new Date(v.timestamp)<new Date(firstVoteTime[v.to])) firstVoteTime[v.to]=v.timestamp;
     });
-
-    const sorted = Object.entries(counts).sort((a, b) => {
-        if (b[1] !== a[1]) return b[1] - a[1];
-        return new Date(firstVoteTime[a[0]]) < new Date(firstVoteTime[b[0]]) ? -1 : 1;
+    const sorted=Object.entries(counts).sort((a,b)=>{
+        if(b[1]!==a[1]) return b[1]-a[1];
+        return new Date(firstVoteTime[a[0]])-new Date(firstVoteTime[b[0]]);
     });
+    const [mostVoted,mostVotes]=sorted[0]||["Ingen",0];
+    const riskTime=firstVoteTime[mostVoted];
+    const riskDateStr=riskTime?new Date(riskTime).toLocaleString("sv-SE",{dateStyle:"short",timeStyle:"short"}):"okänd tid";
+    const latestVoteTime=votes.reduce((acc,v)=>!acc||new Date(v.timestamp)>new Date(acc)?v.timestamp:acc,null);
+    const updateDateStr=latestVoteTime?new Date(latestVoteTime).toLocaleString("sv-SE",{dateStyle:"short",timeStyle:"short"}):"okänd tid";
+    window.state.elements.summary.textContent=`⚠️ Risk för utröstning: ${mostVoted} (${mostVotes} röster, sedan ${riskDateStr}). Senast röst lagd ${updateDateStr}.`;
 
-    const [mostVoted, mostVotes] = sorted[0] || ['Ingen', 0];
-    const riskTime = firstVoteTime[mostVoted];
-    const riskDateStr = riskTime
-        ? new Date(riskTime).toLocaleString("sv-SE", { dateStyle: "short", timeStyle: "short" })
-        : "okänd tid";
+    /* ------------------------ table ---------------------------*/
+    const tableBody=window.state.elements.voteTableBody;
+    tableBody.innerHTML="";
+    const playerSet=new Set();
+    const runningVotes={};
+    const voteRows=[];
+    const voteHistory={};
 
-    const latestVoteTime = votes.reduce((acc, v) => {
-        return !acc || new Date(v.timestamp) > new Date(acc) ? v.timestamp : acc;
-    }, null);
-
-    const updateDateStr = latestVoteTime
-        ? new Date(latestVoteTime).toLocaleString("sv-SE", { dateStyle: "short", timeStyle: "short" })
-        : "okänd tid";
-
-    document.getElementById("summary").textContent =
-        `⚠️ Risk för utröstning: ${mostVoted} (${mostVotes} röster, sedan ${riskDateStr}). Senast röst lagd ${updateDateStr}.`;
-
-    const tableBody = document.querySelector("#voteTable tbody");
-    tableBody.innerHTML = '';
-    const playerSet = new Set();
-    const runningVotes = {};
-    const voteRows = [];
-    const voteHistory = {}; // from -> [to1, to2, ...]
-
-    votes.forEach(({ from, to, postId, timestamp }) => {
-        runningVotes[to] = (runningVotes[to] || 0) + 1;
-
-        // Hitta vem som leder just nu
-        const sorted = Object.entries(runningVotes).sort((a, b) => {
-            const diff = b[1] - a[1];
-            if (diff !== 0) return diff;
-
-            // Tiebreaker: vem fick första rösten först?
-            const timeA = firstVoteTime[a[0]];
-            const timeB = firstVoteTime[b[0]];
-            return new Date(timeA) - new Date(timeB);
+    votes.forEach(({from,to,postId,timestamp})=>{
+        runningVotes[to]=(runningVotes[to]||0)+1;
+        const standing=Object.entries(runningVotes).sort((a,b)=>{
+            const diff=b[1]-a[1];
+            if(diff!==0) return diff;
+            return new Date(firstVoteTime[a[0]])-new Date(firstVoteTime[b[0]]);
         });
-        const currentLeader = sorted[0]?.[0] || "–";
-
+        const leader=standing[0]?.[0]||"–";
+        const leaderCnt=standing[0]?.[1];
+        const leaderDisp=leaderCnt!=null?`${leader} (${leaderCnt})`:leader;
+        const runner=standing[1]?.[0]||"–";
+        const runnerCnt=standing[1]?.[1];
+        const runnerDisp=runnerCnt!=null?`${runner} (${runnerCnt})`:runner;
         playerSet.add(from);
-
-        if (!voteHistory[from]) voteHistory[from] = [];
-        const prevVotes = voteHistory[from];
-        const lastVote = prevVotes[prevVotes.length - 1];
-        if (lastVote !== to) voteHistory[from].push(to);
-
-        const voteChain = voteHistory[from]
-            .map((name, i, arr) => {
-                const color = window.playerColors?.[name] || "#000";
-                const safeName = name.replace(/</g, "&lt;").replace(/>/g, "&gt;"); // just in case
-
-                if (i === arr.length - 1) {
-                    return `<a href="https://www.rollspel.nu/threads/${thread}/post-${postId}" target="_blank" style="color: ${color}; font-weight: bold">${safeName}</a>`;
-                } else {
-                    return `<span style="color: ${color}">${safeName}</span>`;
-                }
-            })
-            .join(" → ");
-
-        const row = document.createElement("tr");
-        const playerColor = window.playerColors?.[from] || "#000"; // fallback color
-        row.setAttribute("data-from", from);
-        row.innerHTML = `
-            <td style="color: ${playerColor}; font-weight: bold">${from}</td>
-            <td title="Senaste röst: ${new Date(timestamp).toLocaleString()}">${voteChain}</td>
-            <td>${new Date(timestamp).toLocaleString("sv-SE")}</td>
-            <td>${currentLeader} (${runningVotes[currentLeader]})</td>`;
+        if(!voteHistory[from]) voteHistory[from]=[];
+        const lastVote=voteHistory[from][voteHistory[from].length-1];
+        if(lastVote!==to) voteHistory[from].push(to);
+        const voteChain=voteHistory[from].map((name,i,arr)=>{
+            const color=getColor(name);
+            const safe=name.replace(/</g,"&lt;").replace(/>/g,"&gt;");
+            if(i===arr.length-1){
+                return `<a href="https://www.rollspel.nu/threads/${thread}/post-${postId}" target="_blank" style="color:${color};font-weight:bold">${safe}</a>`;
+            }
+            return `<span style="color:${color}">${safe}</span>`;
+        }).join(" → ");
+        const row=document.createElement("tr");
+        row.dataset.from=from;
+        row.innerHTML=`<td style="color:${getColor(from)};font-weight:bold">${from}</td><td title="Senaste röst: ${new Date(timestamp).toLocaleString()}">${voteChain}</td><td>${new Date(timestamp).toLocaleString("sv-SE")}</td><td>${leaderDisp}</td><td>${runnerDisp}</td>`;
         voteRows.push(row);
     });
-    voteRows.forEach(row => tableBody.appendChild(row)); 
+    voteRows.forEach(r=>tableBody.appendChild(r));
 
-    const playerFilter = document.getElementById("playerFilter");
-    playerFilter.innerHTML = '<option value="">Alla</option>';
-    [...playerSet].sort().forEach(p => {
-        const color = window.playerColors?.[p] || "#000";
-        playerFilter.innerHTML += `<option value="${p}" style="color: ${color}; font-weight: bold">${p}</option>`;
+    /* ------------------------ player filter -------------------*/
+    const filterSelect=window.state.elements.playerFilter;
+    filterSelect.innerHTML='<option value="">Alla</option>';
+    [...playerSet].sort((a,b)=>a.localeCompare(b,'sv')).forEach(p=>{
+        const c=window.state.playerColors?.[p]||"#000";
+        filterSelect.innerHTML+=`<option value="${p}" style="color:${c};font-weight:bold">${p}</option>`;
     });
 
     filterVotes();
-    showChart(counts);
+    showChart(sorted);
 }
 
-function showChart(counts) {
-    const labels = Object.keys(counts);
-    const data = Object.values(counts);
-
-    const colorMap = window.playerColors;
-    const backgroundColors = labels.map(label => colorMap[label]);
-
-    if (!window.voteChart) {
-        const ctx = document.getElementById("chart").getContext("2d");
-        window.voteChart = new Chart(ctx, {
-            type: "bar",
-            data: {
-                labels,
-                datasets: [{
-                    label: "Antal röster",
-                    data,
-                    backgroundColor: backgroundColors
-                }]
-            },
-            options: {
-                animation: { duration: 300 },
-                responsive: true,
-                scales: {
-                    y: { beginAtZero: true },
-                    x: { ticks: { font: { size: 22 } } }
-                }
-            }
-        });
-    } else {
-        window.voteChart.data.labels = labels;
-        window.voteChart.data.datasets[0].data = data;
-        window.voteChart.data.datasets[0].backgroundColor = backgroundColors;
-        window.voteChart.update();
-    }
-}
-
-function filterVotes() {
-    const selectedOptions = Array.from(document.getElementById("playerFilter").selectedOptions);
-    const selected = selectedOptions.map(opt => opt.value).filter(Boolean); // ta bort tomma strängar
-    const rows = document.querySelectorAll("#voteTable tbody tr");
-
-    rows.forEach(row => {
-        const from = row.getAttribute("data-from");
-        row.style.display = selected.length === 0 || selected.includes(from) ? "" : "none";
+/* =====================================================================
+ * Helper functions
+ * ===================================================================*/
+function filterVotes(){
+    const selected=Array.from(window.state.elements.playerFilter.selectedOptions).map(opt=>opt.value).filter(Boolean);
+    document.querySelectorAll("#voteTable tbody tr").forEach(row=>{
+        row.style.display=selected.length===0||selected.includes(row.dataset.from)?"":"none";
     });
 }
 
-function exportCSV() {
-    const rows = window.allVotes || [];
-    const csv = ["Röstgivare,Röst,Tidpunkt"];
-    rows.forEach(v => {
-        csv.push(`"${v.from}","${v.to}","${v.timestamp}"`);
-    });
-    const blob = new Blob([csv.join("\n")], { type: "text/csv" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "rostdata.csv";
+function getCurrentVoteView(){
+    const r=Array.from(window.state.elements.viewInputs).find(el=>el.checked);
+    return r?.value||"latest";
+}
+
+function toggleVoteView(){
+    const mode=getCurrentVoteView();
+    const thread=window.state.slug;
+    if(!thread) return;
+    const votesToShow=mode==="all"?window.state.allVotes:getLatestVotes(window.state.allVotes);
+    updateURLParams();
+    renderVotes(votesToShow,thread);
+}
+
+function getLatestVotes(votes){
+    const sorted=[...votes].sort((a,b)=>new Date(a.timestamp)-new Date(b.timestamp));
+    const latest={};
+    sorted.forEach(v=>latest[v.from]=v);
+    return Object.values(latest);
+}
+
+function displayVotes(votes,thread){
+    window.state.allVotes=votes;
+    const timestamps=votes.map(v=>new Date(v.timestamp)).sort((a,b)=>a-b);
+    window.state.timeSliderRange={minTime:timestamps[0],maxTime:timestamps[timestamps.length-1]};
+    toggleVoteView();
+}
+
+function exportCSV(){
+    const rows=window.state.allVotes||[];
+    const csv=["Röstgivare,Röst,Tidpunkt"];
+    rows.forEach(v=>csv.push(`"${v.from}","${v.to}","${v.timestamp}"`));
+    const blob=new Blob([csv.join("\n")],{type:"text/csv"});
+    const url=URL.createObjectURL(blob);
+    const a=document.createElement("a");
+    a.href=url;
+    a.download="rostdata.csv";
     a.click();
 }
 
-function sortTable(columnIndex) {
-    const tbody = document.querySelector("#voteTable tbody");
-    const rows = Array.from(tbody.querySelectorAll("tr"));
-    const ascending = tbody.getAttribute("data-sort") !== `${columnIndex}-asc`;
-
-    rows.sort((a, b) => {
-        const aText = a.children[columnIndex].textContent.trim();
-        const bText = b.children[columnIndex].textContent.trim();
-        return ascending
-            ? aText.localeCompare(bText, 'sv')
-            : bText.localeCompare(aText, 'sv');
+function sortTable(columnIndex){
+    const tbody=document.querySelector("#voteTable tbody");
+    const rows=Array.from(tbody.rows);
+    const ascending=tbody.dataset.sort!==`${columnIndex}-asc`;
+    rows.sort((a,b)=>{
+        const at=a.children[columnIndex].textContent.trim();
+        const bt=b.children[columnIndex].textContent.trim();
+        return ascending?at.localeCompare(bt,'sv'):bt.localeCompare(at,'sv');
     });
-
-    tbody.innerHTML = '';
-    rows.forEach(row => tbody.appendChild(row));
-    tbody.setAttribute("data-sort", `${columnIndex}-${ascending ? "asc" : "desc"}`);
+    tbody.innerHTML="";
+    rows.forEach(r=>tbody.appendChild(r));
+    tbody.dataset.sort=`${columnIndex}-${ascending?"asc":"desc"}`;
 }
 
-function getThreadFromURL() {
-    const params = new URLSearchParams(window.location.search);
-    return params.get("thread") || "";
+function getInitialSettingsFromURL(){
+    const p=new URLSearchParams(window.location.search);
+    return{thread:p.get("thread")||"",view:p.get("view")==="all"?"all":"latest",delay:parseInt(p.get("delay"),10)||200};
 }
 
-function playVoteAnimation() {
-    if (window.isAnimating) return; // förhindra att flera animationer kör samtidigt
-    window.isAnimating = true;
+function updateURLParams(){
+    const params=new URLSearchParams(window.location.search);
+    params.set("view",getCurrentVoteView());
+    params.set("delay",window.state.elements.delayInput.value);
+    if(window.state.slug) params.set("thread",window.state.slug);
+    history.replaceState(null,"",`${window.location.pathname}?${params.toString()}`);
+}
 
-    const thread = document.getElementById("threadSelect").value;
-    const delay = parseInt(document.getElementById("liveDelayInput").value, 10);
-    const limitTime = window.sliderTimeLimit || null;
-
-    const votes = (window.allVotes || []).filter(v =>
-        !limitTime || new Date(v.timestamp) <= limitTime
-    );
-
-    let i = 0;
-    function animateStep() {
-        if (i > votes.length) {
-            window.isAnimating = false;
-            return;
-        }
-        const subset = votes.slice(0, i);
-        const viewInput = document.querySelector('input[name="voteView"]:checked');
-        const mode = viewInput ? viewInput.value : "latest";
-        renderVotes(mode === "all" ? subset : getLatestVotes(subset), thread);
+function playVoteAnimation(){
+    if(window.state.isAnimating) return;
+    window.state.isAnimating=true;
+    const els=window.state.elements;
+    const thread=window.state.slug;
+    const delay=parseInt(els.delayInput.value,10)||200;
+    const limit=window.state.sliderTimeLimit;
+    const votes=(window.state.allVotes||[]).filter(v=>!limit||new Date(v.timestamp)<=limit);
+    let i=0;
+    (function step(){
+        if(i>votes.length){window.state.isAnimating=false;return;}
+        const subset=votes.slice(0,i);
+        const mode=getCurrentVoteView();
+        renderVotes(mode==="all"?subset:getLatestVotes(subset),thread);
         i++;
-        setTimeout(animateStep, delay);
-    }
-    animateStep();
+        setTimeout(step,delay);
+    })();
 }
 
-function computePlayerColors(players) {
-    const colorMap = {};
-    players.forEach((player, i) => {
-        colorMap[player] = `hsl(${i * 360 / players.length}, 70%, 60%)`;
-    });
-    return colorMap;
+function computePlayerColors(players){
+    const map={};
+    players.forEach((p,i)=>map[p]=`hsl(${(i*360/players.length).toFixed(0)},70%,60%)`);
+    return map;
+}
+
+function showChart(sortedEntries){
+    const labels=sortedEntries.map(([name])=>name);
+    const data=sortedEntries.map(([_,count])=>count);
+    const backgroundColors=labels.map(l=>window.state.playerColors?.[l]||"#000");
+    if(!window.state.voteChart){
+        const ctx=document.getElementById("chart").getContext("2d");
+        window.state.voteChart=new Chart(ctx, {
+            type:"bar",
+            data: {
+                labels, 
+                datasets: [{
+                    label:"Antal röster",
+                    data,
+                    backgroundColor:backgroundColors
+                }]
+            },
+            options: {
+                animation:{duration:300},
+                responsive:true,
+                indexAxis:'y',
+                scales: {
+                    y:{
+                        ticks:{
+                            font:{
+                                size:22
+                            }
+                        }
+                    },
+                    x:{
+                        beginAtZero:true,
+                        max:window.state.allPlayerCount||undefined,
+                        ticks:{stepSize:1}
+                    }
+                }
+            }
+         });
+    } else {
+        window.state.voteChart.data.labels=labels;
+        window.state.voteChart.data.datasets[0].data=data;
+        window.state.voteChart.data.datasets[0].backgroundColor=backgroundColors;
+        window.state.voteChart.update();
+    }
 }
