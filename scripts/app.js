@@ -1,392 +1,407 @@
-document.addEventListener("DOMContentLoaded",async()=>{
-    /* --------------------------------------------------------------
-     * Global application state
-     * --------------------------------------------------------------*/
-    window.state={
-        playerColors:{},
-        isAnimating:false,
-        threads:null,
-        pages:0,
-        name:null,
-        slug:null,
-        allVotes:[],
-        sliderTimeLimit:null,
-        voteChart:null,
-        allPlayerCount:0,
-        timeSliderRange:null,
-        elements:{}
+// app.js – komplett version 2025‑05‑13
+// ------------------------------------------------------------
+// Huvudfunktioner
+//   • Alla UI‑tillstånd ↔︎ URL‑parametrar (sort, filter, slider, live…)
+//   • Slider‑fix + live‑animation även vid sidladdning
+//   • Filtrering och sortering bibehålls vid varje omrendering
+// ------------------------------------------------------------
+
+//---------------------------------------------------------------------
+// 1. Globalt tillstånd + bootstrap
+//---------------------------------------------------------------------
+document.addEventListener("DOMContentLoaded", async () => {
+    /* ----------------------------------------------------------
+     * Global state – synkas med URL så vyn kan delas som länk
+     * --------------------------------------------------------*/
+    window.state = {
+        // dynamiskt från data
+        threads: null,
+        pages: 0,
+        allVotes: [],
+        playerColors: {},
+        allPlayerCount: 0,
+        // UI‑synkade värden
+        slug: null,
+        name: null,
+        sliderPercent: 100,   // 0–100
+        sliderTimeLimit: null,
+        live: false,
+        sort: "",            // "<col>-<asc|desc>"
+        filterPlayers: [],
+        // interna flaggor / objekt
+        timeSliderRange: null,
+        voteChart: null,
+        isAnimating: false,
+        elements: {},
+        initialSettings: null
     };
 
-    /* --------------------------------------------------------------
-     * Cache DOM elements once and reference them through window.state
-     * --------------------------------------------------------------*/
-    const els={
-        pageTitle:document.getElementById("pageTitle"),
-        threadSelect:document.getElementById("threadSelect"),
-        timeSlider:document.getElementById("timeSlider"),
-        sliderTimeLabel:document.getElementById("sliderTimeLabel"),
-        liveToggle:document.getElementById("liveModeToggle"),
-        delayInput:document.getElementById("liveDelayInput"),
-        summary:document.getElementById("summary"),
-        voteTableBody:document.querySelector("#voteTable tbody"),
-        playerFilter:document.getElementById("playerFilter"),
-        viewInputs:document.querySelectorAll('input[name="voteView"]')
+    /* ----------------------------------------------------------
+     * DOM‑cache (engångs‑uppslag)
+     * --------------------------------------------------------*/
+    const els = {
+        pageTitle: document.getElementById("pageTitle"),
+        threadSelect: document.getElementById("threadSelect"),
+        timeSlider: document.getElementById("timeSlider"),
+        sliderTimeLabel: document.getElementById("sliderTimeLabel"),
+        liveToggle: document.getElementById("liveModeToggle"),
+        delayInput: document.getElementById("liveDelayInput"),
+        summary: document.getElementById("summary"),
+        voteTableBody: document.querySelector("#voteTable tbody"),
+        playerFilter: document.getElementById("playerFilter"),
+        viewInputs: document.querySelectorAll('input[name="voteView"]')
     };
-    window.state.elements=els;
+    window.state.elements = els;
 
-    /* --------------------------------------------------------------
-     * Initialise settings from URL
-     * --------------------------------------------------------------*/
-    const settings=getInitialSettingsFromURL();
-    const selectedViewInput=Array.from(els.viewInputs).find(r=>r.value===settings.view);
-    if(selectedViewInput) selectedViewInput.checked=true;
-    if(!isNaN(settings.delay)) els.delayInput.value=settings.delay;
+    /* ----------------------------------------------------------
+     * Init från URL‑query
+     * --------------------------------------------------------*/
+    const init = getInitialSettingsFromURL();
+    window.state.initialSettings = init;
+    window.state.sort = init.sort;
+    window.state.filterPlayers = init.filter;
+    window.state.sliderPercent = isNaN(init.slider) ? 100 : init.slider;
+    window.state.live = init.live;
 
-    /* --------------------------------------------------------------
-     * Load list of threads and populate <select>
-     * --------------------------------------------------------------*/
-    try{
-        const res=await fetch("data/threads.json");
-        const threads=await res.json();
-        window.state.threads=threads;
-        threads.forEach(t=>{
-            const opt=document.createElement("option");
-            opt.value=t.slug;
-            opt.textContent=t.name;
-            els.threadSelect.appendChild(opt);
+    // förifyll UI
+    els.timeSlider.value = window.state.sliderPercent;
+    els.liveToggle.checked = init.live;
+    const selView = [...els.viewInputs].find(r => r.value === init.view);
+    if (selView) selView.checked = true;
+    if (!isNaN(init.delay)) els.delayInput.value = init.delay;
+
+    /* ----------------------------------------------------------
+     * Hämta trådar + autoladda om query innehåller thread
+     * --------------------------------------------------------*/
+    try {
+        const res = await fetch("data/threads.json");
+        const threads = await res.json();
+        window.state.threads = threads;
+        threads.forEach(t => {
+            const o=document.createElement("option");
+            o.value=t.slug; o.textContent=t.name; els.threadSelect.appendChild(o);
         });
-        if(settings.thread){
-            const threadObj=threads.find(t=>t.slug===settings.thread);
-            if(threadObj){
-                els.threadSelect.value=threadObj.slug;
-                window.state.pages=threadObj.pages;
-                window.state.name=threadObj.name;
-                window.state.slug=threadObj.slug;
-                loadSelected();
+        if (init.thread) {
+            const t=threads.find(x=>x.slug===init.thread);
+            if (t) {
+                els.threadSelect.value=t.slug;
+                Object.assign(window.state,{slug:t.slug,name:t.name,pages:t.pages});
+                await loadSelected();
             }
         }
-    }catch{
-        els.threadSelect.innerHTML='<option>Inga trådar hittades</option>';
-    }
+    } catch(e){ console.error(e); els.threadSelect.innerHTML='<option>Fel vid hämtning</option>'; }
 
-    /* --------------------------------------------------------------
-     * UI event listeners
-     * --------------------------------------------------------------*/
+    /* ----------------------------------------------------------
+     * Event‑lyssnare (UI → state → URL → render)
+     * --------------------------------------------------------*/
     els.threadSelect.addEventListener("change",()=>{
         const slug=els.threadSelect.value;
-        const threadObj=window.state.threads.find(t=>t.slug===slug);
-        if(!threadObj) return;
-        window.state.pages=threadObj.pages;
-        window.state.name=threadObj.name;
-        window.state.slug=threadObj.slug;
+        const t=window.state.threads.find(x=>x.slug===slug);
+        if(!t) return;
+        Object.assign(window.state,{slug:t.slug,name:t.name,pages:t.pages});
         updateURLParams();
         loadSelected();
     });
 
-    els.delayInput.addEventListener("input",updateURLParams);
-
-    els.viewInputs.forEach(r=>r.addEventListener("change",toggleVoteView));
-
-    els.playerFilter.addEventListener("change",filterVotes);
-
-    els.timeSlider.addEventListener("input",handleSliderInput);
+    els.timeSlider.addEventListener("input", handleSliderInput);
 
     els.liveToggle.addEventListener("change",()=>{
-        if(els.liveToggle.checked) playVoteAnimation();
+        window.state.live=els.liveToggle.checked;
+        updateURLParams();
+        if(window.state.live) playVoteAnimation();
+    });
+
+    els.delayInput.addEventListener("input", updateURLParams);
+
+    els.viewInputs.forEach(r=>r.addEventListener("change",()=>{
+        updateURLParams();
+        renderCurrentView();
+    }));
+
+    els.playerFilter.addEventListener("change",()=>{
+        window.state.filterPlayers=[...els.playerFilter.selectedOptions].map(o=>o.value).filter(Boolean);
+        updateURLParams();
+        renderCurrentView();
     });
 });
 
-/* =====================================================================
- * Slider handler
- * ===================================================================*/
-function handleSliderInput(){
-    const percent=parseInt(this.value,10);
-    const {minTime,maxTime}=window.state.timeSliderRange||{};
-    if(!minTime||!maxTime) return;
-    const timeSpan=maxTime-minTime;
-    const limitTime=new Date(minTime.getTime()+timeSpan*percent/100);
-    window.state.elements.sliderTimeLabel.textContent=limitTime.toLocaleString("sv-SE",{dateStyle:"short",timeStyle:"short"});
-    window.state.sliderTimeLimit=limitTime;
-    const thread=window.state.slug;
-    if(!thread||!window.state.allVotes) return;
-    if(window.state.elements.liveToggle.checked){
-        playVoteAnimation();
-    }else{
-        const filteredVotes=window.state.allVotes.filter(v=>!window.state.sliderTimeLimit||new Date(v.timestamp)<=window.state.sliderTimeLimit);
-        const mode=getCurrentVoteView();
-        const subset=mode==="all"?filteredVotes:getLatestVotes(filteredVotes);
-        renderVotes(subset,thread);
-    }
+//---------------------------------------------------------------------
+// 2. URL‑hjälpare
+//---------------------------------------------------------------------
+function getInitialSettingsFromURL(){
+    const p=new URLSearchParams(window.location.search);
+    return {
+        thread:p.get("thread")||"",
+        view:p.get("view")==="all"?"all":"latest",
+        delay:parseInt(p.get("delay"),10)||200,
+        sort:p.get("sort")||"",
+        filter:p.get("filter")?p.get("filter").split(",").map(decodeURIComponent):[],
+        slider:parseInt(p.get("slider"),10),
+        live:p.get("live")==="1"
+    };
 }
 
-/* =====================================================================
- * Load selected thread and parse votes
- * ===================================================================*/
+function updateURLParams(){
+    const p=new URLSearchParams(window.location.search);
+    const st=window.state;
+    const getView=()=>[...st.elements.viewInputs].find(r=>r.checked)?.value||"latest";
+
+    if(st.slug) p.set("thread",st.slug);
+    p.set("view",getView());
+    p.set("delay",st.elements.delayInput.value);
+    p.set("slider",st.sliderPercent);
+    p.set("live",st.live?"1":"0");
+    if(st.sort) p.set("sort",st.sort); else p.delete("sort");
+    if(st.filterPlayers.length) p.set("filter",st.filterPlayers.map(encodeURIComponent).join(",")); else p.delete("filter");
+
+    history.replaceState(null,"",`${window.location.pathname}?${p.toString()}`);
+}
+
+//---------------------------------------------------------------------
+// 3. Tråd‑hämtning och röst‑parsning
+//---------------------------------------------------------------------
 async function loadSelected(){
-    const thread=window.state.slug;
-    if(!thread) return;
+    const {slug,pages,name}=window.state;
+    if(!slug) return;
+
     const els=window.state.elements;
-    els.pageTitle.innerHTML=`<h1>🐺 ${window.state.name}</h1>`
-    els.timeSlider.value=100;
-    els.sliderTimeLabel.textContent="–";
-    window.state.sliderTimeLimit=null;
-    const showLiveVotes=els.liveToggle.checked;
-    let liveVotesTime=parseInt(els.delayInput.value||"200",10);
-    if(isNaN(liveVotesTime)) liveVotesTime=200;
-    const votes=[];
+    els.pageTitle.innerHTML=`<h1>🐺 ${name}</h1>`;
+    window.state.isAnimating=false;
+
+    const live=window.state.live;
+    const delay=parseInt(els.delayInput.value,10)||200;
+
+    // array av fabriker så vi kan köra sekventiellt
+    const factories=[];
+    for(let p=1;p<=pages;p++) factories.push(()=>fetchPage(slug,p));
+    const pagesHtml=live?await simulateLiveFetches(factories,delay):await Promise.all(factories.map(fn=>fn()));
+    const valid=pagesHtml.filter(Boolean);
+    if(!valid.length){console.warn("Inga sidor"); return;}
+
+    const votes=parseVotesFromPages(valid,slug);
     window.state.allVotes=votes;
-    const fetchPage=async page=>{
-        const res=await fetch(`data/${encodeURIComponent(thread)}/page${page}.html`);
-        if(!res.ok) return null;
-        return{page,text:await res.text()};
-    };
-    const pagePromises=[];
-    for(let page=1;page<=window.state.pages;page++) pagePromises.push(fetchPage(page));
-    const results=showLiveVotes?await simulateLiveFetches(pagePromises,liveVotesTime):await Promise.all(pagePromises);
-    const validPages=results.filter(Boolean);
-    if(validPages.length===0){
-        console.warn("Inga sidor kunde laddas.");
-        return;
+
+    const ts=votes.map(v=>new Date(v.timestamp)).sort((a,b)=>a-b);
+    window.state.timeSliderRange={minTime:ts[0],maxTime:ts[ts.length-1]};
+
+    const players=[...new Set(votes.flatMap(v=>[v.from,v.to]))];
+    window.state.playerColors=computePlayerColors(players);
+    window.state.allPlayerCount=players.length;
+
+    displayVotes(votes,slug);
+    updateURLParams();
+}
+
+async function fetchPage(thread,page){
+    const res=await fetch(`data/${encodeURIComponent(thread)}/page${page}.html`);
+    if(!res.ok) return null;
+    return{page,text:await res.text()};
+}
+
+async function simulateLiveFetches(factories,delay){
+    const out=[];
+    for(const fn of factories){
+        const r=await fn(); if(r) out.push(r);
+        await new Promise(ok=>setTimeout(ok,delay));
     }
-    validPages.forEach(({text})=>{
+    return out;
+}
+
+function parseVotesFromPages(pages,thread){
+    const votes=[];
+    pages.forEach(({text})=>{
         const doc=new DOMParser().parseFromString(text,"text/html");
         doc.querySelectorAll("article[data-author]").forEach(post=>{
             const user=post.getAttribute("data-author");
             const postId=post.id?.replace("js-post-","");
-            const timestamp=post.querySelector("time")?.getAttribute("datetime")||"";
+            const ts=post.querySelector("time")?.getAttribute("datetime")||"";
             post.querySelectorAll("blockquote").forEach(bq=>bq.remove());
             const content=post.querySelector(".message-content")?.innerHTML||"";
-            content.split('\n').forEach(line=>{
-                const match=line.match(/Röst:.*<a [^>]*>@([^<]+)<\/a>/i);
-                if(match&&postId){
-                    votes.push({from:user,to:match[1].trim(),postId,timestamp});
-                }
+            content.split("\n").forEach(line=>{
+                const m=line.match(/Röst:.*<a [^>]*>@([^<]+)<\/a>/i);
+                if(m&&postId) votes.push({from:user,to:m[1].trim(),postId,timestamp:ts});
             });
         });
     });
-    const allPlayers=[...new Set(votes.flatMap(v=>[v.from,v.to]))];
-    window.state.playerColors=computePlayerColors(allPlayers);
-    window.state.allPlayerCount=allPlayers.length;
+    return votes;
+}
+
+//---------------------------------------------------------------------
+// 4. Slider & live‑animation
+//---------------------------------------------------------------------
+function handleSliderInput(){
+    const pct=parseInt(this.value,10);
+    window.state.sliderPercent=pct;
+    const {minTime,maxTime}=window.state.timeSliderRange||{};
+    if(!minTime||!maxTime){updateURLParams();return;}
+
+    const limit=new Date(minTime.getTime()+ (maxTime-minTime)*pct/100);
+    window.state.sliderTimeLimit=limit;
+    window.state.elements.sliderTimeLabel.textContent=limit.toLocaleString("sv-SE",{dateStyle:"short",timeStyle:"short"});
+
+    if(window.state.live){ playVoteAnimation(); } else { renderCurrentView(); }
     updateURLParams();
-    displayVotes(votes,thread);
-}
-
-/* =====================================================================
- * Render votes table, summary banner and chart
- * ===================================================================*/
-function renderVotes(votes,thread){
-    const counts={},firstVoteTime={};
-    const getColor=name=>counts[name]?window.state.playerColors?.[name]:"#000";
-    votes.sort((a,b)=>new Date(a.timestamp)-new Date(b.timestamp));
-    votes.forEach(v=>{
-        counts[v.to]=(counts[v.to]||0)+1;
-        if(!firstVoteTime[v.to]||new Date(v.timestamp)<new Date(firstVoteTime[v.to])) firstVoteTime[v.to]=v.timestamp;
-    });
-    const sorted=Object.entries(counts).sort((a,b)=>{
-        if(b[1]!==a[1]) return b[1]-a[1];
-        return new Date(firstVoteTime[a[0]])-new Date(firstVoteTime[b[0]]);
-    });
-    const [mostVoted,mostVotes]=sorted[0]||["Ingen",0];
-    const riskTime=firstVoteTime[mostVoted];
-    const riskDateStr=riskTime?new Date(riskTime).toLocaleString("sv-SE",{dateStyle:"short",timeStyle:"short"}):"okänd tid";
-    const latestVoteTime=votes.reduce((acc,v)=>!acc||new Date(v.timestamp)>new Date(acc)?v.timestamp:acc,null);
-    const updateDateStr=latestVoteTime?new Date(latestVoteTime).toLocaleString("sv-SE",{dateStyle:"short",timeStyle:"short"}):"okänd tid";
-    window.state.elements.summary.textContent=`⚠️ Risk för utröstning: ${mostVoted} (${mostVotes} röster, sedan ${riskDateStr}). Senast röst lagd ${updateDateStr}.`;
-
-    /* ------------------------ table ---------------------------*/
-    const tableBody=window.state.elements.voteTableBody;
-    tableBody.innerHTML="";
-    const playerSet=new Set();
-    const runningVotes={};
-    const voteRows=[];
-    const voteHistory={};
-
-    votes.forEach(({from,to,postId,timestamp})=>{
-        runningVotes[to]=(runningVotes[to]||0)+1;
-        const standing=Object.entries(runningVotes).sort((a,b)=>{
-            const diff=b[1]-a[1];
-            if(diff!==0) return diff;
-            return new Date(firstVoteTime[a[0]])-new Date(firstVoteTime[b[0]]);
-        });
-        const leader=standing[0]?.[0]||"–";
-        const leaderCnt=standing[0]?.[1];
-        const leaderDisp=leaderCnt!=null?`${leader} (${leaderCnt})`:leader;
-        const runner=standing[1]?.[0]||"–";
-        const runnerCnt=standing[1]?.[1];
-        const runnerDisp=runnerCnt!=null?`${runner} (${runnerCnt})`:runner;
-        playerSet.add(from);
-        if(!voteHistory[from]) voteHistory[from]=[];
-        const lastVote=voteHistory[from][voteHistory[from].length-1];
-        if(lastVote!==to) voteHistory[from].push(to);
-        const voteChain=voteHistory[from].map((name,i,arr)=>{
-            const color=getColor(name);
-            const safe=name.replace(/</g,"&lt;").replace(/>/g,"&gt;");
-            if(i===arr.length-1){
-                return `<a href="https://www.rollspel.nu/threads/${thread}/post-${postId}" target="_blank" style="color:${color};font-weight:bold">${safe}</a>`;
-            }
-            return `<span style="color:${color}">${safe}</span>`;
-        }).join(" → ");
-        const row=document.createElement("tr");
-        row.dataset.from=from;
-        row.innerHTML=`<td style="color:${getColor(from)};font-weight:bold">${from}</td><td title="Senaste röst: ${new Date(timestamp).toLocaleString()}">${voteChain}</td><td>${new Date(timestamp).toLocaleString("sv-SE")}</td><td>${leaderDisp}</td><td>${runnerDisp}</td>`;
-        voteRows.push(row);
-    });
-    voteRows.forEach(r=>tableBody.appendChild(r));
-
-    /* ------------------------ player filter -------------------*/
-    const filterSelect=window.state.elements.playerFilter;
-    filterSelect.innerHTML='<option value="">Alla</option>';
-    [...playerSet].sort((a,b)=>a.localeCompare(b,'sv')).forEach(p=>{
-        const c=window.state.playerColors?.[p]||"#000";
-        filterSelect.innerHTML+=`<option value="${p}" style="color:${c};font-weight:bold">${p}</option>`;
-    });
-
-    filterVotes();
-    showChart(sorted);
-}
-
-/* =====================================================================
- * Helper functions
- * ===================================================================*/
-function filterVotes(){
-    const selected=Array.from(window.state.elements.playerFilter.selectedOptions).map(opt=>opt.value).filter(Boolean);
-    document.querySelectorAll("#voteTable tbody tr").forEach(row=>{
-        row.style.display=selected.length===0||selected.includes(row.dataset.from)?"":"none";
-    });
-}
-
-function getCurrentVoteView(){
-    const r=Array.from(window.state.elements.viewInputs).find(el=>el.checked);
-    return r?.value||"latest";
-}
-
-function toggleVoteView(){
-    const mode=getCurrentVoteView();
-    const thread=window.state.slug;
-    if(!thread) return;
-    const votesToShow=mode==="all"?window.state.allVotes:getLatestVotes(window.state.allVotes);
-    updateURLParams();
-    renderVotes(votesToShow,thread);
-}
-
-function getLatestVotes(votes){
-    const sorted=[...votes].sort((a,b)=>new Date(a.timestamp)-new Date(b.timestamp));
-    const latest={};
-    sorted.forEach(v=>latest[v.from]=v);
-    return Object.values(latest);
-}
-
-function displayVotes(votes,thread){
-    window.state.allVotes=votes;
-    const timestamps=votes.map(v=>new Date(v.timestamp)).sort((a,b)=>a-b);
-    window.state.timeSliderRange={minTime:timestamps[0],maxTime:timestamps[timestamps.length-1]};
-    toggleVoteView();
-}
-
-function exportCSV(){
-    const rows=window.state.allVotes||[];
-    const csv=["Röstgivare,Röst,Tidpunkt"];
-    rows.forEach(v=>csv.push(`"${v.from}","${v.to}","${v.timestamp}"`));
-    const blob=new Blob([csv.join("\n")],{type:"text/csv"});
-    const url=URL.createObjectURL(blob);
-    const a=document.createElement("a");
-    a.href=url;
-    a.download="rostdata.csv";
-    a.click();
-}
-
-function sortTable(columnIndex){
-    const tbody=document.querySelector("#voteTable tbody");
-    const rows=Array.from(tbody.rows);
-    const ascending=tbody.dataset.sort!==`${columnIndex}-asc`;
-    rows.sort((a,b)=>{
-        const at=a.children[columnIndex].textContent.trim();
-        const bt=b.children[columnIndex].textContent.trim();
-        return ascending?at.localeCompare(bt,'sv'):bt.localeCompare(at,'sv');
-    });
-    tbody.innerHTML="";
-    rows.forEach(r=>tbody.appendChild(r));
-    tbody.dataset.sort=`${columnIndex}-${ascending?"asc":"desc"}`;
-}
-
-function getInitialSettingsFromURL(){
-    const p=new URLSearchParams(window.location.search);
-    return{thread:p.get("thread")||"",view:p.get("view")==="all"?"all":"latest",delay:parseInt(p.get("delay"),10)||200};
-}
-
-function updateURLParams(){
-    const params=new URLSearchParams(window.location.search);
-    params.set("view",getCurrentVoteView());
-    params.set("delay",window.state.elements.delayInput.value);
-    if(window.state.slug) params.set("thread",window.state.slug);
-    history.replaceState(null,"",`${window.location.pathname}?${params.toString()}`);
 }
 
 function playVoteAnimation(){
     if(window.state.isAnimating) return;
     window.state.isAnimating=true;
-    const els=window.state.elements;
-    const thread=window.state.slug;
-    const delay=parseInt(els.delayInput.value,10)||200;
+    const {delayInput}=window.state.elements;
+    const delay=parseInt(delayInput.value,10)||200;
     const limit=window.state.sliderTimeLimit;
-    const votes=(window.state.allVotes||[]).filter(v=>!limit||new Date(v.timestamp)<=limit);
+    const all=window.state.allVotes.filter(v=>!limit||new Date(v.timestamp)<=limit);
     let i=0;
     (function step(){
-        if(i>votes.length){window.state.isAnimating=false;return;}
-        const subset=votes.slice(0,i);
+        if(i>all.length){window.state.isAnimating=false;return;}
+        const subset=all.slice(0,i);
         const mode=getCurrentVoteView();
-        renderVotes(mode==="all"?subset:getLatestVotes(subset),thread);
-        i++;
-        setTimeout(step,delay);
+        renderVotes(mode==="all"?subset:getLatestVotes(subset),window.state.slug);
+        i++; setTimeout(step,delay);
     })();
 }
 
-function computePlayerColors(players){
-    const map={};
-    players.forEach((p,i)=>map[p]=`hsl(${(i*360/players.length).toFixed(0)},70%,60%)`);
-    return map;
+//---------------------------------------------------------------------
+// 5. Rendering helpers
+//---------------------------------------------------------------------
+function getCurrentVoteView(){
+    return [...window.state.elements.viewInputs].find(r=>r.checked)?.value||"latest";
 }
 
-function showChart(sortedEntries){
-    const labels=sortedEntries.map(([name])=>name);
-    const data=sortedEntries.map(([_,count])=>count);
-    const backgroundColors=labels.map(l=>window.state.playerColors?.[l]||"#000");
+function getLatestVotes(votes){
+    const latest={};
+    [...votes].sort((a,b)=>new Date(a.timestamp)-new Date(b.timestamp)).forEach(v=>latest[v.from]=v);
+    return Object.values(latest);
+}
+
+function renderCurrentView(){
+    const limit=window.state.sliderTimeLimit;
+    let vs=window.state.allVotes;
+    if(limit) vs=vs.filter(v=>new Date(v.timestamp)<=limit);
+    const mode=getCurrentVoteView();
+    const subset=mode==="all"?vs:getLatestVotes(vs);
+    renderVotes(subset,window.state.slug);
+}
+
+function displayVotes(votes,thread){
+    // slider‑label måste uppdateras innan första rendern
+    handleSliderInput.call(window.state.elements.timeSlider);
+    renderCurrentView();
+}
+
+//---------------------------------------------------------------------
+// 6. Tabell / summary / diagram
+//---------------------------------------------------------------------
+function renderVotes(votes,thread){
+    const counts={},first={};
+    votes.sort((a,b)=>new Date(a.timestamp)-new Date(b.timestamp));
+    votes.forEach(v=>{ counts[v.to]=(counts[v.to]||0)+1; if(!first[v.to]||new Date(v.timestamp)<new Date(first[v.to])) first[v.to]=v.timestamp; });
+
+    // Summary
+    const orderedCnt=Object.entries(counts).sort((a,b)=>b[1]-a[1]||new Date(first[a[0]])-new Date(first[b[0]]));
+    const [danger,dCnt]=orderedCnt[0]||["Ingen",0];
+    const riskStr=first[danger]?new Date(first[danger]).toLocaleString("sv-SE",{dateStyle:"short",timeStyle:"short"}):"okänd tid";
+    const lastTS=votes.reduce((acc,v)=>(!acc||new Date(v.timestamp)>new Date(acc))?v.timestamp:acc,null);
+    const lastStr=lastTS?new Date(lastTS).toLocaleString("sv-SE",{dateStyle:"short",timeStyle:"short"}):"okänd tid";
+    window.state.elements.summary.textContent=`⚠️ Risk för utröstning: ${danger} (${dCnt} röster, sedan ${riskStr}). Senast röst lagd ${lastStr}.`;
+
+    // Tabell
+    const tbody=window.state.elements.voteTableBody; tbody.innerHTML="";
+    const playerSet=new Set();
+    const running={};
+    const voteHist={};
+    const rows=[];
+
+    const getColor=n=>window.state.playerColors[n]||"#000";
+
+    votes.forEach(({from,to,postId,timestamp})=>{
+        running[to]=(running[to]||0)+1;
+        const standing=Object.entries(running).sort((a,b)=>b[1]-a[1]||new Date(first[a[0]])-new Date(first[b[0]]));
+        const leaderDisp=standing[0]?`${standing[0][0]} (${standing[0][1]})`:`–`;
+        const runnerDisp=standing[1]?`${standing[1][0]} (${standing[1][1]})`:`–`;
+
+        playerSet.add(from);
+        voteHist[from]=voteHist[from]||[];
+        if(voteHist[from][voteHist[from].length-1]!==to) voteHist[from].push(to);
+        const chain=voteHist[from].map((n,i,arr)=>{
+            const c=getColor(n); const safe=n.replace(/</g,"&lt;").replace(/>/g,"&gt;");
+            return i===arr.length-1?`<a href="https://www.rollspel.nu/threads/${thread}/post-${postId}" target="_blank" style="color:${c};font-weight:bold">${safe}</a>`:`<span style="color:${c}">${safe}</span>`;
+        }).join(" → ");
+
+        const tr=document.createElement("tr"); tr.dataset.from=from;
+        tr.innerHTML=`<td style="color:${getColor(from)};font-weight:bold">${from}</td><td>${chain}</td><td>${new Date(timestamp).toLocaleString("sv-SE")}</td><td>${leaderDisp}</td><td>${runnerDisp}</td>`;
+        rows.push(tr);
+    });
+    rows.forEach(r=>tbody.appendChild(r));
+
+    // Spelar‑filter bygga om men behåll val
+    const sel=window.state.elements.playerFilter; const current=window.state.filterPlayers;
+    sel.innerHTML='<option value="">Alla</option>';
+    [...playerSet].sort((a,b)=>a.localeCompare(b,'sv')).forEach(p=>{
+        const opt=document.createElement("option"); opt.value=p; opt.textContent=p; opt.style.color=window.state.playerColors[p]||"#000"; opt.style.fontWeight="bold"; if(current.includes(p)) opt.selected=true; sel.appendChild(opt);
+    });
+
+    // Använd befintligt filter‑urval
+    filterVotes();
+
+    // Använd sortering om satt
+    if(window.state.sort){ const [idx,dir]=window.state.sort.split("-"); sortTable(parseInt(idx,10),dir); }
+
+    // Diagram
+    showChart(orderedCnt);
+}
+
+function filterVotes(){
+    const sel=window.state.filterPlayers;
+    [...document.querySelectorAll("#voteTable tbody tr")].forEach(r=>{
+        r.style.display=!sel.length||sel.includes(r.dataset.from)?"":"none";
+    });
+}
+
+function sortTable(colIndex,direction){
+    const tbody=document.querySelector("#voteTable tbody"); const rows=[...tbody.rows];
+    const asc=direction?direction==="asc":(tbody.dataset.sort!==`${colIndex}-asc`);
+    rows.sort((a,b)=>{
+        const at=a.children[colIndex].textContent.trim();
+        const bt=b.children[colIndex].textContent.trim();
+        return asc?at.localeCompare(bt,'sv'):bt.localeCompare(at,'sv');
+    });
+    tbody.innerHTML=""; rows.forEach(r=>tbody.appendChild(r));
+    tbody.dataset.sort=`${colIndex}-${asc?"asc":"desc"}`;
+    window.state.sort=tbody.dataset.sort; updateURLParams();
+}
+
+function computePlayerColors(players){
+    const map={}; players.forEach((p,i)=>map[p]=`hsl(${(i*360/players.length).toFixed(0)},70%,60%)`); return map;
+}
+
+//---------------------------------------------------------------------
+// 7. Diagram (Chart.js)
+//---------------------------------------------------------------------
+function showChart(entries){
+    const labels=entries.map(([n])=>n);
+    const data=entries.map(([,c])=>c);
+    const bg=labels.map(l=>window.state.playerColors[l]||"#000");
+
     if(!window.state.voteChart){
         const ctx=document.getElementById("chart").getContext("2d");
-        window.state.voteChart=new Chart(ctx, {
-            type:"bar",
-            data: {
-                labels, 
-                datasets: [{
-                    label:"Antal röster",
-                    data,
-                    backgroundColor:backgroundColors
-                }]
-            },
-            options: {
-                animation:{duration:300},
-                responsive:true,
-                indexAxis:'y',
-                scales: {
-                    y:{
-                        ticks:{
-                            font:{
-                                size:22
-                            }
-                        }
-                    },
-                    x:{
-                        beginAtZero:true,
-                        max:window.state.allPlayerCount||undefined,
-                        ticks:{stepSize:1}
-                    }
-                }
-            }
-         });
-    } else {
-        window.state.voteChart.data.labels=labels;
-        window.state.voteChart.data.datasets[0].data=data;
-        window.state.voteChart.data.datasets[0].backgroundColor=backgroundColors;
-        window.state.voteChart.update();
+        window.state.voteChart=new Chart(ctx,{type:"bar",data:{labels,datasets:[{label:"Antal röster",data,backgroundColor:bg}]},options:{responsive:true,indexAxis:'y',animation:{duration:300},scales:{x:{beginAtZero:true,max:window.state.allPlayerCount||undefined,ticks:{stepSize:1}},y:{ticks:{font:{size:22}}}}}});
+    }else{
+        const ch=window.state.voteChart;
+        Object.assign(ch.data,{labels}); ch.data.datasets[0].data=data; ch.data.datasets[0].backgroundColor=bg; ch.update();
     }
+}
+
+//---------------------------------------------------------------------
+// 8. Export CSV 
+//---------------------------------------------------------------------
+function exportCSV(){
+        const rows=window.state.allVotes||[];
+        const csv=["Röstgivare,Röst,Tidpunkt"];
+        rows.forEach(v=>csv.push(`"${v.from}","${v.to}","${v.timestamp}"`));
+        const blob=new Blob([csv.join("\n")],{type:"text/csv"});
+        const url=URL.createObjectURL(blob);
+        const a=document.createElement("a");
+        a.href=url;
+        a.download="rostdata.csv";
+        a.click();
 }
