@@ -126,7 +126,7 @@ async function loadSelected(){
     const thread=window.state.slug;
     if(!thread) return;
     const els=window.state.elements;
-    els.pageTitle.innerHTML=`<h1>${window.state.name}</h1>`
+    els.pageTitle.innerHTML=`<h1>🐺 ${window.state.name}</h1>`
     els.timeSlider.value=100;
     els.sliderTimeLabel.textContent="–";
     window.state.sliderTimeLimit=null;
