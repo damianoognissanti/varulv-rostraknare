@@ -65,6 +65,36 @@
     "pages": 3
   },
   {
+    "name": "Bamse och hans vener - R1",
+    "slug": "bamse-och-hans-vener-r1.85879",
+    "pages": 24
+  },
+  {
+    "name": "Bamse och hans vener - R2",
+    "slug": "bamse-och-hans-vener-r2.85887",
+    "pages": 11
+  },
+  {
+    "name": "Bamse och hans vener - R3",
+    "slug": "bamse-och-hans-vener-r3.85891",
+    "pages": 4
+  },
+  {
+    "name": "Bamse och hans vener - R4",
+    "slug": "bamse-och-hans-vener-r4.85900",
+    "pages": 7
+  },
+  {
+    "name": "Bamse och hans vener - R5",
+    "slug": "bamse-och-hans-vener-r5.85912",
+    "pages": 4
+  },
+  {
+    "name": "Bamse och hans vener - SLUT",
+    "slug": "bamse-och-hans-vener-slut.85917",
+    "pages": 4
+  },
+  {
     "name": "[BH II] - R1",
     "slug": "bh-ii-r1.85315",
     "pages": 32
@@ -473,6 +503,61 @@
     "name": "Klassåterträff i Nora - Spelet är slut - ULVVINST!",
     "slug": "klass%C3%A5tertr%C3%A4ff-i-nora-spelet-%C3%A4r-slut-ulvvinst.83347",
     "pages": 5
+  },
+  {
+    "name": "[KoK] - R1",
+    "slug": "kok-r1.85670",
+    "pages": 13
+  },
+  {
+    "name": "[KoK] - R10",
+    "slug": "kok-r10.85701",
+    "pages": 5
+  },
+  {
+    "name": "[KoK] - R11 - GAME OVER",
+    "slug": "kok-r11-game-over.85703",
+    "pages": 6
+  },
+  {
+    "name": "[KoK] - R2",
+    "slug": "kok-r2.85678",
+    "pages": 19
+  },
+  {
+    "name": "[KoK] - R3",
+    "slug": "kok-r3.85683",
+    "pages": 14
+  },
+  {
+    "name": "[KoK] - R4",
+    "slug": "kok-r4.85687",
+    "pages": 11
+  },
+  {
+    "name": "[KoK] - R5",
+    "slug": "kok-r5.85689",
+    "pages": 4
+  },
+  {
+    "name": "[KoK] - R6",
+    "slug": "kok-r6.85692",
+    "pages": 5
+  },
+  {
+    "name": "[KoK] - R7",
+    "slug": "kok-r7.85693",
+    "pages": 6
+  },
+  {
+    "name": "[KoK] - R8",
+    "slug": "kok-r8.85695",
+    "pages": 11
+  },
+  {
+    "name": "[KoK] - R9",
+    "slug": "kok-r9.85699",
+    "pages": 7
   },
   {
     "name": "Kungens råd - andra mötet",
@@ -925,6 +1010,31 @@
     "pages": 8
   },
   {
+    "name": "Paris part trois - Le Runda 1",
+    "slug": "paris-part-trois-le-runda-1.86848",
+    "pages": 19
+  },
+  {
+    "name": "Paris part trois - Le Runda 2",
+    "slug": "paris-part-trois-le-runda-2.86863",
+    "pages": 14
+  },
+  {
+    "name": "Paris part trois - Le Runda 3",
+    "slug": "paris-part-trois-le-runda-3.86870",
+    "pages": 5
+  },
+  {
+    "name": "Paris part trois - Le Runda 4",
+    "slug": "paris-part-trois-le-runda-4.86876",
+    "pages": 5
+  },
+  {
+    "name": "Paris part trois - Le Slut på spelet",
+    "slug": "paris-part-trois-le-slut-p%C3%A5-spelet.86883",
+    "pages": 6
+  },
+  {
     "name": "Paris - Runda 1",
     "slug": "paris-runda-1.80530",
     "pages": 4
@@ -1060,9 +1170,19 @@
     "pages": 1
   },
   {
+    "name": "[R1] Spionchefens hemlighet",
+    "slug": "r1-spionchefens-hemlighet.86088",
+    "pages": 23
+  },
+  {
     "name": "[R1] Utkante - en liten by bland drakar och demoner",
     "slug": "r1-utkante-en-liten-by-bland-drakar-och-demoner.82267",
     "pages": 28
+  },
+  {
+    "name": "[R2] Spionchefens hemlighet",
+    "slug": "r2-spionchefens-hemlighet.86107",
+    "pages": 18
   },
   {
     "name": "[R2] Utkante - en liten by bland drakar och demoner",
@@ -1070,13 +1190,33 @@
     "pages": 19
   },
   {
+    "name": "[R3] Spionchefens hemlighet",
+    "slug": "r3-spionchefens-hemlighet.86114",
+    "pages": 8
+  },
+  {
     "name": "[R3] Utkante - en liten by bland drakar och demoner",
     "slug": "r3-utkante-en-liten-by-bland-drakar-och-demoner.82291",
     "pages": 9
   },
   {
+    "name": "[R4] Spionchefens hemlighet",
+    "slug": "r4-spionchefens-hemlighet.86118",
+    "pages": 2
+  },
+  {
     "name": "[R4] Utkante - en liten by bland drakar och demoner",
     "slug": "r4-utkante-en-liten-by-bland-drakar-och-demoner.82302",
+    "pages": 3
+  },
+  {
+    "name": "[R5] Spionchefens hemlighet",
+    "slug": "r5-spionchefens-hemlighet.86119",
+    "pages": 4
+  },
+  {
+    "name": "R6 Varulvsblixt⚡️2 2025 SLUT",
+    "slug": "r6-varulvsblixt%E2%9A%A1%EF%B8%8F2-2025-slut.85517",
     "pages": 3
   },
   {
@@ -1245,6 +1385,11 @@
     "pages": 3
   },
   {
+    "name": "Spionchefens hemlighet, spelet slut! Bybovinst!",
+    "slug": "spionchefens-hemlighet-spelet-slut-bybovinst.86123",
+    "pages": 8
+  },
+  {
     "name": "SpringSmash23 avslutat BYBOVINST",
     "slug": "springsmash23-avslutat-bybovinst.81065",
     "pages": 2
@@ -1280,6 +1425,26 @@
     "pages": 1
   },
   {
+    "name": "Ulvar på puben R1",
+    "slug": "ulvar-p%C3%A5-puben-r1.86465",
+    "pages": 9
+  },
+  {
+    "name": "Ulvar på puben R2",
+    "slug": "ulvar-p%C3%A5-puben-r2.86480",
+    "pages": 9
+  },
+  {
+    "name": "Ulvar på puben R3",
+    "slug": "ulvar-p%C3%A5-puben-r3.86484",
+    "pages": 5
+  },
+  {
+    "name": "Ulvar på puben - Spelet är slut",
+    "slug": "ulvar-p%C3%A5-puben-spelet-%C3%A4r-slut.86486",
+    "pages": 8
+  },
+  {
     "name": "Ulvfellas - Runda 1",
     "slug": "ulvfellas-runda-1.83203",
     "pages": 15
@@ -1303,6 +1468,16 @@
     "name": "Ulvfellas - Spelet är slut",
     "slug": "ulvfellas-spelet-%C3%A4r-slut.83223",
     "pages": 4
+  },
+  {
+    "name": "Ulvgårdens gästabud - R1",
+    "slug": "ulvg%C3%A5rdens-g%C3%A4stabud-r1.86276",
+    "pages": 44
+  },
+  {
+    "name": "Ulvgårdens gästabud - R2",
+    "slug": "ulvg%C3%A5rdens-g%C3%A4stabud-r2.86299",
+    "pages": 23
   },
   {
     "name": "USCSS OHSHT: Mekanike(r)n på bordet Runda 1",
@@ -1485,6 +1660,71 @@
     "pages": 6
   },
   {
+    "name": "Varbruari 3 Månförmörkelse: Runda 1",
+    "slug": "varbruari-3-m%C3%A5nf%C3%B6rm%C3%B6rkelse-runda-1.87044",
+    "pages": 13
+  },
+  {
+    "name": "Varbruari 3 Månförmörkelse: Runda 2",
+    "slug": "varbruari-3-m%C3%A5nf%C3%B6rm%C3%B6rkelse-runda-2.87054",
+    "pages": 3
+  },
+  {
+    "name": "Varbruari 3 Månförmörkelse: Runda 3",
+    "slug": "varbruari-3-m%C3%A5nf%C3%B6rm%C3%B6rkelse-runda-3.87058",
+    "pages": 4
+  },
+  {
+    "name": "Varbruari 3 Månförmörkelse: Runda 4",
+    "slug": "varbruari-3-m%C3%A5nf%C3%B6rm%C3%B6rkelse-runda-4.87061",
+    "pages": 5
+  },
+  {
+    "name": "Varbruari 3 Månförmörkelse: Runda 5",
+    "slug": "varbruari-3-m%C3%A5nf%C3%B6rm%C3%B6rkelse-runda-5.87067",
+    "pages": 3
+  },
+  {
+    "name": "Varbruari 3 Månförmörkelse: Runda 6",
+    "slug": "varbruari-3-m%C3%A5nf%C3%B6rm%C3%B6rkelse-runda-6.87080",
+    "pages": 1
+  },
+  {
+    "name": "Vargbruari 1: Runda 1",
+    "slug": "vargbruari-1-runda-1.86944",
+    "pages": 7
+  },
+  {
+    "name": "Vargbruari 1: Runda 2",
+    "slug": "vargbruari-1-runda-2.86951",
+    "pages": 8
+  },
+  {
+    "name": "Vargbruari 1: Spelet är slut",
+    "slug": "vargbruari-1-spelet-%C3%A4r-slut.86961",
+    "pages": 4
+  },
+  {
+    "name": "Vargbruari 2 Ny måne: Runda 1",
+    "slug": "vargbruari-2-ny-m%C3%A5ne-runda-1.86993",
+    "pages": 13
+  },
+  {
+    "name": "Vargbruari 2 Ny måne: Runda 2",
+    "slug": "vargbruari-2-ny-m%C3%A5ne-runda-2.87003",
+    "pages": 9
+  },
+  {
+    "name": "Vargbruari 2 Ny måne: Runda 3",
+    "slug": "vargbruari-2-ny-m%C3%A5ne-runda-3.87014",
+    "pages": 1
+  },
+  {
+    "name": "Vargbruari 2 Ny måne: Spelet är slut (Ulvvinst!)",
+    "slug": "vargbruari-2-ny-m%C3%A5ne-spelet-%C3%A4r-slut-ulvvinst.87015",
+    "pages": 4
+  },
+  {
     "name": "[VaruIvspeI] - Game over",
     "slug": "varuivspei-game-over.79502",
     "pages": 1
@@ -1620,6 +1860,36 @@
     "pages": 3
   },
   {
+    "name": "Varulvsblixt⚡️2 R2",
+    "slug": "varulvsblixt%E2%9A%A1%EF%B8%8F2-r2.85511",
+    "pages": 8
+  },
+  {
+    "name": "Varulvsblixt⚡️2 R3",
+    "slug": "varulvsblixt%E2%9A%A1%EF%B8%8F2-r3.85512",
+    "pages": 7
+  },
+  {
+    "name": "Varulvsblixt⚡️2 R4",
+    "slug": "varulvsblixt%E2%9A%A1%EF%B8%8F2-r4.85513",
+    "pages": 3
+  },
+  {
+    "name": "Varulvsblixt⚡️2 R5",
+    "slug": "varulvsblixt%E2%9A%A1%EF%B8%8F2-r5.85514",
+    "pages": 3
+  },
+  {
+    "name": "Varulvsblixt⚡️2 R6",
+    "slug": "varulvsblixt%E2%9A%A1%EF%B8%8F2-r6.85516",
+    "pages": 2
+  },
+  {
+    "name": "Varulvsblixt⚡️2",
+    "slug": "varulvsblixt%E2%9A%A1%EF%B8%8F2.85510",
+    "pages": 11
+  },
+  {
     "name": "Varulvsblixt⚡️2024 R1",
     "slug": "varulvsblixt%E2%9A%A1%EF%B8%8F2024-r1.83531",
     "pages": 8
@@ -1723,5 +1993,35 @@
     "name": "Varulvsspelet Revolution och tandagnisslan avslutat",
     "slug": "varulvsspelet-revolution-och-tandagnisslan-avslutat.71809",
     "pages": 1
+  },
+  {
+    "name": "[WY25] Information och frågor",
+    "slug": "wy25-information-och-fr%C3%A5gor.86642",
+    "pages": 3
+  },
+  {
+    "name": "[WY25] Runda 1",
+    "slug": "wy25-runda-1.86652",
+    "pages": 26
+  },
+  {
+    "name": "[WY25] Runda 2",
+    "slug": "wy25-runda-2.86658",
+    "pages": 11
+  },
+  {
+    "name": "[WY25] Runda 3",
+    "slug": "wy25-runda-3.86666",
+    "pages": 12
+  },
+  {
+    "name": "[WY25] Runda 4",
+    "slug": "wy25-runda-4.86672",
+    "pages": 4
+  },
+  {
+    "name": "[WY25] Runda 5",
+    "slug": "wy25-runda-5.86678",
+    "pages": 6
   }
 ]

@@ -13,6 +13,7 @@ def verify_titles(base_dir="data"):
     errors = []
 
     for thread_folder in os.listdir(base_dir):
+        print("kollar: " + thread_folder)
         thread_path = os.path.join(base_dir, thread_folder)
         if not os.path.isdir(thread_path):
             continue
