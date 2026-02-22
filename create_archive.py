@@ -186,9 +186,8 @@ th{{background:#3c8dbc;color:#fff;cursor:pointer}}
 </head>
 <body>
 <div id="pageTitle"><h1>🐺 Varulv Rösträknare (Arkiv)</h1></div>
-<label for="threadInput">Välj/klistra tråd:</label>
-<input id="threadInput" list="threadList" placeholder="Sök tråd… (eller klistra slug/url)" autocomplete="off">
-<datalist id="threadList"></datalist>
+<label for="threadSelect">Välj tråd:</label>
+<select id="threadSelect"></select>
 <button id="exportBtn">Exportera CSV</button>
 <div class="small" id="sourceLine"></div>
 <br>
@@ -229,7 +228,7 @@ th{{background:#3c8dbc;color:#fff;cursor:pointer}}
 const A=JSON.parse(document.getElementById("ARCHIVE_DATA").textContent);
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const els={{
-  in:$("#threadInput"), list:$("#threadList"), export:$("#exportBtn"), src:$("#sourceLine"),
+  in:$("#threadSelect"), export:$("#exportBtn"), src:$("#sourceLine"),
   view:$$('input[name="voteView"]'), live:$("#liveModeToggle"), delay:$("#liveDelayInput"),
   slider:$("#timeSlider"), sliderLbl:$("#sliderTimeLabel"), summary:$("#summary"),
   tbody:$("#voteTable tbody"), fp:$("#playerFilter"), ths:$$('#voteTable thead th'),
@@ -269,23 +268,15 @@ function applyURL(){{
   history.replaceState(null,"",`${{location.pathname}}?${{p.toString()}}`);
 }}
 function fillThreads(){{
-  els.list.innerHTML="";
+  els.in.innerHTML='<option value="">Välj...</option>';
   A.threads.forEach(t=>{{
     const o=document.createElement("option");
-    o.value=t.name; o.dataset.slug=t.slug;
-    els.list.appendChild(o);
+    o.value=t.slug;
+    o.textContent=t.name;
+    els.in.appendChild(o);
   }});
 }}
-function slugFromInput(){{
-  const v=els.in.value.trim();
-  if(!v) return "";
-  const opt=$$(`#threadList option`).find(o=>o.value===v);
-  if(opt) return opt.dataset.slug||"";
-  if(A.bySlug[v]) return v;
-  const m=v.match(/\\/threads\\/([^\\/]+)\\/?/);
-  if(m && A.bySlug[m[1]]) return m[1];
-  return "";
-}}
+function slugFromInput(){{ return els.in.value||""; }}
 function loadThread(slug, skipURL){{
   const j=A.bySlug[slug];
   if(!j) return;
@@ -295,7 +286,7 @@ function loadThread(slug, skipURL){{
   st.colors=mkColors(st.players);
   const ts=st.votes.map(v=>+new Date(v.ts)).filter(x=>!isNaN(x)).sort((a,b)=>a-b);
   st.range={{min:ts[0]?new Date(ts[0]):null,max:ts[ts.length-1]?new Date(ts[ts.length-1]):null}};
-  els.in.value=st.name;
+  els.in.value=st.slug;
   els.src.innerHTML=st.slug?`Källa: <a target="_blank" href="https://www.rollspel.nu/threads/${{st.slug}}/">https://www.rollspel.nu/threads/${{enc(st.slug)}}/</a>`:"";
   els.fp.innerHTML='<option value="">Alla</option>';
   st.players.slice().sort((a,b)=>a.localeCompare(b,"sv")).forEach(n=>{{
