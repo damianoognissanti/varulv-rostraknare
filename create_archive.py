@@ -451,7 +451,7 @@ document.addEventListener("DOMContentLoaded", ()=>{{
   if(rv) rv.checked=true;
   els.th.addEventListener("change",()=>{{ const s=els.th.value||""; if(s) loadThread(s,false); }});
   els.exp.addEventListener("click",exportCSV);
-  els.view.forEach(r=>r.addEventListener("change",()=>{{ render(); applyURL(); }}));
+  els.view.forEach(r=>r.addEventListener("change",()=>{{ if(st.animTimer){{clearTimeout(st.animTimer);st.animTimer=null;st.anim=false;}} render(); applyURL(); }}));
   els.animBtn.addEventListener("click", () => {{ if(!st.slug) return; play(); }});
   els.delay.addEventListener("input",applyURL);
   els.slider.addEventListener("input",()=>onSlider(false));
