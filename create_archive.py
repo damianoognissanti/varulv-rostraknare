@@ -24,6 +24,10 @@ def pages_in_dir(d: Path):
             pages.append((int(m.group(1)), p))
     pages.sort(key=lambda x: x[0])
     return pages
+def _split_html_lines(html_fragment: str):
+    # Gör <br> till \n innan split, för mer stabil rad-detektering
+    frag = re.sub(r"<br\s*/?>", "\n", html_fragment, flags=re.I)
+    return re.split(r"\n", frag)
 def extract_votes_from_html(html: str, page_num: int):
     soup = BeautifulSoup(html, "html.parser")
     out = []
@@ -37,8 +41,8 @@ def extract_votes_from_html(html: str, page_num: int):
         msg = post.select_one(".message-content")
         if not msg or not pid:
             continue
-        content_html = msg.decode()
-        for line in re.split(r"\n|<br\s*/?>", content_html, flags=re.I):
+        content_html = msg.decode_contents()  # viktig: bara innehållet, inte wrapper-taggen
+        for line in _split_html_lines(content_html):
             if not VOTE_START.search(line):
                 continue
             m = USER_TAG.search(line)
@@ -57,6 +61,28 @@ def _best_prefix_known(raw: str, known_cf: set):
         if pref and pref.casefold() in known_cf:
             return pref
     return None
+def build_known_and_canon(pages):
+    known_cf = set()
+    canon = {}
+    for _, page_path in pages:
+        html = page_path.read_text(encoding="utf-8", errors="ignore")
+        soup = BeautifulSoup(html, "html.parser")
+        for post in soup.select("article[data-author]"):
+            a = (post.get("data-author") or "").strip()
+            if not a:
+                continue
+            cf = a.casefold()
+            known_cf.add(cf)
+            canon.setdefault(cf, a)
+        # plocka även alla taggar i HTML (även om personen aldrig postade)
+        for m in USER_TAG.finditer(html):
+            u = (m.group(1) or "").lstrip("@").strip()
+            if not u:
+                continue
+            cf = u.casefold()
+            known_cf.add(cf)
+            canon.setdefault(cf, u)
+    return known_cf, canon
 def extract_votes_from_html_old(html: str, page_num: int, known_cf: set, canon: dict):
     soup = BeautifulSoup(html, "html.parser")
     out = []
@@ -70,8 +96,8 @@ def extract_votes_from_html_old(html: str, page_num: int, known_cf: set, canon: 
         msg = post.select_one(".message-content")
         if not msg or not pid:
             continue
-        content_html = msg.decode()
-        for line in re.split(r"\n|<br\s*/?>", content_html, flags=re.I):
+        content_html = msg.decode_contents()
+        for line in _split_html_lines(content_html):
             if not VOTE_START.search(line):
                 continue
             m = OLD_VOTE.search(line)
@@ -86,38 +112,19 @@ def extract_votes_from_html_old(html: str, page_num: int, known_cf: set, canon: 
             if best:
                 to_user = best
             else:
-                nm = NAME_CHARS.match(raw)
+                # search() istället för match(), så "@Namn", "(Namn)" etc fångas
+                nm = NAME_CHARS.search(raw)
                 if not nm:
                     continue
                 to_user = nm.group(0).strip()
             if not to_user:
                 continue
+            # Canonical casing om vi råkar känna igen personen
             cf = to_user.casefold()
             to_user = canon.get(cf, to_user)
             if from_user and to_user:
                 out.append({"from": from_user, "to": to_user, "ts": ts, "post": pid, "page": page_num})
     return out
-def build_known_and_canon(pages):
-    known_cf = set()
-    canon = {}
-    for _, page_path in pages:
-        html = page_path.read_text(encoding="utf-8", errors="ignore")
-        soup = BeautifulSoup(html, "html.parser")
-        for post in soup.select("article[data-author]"):
-            a = (post.get("data-author") or "").strip()
-            if not a:
-                continue
-            cf = a.casefold()
-            known_cf.add(cf)
-            canon.setdefault(cf, a)
-        for m in USER_TAG.finditer(html):
-            u = (m.group(1) or "").lstrip("@").strip()
-            if not u:
-                continue
-            cf = u.casefold()
-            known_cf.add(cf)
-            canon.setdefault(cf, u)
-    return known_cf, canon
 def build_archive(data_dir: Path):
     threads = []
     by_slug = {}
@@ -134,6 +141,7 @@ def build_archive(data_dir: Path):
             print("Läser:", page_path)
             html = page_path.read_text(encoding="utf-8", errors="ignore")
             votes.extend(extract_votes_from_html(html, page_num))
+        # Viktigt: vi blandar inte lägen. Old-läge endast om 0 röster i hela tråden.
         if not votes:
             print("Hittade 0 röster med tagg-läge, testar gammalt läge...")
             votes_tag_found = False
@@ -143,24 +151,31 @@ def build_archive(data_dir: Path):
                 html = page_path.read_text(encoding="utf-8", errors="ignore")
                 votes.extend(extract_votes_from_html_old(html, page_num, known_cf, canon))
         print("Hittade", len(votes), "röster")
+        # ISO-datetime (u-dt datetime) sorterar bra som sträng. Tomma ts hamnar först.
         votes.sort(key=lambda v: v.get("ts") or "")
         if votes:
-            players = sorted(set([v["from"] for v in votes] + [v["to"] for v in votes]), key=lambda s: s.lower())
+            players = sorted(
+                set([v["from"] for v in votes] + [v["to"] for v in votes]),
+                key=lambda s: s.lower()
+            )
             tss = [v["ts"] for v in votes if v.get("ts")]
             rng = {"min": tss[0] if tss else None, "max": tss[-1] if tss else None}
         else:
             players, rng = [], {"min": None, "max": None}
         threads.append({"slug": slug, "name": name})
         by_slug[slug] = {
-            "slug": slug, "name": name,
-            "players": players, "range": rng,
+            "slug": slug,
+            "name": name,
+            "players": players,
+            "range": rng,
             "votes": votes,
-            "mode": "tag" if votes_tag_found else "old"
+            "mode": "tag" if votes_tag_found else "old",
         }
     threads.sort(key=lambda x: x["name"].lower())
     return {"threads": threads, "bySlug": by_slug}
 def render_html(archive_obj: dict) -> str:
-    data_json = json.dumps(archive_obj, ensure_ascii=False)
+    # kompakt JSON: snabbare laddning, mindre fil
+    data_json = json.dumps(archive_obj, ensure_ascii=False, separators=(",", ":"))
     return f"""<!doctype html>
 <html lang="sv">
 <head>
@@ -194,7 +209,7 @@ th{{background:#3c8dbc;color:#fff;cursor:pointer}}
 <label><input type="radio" name="voteView" value="latest" checked> Endast senaste röst</label>
 <label><input type="radio" name="voteView" value="all"> Alla röster</label>
 <br>
-<label><input type="checkbox" id="liveModeToggle"> Visa animation av röster.</label>
+<button id="animateBtn" type="button">Animera röster</button>
 <label>Hastighet:
   <input type="number" id="liveDelayInput" value="200" min="0" style="width:60px"> ms
 </label>
@@ -228,13 +243,13 @@ th{{background:#3c8dbc;color:#fff;cursor:pointer}}
 const A=JSON.parse(document.getElementById("ARCHIVE_DATA").textContent);
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const els={{
-  in:$("#threadSelect"), export:$("#exportBtn"), src:$("#sourceLine"),
-  view:$$('input[name="voteView"]'), live:$("#liveModeToggle"), delay:$("#liveDelayInput"),
+  th:$("#threadSelect"), exp:$("#exportBtn"), src:$("#sourceLine"),
+  view:$$('input[name="voteView"]'), animBtn:$("#animateBtn"), delay:$("#liveDelayInput"),
   slider:$("#timeSlider"), sliderLbl:$("#sliderTimeLabel"), summary:$("#summary"),
   tbody:$("#voteTable tbody"), fp:$("#playerFilter"), ths:$$('#voteTable thead th'),
   cv:$("#chart")
 }};
-const st={{slug:"", name:"", votes:[], players:[], colors:{{}}, fp:"", sort:"", live:false, anim:false, pct:100, lim:null, range:{{min:null,max:null}}}};
+const st={{slug:"", votes:[], players:[], colors:{{}}, fp:"", sort:"", anim:false, animTimer:null, pct:100, lim:null, range:{{min:null,max:null}}}};
 const curView=()=>els.view.find(r=>r.checked)?.value||"latest";
 const fmt=t=>t?new Date(t).toLocaleString("sv-SE",{{dateStyle:"short",timeStyle:"short"}}):"–";
 const enc=s=>String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
@@ -246,12 +261,10 @@ function readURL(){{
   const view=p.get("view")==="all"?"all":"latest";
   const delay=parseInt(p.get("delay")||"200",10);
   const slider=parseInt(p.get("slider")||"100",10);
-  const live=p.get("live")==="1";
   return {{
     thread:p.get("thread")||"",
     view, delay:isNaN(delay)?200:delay,
     slider:isNaN(slider)?100:slider,
-    live,
     fp:p.get("fp")||"",
     sort:p.get("sort")||""
   }};
@@ -262,31 +275,30 @@ function applyURL(){{
   p.set("view",curView());
   p.set("delay",String(parseInt(els.delay.value||"200",10)||200));
   p.set("slider",String(st.pct));
-  p.set("live",st.live?"1":"0");
   if(st.fp) p.set("fp",st.fp); else p.delete("fp");
   if(st.sort) p.set("sort",st.sort); else p.delete("sort");
   history.replaceState(null,"",`${{location.pathname}}?${{p.toString()}}`);
 }}
 function fillThreads(){{
-  els.in.innerHTML='<option value="">Välj...</option>';
+  els.th.innerHTML='<option value="">Välj...</option>';
   A.threads.forEach(t=>{{
     const o=document.createElement("option");
     o.value=t.slug;
     o.textContent=t.name;
-    els.in.appendChild(o);
+    els.th.appendChild(o);
   }});
 }}
-function slugFromInput(){{ return els.in.value||""; }}
 function loadThread(slug, skipURL){{
+  if(st.animTimer){{ clearTimeout(st.animTimer); st.animTimer=null; st.anim=false; }}
   const j=A.bySlug[slug];
   if(!j) return;
-  st.slug=slug; st.name=j.name||slug;
+  st.slug=slug;
   st.votes=(j.votes||[]).map(v=>({{...v}}));
   st.players=(j.players&&j.players.length)?j.players:[...new Set(st.votes.flatMap(v=>[v.from,v.to]))];
   st.colors=mkColors(st.players);
   const ts=st.votes.map(v=>+new Date(v.ts)).filter(x=>!isNaN(x)).sort((a,b)=>a-b);
   st.range={{min:ts[0]?new Date(ts[0]):null,max:ts[ts.length-1]?new Date(ts[ts.length-1]):null}};
-  els.in.value=st.slug;
+  els.th.value=st.slug;
   els.src.innerHTML=st.slug?`Källa: <a target="_blank" href="https://www.rollspel.nu/threads/${{st.slug}}/">https://www.rollspel.nu/threads/${{enc(st.slug)}}/</a>`:"";
   els.fp.innerHTML='<option value="">Alla</option>';
   st.players.slice().sort((a,b)=>a.localeCompare(b,"sv")).forEach(n=>{{
@@ -304,6 +316,7 @@ function subset(){{
   let vs=st.votes;
   if(st.lim) vs=vs.filter(v=>+new Date(v.ts)<=+st.lim);
   if(curView()==="latest") vs=getLatest(vs);
+  if(st.fp) vs=vs.filter(v=>v.from===st.fp); // filter är på röstgivare
   return vs;
 }}
 function bars(entries){{
@@ -326,18 +339,23 @@ function bars(entries){{
     ctx.fillText(val,Math.max(left+4,left+w-tw-4),y+barH-2);
   }});
 }}
-function sortApply(k){{
+function sortApply(){{
+  if(!st.sort) return;
   const rows=$$("#voteTable tbody tr");
   const asc=!st.sort.endsWith("-desc");
-  const col=k.startsWith("from")?0:2;
+  const k=st.sort.split("-")[0];
   rows.sort((a,b)=>{{
-    const A=a.children[col].textContent.trim(), B=b.children[col].textContent.trim();
-    return asc?A.localeCompare(B,"sv"):B.localeCompare(A,"sv");
+    if(k==="from") {{
+      const A=a.children[0].textContent.trim(), B=b.children[0].textContent.trim();
+      return asc?A.localeCompare(B,"sv"):B.localeCompare(A,"sv");
+    }}
+    const A=a.dataset.ts||"", B=b.dataset.ts||"";
+    return asc?A.localeCompare(B):B.localeCompare(A);
   }});
   els.tbody.innerHTML=""; rows.forEach(r=>els.tbody.appendChild(r));
 }}
-function render(){{
-  const vs=subset();
+function render(vsOverride=null){{
+  const vs = vsOverride ?? subset();
   if(!vs.length){{
     els.summary.textContent="Inga röster att visa.";
     els.tbody.innerHTML="";
@@ -372,40 +390,49 @@ function render(){{
     }}).join(" → ");
     const tr=document.createElement("tr");
     tr.dataset.from=v.from;
+    tr.dataset.ts=v.ts||"";
     tr.innerHTML=`<td style="color:${{GC(v.from)}};font-weight:bold">${{enc(v.from)}}</td><td>${{chain}}</td><td>${{fmt(v.ts)}}</td><td>${{leader}}</td><td>${{runner}}</td>`;
     els.tbody.appendChild(tr);
   }});
-  if(st.fp) $$(`#voteTable tbody tr`).forEach(r=>r.style.display=r.dataset.from===st.fp?"":"none");
-  if(st.sort) sortApply(st.sort);
+  sortApply();
   bars(ord);
 }}
 function onSlider(skipURL){{
+  if(st.animTimer){{clearTimeout(st.animTimer);st.animTimer=null;st.anim=false;}}
   st.pct=parseInt(els.slider.value||"100",10);
   if(!st.range.min||!st.range.max){{ st.lim=null; els.sliderLbl.textContent="–"; if(!skipURL){{ render(); applyURL(); }} return; }}
   const min=+st.range.min, max=+st.range.max;
   st.lim=new Date(min+(max-min)*st.pct/100);
   els.sliderLbl.textContent=fmt(st.lim);
   if(skipURL) return;
-  st.live?play():render();
+  render();
   applyURL();
 }}
 function play(){{
-  if(st.anim) return;
-  st.anim=true;
-  const d=parseInt(els.delay.value||"200",10);
-  const lim=st.lim;
-  const all=st.votes.filter(v=>!lim||+new Date(v.ts)<=+st.lim).sort((a,b)=>+new Date(a.ts)-+new Date(b.ts));
-  let i=0;
+  if(st.animTimer) {{ clearTimeout(st.animTimer); st.animTimer = null; }}
+  st.anim = true;
+  const d = parseInt(els.delay.value||"200",10);
+  const lim = st.lim;
+  const all = (A.bySlug[st.slug].votes||[])
+    .filter(v => !lim || +new Date(v.ts) <= +lim)
+    .sort((a,b)=>+new Date(a.ts)-+new Date(b.ts));
+  let i = 0;
   (function step(){{
-    if(i>all.length){{ st.anim=false; return; }}
-    const sub=all.slice(0,i);
-    const show=curView()==="all"?sub:getLatest(sub);
-    const old=st.votes; st.votes=show; render(); st.votes=old;
-    i++; setTimeout(step,d);
+    if(i > all.length){{
+      st.anim = false;
+      st.animTimer = null;
+      return;
+    }}
+    const sub = all.slice(0,i);
+    let show = (curView()==="all") ? sub : getLatest(sub);
+    if(st.fp) show = show.filter(v => v.from === st.fp);
+    render(show);
+    i++;
+    st.animTimer = setTimeout(step, d); // NEW: spara id
   }})();
 }}
 function exportCSV(){{
-  const rows=st.votes||[];
+  const rows=subset();
   const csv=["Röstgivare,Röst,Tidpunkt,Post,Page"];
   rows.forEach(v=>csv.push(`"${{v.from}}","${{v.to}}","${{v.ts}}","${{v.post}}","${{v.page}}"`));
   const a=document.createElement("a");
@@ -418,16 +445,14 @@ document.addEventListener("DOMContentLoaded", ()=>{{
   const init=readURL();
   els.delay.value=String(init.delay||200);
   els.slider.value=String(init.slider||100);
-  els.live.checked=st.live=!!init.live;
   st.fp=init.fp||"";
   st.sort=init.sort||"";
   const rv=els.view.find(r=>r.value===init.view);
   if(rv) rv.checked=true;
-  els.in.addEventListener("input",()=>{{ const s=slugFromInput(); if(s) loadThread(s,false); }});
-  els.in.addEventListener("change",()=>{{ const s=slugFromInput(); if(s) loadThread(s,false); }});
-  els.export.addEventListener("click",exportCSV);
+  els.th.addEventListener("change",()=>{{ const s=els.th.value||""; if(s) loadThread(s,false); }});
+  els.exp.addEventListener("click",exportCSV);
   els.view.forEach(r=>r.addEventListener("change",()=>{{ render(); applyURL(); }}));
-  els.live.addEventListener("change",()=>{{ st.live=els.live.checked; st.live?play():render(); applyURL(); }});
+  els.animBtn.addEventListener("click", () => {{ if(!st.slug) return; play(); }});
   els.delay.addEventListener("input",applyURL);
   els.slider.addEventListener("input",()=>onSlider(false));
   els.fp.addEventListener("change",()=>{{ st.fp=els.fp.value||""; render(); applyURL(); }});
