@@ -1,0 +1,83 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Hägerstrand",
+          "page": 1,
+          "post": "1272523",
+          "to": "Hägerstrand",
+          "ts": "2024-09-18T21:13:44+0200"
+        },
+        {
+          "from": "Hägerstrand",
+          "page": 1,
+          "post": "1272526",
+          "to": "Sidd",
+          "ts": "2024-09-18T21:20:39+0200"
+        },
+        {
+          "from": "StradhLestat",
+          "page": 1,
+          "post": "1272536",
+          "to": "Hägerstrand",
+          "ts": "2024-09-18T21:31:59+0200"
+        },
+        {
+          "from": "fjodorsenuba",
+          "page": 1,
+          "post": "1272538",
+          "to": "Hägerstrand",
+          "ts": "2024-09-18T21:40:50+0200"
+        },
+        {
+          "from": "Impetigo",
+          "page": 1,
+          "post": "1272539",
+          "to": "Sidd",
+          "ts": "2024-09-18T21:41:59+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": []
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Mr.J",
+          "page": 3,
+          "post": "1272577",
+          "to": "Sidd",
+          "ts": "2024-09-18T22:56:41+0200"
+        },
+        {
+          "from": "Sidd",
+          "page": 3,
+          "post": "1272586",
+          "to": "Sidd",
+          "ts": "2024-09-19T01:07:10+0200"
+        },
+        {
+          "from": "StradhLestat",
+          "page": 3,
+          "post": "1272591",
+          "to": "Sidd",
+          "ts": "2024-09-19T06:30:53+0200"
+        },
+        {
+          "from": "fjodorsenuba",
+          "page": 3,
+          "post": "1272594",
+          "to": "Sidd",
+          "ts": "2024-09-19T07:05:29+0200"
+        }
+      ]
+    },
+    "4": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

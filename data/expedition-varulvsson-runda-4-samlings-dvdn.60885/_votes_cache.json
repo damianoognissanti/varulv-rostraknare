@@ -1,0 +1,152 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "LJSLarsson",
+          "page": 1,
+          "post": "820979",
+          "to": "RasmusL",
+          "ts": "2013-10-23T22:16:57+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "820981",
+          "to": "Mukwa",
+          "ts": "2013-10-23T22:20:38+0200"
+        },
+        {
+          "from": "Trasapa",
+          "page": 1,
+          "post": "820984",
+          "to": "Rasmus",
+          "ts": "2013-10-23T22:33:49+0200"
+        },
+        {
+          "from": "Vimes",
+          "page": 1,
+          "post": "821013",
+          "to": "LJSLarsson",
+          "ts": "2013-10-24T07:52:22+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "821016",
+          "to": "Xyas",
+          "ts": "2013-10-24T08:32:27+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 1,
+          "post": "821030",
+          "to": "Ingen",
+          "ts": "2013-10-24T09:45:20+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 2,
+          "post": "821054",
+          "to": "LJS",
+          "ts": "2013-10-24T11:40:52+0200"
+        },
+        {
+          "from": "Mukwa",
+          "page": 2,
+          "post": "821123",
+          "to": "en ulv",
+          "ts": "2013-10-24T16:59:48+0200"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Ruga",
+          "page": 3,
+          "post": "821140",
+          "to": "LJS",
+          "ts": "2013-10-24T18:24:38+0200"
+        },
+        {
+          "from": "Mukwa",
+          "page": 3,
+          "post": "821143",
+          "to": "LJSL",
+          "ts": "2013-10-24T19:27:42+0200"
+        },
+        {
+          "from": "anth",
+          "page": 3,
+          "post": "821201",
+          "to": "LJSLarsson",
+          "ts": "2013-10-25T10:31:52+0200"
+        },
+        {
+          "from": "!Paxen",
+          "page": 3,
+          "post": "821214",
+          "to": "LJSLarsson",
+          "ts": "2013-10-25T11:30:24+0200"
+        }
+      ]
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "RasmusL",
+          "page": 4,
+          "post": "821244",
+          "to": "LJSLarsson",
+          "ts": "2013-10-25T13:07:11+0200"
+        },
+        {
+          "from": "Pixie",
+          "page": 4,
+          "post": "821312",
+          "to": "Trasapa",
+          "ts": "2013-10-25T15:45:07+0200"
+        },
+        {
+          "from": "Recca",
+          "page": 4,
+          "post": "821320",
+          "to": "Trasapa",
+          "ts": "2013-10-25T16:09:40+0200"
+        }
+      ]
+    },
+    "5": {
+      "votes": [
+        {
+          "from": "Xyas",
+          "page": 5,
+          "post": "821360",
+          "to": "LJSLarsson",
+          "ts": "2013-10-25T20:18:38+0200"
+        },
+        {
+          "from": "Trasapa",
+          "page": 5,
+          "post": "821369",
+          "to": "Larsson",
+          "ts": "2013-10-25T22:12:51+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 5,
+          "post": "821371",
+          "to": "Larsson",
+          "ts": "2013-10-25T22:43:12+0200"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

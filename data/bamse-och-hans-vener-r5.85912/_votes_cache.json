@@ -1,0 +1,63 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Brynolf",
+          "page": 1,
+          "post": "1336466",
+          "to": "Brynolf",
+          "ts": "2025-08-18T21:10:07+0200"
+        },
+        {
+          "from": "Sysp",
+          "page": 1,
+          "post": "1336467",
+          "to": "fjodorsenuba",
+          "ts": "2025-08-18T21:11:35+0200"
+        },
+        {
+          "from": "fjodorsenuba",
+          "page": 1,
+          "post": "1336486",
+          "to": "Sysp",
+          "ts": "2025-08-18T21:36:23+0200"
+        },
+        {
+          "from": "Anthrox",
+          "page": 1,
+          "post": "1336495",
+          "to": "Sysp",
+          "ts": "2025-08-18T22:17:41+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Big Mama",
+          "page": 2,
+          "post": "1336516",
+          "to": "fjodorsenuba",
+          "ts": "2025-08-19T06:48:27+0200"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Big Mama",
+          "page": 3,
+          "post": "1336632",
+          "to": "Sysp",
+          "ts": "2025-08-19T18:44:46+0200"
+        }
+      ]
+    },
+    "4": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

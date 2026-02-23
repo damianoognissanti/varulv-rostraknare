@@ -1,0 +1,55 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Feuflux",
+          "page": 1,
+          "post": "1113605",
+          "to": "Bageri",
+          "ts": "2022-03-06T14:31:30+0100"
+        },
+        {
+          "from": "Sidd",
+          "page": 1,
+          "post": "1113606",
+          "to": "Smedjan",
+          "ts": "2022-03-06T15:07:18+0100"
+        },
+        {
+          "from": "Impetigo",
+          "page": 1,
+          "post": "1113654",
+          "to": "Smedjan",
+          "ts": "2022-03-06T22:38:38+0100"
+        },
+        {
+          "from": "Empiricus",
+          "page": 1,
+          "post": "1113657",
+          "to": "Köket",
+          "ts": "2022-03-06T22:53:18+0100"
+        },
+        {
+          "from": "fjodorsenuba",
+          "page": 1,
+          "post": "1113676",
+          "to": "Smedjan",
+          "ts": "2022-03-07T07:34:20+0100"
+        },
+        {
+          "from": "Empiricus",
+          "page": 1,
+          "post": "1113712",
+          "to": "Smedjan",
+          "ts": "2022-03-07T14:06:47+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,110 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Brynolf",
+          "page": 1,
+          "post": "1272272",
+          "to": "Sysp",
+          "ts": "2024-09-17T22:00:45+0200"
+        },
+        {
+          "from": "Sidd",
+          "page": 1,
+          "post": "1272279",
+          "to": "Sysp",
+          "ts": "2024-09-17T22:19:42+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Hägerstrand",
+          "page": 2,
+          "post": "1272289",
+          "to": "Sysp",
+          "ts": "2024-09-17T22:40:53+0200"
+        },
+        {
+          "from": "Impetigo",
+          "page": 2,
+          "post": "1272296",
+          "to": "Sysp",
+          "ts": "2024-09-18T01:07:25+0200"
+        },
+        {
+          "from": "Sysp",
+          "page": 2,
+          "post": "1272302",
+          "to": "Hägerstrand",
+          "ts": "2024-09-18T07:06:20+0200"
+        },
+        {
+          "from": "fjodorsenuba",
+          "page": 2,
+          "post": "1272306",
+          "to": "Sysp",
+          "ts": "2024-09-18T07:25:36+0200"
+        }
+      ]
+    },
+    "3": {
+      "votes": []
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "StradhLestat",
+          "page": 4,
+          "post": "1272389",
+          "to": "Sysp",
+          "ts": "2024-09-18T13:17:56+0200"
+        },
+        {
+          "from": "BiobunkerVII",
+          "page": 4,
+          "post": "1272396",
+          "to": "Sysp",
+          "ts": "2024-09-18T13:36:28+0200"
+        }
+      ]
+    },
+    "5": {
+      "votes": [
+        {
+          "from": "Impetigo",
+          "page": 5,
+          "post": "1272458",
+          "to": "Hägerstrand",
+          "ts": "2024-09-18T17:21:58+0200"
+        }
+      ]
+    },
+    "6": {
+      "votes": [
+        {
+          "from": "BiobunkerVII",
+          "page": 6,
+          "post": "1272463",
+          "to": "Hägerstrand",
+          "ts": "2024-09-18T17:26:37+0200"
+        }
+      ]
+    },
+    "7": {
+      "votes": [
+        {
+          "from": "Impetigo",
+          "page": 7,
+          "post": "1272518",
+          "to": "Sysp",
+          "ts": "2024-09-18T21:00:00+0200"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

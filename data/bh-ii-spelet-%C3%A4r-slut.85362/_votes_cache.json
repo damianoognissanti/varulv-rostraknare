@@ -1,0 +1,29 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": []
+    },
+    "2": {
+      "votes": []
+    },
+    "3": {
+      "votes": []
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "Hägerstrand",
+          "page": 4,
+          "post": "1319090",
+          "to": "de som tyckte det var fullständigt omöjligt",
+          "ts": "2025-05-13T07:25:07+0200"
+        }
+      ]
+    },
+    "5": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

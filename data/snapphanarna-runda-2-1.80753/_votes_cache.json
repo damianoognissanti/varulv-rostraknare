@@ -1,0 +1,96 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "RasmusL",
+          "page": 1,
+          "post": "1170551",
+          "to": "JA - Vilket innebär att ni stödjer Impetigos förslag",
+          "ts": "2023-02-22T21:02:37+0100"
+        },
+        {
+          "from": "RasmusL",
+          "page": 1,
+          "post": "1170551",
+          "to": "NEJ - Vilket innebär att ni motsätter er Impetigos förslag",
+          "ts": "2023-02-22T21:02:37+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Andersson",
+          "page": 2,
+          "post": "1170586",
+          "to": "JA",
+          "ts": "2023-02-22T22:46:59+0100"
+        },
+        {
+          "from": "Octagonal",
+          "page": 2,
+          "post": "1170600",
+          "to": "NEJ",
+          "ts": "2023-02-23T02:31:44+0100"
+        },
+        {
+          "from": "Vimes",
+          "page": 2,
+          "post": "1170601",
+          "to": "NEJ",
+          "ts": "2023-02-23T05:43:37+0100"
+        },
+        {
+          "from": "Basenanji",
+          "page": 2,
+          "post": "1170604",
+          "to": "NEJ",
+          "ts": "2023-02-23T07:10:23+0100"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Genesis",
+          "page": 3,
+          "post": "1170622",
+          "to": "NEJ",
+          "ts": "2023-02-23T07:55:54+0100"
+        },
+        {
+          "from": "Impetigo",
+          "page": 3,
+          "post": "1170644",
+          "to": "JA",
+          "ts": "2023-02-23T08:39:00+0100"
+        }
+      ]
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "Sidd",
+          "page": 4,
+          "post": "1170681",
+          "to": "NEJ",
+          "ts": "2023-02-23T12:16:45+0100"
+        }
+      ]
+    },
+    "5": {
+      "votes": [
+        {
+          "from": "Martin3",
+          "page": 5,
+          "post": "1170729",
+          "to": "nej",
+          "ts": "2023-02-23T15:05:57+0100"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

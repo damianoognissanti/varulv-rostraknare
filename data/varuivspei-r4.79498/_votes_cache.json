@@ -1,0 +1,41 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Impetigo",
+          "page": 1,
+          "post": "1129131",
+          "to": "Empiricus",
+          "ts": "2022-07-06T23:59:47+0200"
+        },
+        {
+          "from": "Sidd",
+          "page": 1,
+          "post": "1129132",
+          "to": "Empiricus",
+          "ts": "2022-07-07T00:20:06+0200"
+        },
+        {
+          "from": "Sidd",
+          "page": 1,
+          "post": "1129208",
+          "to": "Impetigo",
+          "ts": "2022-07-07T18:45:24+0200"
+        },
+        {
+          "from": "Impetigo",
+          "page": 1,
+          "post": "1129224",
+          "to": "Sidd",
+          "ts": "2022-07-07T20:00:11+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

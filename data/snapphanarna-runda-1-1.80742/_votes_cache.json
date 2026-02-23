@@ -1,0 +1,116 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "RasmusL",
+          "page": 1,
+          "post": "1170142",
+          "to": "JA - Vilket innebär att ni stödjer Impetigos förslag",
+          "ts": "2023-02-21T17:07:56+0100"
+        },
+        {
+          "from": "RasmusL",
+          "page": 1,
+          "post": "1170142",
+          "to": "NEJ - Vilket innebär att ni motsätter er Impetigos förslag",
+          "ts": "2023-02-21T17:07:56+0100"
+        },
+        {
+          "from": "Sidd",
+          "page": 1,
+          "post": "1170174",
+          "to": "JA",
+          "ts": "2023-02-21T19:10:14+0100"
+        },
+        {
+          "from": "BiobunkerVII",
+          "page": 1,
+          "post": "1170177",
+          "to": "Ja",
+          "ts": "2023-02-21T19:25:58+0100"
+        },
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "1170178",
+          "to": "JA",
+          "ts": "2023-02-21T19:35:46+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Vimes",
+          "page": 2,
+          "post": "1170193",
+          "to": "NEJ",
+          "ts": "2023-02-21T20:31:03+0100"
+        },
+        {
+          "from": "Octagonal",
+          "page": 2,
+          "post": "1170201",
+          "to": "JA",
+          "ts": "2023-02-21T21:00:42+0100"
+        },
+        {
+          "from": "Genesis",
+          "page": 2,
+          "post": "1170205",
+          "to": "JA",
+          "ts": "2023-02-21T21:13:30+0100"
+        },
+        {
+          "from": "Impetigo",
+          "page": 2,
+          "post": "1170209",
+          "to": "Ja",
+          "ts": "2023-02-21T21:25:19+0100"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Vimes",
+          "page": 3,
+          "post": "1170234",
+          "to": "JA",
+          "ts": "2023-02-22T06:52:40+0100"
+        },
+        {
+          "from": "Vimes",
+          "page": 3,
+          "post": "1170242",
+          "to": "NEJ",
+          "ts": "2023-02-22T07:59:50+0100"
+        }
+      ]
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "Martin3",
+          "page": 4,
+          "post": "1170267",
+          "to": "Ja",
+          "ts": "2023-02-22T09:03:47+0100"
+        },
+        {
+          "from": "Andersson",
+          "page": 4,
+          "post": "1170286",
+          "to": "JA",
+          "ts": "2023-02-22T10:02:02+0100"
+        }
+      ]
+    },
+    "5": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

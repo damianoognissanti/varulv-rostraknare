@@ -1,0 +1,80 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "RasmusL",
+          "page": 1,
+          "post": "1280527",
+          "to": "Big Mama",
+          "ts": "2024-10-25T21:03:10+0200"
+        },
+        {
+          "from": "Octagonal",
+          "page": 1,
+          "post": "1280528",
+          "to": "damogn",
+          "ts": "2024-10-25T21:03:12+0200"
+        },
+        {
+          "from": "damogn",
+          "page": 1,
+          "post": "1280531",
+          "to": "Octagonal",
+          "ts": "2024-10-25T21:05:33+0200"
+        },
+        {
+          "from": "BiobunkerVII",
+          "page": 1,
+          "post": "1280532",
+          "to": "Octagonal",
+          "ts": "2024-10-25T21:05:36+0200"
+        },
+        {
+          "from": "StradhLestat",
+          "page": 1,
+          "post": "1280534",
+          "to": "Octagonal",
+          "ts": "2024-10-25T21:05:54+0200"
+        },
+        {
+          "from": "Octagonal",
+          "page": 1,
+          "post": "1280541",
+          "to": "Big Mama",
+          "ts": "2024-10-25T21:08:39+0200"
+        },
+        {
+          "from": "BiobunkerVII",
+          "page": 1,
+          "post": "1280545",
+          "to": "Big Mama",
+          "ts": "2024-10-25T21:09:25+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": []
+    },
+    "3": {
+      "votes": []
+    },
+    "4": {
+      "votes": []
+    },
+    "5": {
+      "votes": []
+    },
+    "6": {
+      "votes": []
+    },
+    "7": {
+      "votes": []
+    },
+    "8": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

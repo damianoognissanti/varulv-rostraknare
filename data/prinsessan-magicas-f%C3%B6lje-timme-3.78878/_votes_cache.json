@@ -1,0 +1,56 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "1113978",
+          "to": "Parken",
+          "ts": "2022-03-08T21:31:54+0100"
+        },
+        {
+          "from": "Martin3",
+          "page": 1,
+          "post": "1114002",
+          "to": "Parken",
+          "ts": "2022-03-09T07:36:25+0100"
+        },
+        {
+          "from": "Vimes",
+          "page": 1,
+          "post": "1114007",
+          "to": "Parken",
+          "ts": "2022-03-09T08:30:00+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Vimes",
+          "page": 2,
+          "post": "1114018",
+          "to": "Duvslaget",
+          "ts": "2022-03-09T09:08:29+0100"
+        },
+        {
+          "from": "Lukas",
+          "page": 2,
+          "post": "1114024",
+          "to": "duvlaget",
+          "ts": "2022-03-09T10:23:01+0100"
+        },
+        {
+          "from": "Xyas",
+          "page": 2,
+          "post": "1114039",
+          "to": "Parken",
+          "ts": "2022-03-09T13:47:32+0100"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,114 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Brynolf",
+          "page": 1,
+          "post": "1217101",
+          "to": "Hägerstrand",
+          "ts": "2023-11-20T21:29:12+0100"
+        },
+        {
+          "from": "Vimes",
+          "page": 1,
+          "post": "1217103",
+          "to": "Hägerstrand",
+          "ts": "2023-11-20T21:29:47+0100"
+        },
+        {
+          "from": "Anthrox",
+          "page": 1,
+          "post": "1217110",
+          "to": "Hägerstrand",
+          "ts": "2023-11-20T21:34:04+0100"
+        },
+        {
+          "from": "fjodorsenuba",
+          "page": 1,
+          "post": "1217112",
+          "to": "Vimes",
+          "ts": "2023-11-20T21:35:35+0100"
+        },
+        {
+          "from": "Andersson",
+          "page": 1,
+          "post": "1217121",
+          "to": "Octagonal",
+          "ts": "2023-11-20T21:43:44+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Octagonal",
+          "page": 2,
+          "post": "1217130",
+          "to": "Andersson",
+          "ts": "2023-11-20T21:54:38+0100"
+        },
+        {
+          "from": "Hägerstrand",
+          "page": 2,
+          "post": "1217134",
+          "to": "Octagonal",
+          "ts": "2023-11-20T22:02:29+0100"
+        }
+      ]
+    },
+    "3": {
+      "votes": []
+    },
+    "4": {
+      "votes": []
+    },
+    "5": {
+      "votes": []
+    },
+    "6": {
+      "votes": []
+    },
+    "7": {
+      "votes": [
+        {
+          "from": "fjodorsenuba",
+          "page": 7,
+          "post": "1217297",
+          "to": "Hägerstrand",
+          "ts": "2023-11-21T14:06:04+0100"
+        }
+      ]
+    },
+    "8": {
+      "votes": [
+        {
+          "from": "BiobunkerVII",
+          "page": 8,
+          "post": "1217310",
+          "to": "Hägerstrand",
+          "ts": "2023-11-21T15:03:21+0100"
+        },
+        {
+          "from": "Hägerstrand",
+          "page": 8,
+          "post": "1217317",
+          "to": "Brynolf",
+          "ts": "2023-11-21T15:50:02+0100"
+        },
+        {
+          "from": "Andersson",
+          "page": 8,
+          "post": "1217319",
+          "to": "Hägerstrand",
+          "ts": "2023-11-21T16:02:22+0100"
+        }
+      ]
+    },
+    "9": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

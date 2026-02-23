@@ -1,0 +1,24 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "StradhLestat",
+          "page": 1,
+          "post": "1272803",
+          "to": "Mr.J",
+          "ts": "2024-09-20T10:33:01+0200"
+        },
+        {
+          "from": "Mr.J",
+          "page": 1,
+          "post": "1272885",
+          "to": "StradhLestat",
+          "ts": "2024-09-20T12:58:29+0200"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

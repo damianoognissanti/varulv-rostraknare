@@ -1,0 +1,59 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Sidd",
+          "page": 1,
+          "post": "1113804",
+          "to": "Stallet",
+          "ts": "2022-03-07T22:31:00+0100"
+        },
+        {
+          "from": "Empiricus",
+          "page": 1,
+          "post": "1113810",
+          "to": "Kök",
+          "ts": "2022-03-08T06:13:11+0100"
+        },
+        {
+          "from": "fjodorsenuba",
+          "page": 1,
+          "post": "1113814",
+          "to": "Köket",
+          "ts": "2022-03-08T07:20:16+0100"
+        },
+        {
+          "from": "Sidd",
+          "page": 1,
+          "post": "1113818",
+          "to": "Parken",
+          "ts": "2022-03-08T07:42:23+0100"
+        },
+        {
+          "from": "Impetigo",
+          "page": 1,
+          "post": "1113841",
+          "to": "Kök",
+          "ts": "2022-03-08T10:20:07+0100"
+        },
+        {
+          "from": "fjodorsenuba",
+          "page": 1,
+          "post": "1113957",
+          "to": "Parken",
+          "ts": "2022-03-08T20:01:32+0100"
+        },
+        {
+          "from": "fjodorsenuba",
+          "page": 1,
+          "post": "1113960",
+          "to": "Köket",
+          "ts": "2022-03-08T20:43:03+0100"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

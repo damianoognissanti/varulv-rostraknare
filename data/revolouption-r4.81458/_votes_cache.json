@@ -1,0 +1,46 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "1191644",
+          "to": "Impetigo",
+          "ts": "2023-07-18T22:14:57+0200"
+        },
+        {
+          "from": "BiobunkerVII",
+          "page": 1,
+          "post": "1191647",
+          "to": "Impetigo",
+          "ts": "2023-07-18T22:22:26+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "RasmusL",
+          "page": 2,
+          "post": "1191666",
+          "to": "Impetigo",
+          "ts": "2023-07-18T23:16:11+0200"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Octagonal",
+          "page": 3,
+          "post": "1191687",
+          "to": "Impetigo",
+          "ts": "2023-07-19T02:29:48+0200"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

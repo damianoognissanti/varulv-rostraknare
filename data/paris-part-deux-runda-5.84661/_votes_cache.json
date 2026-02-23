@@ -1,0 +1,60 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Sömniga Isaac",
+          "page": 1,
+          "post": "1296108",
+          "to": "Sidd",
+          "ts": "2025-01-15T23:13:29+0100"
+        },
+        {
+          "from": "Sidd",
+          "page": 1,
+          "post": "1296122",
+          "to": "Sömniga Isaac",
+          "ts": "2025-01-15T23:59:40+0100"
+        },
+        {
+          "from": "Hägerstrand",
+          "page": 1,
+          "post": "1296146",
+          "to": "Sidd",
+          "ts": "2025-01-16T08:47:05+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Sidd",
+          "page": 2,
+          "post": "1296264",
+          "to": "Hägerstrand",
+          "ts": "2025-01-16T16:11:30+0100"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Sidd",
+          "page": 3,
+          "post": "1296290",
+          "to": "Sömniga Isaac",
+          "ts": "2025-01-16T19:30:36+0100"
+        },
+        {
+          "from": "Sidd",
+          "page": 3,
+          "post": "1296301",
+          "to": "Hägerstrand",
+          "ts": "2025-01-16T20:47:30+0100"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

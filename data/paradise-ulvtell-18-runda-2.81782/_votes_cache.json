@@ -1,0 +1,49 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": []
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Impetigo",
+          "page": 2,
+          "post": "1200084",
+          "to": "Waterhouse",
+          "ts": "2023-09-05T17:47:10+0200"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Impetigo",
+          "page": 3,
+          "post": "1200118",
+          "to": "Vimes",
+          "ts": "2023-09-05T21:13:58+0200"
+        }
+      ]
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "Waterhouse",
+          "page": 4,
+          "post": "1200189",
+          "to": "Impetigo",
+          "ts": "2023-09-06T07:10:12+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 4,
+          "post": "1200217",
+          "to": "Andersson",
+          "ts": "2023-09-06T08:52:12+0200"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

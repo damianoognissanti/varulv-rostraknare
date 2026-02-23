@@ -1,0 +1,48 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": []
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 2,
+          "post": "1114399",
+          "to": "Bryggeriet",
+          "ts": "2022-03-11T14:42:44+0100"
+        },
+        {
+          "from": "Xyas",
+          "page": 2,
+          "post": "1114400",
+          "to": "bryggeriet",
+          "ts": "2022-03-11T15:08:38+0100"
+        },
+        {
+          "from": "Vimes",
+          "page": 2,
+          "post": "1114403",
+          "to": "Bryggeriet",
+          "ts": "2022-03-11T15:33:58+0100"
+        },
+        {
+          "from": "Lukas",
+          "page": 2,
+          "post": "1114419",
+          "to": "bryggeri",
+          "ts": "2022-03-11T17:13:30+0100"
+        },
+        {
+          "from": "Martin3",
+          "page": 2,
+          "post": "1114421",
+          "to": "Bryggeriet",
+          "ts": "2022-03-11T17:34:12+0100"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

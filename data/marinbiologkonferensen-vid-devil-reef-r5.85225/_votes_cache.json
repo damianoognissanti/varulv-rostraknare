@@ -1,0 +1,80 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Anthrox",
+          "page": 1,
+          "post": "1313270",
+          "to": "Vimes",
+          "ts": "2025-04-13T09:05:10+0200"
+        },
+        {
+          "from": "Impetigo",
+          "page": 1,
+          "post": "1313271",
+          "to": "Vimes",
+          "ts": "2025-04-13T09:05:18+0200"
+        },
+        {
+          "from": "Badmojo",
+          "page": 1,
+          "post": "1313272",
+          "to": "Vimes",
+          "ts": "2025-04-13T09:05:54+0200"
+        },
+        {
+          "from": "Vimes",
+          "page": 1,
+          "post": "1313273",
+          "to": "Impetigo",
+          "ts": "2025-04-13T09:07:14+0200"
+        },
+        {
+          "from": "Brynolf",
+          "page": 1,
+          "post": "1313281",
+          "to": "Vimes",
+          "ts": "2025-04-13T09:24:29+0200"
+        },
+        {
+          "from": "Sidd",
+          "page": 1,
+          "post": "1313284",
+          "to": "Vimes",
+          "ts": "2025-04-13T09:27:15+0200"
+        },
+        {
+          "from": "fjodorsenuba",
+          "page": 1,
+          "post": "1313352",
+          "to": "Sidd",
+          "ts": "2025-04-13T13:08:14+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Vimes",
+          "page": 2,
+          "post": "1313384",
+          "to": "Anthrox",
+          "ts": "2025-04-13T16:00:11+0200"
+        },
+        {
+          "from": "fjodorsenuba",
+          "page": 2,
+          "post": "1313397",
+          "to": "Anthrox",
+          "ts": "2025-04-13T17:24:17+0200"
+        }
+      ]
+    },
+    "3": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

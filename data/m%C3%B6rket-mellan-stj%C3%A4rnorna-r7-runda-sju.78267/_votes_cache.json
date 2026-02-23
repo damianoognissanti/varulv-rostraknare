@@ -1,0 +1,63 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Empiricus",
+          "page": 1,
+          "post": "1094678",
+          "to": "fjodorsenuba",
+          "ts": "2021-11-19T08:48:51+0100"
+        },
+        {
+          "from": "fjodorsenuba",
+          "page": 1,
+          "post": "1094695",
+          "to": "Empirucus",
+          "ts": "2021-11-19T09:50:21+0100"
+        },
+        {
+          "from": "Sidd",
+          "page": 1,
+          "post": "1094697",
+          "to": "Empiricus",
+          "ts": "2021-11-19T10:13:08+0100"
+        },
+        {
+          "from": "Hellzon",
+          "page": 1,
+          "post": "1094728",
+          "to": "Empiricus",
+          "ts": "2021-11-19T12:41:48+0100"
+        },
+        {
+          "from": "Sidd",
+          "page": 1,
+          "post": "1094792",
+          "to": "fjodorsenuba",
+          "ts": "2021-11-19T16:19:23+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Sidd",
+          "page": 2,
+          "post": "1094825",
+          "to": "Empiricus",
+          "ts": "2021-11-19T17:59:58+0100"
+        },
+        {
+          "from": "Empiricus",
+          "page": 2,
+          "post": "1094826",
+          "to": "Basse",
+          "ts": "2021-11-19T18:00:23+0100"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

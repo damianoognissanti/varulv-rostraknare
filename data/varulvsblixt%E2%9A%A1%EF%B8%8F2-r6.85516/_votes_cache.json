@@ -1,0 +1,41 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Sömniga Isaac",
+          "page": 1,
+          "post": "1323683",
+          "to": "RasmusL",
+          "ts": "2025-06-15T22:04:27+0200"
+        },
+        {
+          "from": "Anthrox",
+          "page": 1,
+          "post": "1323684",
+          "to": "Sömniga Isaac",
+          "ts": "2025-06-15T22:06:25+0200"
+        },
+        {
+          "from": "Sömniga Isaac",
+          "page": 1,
+          "post": "1323685",
+          "to": "RasmusL",
+          "ts": "2025-06-15T22:06:29+0200"
+        },
+        {
+          "from": "RasmusL",
+          "page": 1,
+          "post": "1323689",
+          "to": "Sömniga Isaac",
+          "ts": "2025-06-15T22:13:53+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

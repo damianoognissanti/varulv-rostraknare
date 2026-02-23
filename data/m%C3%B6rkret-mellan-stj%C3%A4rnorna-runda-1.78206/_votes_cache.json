@@ -1,0 +1,37 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Vimes",
+          "page": 1,
+          "post": "1092078",
+          "to": "Empiricus",
+          "ts": "2021-11-11T08:15:54+0100"
+        },
+        {
+          "from": "RasmusL",
+          "page": 1,
+          "post": "1092301",
+          "to": "Xyas",
+          "ts": "2021-11-11T14:58:13+0100"
+        },
+        {
+          "from": "BiobunkerVII",
+          "page": 1,
+          "post": "1092329",
+          "to": "Vimes",
+          "ts": "2021-11-11T16:39:21+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": []
+    },
+    "3": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

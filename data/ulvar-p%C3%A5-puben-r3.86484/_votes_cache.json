@@ -1,0 +1,186 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "StradhLestat",
+          "page": 1,
+          "post": "1357880",
+          "to": "Hägerstrand",
+          "ts": "2025-11-18T20:51:25+0100"
+        },
+        {
+          "from": "Sömniga Isaac",
+          "page": 1,
+          "post": "1357883",
+          "to": "Hägerstrand",
+          "ts": "2025-11-18T21:03:03+0100"
+        },
+        {
+          "from": "Vimes",
+          "page": 1,
+          "post": "1357887",
+          "to": "Hägerstrand",
+          "ts": "2025-11-18T21:13:06+0100"
+        },
+        {
+          "from": "Anthrox",
+          "page": 1,
+          "post": "1357892",
+          "to": "Hägerstrand",
+          "ts": "2025-11-18T21:22:18+0100"
+        },
+        {
+          "from": "Brynolf",
+          "page": 1,
+          "post": "1357893",
+          "to": "Hägerstrand",
+          "ts": "2025-11-18T21:22:53+0100"
+        },
+        {
+          "from": "Hägerstrand",
+          "page": 1,
+          "post": "1357896",
+          "to": "Vimes",
+          "ts": "2025-11-18T21:34:32+0100"
+        },
+        {
+          "from": "Hägerstrand",
+          "page": 1,
+          "post": "1357897",
+          "to": "Vimes",
+          "ts": "2025-11-18T21:34:56+0100"
+        },
+        {
+          "from": "Hägerstrand",
+          "page": 1,
+          "post": "1357898",
+          "to": "Vimes",
+          "ts": "2025-11-18T21:35:05+0100"
+        },
+        {
+          "from": "Hägerstrand",
+          "page": 1,
+          "post": "1357899",
+          "to": "Vimes",
+          "ts": "2025-11-18T21:35:16+0100"
+        },
+        {
+          "from": "Hägerstrand",
+          "page": 1,
+          "post": "1357901",
+          "to": "Vimes",
+          "ts": "2025-11-18T21:35:24+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Hägerstrand",
+          "page": 2,
+          "post": "1357902",
+          "to": "Basenanji",
+          "ts": "2025-11-18T21:35:38+0100"
+        },
+        {
+          "from": "Hägerstrand",
+          "page": 2,
+          "post": "1357903",
+          "to": "Vimes",
+          "ts": "2025-11-18T21:35:56+0100"
+        },
+        {
+          "from": "Hägerstrand",
+          "page": 2,
+          "post": "1357904",
+          "to": "Vimes",
+          "ts": "2025-11-18T21:36:05+0100"
+        },
+        {
+          "from": "Hägerstrand",
+          "page": 2,
+          "post": "1357905",
+          "to": "Vimes",
+          "ts": "2025-11-18T21:36:14+0100"
+        },
+        {
+          "from": "Hägerstrand",
+          "page": 2,
+          "post": "1357906",
+          "to": "Vimes",
+          "ts": "2025-11-18T21:36:41+0100"
+        },
+        {
+          "from": "Hägerstrand",
+          "page": 2,
+          "post": "1357907",
+          "to": "Vimes",
+          "ts": "2025-11-18T21:36:51+0100"
+        },
+        {
+          "from": "Hägerstrand",
+          "page": 2,
+          "post": "1357908",
+          "to": "Vimes",
+          "ts": "2025-11-18T21:36:59+0100"
+        },
+        {
+          "from": "Hägerstrand",
+          "page": 2,
+          "post": "1357909",
+          "to": "Vimes",
+          "ts": "2025-11-18T21:37:10+0100"
+        },
+        {
+          "from": "Hägerstrand",
+          "page": 2,
+          "post": "1357910",
+          "to": "Vimes",
+          "ts": "2025-11-18T21:37:19+0100"
+        },
+        {
+          "from": "Brynolf",
+          "page": 2,
+          "post": "1357919",
+          "to": "Vimes",
+          "ts": "2025-11-18T22:23:43+0100"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Big Mama",
+          "page": 3,
+          "post": "1357933",
+          "to": "Vimes",
+          "ts": "2025-11-19T06:20:55+0100"
+        }
+      ]
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "StradhLestat",
+          "page": 4,
+          "post": "1358012",
+          "to": "Vimes",
+          "ts": "2025-11-19T15:40:49+0100"
+        },
+        {
+          "from": "StradhLestat",
+          "page": 4,
+          "post": "1358015",
+          "to": "Big Mama",
+          "ts": "2025-11-19T15:43:29+0100"
+        }
+      ]
+    },
+    "5": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

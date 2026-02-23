@@ -1,0 +1,63 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "LJSLarsson",
+          "page": 1,
+          "post": "860855",
+          "to": "Sodivra",
+          "ts": "2020-04-04T23:09:06+0200"
+        },
+        {
+          "from": "Sodivra",
+          "page": 1,
+          "post": "985679",
+          "to": "Stövelkatten",
+          "ts": "2020-04-04T23:09:52+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 1,
+          "post": "860859",
+          "to": "Ingen",
+          "ts": "2020-04-04T23:20:46+0200"
+        },
+        {
+          "from": "Stövelkatten",
+          "page": 1,
+          "post": "888540",
+          "to": "Sodivra",
+          "ts": "2020-04-05T15:31:38+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 1,
+          "post": "860863",
+          "to": "Stövelkatten",
+          "ts": "2020-04-05T16:08:51+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Khan",
+          "page": 2,
+          "post": "974973",
+          "to": "Stövelkatten",
+          "ts": "2020-04-06T07:58:27+0200"
+        },
+        {
+          "from": "Stövelkatten",
+          "page": 2,
+          "post": "888544",
+          "to": "LJSLarsson",
+          "ts": "2020-04-06T21:49:27+0200"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

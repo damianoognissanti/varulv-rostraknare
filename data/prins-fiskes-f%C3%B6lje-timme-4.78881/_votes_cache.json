@@ -1,0 +1,38 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Empiricus",
+          "page": 1,
+          "post": "1114111",
+          "to": "Bryggeri",
+          "ts": "2022-03-10T06:48:02+0100"
+        },
+        {
+          "from": "fjodorsenuba",
+          "page": 1,
+          "post": "1114228",
+          "to": "Stallet",
+          "ts": "2022-03-10T15:36:04+0100"
+        },
+        {
+          "from": "Sidd",
+          "page": 1,
+          "post": "1114263",
+          "to": "Stallet",
+          "ts": "2022-03-10T17:46:27+0100"
+        },
+        {
+          "from": "Empiricus",
+          "page": 1,
+          "post": "1114283",
+          "to": "Stallet",
+          "ts": "2022-03-10T19:04:23+0100"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

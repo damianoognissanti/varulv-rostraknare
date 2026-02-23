@@ -1,0 +1,102 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "1048603",
+          "to": "Hellzon",
+          "ts": "2021-02-11T21:26:43+0100"
+        },
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "1048605",
+          "to": "Khan",
+          "ts": "2021-02-11T21:37:23+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Empiricus",
+          "page": 2,
+          "post": "1048648",
+          "to": "Basenanji",
+          "ts": "2021-02-11T23:14:59+0100"
+        },
+        {
+          "from": "Sidd",
+          "page": 2,
+          "post": "1048678",
+          "to": "Empiricus",
+          "ts": "2021-02-12T08:38:44+0100"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 3,
+          "post": "1048679",
+          "to": "Hellzon",
+          "ts": "2021-02-12T08:39:06+0100"
+        },
+        {
+          "from": "Basenanji",
+          "page": 3,
+          "post": "1048680",
+          "to": "Empiricus",
+          "ts": "2021-02-12T08:41:22+0100"
+        },
+        {
+          "from": "Hellzon",
+          "page": 3,
+          "post": "1048686",
+          "to": "Basenanji",
+          "ts": "2021-02-12T09:09:08+0100"
+        },
+        {
+          "from": "Khan",
+          "page": 3,
+          "post": "1048729",
+          "to": "Basenanji",
+          "ts": "2021-02-12T11:43:34+0100"
+        }
+      ]
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "Khan",
+          "page": 4,
+          "post": "1048789",
+          "to": "Hellzon",
+          "ts": "2021-02-12T18:11:13+0100"
+        },
+        {
+          "from": "Basenanji",
+          "page": 4,
+          "post": "1048795",
+          "to": "Hellzon",
+          "ts": "2021-02-12T19:22:51+0100"
+        },
+        {
+          "from": "Sidd",
+          "page": 4,
+          "post": "1048830",
+          "to": "Hellzon",
+          "ts": "2021-02-12T22:19:28+0100"
+        }
+      ]
+    },
+    "5": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

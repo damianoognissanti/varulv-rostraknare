@@ -1,0 +1,320 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Impetigo",
+          "page": 1,
+          "post": "1060951",
+          "to": "Halo9000",
+          "ts": "2021-04-27T21:53:46+0200"
+        }
+      ]
+    },
+    "10": {
+      "votes": [
+        {
+          "from": "Björn den gode",
+          "page": 10,
+          "post": "1061296",
+          "to": "Kim Nolemo",
+          "ts": "2021-04-29T08:51:08+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 10,
+          "post": "1061300",
+          "to": "Kim Nolemo",
+          "ts": "2021-04-29T09:02:09+0200"
+        },
+        {
+          "from": "Sidd",
+          "page": 10,
+          "post": "1061302",
+          "to": "Basenanji",
+          "ts": "2021-04-29T09:08:55+0200"
+        }
+      ]
+    },
+    "11": {
+      "votes": [
+        {
+          "from": "Korpa",
+          "page": 11,
+          "post": "1061330",
+          "to": "Kim Nolemo",
+          "ts": "2021-04-29T10:02:46+0200"
+        }
+      ]
+    },
+    "12": {
+      "votes": []
+    },
+    "13": {
+      "votes": [
+        {
+          "from": "Vimes",
+          "page": 13,
+          "post": "1061409",
+          "to": "Halo9000",
+          "ts": "2021-04-29T13:27:12+0200"
+        }
+      ]
+    },
+    "14": {
+      "votes": [
+        {
+          "from": "Kim Nolemo",
+          "page": 14,
+          "post": "1061427",
+          "to": "Björn den gode",
+          "ts": "2021-04-29T14:27:22+0200"
+        },
+        {
+          "from": "Vimes",
+          "page": 14,
+          "post": "1061433",
+          "to": "Björn den gode",
+          "ts": "2021-04-29T14:34:58+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 14,
+          "post": "1061440",
+          "to": "Halo9000",
+          "ts": "2021-04-29T15:00:06+0200"
+        }
+      ]
+    },
+    "15": {
+      "votes": []
+    },
+    "16": {
+      "votes": []
+    },
+    "17": {
+      "votes": [
+        {
+          "from": "Halo9000",
+          "page": 17,
+          "post": "1061528",
+          "to": "Impetigo",
+          "ts": "2021-04-29T18:30:46+0200"
+        },
+        {
+          "from": "Impetigo",
+          "page": 17,
+          "post": "1061539",
+          "to": "Björn den gode",
+          "ts": "2021-04-29T18:54:12+0200"
+        }
+      ]
+    },
+    "18": {
+      "votes": [
+        {
+          "from": "Sidd",
+          "page": 18,
+          "post": "1061546",
+          "to": "Ingen",
+          "ts": "2021-04-29T19:02:49+0200"
+        },
+        {
+          "from": "Halo9000",
+          "page": 18,
+          "post": "1061556",
+          "to": "BDG",
+          "ts": "2021-04-29T19:12:52+0200"
+        }
+      ]
+    },
+    "19": {
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 19,
+          "post": "1061573",
+          "to": "Halo9000",
+          "ts": "2021-04-29T19:34:30+0200"
+        },
+        {
+          "from": "Björn den gode",
+          "page": 19,
+          "post": "1061587",
+          "to": "Halo Utöver det så tror jag ju inte att jag kan säga så mycket som kommer skifta drevet",
+          "ts": "2021-04-29T19:54:34+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Sidd",
+          "page": 2,
+          "post": "1060976",
+          "to": "Björn den gode",
+          "ts": "2021-04-27T22:57:52+0200"
+        },
+        {
+          "from": "Impetigo",
+          "page": 2,
+          "post": "1060994",
+          "to": "Björn den gode",
+          "ts": "2021-04-28T06:30:38+0200"
+        },
+        {
+          "from": "Vimes",
+          "page": 2,
+          "post": "1061001",
+          "to": "Björn den gode",
+          "ts": "2021-04-28T07:56:40+0200"
+        }
+      ]
+    },
+    "20": {
+      "votes": [
+        {
+          "from": "Impetigo",
+          "page": 20,
+          "post": "1061624",
+          "to": "Halo9000",
+          "ts": "2021-04-29T20:34:18+0200"
+        }
+      ]
+    },
+    "21": {
+      "votes": [
+        {
+          "from": "Impetigo",
+          "page": 21,
+          "post": "1061637",
+          "to": "Halo9000",
+          "ts": "2021-04-29T20:41:20+0200"
+        },
+        {
+          "from": "Impetigo",
+          "page": 21,
+          "post": "1061645",
+          "to": "Halo9000",
+          "ts": "2021-04-29T20:43:50+0200"
+        }
+      ]
+    },
+    "22": {
+      "votes": [
+        {
+          "from": "Vimes",
+          "page": 22,
+          "post": "1061657",
+          "to": "Halo9000",
+          "ts": "2021-04-29T20:59:52+0200"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 3,
+          "post": "1061006",
+          "to": "Halo9000",
+          "ts": "2021-04-28T08:10:11+0200"
+        }
+      ]
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "Xyas",
+          "page": 4,
+          "post": "1061038",
+          "to": "Halo9000",
+          "ts": "2021-04-28T09:12:31+0200"
+        },
+        {
+          "from": "Björn den gode",
+          "page": 4,
+          "post": "1061045",
+          "to": "Impetigo",
+          "ts": "2021-04-28T09:31:22+0200"
+        },
+        {
+          "from": "Halo9000",
+          "page": 4,
+          "post": "1061046",
+          "to": "Impetigo",
+          "ts": "2021-04-28T09:34:13+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 4,
+          "post": "1061089",
+          "to": "Björn den gode",
+          "ts": "2021-04-28T11:09:48+0200"
+        }
+      ]
+    },
+    "5": {
+      "votes": []
+    },
+    "6": {
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 6,
+          "post": "1061172",
+          "to": "Impetigo",
+          "ts": "2021-04-28T17:30:57+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 6,
+          "post": "1061174",
+          "to": "Impetigo",
+          "ts": "2021-04-28T17:37:10+0200"
+        }
+      ]
+    },
+    "7": {
+      "votes": []
+    },
+    "8": {
+      "votes": [
+        {
+          "from": "Sidd",
+          "page": 8,
+          "post": "1061226",
+          "to": "Ingen",
+          "ts": "2021-04-28T22:26:58+0200"
+        },
+        {
+          "from": "Korpa",
+          "page": 8,
+          "post": "1061248",
+          "to": "Sidd",
+          "ts": "2021-04-28T23:42:30+0200"
+        }
+      ]
+    },
+    "9": {
+      "votes": [
+        {
+          "from": "Impetigo",
+          "page": 9,
+          "post": "1061257",
+          "to": "Kim Nolemo",
+          "ts": "2021-04-29T07:04:40+0200"
+        },
+        {
+          "from": "Halo9000",
+          "page": 9,
+          "post": "1061258",
+          "to": "Basenanji",
+          "ts": "2021-04-29T07:11:21+0200"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

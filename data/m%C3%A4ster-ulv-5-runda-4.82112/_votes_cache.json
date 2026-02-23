@@ -1,0 +1,245 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Waterhouse",
+          "page": 1,
+          "post": "1210856",
+          "to": "Anthrox",
+          "ts": "2023-10-19T22:06:47+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "1210859",
+          "to": "LegoIvar",
+          "ts": "2023-10-19T22:10:39+0200"
+        },
+        {
+          "from": "Hägerstrand",
+          "page": 1,
+          "post": "1210860",
+          "to": "Anthrox",
+          "ts": "2023-10-19T22:11:12+0200"
+        },
+        {
+          "from": "Anthrox",
+          "page": 1,
+          "post": "1210865",
+          "to": "Impetigo",
+          "ts": "2023-10-19T22:15:40+0200"
+        },
+        {
+          "from": "Andersson",
+          "page": 1,
+          "post": "1210870",
+          "to": "Skarpskytten",
+          "ts": "2023-10-19T22:20:27+0200"
+        },
+        {
+          "from": "Octagonal",
+          "page": 1,
+          "post": "1210871",
+          "to": "Impetigo",
+          "ts": "2023-10-19T22:20:33+0200"
+        }
+      ]
+    },
+    "10": {
+      "votes": []
+    },
+    "11": {
+      "votes": []
+    },
+    "12": {
+      "votes": []
+    },
+    "13": {
+      "votes": [
+        {
+          "from": "HerrK",
+          "page": 13,
+          "post": "1211264",
+          "to": "Anthrox",
+          "ts": "2023-10-20T20:17:40+0200"
+        },
+        {
+          "from": "Impetigo",
+          "page": 13,
+          "post": "1211286",
+          "to": "LegoIvar",
+          "ts": "2023-10-20T21:02:44+0200"
+        },
+        {
+          "from": "Brynolf",
+          "page": 13,
+          "post": "1211287",
+          "to": "Skarpskytten",
+          "ts": "2023-10-20T21:07:35+0200"
+        }
+      ]
+    },
+    "14": {
+      "votes": [
+        {
+          "from": "HerrK",
+          "page": 14,
+          "post": "1211327",
+          "to": "Impetigo",
+          "ts": "2023-10-20T23:43:41+0200"
+        }
+      ]
+    },
+    "15": {
+      "votes": [
+        {
+          "from": "Waterhouse",
+          "page": 15,
+          "post": "1211339",
+          "to": "LegoIvar",
+          "ts": "2023-10-21T05:18:51+0200"
+        }
+      ]
+    },
+    "16": {
+      "votes": [
+        {
+          "from": "Brynolf",
+          "page": 16,
+          "post": "1211375",
+          "to": "Impetigo",
+          "ts": "2023-10-21T09:28:14+0200"
+        },
+        {
+          "from": "Brynolf",
+          "page": 16,
+          "post": "1211379",
+          "to": "Andersson",
+          "ts": "2023-10-21T09:39:40+0200"
+        },
+        {
+          "from": "Hägerstrand",
+          "page": 16,
+          "post": "1211393",
+          "to": "Impetigo",
+          "ts": "2023-10-21T09:59:41+0200"
+        }
+      ]
+    },
+    "17": {
+      "votes": [
+        {
+          "from": "Andersson",
+          "page": 17,
+          "post": "1211402",
+          "to": "Impetigo",
+          "ts": "2023-10-21T10:16:58+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 17,
+          "post": "1211404",
+          "to": "Impetigo",
+          "ts": "2023-10-21T10:17:36+0200"
+        }
+      ]
+    },
+    "18": {
+      "votes": []
+    },
+    "19": {
+      "votes": [
+        {
+          "from": "Impetigo",
+          "page": 19,
+          "post": "1211473",
+          "to": "Andersson",
+          "ts": "2023-10-21T11:54:15+0200"
+        },
+        {
+          "from": "Vimes",
+          "page": 19,
+          "post": "1211480",
+          "to": "Anthrox",
+          "ts": "2023-10-21T12:01:26+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Impetigo",
+          "page": 2,
+          "post": "1210909",
+          "to": "Octagonal",
+          "ts": "2023-10-19T23:25:17+0200"
+        },
+        {
+          "from": "Impetigo",
+          "page": 2,
+          "post": "1210910",
+          "to": "Anthrox",
+          "ts": "2023-10-19T23:27:44+0200"
+        }
+      ]
+    },
+    "20": {
+      "votes": []
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Skarpskytten",
+          "page": 3,
+          "post": "1210932",
+          "to": "Anthrox",
+          "ts": "2023-10-20T07:24:54+0200"
+        }
+      ]
+    },
+    "4": {
+      "votes": []
+    },
+    "5": {
+      "votes": []
+    },
+    "6": {
+      "votes": [
+        {
+          "from": "Hägerstrand",
+          "page": 6,
+          "post": "1211039",
+          "to": "Skarpskytten",
+          "ts": "2023-10-20T11:26:17+0200"
+        },
+        {
+          "from": "Skarpskytten",
+          "page": 6,
+          "post": "1211046",
+          "to": "Impetigo",
+          "ts": "2023-10-20T11:49:34+0200"
+        }
+      ]
+    },
+    "7": {
+      "votes": [
+        {
+          "from": "LegoIvar",
+          "page": 7,
+          "post": "1211087",
+          "to": "Impetigo",
+          "ts": "2023-10-20T13:03:14+0200"
+        }
+      ]
+    },
+    "8": {
+      "votes": []
+    },
+    "9": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,81 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "1229380",
+          "to": "fjodorsenuba",
+          "ts": "2024-01-23T21:39:18+0100"
+        },
+        {
+          "from": "Sidd",
+          "page": 1,
+          "post": "1229381",
+          "to": "fjodorsenuba",
+          "ts": "2024-01-23T21:39:34+0100"
+        },
+        {
+          "from": "Hägerstrand",
+          "page": 1,
+          "post": "1229387",
+          "to": "fjodorsenuba",
+          "ts": "2024-01-23T22:16:50+0100"
+        },
+        {
+          "from": "fjodorsenuba",
+          "page": 1,
+          "post": "1229406",
+          "to": "Basenanji",
+          "ts": "2024-01-24T07:20:35+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": []
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Hägerstrand",
+          "page": 3,
+          "post": "1229538",
+          "to": "Genesis",
+          "ts": "2024-01-24T19:30:23+0100"
+        },
+        {
+          "from": "Hägerstrand",
+          "page": 3,
+          "post": "1229540",
+          "to": "fjodorsenuba",
+          "ts": "2024-01-24T19:30:55+0100"
+        }
+      ]
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "fjodorsenuba",
+          "page": 4,
+          "post": "1229566",
+          "to": "Hägerstrand",
+          "ts": "2024-01-24T20:39:33+0100"
+        }
+      ]
+    },
+    "5": {
+      "votes": [
+        {
+          "from": "fjodorsenuba",
+          "page": 5,
+          "post": "1229590",
+          "to": "Genesis",
+          "ts": "2024-01-24T20:53:11+0100"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

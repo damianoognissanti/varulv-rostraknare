@@ -1,0 +1,70 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Brynolf",
+          "page": 1,
+          "post": "1335974",
+          "to": "Brynolf",
+          "ts": "2025-08-16T21:10:02+0200"
+        },
+        {
+          "from": "Anthrox",
+          "page": 1,
+          "post": "1335976",
+          "to": "Hägerstrand",
+          "ts": "2025-08-16T21:14:02+0200"
+        },
+        {
+          "from": "BiobunkerVII",
+          "page": 1,
+          "post": "1335977",
+          "to": "Hägerstrand",
+          "ts": "2025-08-16T21:15:19+0200"
+        },
+        {
+          "from": "Sidd",
+          "page": 1,
+          "post": "1335986",
+          "to": "Hägerstrand",
+          "ts": "2025-08-16T21:35:23+0200"
+        },
+        {
+          "from": "Impetigo",
+          "page": 1,
+          "post": "1335987",
+          "to": "Hägerstrand",
+          "ts": "2025-08-16T21:48:06+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Big Mama",
+          "page": 2,
+          "post": "1336010",
+          "to": "Hägerstrand",
+          "ts": "2025-08-16T23:43:12+0200"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Sysp",
+          "page": 3,
+          "post": "1336059",
+          "to": "Hägerstrand",
+          "ts": "2025-08-17T09:44:29+0200"
+        }
+      ]
+    },
+    "4": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

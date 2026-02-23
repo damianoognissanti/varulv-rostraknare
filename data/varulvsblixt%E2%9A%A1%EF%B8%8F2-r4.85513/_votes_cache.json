@@ -1,0 +1,102 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Vimes",
+          "page": 1,
+          "post": "1323565",
+          "to": "RasmusL",
+          "ts": "2025-06-15T20:02:24+0200"
+        },
+        {
+          "from": "Anthrox",
+          "page": 1,
+          "post": "1323568",
+          "to": "Vimes",
+          "ts": "2025-06-15T20:04:14+0200"
+        },
+        {
+          "from": "Anthrox",
+          "page": 1,
+          "post": "1323577",
+          "to": "RasmusL",
+          "ts": "2025-06-15T20:12:31+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Big Mama",
+          "page": 2,
+          "post": "1323586",
+          "to": "Vimes",
+          "ts": "2025-06-15T20:19:25+0200"
+        },
+        {
+          "from": "Vimes",
+          "page": 2,
+          "post": "1323587",
+          "to": "Sömniga Isaac",
+          "ts": "2025-06-15T20:20:58+0200"
+        },
+        {
+          "from": "Sömniga Isaac",
+          "page": 2,
+          "post": "1323590",
+          "to": "RasmusL",
+          "ts": "2025-06-15T20:33:46+0200"
+        },
+        {
+          "from": "Impetigo",
+          "page": 2,
+          "post": "1323598",
+          "to": "RasmusL",
+          "ts": "2025-06-15T20:48:15+0200"
+        },
+        {
+          "from": "RasmusL",
+          "page": 2,
+          "post": "1323601",
+          "to": "Sömniga Isaac",
+          "ts": "2025-06-15T20:50:22+0200"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Impetigo",
+          "page": 3,
+          "post": "1323612",
+          "to": "Big Mama",
+          "ts": "2025-06-15T20:57:08+0200"
+        },
+        {
+          "from": "Sömniga Isaac",
+          "page": 3,
+          "post": "1323613",
+          "to": "Vimes",
+          "ts": "2025-06-15T20:58:01+0200"
+        },
+        {
+          "from": "Anthrox",
+          "page": 3,
+          "post": "1323616",
+          "to": "Impetigo",
+          "ts": "2025-06-15T20:59:52+0200"
+        },
+        {
+          "from": "Vimes",
+          "page": 3,
+          "post": "1323617",
+          "to": "RasmusL",
+          "ts": "2025-06-15T21:00:12+0200"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

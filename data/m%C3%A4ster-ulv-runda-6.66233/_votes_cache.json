@@ -1,0 +1,138 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "LJSLarsson",
+          "page": 1,
+          "post": "860665",
+          "to": "Vicotnik",
+          "ts": "2017-07-11T22:25:17+0200"
+        },
+        {
+          "from": "Halo77",
+          "page": 1,
+          "post": "1012082",
+          "to": "Basse",
+          "ts": "2017-07-11T22:38:32+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "924145",
+          "to": "Halo 77",
+          "ts": "2017-07-11T22:42:00+0200"
+        },
+        {
+          "from": "Vicotnik",
+          "page": 1,
+          "post": "840995",
+          "to": "Halo77",
+          "ts": "2017-07-11T23:39:49+0200"
+        },
+        {
+          "from": "Halo77",
+          "page": 1,
+          "post": "1012083",
+          "to": "Basse",
+          "ts": "2017-07-12T01:39:34+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "924146",
+          "to": "Ingen",
+          "ts": "2017-07-12T09:39:57+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Vicotnik",
+          "page": 2,
+          "post": "841001",
+          "to": "Ingen",
+          "ts": "2017-07-12T15:05:42+0200"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 3,
+          "post": "924152",
+          "to": "LJS",
+          "ts": "2017-07-13T00:25:45+0200"
+        },
+        {
+          "from": "Vicotnik",
+          "page": 3,
+          "post": "841008",
+          "to": "Basse",
+          "ts": "2017-07-13T11:24:23+0200"
+        }
+      ]
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "LJSLarsson",
+          "page": 4,
+          "post": "860675",
+          "to": "Basse",
+          "ts": "2017-07-13T13:43:08+0200"
+        },
+        {
+          "from": "Halo77",
+          "page": 4,
+          "post": "1012103",
+          "to": "LJSLarsson",
+          "ts": "2017-07-13T15:17:57+0200"
+        }
+      ]
+    },
+    "5": {
+      "votes": []
+    },
+    "6": {
+      "votes": [
+        {
+          "from": "LJSLarsson",
+          "page": 6,
+          "post": "860691",
+          "to": "Ingen",
+          "ts": "2017-07-13T21:00:46+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 6,
+          "post": "924176",
+          "to": "Halo77",
+          "ts": "2017-07-13T21:03:44+0200"
+        }
+      ]
+    },
+    "7": {
+      "votes": [
+        {
+          "from": "Halo77",
+          "page": 7,
+          "post": "1012104",
+          "to": "Basse",
+          "ts": "2017-07-13T21:38:51+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 7,
+          "post": "860697",
+          "to": "Basse",
+          "ts": "2017-07-13T21:46:54+0200"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

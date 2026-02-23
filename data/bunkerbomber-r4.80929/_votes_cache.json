@@ -1,0 +1,40 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Impetigo",
+          "page": 1,
+          "post": "1175955",
+          "to": "Basenanji",
+          "ts": "2023-03-27T21:08:28+0200"
+        },
+        {
+          "from": "Empiricus",
+          "page": 1,
+          "post": "1175957",
+          "to": "Basenanji",
+          "ts": "2023-03-27T21:09:02+0200"
+        },
+        {
+          "from": "Octagonal",
+          "page": 1,
+          "post": "1175959",
+          "to": "Basenanji",
+          "ts": "2023-03-27T21:13:55+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": []
+    },
+    "3": {
+      "votes": []
+    },
+    "4": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

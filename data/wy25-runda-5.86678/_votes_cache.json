@@ -1,0 +1,119 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Octagonal",
+          "page": 1,
+          "post": "1365349",
+          "to": "fjodorsenuba",
+          "ts": "2025-12-19T21:10:15+0100"
+        },
+        {
+          "from": "Octagonal",
+          "page": 1,
+          "post": "1365351",
+          "to": "Sömniga Isaac",
+          "ts": "2025-12-19T21:12:30+0100"
+        },
+        {
+          "from": "Anthrox",
+          "page": 1,
+          "post": "1365354",
+          "to": "Sömniga Isaac",
+          "ts": "2025-12-19T21:13:56+0100"
+        },
+        {
+          "from": "Big Mama",
+          "page": 1,
+          "post": "1365368",
+          "to": "Sömniga Isaac",
+          "ts": "2025-12-19T21:35:48+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "RasmusL",
+          "page": 2,
+          "post": "1365371",
+          "to": "Sömniga Isaac",
+          "ts": "2025-12-19T21:42:38+0100"
+        },
+        {
+          "from": "Khan",
+          "page": 2,
+          "post": "1365379",
+          "to": "Sömniga Isaac",
+          "ts": "2025-12-19T22:06:46+0100"
+        },
+        {
+          "from": "Sömniga Isaac",
+          "page": 2,
+          "post": "1365380",
+          "to": "fjodorsenuba",
+          "ts": "2025-12-19T22:11:04+0100"
+        },
+        {
+          "from": "Sömniga Isaac",
+          "page": 2,
+          "post": "1365387",
+          "to": "Brynolf",
+          "ts": "2025-12-19T22:25:03+0100"
+        },
+        {
+          "from": "Octagonal",
+          "page": 2,
+          "post": "1365388",
+          "to": "fjodorsenuba",
+          "ts": "2025-12-19T22:28:33+0100"
+        },
+        {
+          "from": "Sömniga Isaac",
+          "page": 2,
+          "post": "1365389",
+          "to": "fjodorsenuba",
+          "ts": "2025-12-19T22:31:12+0100"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Sidd",
+          "page": 3,
+          "post": "1365471",
+          "to": "fjodorsenuba",
+          "ts": "2025-12-20T12:08:42+0100"
+        }
+      ]
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "Vimes",
+          "page": 4,
+          "post": "1365472",
+          "to": "fjodorsenuba",
+          "ts": "2025-12-20T12:10:13+0100"
+        },
+        {
+          "from": "Hägerstrand",
+          "page": 4,
+          "post": "1365474",
+          "to": "fjodorsenuba",
+          "ts": "2025-12-20T12:23:44+0100"
+        }
+      ]
+    },
+    "5": {
+      "votes": []
+    },
+    "6": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

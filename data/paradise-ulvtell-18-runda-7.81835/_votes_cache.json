@@ -1,0 +1,123 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Anthrox",
+          "page": 1,
+          "post": "1201841",
+          "to": "Impetigo",
+          "ts": "2023-09-11T18:45:16+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "fjodorsenuba",
+          "page": 2,
+          "post": "1201985",
+          "to": "Waterhouse",
+          "ts": "2023-09-12T10:28:09+0200"
+        },
+        {
+          "from": "Andersson",
+          "page": 2,
+          "post": "1201988",
+          "to": "Waterhouse",
+          "ts": "2023-09-12T10:40:20+0200"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "RasmusL",
+          "page": 3,
+          "post": "1202058",
+          "to": "Basenanji",
+          "ts": "2023-09-12T12:43:33+0200"
+        },
+        {
+          "from": "Impetigo",
+          "page": 3,
+          "post": "1202068",
+          "to": "Basenanji",
+          "ts": "2023-09-12T12:55:10+0200"
+        }
+      ]
+    },
+    "4": {
+      "votes": []
+    },
+    "5": {
+      "votes": []
+    },
+    "6": {
+      "votes": [
+        {
+          "from": "Sidd",
+          "page": 6,
+          "post": "1202203",
+          "to": "Vimes",
+          "ts": "2023-09-12T18:56:08+0200"
+        },
+        {
+          "from": "Andersson",
+          "page": 6,
+          "post": "1202204",
+          "to": "Basenanji",
+          "ts": "2023-09-12T18:57:32+0200"
+        },
+        {
+          "from": "Andersson",
+          "page": 6,
+          "post": "1202205",
+          "to": "Basenanji",
+          "ts": "2023-09-12T18:57:51+0200"
+        },
+        {
+          "from": "Impetigo",
+          "page": 6,
+          "post": "1202208",
+          "to": "Waterhouse",
+          "ts": "2023-09-12T18:59:58+0200"
+        },
+        {
+          "from": "Andersson",
+          "page": 6,
+          "post": "1202218",
+          "to": "Basenanji",
+          "ts": "2023-09-12T19:08:02+0200"
+        },
+        {
+          "from": "Impetigo",
+          "page": 6,
+          "post": "1202219",
+          "to": "Basenanji",
+          "ts": "2023-09-12T19:08:59+0200"
+        },
+        {
+          "from": "Sidd",
+          "page": 6,
+          "post": "1202221",
+          "to": "Waterhouse",
+          "ts": "2023-09-12T19:12:55+0200"
+        }
+      ]
+    },
+    "7": {
+      "votes": [
+        {
+          "from": "RasmusL",
+          "page": 7,
+          "post": "1202225",
+          "to": "Basenanji",
+          "ts": "2023-09-12T19:16:34+0200"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

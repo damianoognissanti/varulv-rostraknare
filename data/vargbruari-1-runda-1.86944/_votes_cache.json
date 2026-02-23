@@ -1,0 +1,116 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Octagonal",
+          "page": 1,
+          "post": "1374712",
+          "to": "Impetigo",
+          "ts": "2026-02-01T01:04:11+0100"
+        },
+        {
+          "from": "StradhLestat",
+          "page": 1,
+          "post": "1374724",
+          "to": "Octagonal",
+          "ts": "2026-02-01T08:45:38+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Octagonal",
+          "page": 2,
+          "post": "1374842",
+          "to": "Anthrox",
+          "ts": "2026-02-01T18:18:58+0100"
+        },
+        {
+          "from": "Impetigo",
+          "page": 2,
+          "post": "1374881",
+          "to": "Sysp",
+          "ts": "2026-02-01T21:38:56+0100"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Sysp",
+          "page": 3,
+          "post": "1374906",
+          "to": "Anthrox",
+          "ts": "2026-02-01T23:27:30+0100"
+        },
+        {
+          "from": "Anthrox",
+          "page": 3,
+          "post": "1374912",
+          "to": "Sysp",
+          "ts": "2026-02-02T00:01:29+0100"
+        },
+        {
+          "from": "Big Mama",
+          "page": 3,
+          "post": "1374916",
+          "to": "Octagonal",
+          "ts": "2026-02-02T00:25:52+0100"
+        }
+      ]
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "Octagonal",
+          "page": 4,
+          "post": "1375074",
+          "to": "Sysp",
+          "ts": "2026-02-02T16:06:49+0100"
+        },
+        {
+          "from": "Brynolf",
+          "page": 4,
+          "post": "1375082",
+          "to": "Sysp",
+          "ts": "2026-02-02T17:12:56+0100"
+        },
+        {
+          "from": "Impetigo",
+          "page": 4,
+          "post": "1375095",
+          "to": "Octagonal",
+          "ts": "2026-02-02T18:00:29+0100"
+        },
+        {
+          "from": "Sysp",
+          "page": 4,
+          "post": "1375101",
+          "to": "Octagonal",
+          "ts": "2026-02-02T18:12:44+0100"
+        }
+      ]
+    },
+    "5": {
+      "votes": []
+    },
+    "6": {
+      "votes": [
+        {
+          "from": "Brynolf",
+          "page": 6,
+          "post": "1375149",
+          "to": "Anthrox",
+          "ts": "2026-02-02T19:47:17+0100"
+        }
+      ]
+    },
+    "7": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

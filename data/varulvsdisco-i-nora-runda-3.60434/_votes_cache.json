@@ -1,0 +1,173 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Recca",
+          "page": 1,
+          "post": "814012",
+          "to": "Dragonborn",
+          "ts": "2013-09-08T22:30:58+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 1,
+          "post": "814042",
+          "to": "Basse",
+          "ts": "2013-09-09T09:09:14+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "814043",
+          "to": "Xyas",
+          "ts": "2013-09-09T09:38:54+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "814044",
+          "to": "Arvid",
+          "ts": "2013-09-09T09:46:22+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "814044",
+          "to": "Arvid",
+          "ts": "2013-09-09T09:46:22+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "814044",
+          "to": "Arvid",
+          "ts": "2013-09-09T09:46:22+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "814044",
+          "to": "Arvid",
+          "ts": "2013-09-09T09:46:22+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Xyas",
+          "page": 2,
+          "post": "814075",
+          "to": "Lukas",
+          "ts": "2013-09-09T12:05:34+0200"
+        },
+        {
+          "from": "Recca",
+          "page": 2,
+          "post": "814083",
+          "to": "Basenanji",
+          "ts": "2013-09-09T12:33:33+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 2,
+          "post": "814118",
+          "to": "Lu-kaazh",
+          "ts": "2013-09-09T15:46:14+0200"
+        },
+        {
+          "from": "Sodivra",
+          "page": 2,
+          "post": "814130",
+          "to": "Lu-kaazh",
+          "ts": "2013-09-09T17:15:15+0200"
+        },
+        {
+          "from": "Björn den gode",
+          "page": 2,
+          "post": "814131",
+          "to": "Dragonborn",
+          "ts": "2013-09-09T17:27:50+0200"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Konrad Konvalj",
+          "page": 3,
+          "post": "814169",
+          "to": "ARVID men jag sket i det och väntade in R3 och nu har ju Arvid snäppat upp igen",
+          "ts": "2013-09-09T22:03:49+0200"
+        },
+        {
+          "from": "Björn den gode",
+          "page": 3,
+          "post": "814173",
+          "to": "Lu-kaazh",
+          "ts": "2013-09-09T22:31:49+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 3,
+          "post": "814213",
+          "to": "Dragonborn",
+          "ts": "2013-09-10T07:38:34+0200"
+        }
+      ]
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "Recca",
+          "page": 4,
+          "post": "814322",
+          "to": "Dragonborn",
+          "ts": "2013-09-10T16:38:15+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 4,
+          "post": "814337",
+          "to": "Dragonborn",
+          "ts": "2013-09-10T17:38:20+0200"
+        },
+        {
+          "from": "Konrad Konvalj",
+          "page": 4,
+          "post": "814344",
+          "to": "Dragonborn",
+          "ts": "2013-09-10T18:00:14+0200"
+        },
+        {
+          "from": "Brynolf",
+          "page": 4,
+          "post": "814350",
+          "to": "Dragonborn",
+          "ts": "2013-09-10T18:35:43+0200"
+        }
+      ]
+    },
+    "5": {
+      "votes": [
+        {
+          "from": "Sodivra",
+          "page": 5,
+          "post": "814375",
+          "to": "Dragonborn",
+          "ts": "2013-09-10T21:48:45+0200"
+        },
+        {
+          "from": "Sodivra",
+          "page": 5,
+          "post": "814378",
+          "to": "Lu-kaazh",
+          "ts": "2013-09-10T21:57:39+0200"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

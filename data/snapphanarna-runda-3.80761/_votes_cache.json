@@ -1,0 +1,125 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "RasmusL",
+          "page": 1,
+          "post": "1170872",
+          "to": "JA - Vilket innebär att ni stödjer korpralens förslag",
+          "ts": "2023-02-24T09:36:38+0100"
+        },
+        {
+          "from": "RasmusL",
+          "page": 1,
+          "post": "1170872",
+          "to": "NEJ - Vilket innebär att ni motsätter er korpralens förslag",
+          "ts": "2023-02-24T09:36:38+0100"
+        },
+        {
+          "from": "Genesis",
+          "page": 1,
+          "post": "1170922",
+          "to": "JA",
+          "ts": "2023-02-24T11:38:31+0100"
+        },
+        {
+          "from": "Vimes",
+          "page": 1,
+          "post": "1170926",
+          "to": "JA",
+          "ts": "2023-02-24T11:55:12+0100"
+        },
+        {
+          "from": "BiobunkerVII",
+          "page": 1,
+          "post": "1170929",
+          "to": "Ja",
+          "ts": "2023-02-24T12:15:16+0100"
+        }
+      ]
+    },
+    "10": {
+      "votes": [
+        {
+          "from": "BiobunkerVII",
+          "page": 10,
+          "post": "1171265",
+          "to": "Ja",
+          "ts": "2023-02-25T14:07:52+0100"
+        },
+        {
+          "from": "Martin3",
+          "page": 10,
+          "post": "1171322",
+          "to": "Ja",
+          "ts": "2023-02-25T19:22:46+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Octagonal",
+          "page": 2,
+          "post": "1170952",
+          "to": "JA",
+          "ts": "2023-02-24T12:54:35+0100"
+        },
+        {
+          "from": "Impetigo",
+          "page": 2,
+          "post": "1170969",
+          "to": "NEJ",
+          "ts": "2023-02-24T13:54:54+0100"
+        }
+      ]
+    },
+    "3": {
+      "votes": []
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "BiobunkerVII",
+          "page": 4,
+          "post": "1171011",
+          "to": "Nej",
+          "ts": "2023-02-24T16:50:51+0100"
+        },
+        {
+          "from": "Andersson",
+          "page": 4,
+          "post": "1171026",
+          "to": "JA",
+          "ts": "2023-02-24T18:35:59+0100"
+        }
+      ]
+    },
+    "5": {
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 5,
+          "post": "1171048",
+          "to": "NEJ",
+          "ts": "2023-02-24T20:11:04+0100"
+        }
+      ]
+    },
+    "6": {
+      "votes": []
+    },
+    "7": {
+      "votes": []
+    },
+    "8": {
+      "votes": []
+    },
+    "9": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

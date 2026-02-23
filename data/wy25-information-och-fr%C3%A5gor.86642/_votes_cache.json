@@ -1,0 +1,23 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "fjodorsenuba",
+          "page": 1,
+          "post": "1363244",
+          "to": "fjodorsenuba",
+          "ts": "2025-12-14T15:39:45+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": []
+    },
+    "3": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

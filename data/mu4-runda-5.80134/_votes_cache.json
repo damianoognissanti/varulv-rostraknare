@@ -1,0 +1,77 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Konrad Konvalj",
+          "page": 1,
+          "post": "1150758",
+          "to": "Recca",
+          "ts": "2022-10-29T22:17:05+0200"
+        },
+        {
+          "from": "Recca",
+          "page": 1,
+          "post": "1150766",
+          "to": "Konrad Konvalj",
+          "ts": "2022-10-29T23:03:24+0200"
+        },
+        {
+          "from": "Konrad Konvalj",
+          "page": 1,
+          "post": "1150769",
+          "to": "Octagonal",
+          "ts": "2022-10-29T23:09:00+0200"
+        },
+        {
+          "from": "Recca",
+          "page": 1,
+          "post": "1150775",
+          "to": "Octagonal",
+          "ts": "2022-10-29T23:24:02+0200"
+        },
+        {
+          "from": "Martin3",
+          "page": 1,
+          "post": "1150782",
+          "to": "Octagonal",
+          "ts": "2022-10-30T00:05:15+0200"
+        },
+        {
+          "from": "Octagonal",
+          "page": 1,
+          "post": "1150786",
+          "to": "Konrad Konvalj",
+          "ts": "2022-10-30T00:23:59+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Sidd",
+          "page": 2,
+          "post": "1150843",
+          "to": "Konrad Konvalj",
+          "ts": "2022-10-30T13:39:32+0100"
+        }
+      ]
+    },
+    "3": {
+      "votes": []
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "Vimes",
+          "page": 4,
+          "post": "1150907",
+          "to": "Octagonal",
+          "ts": "2022-10-30T22:00:57+0100"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

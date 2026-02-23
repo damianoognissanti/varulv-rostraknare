@@ -1,0 +1,59 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Feuflux",
+          "page": 1,
+          "post": "1113604",
+          "to": "Bageri",
+          "ts": "2022-03-06T14:28:27+0100"
+        },
+        {
+          "from": "Vimes",
+          "page": 1,
+          "post": "1113609",
+          "to": "Stora salen",
+          "ts": "2022-03-06T16:11:22+0100"
+        },
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "1113677",
+          "to": "Stora Salen",
+          "ts": "2022-03-07T07:37:31+0100"
+        },
+        {
+          "from": "Martin3",
+          "page": 1,
+          "post": "1113686",
+          "to": "Stallet",
+          "ts": "2022-03-07T08:42:01+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Xyas",
+          "page": 2,
+          "post": "1113691",
+          "to": "Stallet",
+          "ts": "2022-03-07T09:07:42+0100"
+        },
+        {
+          "from": "Lukas",
+          "page": 2,
+          "post": "1113743",
+          "to": "Stora salen",
+          "ts": "2022-03-07T16:36:04+0100"
+        }
+      ]
+    },
+    "3": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,92 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "1042343",
+          "to": "LJSLarsson",
+          "ts": "2020-12-30T22:03:12+0100"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 1,
+          "post": "1042349",
+          "to": "Xyas",
+          "ts": "2020-12-30T22:13:43+0100"
+        },
+        {
+          "from": "Vimes",
+          "page": 1,
+          "post": "1042352",
+          "to": "LJSLarsson",
+          "ts": "2020-12-30T22:16:19+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Sidd",
+          "page": 2,
+          "post": "1042356",
+          "to": "Xyas",
+          "ts": "2020-12-30T22:28:48+0100"
+        },
+        {
+          "from": "Xyas",
+          "page": 2,
+          "post": "1042357",
+          "to": "LJSLarsson",
+          "ts": "2020-12-30T22:35:43+0100"
+        },
+        {
+          "from": "Empiricus",
+          "page": 2,
+          "post": "1042360",
+          "to": "LJSLarsson",
+          "ts": "2020-12-30T22:37:23+0100"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "LJSLarsson",
+          "page": 3,
+          "post": "1042401",
+          "to": "Sidd",
+          "ts": "2020-12-31T09:35:05+0100"
+        }
+      ]
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 4,
+          "post": "1042598",
+          "to": "Stövelkatten",
+          "ts": "2021-01-01T17:00:39+0100"
+        },
+        {
+          "from": "Sidd",
+          "page": 4,
+          "post": "1042604",
+          "to": "Stövelkatten",
+          "ts": "2021-01-01T18:05:23+0100"
+        },
+        {
+          "from": "Basenanji",
+          "page": 4,
+          "post": "1042617",
+          "to": "LJSLarsson",
+          "ts": "2021-01-01T19:42:39+0100"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

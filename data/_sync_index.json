@@ -1,0 +1,2453 @@
+{
+  "forum": {
+    "forum_last_page": 21,
+    "last_crawl_unix": 1771839874,
+    "limit_threads": 1,
+    "thread_count": 407
+  },
+  "threads": {
+    "%C3%85lderdomshemmet-runda-1.63435": {
+      "base_url": "https://www.rollspel.nu/threads/%C3%85lderdomshemmet-runda-1.63435/",
+      "last_page_hint": 3,
+      "latest_ts": 1515704538,
+      "title": "Ålderdomshemmet - Runda 1"
+    },
+    "%C3%85lderdomshemmet-runda-2.63436": {
+      "base_url": "https://www.rollspel.nu/threads/%C3%85lderdomshemmet-runda-2.63436/",
+      "last_page_hint": 3,
+      "latest_ts": 1515952593,
+      "title": "Ålderdomshemmet - runda 2"
+    },
+    "%C3%85lderdomshemmet-slut.63437": {
+      "base_url": "https://www.rollspel.nu/threads/%C3%85lderdomshemmet-slut.63437/",
+      "last_page_hint": 1,
+      "latest_ts": 1516692666,
+      "title": "Ålderdomshemmet - slut"
+    },
+    "abditc-runda-1.81321": {
+      "base_url": "https://www.rollspel.nu/threads/abditc-runda-1.81321/",
+      "last_page_hint": 19,
+      "latest_ts": 1686682816,
+      "title": "[ABDitC] Runda 1"
+    },
+    "abditc-runda-2.81330": {
+      "base_url": "https://www.rollspel.nu/threads/abditc-runda-2.81330/",
+      "last_page_hint": 14,
+      "latest_ts": 1686859016,
+      "title": "[ABDitC] Runda 2"
+    },
+    "abditc-runda-3.81340": {
+      "base_url": "https://www.rollspel.nu/threads/abditc-runda-3.81340/",
+      "last_page_hint": 9,
+      "latest_ts": 1686943897,
+      "title": "[ABDitC] Runda 3"
+    },
+    "abditc-runda-4.81344": {
+      "base_url": "https://www.rollspel.nu/threads/abditc-runda-4.81344/",
+      "last_page_hint": 5,
+      "latest_ts": 1687028868,
+      "title": "[ABDitC] Runda 4"
+    },
+    "abditc-spelet-%C3%A4r-slut.81346": {
+      "base_url": "https://www.rollspel.nu/threads/abditc-spelet-%C3%A4r-slut.81346/",
+      "last_page_hint": 3,
+      "latest_ts": 1687367236,
+      "title": "[ABDitC] Spelet är slut"
+    },
+    "among-us.75933": {
+      "base_url": "https://www.rollspel.nu/threads/among-us.75933/",
+      "last_page_hint": 1,
+      "latest_ts": 1603576297,
+      "title": "Among Us"
+    },
+    "avg%C3%A5ngsklassen-r2.81170": {
+      "base_url": "https://www.rollspel.nu/threads/avg%C3%A5ngsklassen-r2.81170/",
+      "last_page_hint": 17,
+      "latest_ts": 1683914441,
+      "title": "Avgångsklassen R2"
+    },
+    "avg%C3%A5ngsklassen-spelet-%C3%A4r-slut.81188": {
+      "base_url": "https://www.rollspel.nu/threads/avg%C3%A5ngsklassen-spelet-%C3%A4r-slut.81188/",
+      "last_page_hint": 3,
+      "latest_ts": 1684138972,
+      "title": "Avgångsklassen - spelet är slut"
+    },
+    "avg%C3%A5ngsklassen.81151": {
+      "base_url": "https://www.rollspel.nu/threads/avg%C3%A5ngsklassen.81151/",
+      "last_page_hint": 23,
+      "latest_ts": 1683741877,
+      "title": "Avgångsklassen"
+    },
+    "avslutningsklassen-r3.81186": {
+      "base_url": "https://www.rollspel.nu/threads/avslutningsklassen-r3.81186/",
+      "last_page_hint": 3,
+      "latest_ts": 1683921006,
+      "title": "Avslutningsklassen R3"
+    },
+    "bamse-och-hans-vener-r1.85879": {
+      "base_url": "https://www.rollspel.nu/threads/bamse-och-hans-vener-r1.85879/",
+      "last_page_hint": 24,
+      "latest_ts": 1755280883,
+      "title": "Bamse och hans vener - R1"
+    },
+    "bamse-och-hans-vener-r2.85887": {
+      "base_url": "https://www.rollspel.nu/threads/bamse-och-hans-vener-r2.85887/",
+      "last_page_hint": 11,
+      "latest_ts": 1755370887,
+      "title": "Bamse och hans vener - R2"
+    },
+    "bamse-och-hans-vener-r3.85891": {
+      "base_url": "https://www.rollspel.nu/threads/bamse-och-hans-vener-r3.85891/",
+      "last_page_hint": 4,
+      "latest_ts": 1755450034,
+      "title": "Bamse och hans vener - R3"
+    },
+    "bamse-och-hans-vener-r4.85900": {
+      "base_url": "https://www.rollspel.nu/threads/bamse-och-hans-vener-r4.85900/",
+      "last_page_hint": 7,
+      "latest_ts": 1755543613,
+      "title": "Bamse och hans vener - R4"
+    },
+    "bamse-och-hans-vener-r5.85912": {
+      "base_url": "https://www.rollspel.nu/threads/bamse-och-hans-vener-r5.85912/",
+      "last_page_hint": 4,
+      "latest_ts": 1755626414,
+      "title": "Bamse och hans vener - R5"
+    },
+    "bamse-och-hans-vener-slut.85917": {
+      "base_url": "https://www.rollspel.nu/threads/bamse-och-hans-vener-slut.85917/",
+      "last_page_hint": 4,
+      "latest_ts": 1755725182,
+      "title": "Bamse och hans vener - SLUT"
+    },
+    "bh-ii-r1.85315": {
+      "base_url": "https://www.rollspel.nu/threads/bh-ii-r1.85315/",
+      "last_page_hint": 32,
+      "latest_ts": 1746558017,
+      "title": "[BH II] - R1"
+    },
+    "bh-ii-r2.85331": {
+      "base_url": "https://www.rollspel.nu/threads/bh-ii-r2.85331/",
+      "last_page_hint": 14,
+      "latest_ts": 1746644411,
+      "title": "[BH II] - R2"
+    },
+    "bh-ii-r3.85336": {
+      "base_url": "https://www.rollspel.nu/threads/bh-ii-r3.85336/",
+      "last_page_hint": 22,
+      "latest_ts": 1746730815,
+      "title": "[BH II] - R3"
+    },
+    "bh-ii-r4.85339": {
+      "base_url": "https://www.rollspel.nu/threads/bh-ii-r4.85339/",
+      "last_page_hint": 14,
+      "latest_ts": 1746817202,
+      "title": "[BH II] - R4"
+    },
+    "bh-ii-r5.85345": {
+      "base_url": "https://www.rollspel.nu/threads/bh-ii-r5.85345/",
+      "last_page_hint": 10,
+      "latest_ts": 1746903609,
+      "title": "[BH II] - R5"
+    },
+    "bh-ii-r6.85349": {
+      "base_url": "https://www.rollspel.nu/threads/bh-ii-r6.85349/",
+      "last_page_hint": 3,
+      "latest_ts": 1746990063,
+      "title": "[BH II] - R6"
+    },
+    "bh-ii-r7.85356": {
+      "base_url": "https://www.rollspel.nu/threads/bh-ii-r7.85356/",
+      "last_page_hint": 4,
+      "latest_ts": 1747076407,
+      "title": "[BH II] - R7"
+    },
+    "bh-ii-spelet-%C3%A4r-slut.85362": {
+      "base_url": "https://www.rollspel.nu/threads/bh-ii-spelet-%C3%A4r-slut.85362/",
+      "last_page_hint": 5,
+      "latest_ts": 1747295310,
+      "title": "[BH II] - Spelet är slut"
+    },
+    "bunkerbomber-boss-battle.80949": {
+      "base_url": "https://www.rollspel.nu/threads/bunkerbomber-boss-battle.80949/",
+      "last_page_hint": 3,
+      "latest_ts": 1680716146,
+      "title": "BUNKERBOMBER BOSS BATTLE"
+    },
+    "bunkerbomber-game-over.80953": {
+      "base_url": "https://www.rollspel.nu/threads/bunkerbomber-game-over.80953/",
+      "last_page_hint": 2,
+      "latest_ts": 1680354008,
+      "title": "BUNKERBOMBER: GAME OVER"
+    },
+    "bunkerbomber-r1.80900": {
+      "base_url": "https://www.rollspel.nu/threads/bunkerbomber-r1.80900/",
+      "last_page_hint": 8,
+      "latest_ts": 1679688005,
+      "title": "BUNKERBOMBER R1"
+    },
+    "bunkerbomber-r2.80910": {
+      "base_url": "https://www.rollspel.nu/threads/bunkerbomber-r2.80910/",
+      "last_page_hint": 10,
+      "latest_ts": 1679857208,
+      "title": "BUNKERBOMBER R2"
+    },
+    "bunkerbomber-r3.80924": {
+      "base_url": "https://www.rollspel.nu/threads/bunkerbomber-r3.80924/",
+      "last_page_hint": 5,
+      "latest_ts": 1679943604,
+      "title": "BUNKERBOMBER R3"
+    },
+    "bunkerbomber-r4.80929": {
+      "base_url": "https://www.rollspel.nu/threads/bunkerbomber-r4.80929/",
+      "last_page_hint": 4,
+      "latest_ts": 1680030038,
+      "title": "BUNKERBOMBER R4"
+    },
+    "bunkerbomber-r5.80938": {
+      "base_url": "https://www.rollspel.nu/threads/bunkerbomber-r5.80938/",
+      "last_page_hint": 4,
+      "latest_ts": 1680116403,
+      "title": "BUNKERBOMBER R5"
+    },
+    "bunkerbomber-r6.80945": {
+      "base_url": "https://www.rollspel.nu/threads/bunkerbomber-r6.80945/",
+      "last_page_hint": 3,
+      "latest_ts": 1680202802,
+      "title": "BUNKERBOMBER R6"
+    },
+    "bybornas-h%C3%B6vding-r1.84472": {
+      "base_url": "https://www.rollspel.nu/threads/bybornas-h%C3%B6vding-r1.84472/",
+      "last_page_hint": 25,
+      "latest_ts": 1734466143,
+      "title": "Bybornas hövding - R1"
+    },
+    "bybornas-h%C3%B6vding-r2.84486": {
+      "base_url": "https://www.rollspel.nu/threads/bybornas-h%C3%B6vding-r2.84486/",
+      "last_page_hint": 18,
+      "latest_ts": 1734552422,
+      "title": "Bybornas hövding - R2"
+    },
+    "bybornas-h%C3%B6vding-r3.84491": {
+      "base_url": "https://www.rollspel.nu/threads/bybornas-h%C3%B6vding-r3.84491/",
+      "last_page_hint": 16,
+      "latest_ts": 1734646697,
+      "title": "Bybornas hövding - R3"
+    },
+    "bybornas-h%C3%B6vding-spelet-slut.84498": {
+      "base_url": "https://www.rollspel.nu/threads/bybornas-h%C3%B6vding-spelet-slut.84498/",
+      "last_page_hint": 5,
+      "latest_ts": 1734773670,
+      "title": "Bybornas hövding - Spelet slut"
+    },
+    "carmilla-vs-dracula-runda-1.84792": {
+      "base_url": "https://www.rollspel.nu/threads/carmilla-vs-dracula-runda-1.84792/",
+      "last_page_hint": 25,
+      "latest_ts": 1738526406,
+      "title": "Carmilla vs. Dracula - Runda 1"
+    },
+    "carmilla-vs-dracula-runda-2.84808": {
+      "base_url": "https://www.rollspel.nu/threads/carmilla-vs-dracula-runda-2.84808/",
+      "last_page_hint": 13,
+      "latest_ts": 1738612804,
+      "title": "Carmilla vs. Dracula - Runda 2"
+    },
+    "carmilla-vs-dracula-runda-3.84819": {
+      "base_url": "https://www.rollspel.nu/threads/carmilla-vs-dracula-runda-3.84819/",
+      "last_page_hint": 12,
+      "latest_ts": 1738699203,
+      "title": "Carmilla vs. Dracula - Runda 3"
+    },
+    "carmilla-vs-dracula-runda-4.84831": {
+      "base_url": "https://www.rollspel.nu/threads/carmilla-vs-dracula-runda-4.84831/",
+      "last_page_hint": 18,
+      "latest_ts": 1738868419,
+      "title": "Carmilla vs. Dracula - Runda 4"
+    },
+    "carmilla-vs-dracula-spelet-%C3%A4r-slut.84836": {
+      "base_url": "https://www.rollspel.nu/threads/carmilla-vs-dracula-spelet-%C3%A4r-slut.84836/",
+      "last_page_hint": 8,
+      "latest_ts": 1739609007,
+      "title": "Carmilla vs. Dracula - Spelet är slut"
+    },
+    "deception-murder-in-hong-kong-%E2%80%93-runda-1-3.72159": {
+      "base_url": "https://www.rollspel.nu/threads/deception-murder-in-hong-kong-%E2%80%93-runda-1-3.72159/",
+      "last_page_hint": 2,
+      "latest_ts": 1501621487,
+      "title": "Deception, murder in Hong Kong – Runda 1/3"
+    },
+    "deception-murder-in-hong-kong-%E2%80%93-runda-2-3.72160": {
+      "base_url": "https://www.rollspel.nu/threads/deception-murder-in-hong-kong-%E2%80%93-runda-2-3.72160/",
+      "last_page_hint": 1,
+      "latest_ts": 1501865796,
+      "title": "Deception, murder in Hong Kong – Runda 2/3"
+    },
+    "deception-murder-in-hong-kong-20-22-augusti.72162": {
+      "base_url": "https://www.rollspel.nu/threads/deception-murder-in-hong-kong-20-22-augusti.72162/",
+      "last_page_hint": 1,
+      "latest_ts": 1503612096,
+      "title": "?Deception: Murder in Hong Kong. 20-22 augusti."
+    },
+    "det-dolda-ger-kaos-r1.85092": {
+      "base_url": "https://www.rollspel.nu/threads/det-dolda-ger-kaos-r1.85092/",
+      "last_page_hint": 13,
+      "latest_ts": 1742673668,
+      "title": "Det dolda ger kaos R1"
+    },
+    "det-dolda-ger-kaos-r2.85095": {
+      "base_url": "https://www.rollspel.nu/threads/det-dolda-ger-kaos-r2.85095/",
+      "last_page_hint": 18,
+      "latest_ts": 1742760020,
+      "title": "Det dolda ger Kaos R2"
+    },
+    "det-dolda-ger-kaos-r3.85103": {
+      "base_url": "https://www.rollspel.nu/threads/det-dolda-ger-kaos-r3.85103/",
+      "last_page_hint": 12,
+      "latest_ts": 1742846432,
+      "title": "Det Dolda Ger Kaos R3"
+    },
+    "det-dolda-ger-kaos-slut-varulvsseger-och-eftersnack.85110": {
+      "base_url": "https://www.rollspel.nu/threads/det-dolda-ger-kaos-slut-varulvsseger-och-eftersnack.85110/",
+      "last_page_hint": 6,
+      "latest_ts": 1742941057,
+      "title": "Det Dolda Ger Kaos SLUT * Varulvsseger* och eftersnack"
+    },
+    "dr-whowolf-runda-1.59176": {
+      "base_url": "https://www.rollspel.nu/threads/dr-whowolf-runda-1.59176/",
+      "last_page_hint": 27,
+      "latest_ts": 1368732721,
+      "title": "Dr Whowolf (runda 1)"
+    },
+    "dr-whowolf-runda-2.59191": {
+      "base_url": "https://www.rollspel.nu/threads/dr-whowolf-runda-2.59191/",
+      "last_page_hint": 16,
+      "latest_ts": 1368991880,
+      "title": "Dr Whowolf (runda 2)"
+    },
+    "dr-whowolf-runda-3.59219": {
+      "base_url": "https://www.rollspel.nu/threads/dr-whowolf-runda-3.59219/",
+      "last_page_hint": 16,
+      "latest_ts": 1369164595,
+      "title": "Dr Whowolf (runda 3)"
+    },
+    "dr-whowolf-runda-4.59243": {
+      "base_url": "https://www.rollspel.nu/threads/dr-whowolf-runda-4.59243/",
+      "last_page_hint": 11,
+      "latest_ts": 1369337320,
+      "title": "Dr Whowolf (runda 4)"
+    },
+    "dr-whowolf-runda-5.59257": {
+      "base_url": "https://www.rollspel.nu/threads/dr-whowolf-runda-5.59257/",
+      "last_page_hint": 4,
+      "latest_ts": 1369658075,
+      "title": "Dr Whowolf - runda 5"
+    },
+    "dune-%C3%B6kenplaneten-runda-1.82982": {
+      "base_url": "https://www.rollspel.nu/threads/dune-%C3%B6kenplaneten-runda-1.82982/",
+      "last_page_hint": 12,
+      "latest_ts": 1710159438,
+      "title": "Dune: ökenplaneten - Runda 1"
+    },
+    "dune-%C3%B6kenplaneten-runda-2.83003": {
+      "base_url": "https://www.rollspel.nu/threads/dune-%C3%B6kenplaneten-runda-2.83003/",
+      "last_page_hint": 16,
+      "latest_ts": 1710251609,
+      "title": "Dune: ökenplaneten - Runda 2"
+    },
+    "dune-%C3%B6kenplaneten-runda-3.83010": {
+      "base_url": "https://www.rollspel.nu/threads/dune-%C3%B6kenplaneten-runda-3.83010/",
+      "last_page_hint": 7,
+      "latest_ts": 1710345426,
+      "title": "Dune: ökenplaneten - Runda 3"
+    },
+    "dune-%C3%B6kenplaneten-runda-4.83022": {
+      "base_url": "https://www.rollspel.nu/threads/dune-%C3%B6kenplaneten-runda-4.83022/",
+      "last_page_hint": 5,
+      "latest_ts": 1710439555,
+      "title": "Dune: ökenplaneten - Runda 4"
+    },
+    "dune-part-2-runda-5.83030": {
+      "base_url": "https://www.rollspel.nu/threads/dune-part-2-runda-5.83030/",
+      "last_page_hint": 1,
+      "latest_ts": 1710523812,
+      "title": "Dune: Part 2 - Runda 5"
+    },
+    "dune-spelet-%C3%A4r-slut.83037": {
+      "base_url": "https://www.rollspel.nu/threads/dune-spelet-%C3%A4r-slut.83037/",
+      "last_page_hint": 4,
+      "latest_ts": 1710789031,
+      "title": "Dune - Spelet är slut"
+    },
+    "expedition-varulvsson-det-sista-%C3%B6r%C3%A5det.60935": {
+      "base_url": "https://www.rollspel.nu/threads/expedition-varulvsson-det-sista-%C3%B6r%C3%A5det.60935/",
+      "last_page_hint": 3,
+      "latest_ts": 1383244052,
+      "title": "Expedition Varulvsson - Det sista örådet"
+    },
+    "expedition-varulvsson-runda-1-p%C3%A5-riktigt.60779": {
+      "base_url": "https://www.rollspel.nu/threads/expedition-varulvsson-runda-1-p%C3%A5-riktigt.60779/",
+      "last_page_hint": 10,
+      "latest_ts": 1382039769,
+      "title": "Expedition Varulvsson - Runda 1 - På riktigt"
+    },
+    "expedition-varulvsson-runda-2-%C3%84kta-tv.60825": {
+      "base_url": "https://www.rollspel.nu/threads/expedition-varulvsson-runda-2-%C3%84kta-tv.60825/",
+      "last_page_hint": 8,
+      "latest_ts": 1382298894,
+      "title": "Expedition Varulvsson - Runda 2 - Äkta TV"
+    },
+    "expedition-varulvsson-runda-3-efter-reklamen.60854": {
+      "base_url": "https://www.rollspel.nu/threads/expedition-varulvsson-runda-3-efter-reklamen.60854/",
+      "last_page_hint": 6,
+      "latest_ts": 1382558066,
+      "title": "Expedition Varulvsson - Runda 3 - Efter reklamen"
+    },
+    "expedition-varulvsson-runda-4-samlings-dvdn.60885": {
+      "base_url": "https://www.rollspel.nu/threads/expedition-varulvsson-runda-4-samlings-dvdn.60885/",
+      "last_page_hint": 5,
+      "latest_ts": 1382734502,
+      "title": "Expedition Varulvsson - Runda 4 - Samlings-DVDn"
+    },
+    "expedition-varulvsson-runda-5-tittarrekord.60902": {
+      "base_url": "https://www.rollspel.nu/threads/expedition-varulvsson-runda-5-tittarrekord.60902/",
+      "last_page_hint": 3,
+      "latest_ts": 1382907307,
+      "title": "Expedition Varulvsson - Runda 5 - Tittarrekord"
+    },
+    "expedition-varulvsson-runda-6-nakenchocken.60918": {
+      "base_url": "https://www.rollspel.nu/threads/expedition-varulvsson-runda-6-nakenchocken.60918/",
+      "last_page_hint": 3,
+      "latest_ts": 1383080040,
+      "title": "Expedition Varulvsson - Runda 6 - Nakenchocken"
+    },
+    "fight-club-runda-1.82473": {
+      "base_url": "https://www.rollspel.nu/threads/fight-club-runda-1.82473/",
+      "last_page_hint": 13,
+      "latest_ts": 1702727981,
+      "title": "Fight Club - Runda 1"
+    },
+    "fight-club-runda-2.82478": {
+      "base_url": "https://www.rollspel.nu/threads/fight-club-runda-2.82478/",
+      "last_page_hint": 8,
+      "latest_ts": 1702818018,
+      "title": "Fight Club - Runda 2"
+    },
+    "fight-club-runda-3.82483": {
+      "base_url": "https://www.rollspel.nu/threads/fight-club-runda-3.82483/",
+      "last_page_hint": 1,
+      "latest_ts": 1702819172,
+      "title": "Fight Club - Runda 3"
+    },
+    "fight-club-runda-4.82484": {
+      "base_url": "https://www.rollspel.nu/threads/fight-club-runda-4.82484/",
+      "last_page_hint": 1,
+      "latest_ts": 1702840037,
+      "title": "Fight Club - Runda 4"
+    },
+    "fight-club-spelet-%C3%A4r-slut.82486": {
+      "base_url": "https://www.rollspel.nu/threads/fight-club-spelet-%C3%A4r-slut.82486/",
+      "last_page_hint": 2,
+      "latest_ts": 1702849019,
+      "title": "Fight Club - Spelet är slut"
+    },
+    "forumspel-oklart-parlamentariskt-l%C3%A4ge.66248": {
+      "base_url": "https://www.rollspel.nu/threads/forumspel-oklart-parlamentariskt-l%C3%A4ge.66248/",
+      "last_page_hint": 4,
+      "latest_ts": 1554831013,
+      "title": "Forumspel - oklart parlamentariskt läge!"
+    },
+    "h%C3%A4xm%C3%A4starnas-r%C3%A5dslag-andra-rundan.77124": {
+      "base_url": "https://www.rollspel.nu/threads/h%C3%A4xm%C3%A4starnas-r%C3%A5dslag-andra-rundan.77124/",
+      "last_page_hint": 22,
+      "latest_ts": 1619722814,
+      "title": "[Häxmästarnas rådslag] Andra rundan"
+    },
+    "h%C3%A4xm%C3%A4starnas-r%C3%A5dslag-f%C3%B6rsta-rundan.77109": {
+      "base_url": "https://www.rollspel.nu/threads/h%C3%A4xm%C3%A4starnas-r%C3%A5dslag-f%C3%B6rsta-rundan.77109/",
+      "last_page_hint": 15,
+      "latest_ts": 1619589326,
+      "title": "[Häxmästarnas rådslag] Första rundan"
+    },
+    "h%C3%A4xm%C3%A4starnas-r%C3%A5dslag-fj%C3%A4rde-rundan.77144": {
+      "base_url": "https://www.rollspel.nu/threads/h%C3%A4xm%C3%A4starnas-r%C3%A5dslag-fj%C3%A4rde-rundan.77144/",
+      "last_page_hint": 11,
+      "latest_ts": 1620068401,
+      "title": "[Häxmästarnas rådslag] Fjärde rundan"
+    },
+    "h%C3%A4xm%C3%A4starnas-r%C3%A5dslag-spelet-slut.77154": {
+      "base_url": "https://www.rollspel.nu/threads/h%C3%A4xm%C3%A4starnas-r%C3%A5dslag-spelet-slut.77154/",
+      "last_page_hint": 3,
+      "latest_ts": 1620237178,
+      "title": "[Häxmästarnas rådslag] Spelet slut"
+    },
+    "h%C3%A4xm%C3%A4starnas-r%C3%A5dslag-tredje-rundan.77133": {
+      "base_url": "https://www.rollspel.nu/threads/h%C3%A4xm%C3%A4starnas-r%C3%A5dslag-tredje-rundan.77133/",
+      "last_page_hint": 17,
+      "latest_ts": 1619895847,
+      "title": "[Häxmästarnas rådslag] Tredje rundan"
+    },
+    "haunted-house-game-over.65199": {
+      "base_url": "https://www.rollspel.nu/threads/haunted-house-game-over.65199/",
+      "last_page_hint": 2,
+      "latest_ts": 1587369757,
+      "title": "Haunted House - GAME OVER"
+    },
+    "haunted-house-runda-1.65196": {
+      "base_url": "https://www.rollspel.nu/threads/haunted-house-runda-1.65196/",
+      "last_page_hint": 10,
+      "latest_ts": 1585858426,
+      "title": "Haunted House - runda 1"
+    },
+    "haunted-house-runda-2.65197": {
+      "base_url": "https://www.rollspel.nu/threads/haunted-house-runda-2.65197/",
+      "last_page_hint": 5,
+      "latest_ts": 1586034317,
+      "title": "Haunted House - runda 2"
+    },
+    "haunted-house-runda-3.65198": {
+      "base_url": "https://www.rollspel.nu/threads/haunted-house-runda-3.65198/",
+      "last_page_hint": 2,
+      "latest_ts": 1586206228,
+      "title": "Haunted House - runda 3"
+    },
+    "hitta-jesus-runda-1.81611": {
+      "base_url": "https://www.rollspel.nu/threads/hitta-jesus-runda-1.81611/",
+      "last_page_hint": 17,
+      "latest_ts": 1691780405,
+      "title": "Hitta Jesus - Runda 1"
+    },
+    "hitta-jesus-runda-2.81621": {
+      "base_url": "https://www.rollspel.nu/threads/hitta-jesus-runda-2.81621/",
+      "last_page_hint": 13,
+      "latest_ts": 1691951433,
+      "title": "Hitta Jesus - Runda 2"
+    },
+    "hitta-jesus-spelet-%C3%A4r-%C3%B6ver.81634": {
+      "base_url": "https://www.rollspel.nu/threads/hitta-jesus-spelet-%C3%A4r-%C3%B6ver.81634/",
+      "last_page_hint": 3,
+      "latest_ts": 1692044137,
+      "title": "Hitta Jesus - Spelet är över"
+    },
+    "inbjudan-till-maffia-varulvs-vm.83048": {
+      "base_url": "https://www.rollspel.nu/threads/inbjudan-till-maffia-varulvs-vm.83048/",
+      "last_page_hint": 1,
+      "latest_ts": 1713692465,
+      "title": "Inbjudan till Maffia/Varulvs VM"
+    },
+    "inbjudan-till-maffia-vm-igen.80894": {
+      "base_url": "https://www.rollspel.nu/threads/inbjudan-till-maffia-vm-igen.80894/",
+      "last_page_hint": 1,
+      "latest_ts": 1682126336,
+      "title": "Inbjudan till Maffia VM, igen!"
+    },
+    "inbjudan-till-maffia-vm.77303": {
+      "base_url": "https://www.rollspel.nu/threads/inbjudan-till-maffia-vm.77303/",
+      "last_page_hint": 1,
+      "latest_ts": 1622549345,
+      "title": "Inbjudan till Maffia-VM!"
+    },
+    "inbjudan-till-maffia-vm.78932": {
+      "base_url": "https://www.rollspel.nu/threads/inbjudan-till-maffia-vm.78932/",
+      "last_page_hint": 2,
+      "latest_ts": 1654901102,
+      "title": "Inbjudan till Maffia VM!"
+    },
+    "incidentkommissionen-andra-rundan.77807": {
+      "base_url": "https://www.rollspel.nu/threads/incidentkommissionen-andra-rundan.77807/",
+      "last_page_hint": 4,
+      "latest_ts": 1630868401,
+      "title": "Incidentkommissionen [Andra Rundan]"
+    },
+    "incidentkommissionen-f%C3%B6rsta-rundan.77786": {
+      "base_url": "https://www.rollspel.nu/threads/incidentkommissionen-f%C3%B6rsta-rundan.77786/",
+      "last_page_hint": 7,
+      "latest_ts": 1630742726,
+      "title": "Incidentkommissionen [Första Rundan]"
+    },
+    "incidentkommissionen-slut-p%C3%A5-spelet.77835": {
+      "base_url": "https://www.rollspel.nu/threads/incidentkommissionen-slut-p%C3%A5-spelet.77835/",
+      "last_page_hint": 2,
+      "latest_ts": 1631199883,
+      "title": "Incidentkommissionen [Slut på spelet]"
+    },
+    "incidentkommissionen-tredje-rundan.77821": {
+      "base_url": "https://www.rollspel.nu/threads/incidentkommissionen-tredje-rundan.77821/",
+      "last_page_hint": 6,
+      "latest_ts": 1631041200,
+      "title": "Incidentkommissionen [Tredje Rundan]"
+    },
+    "invitation-to-the-werewolf-championship.72296": {
+      "base_url": "https://www.rollspel.nu/threads/invitation-to-the-werewolf-championship.72296/",
+      "last_page_hint": 1,
+      "latest_ts": 1525388554,
+      "title": "Invitation to the werewolf championship"
+    },
+    "invitation-to-werewolf-world-championship.74423": {
+      "base_url": "https://www.rollspel.nu/threads/invitation-to-werewolf-world-championship.74423/",
+      "last_page_hint": 3,
+      "latest_ts": 1501141543,
+      "title": "Invitation to Werewolf World Championship"
+    },
+    "klass%C3%A5tertr%C3%A4ff-i-nora-runda-1.83328": {
+      "base_url": "https://www.rollspel.nu/threads/klass%C3%A5tertr%C3%A4ff-i-nora-runda-1.83328/",
+      "last_page_hint": 15,
+      "latest_ts": 1715709680,
+      "title": "Klassåterträff i Nora - Runda 1"
+    },
+    "klass%C3%A5tertr%C3%A4ff-i-nora-runda-2.83336": {
+      "base_url": "https://www.rollspel.nu/threads/klass%C3%A5tertr%C3%A4ff-i-nora-runda-2.83336/",
+      "last_page_hint": 11,
+      "latest_ts": 1715799656,
+      "title": "Klassåterträff i Nora - Runda 2"
+    },
+    "klass%C3%A5tertr%C3%A4ff-i-nora-runda-3.83342": {
+      "base_url": "https://www.rollspel.nu/threads/klass%C3%A5tertr%C3%A4ff-i-nora-runda-3.83342/",
+      "last_page_hint": 4,
+      "latest_ts": 1715873703,
+      "title": "Klassåterträff i Nora - Runda 3"
+    },
+    "klass%C3%A5tertr%C3%A4ff-i-nora-spelet-%C3%A4r-slut-ulvvinst.83347": {
+      "base_url": "https://www.rollspel.nu/threads/klass%C3%A5tertr%C3%A4ff-i-nora-spelet-%C3%A4r-slut-ulvvinst.83347/",
+      "last_page_hint": 5,
+      "latest_ts": 1716705251,
+      "title": "Klassåterträff i Nora - Spelet är slut - ULVVINST!"
+    },
+    "kok-r1.85670": {
+      "base_url": "https://www.rollspel.nu/threads/kok-r1.85670/",
+      "last_page_hint": 13,
+      "latest_ts": 1752523214,
+      "title": "[KoK] - R1"
+    },
+    "kok-r10.85701": {
+      "base_url": "https://www.rollspel.nu/threads/kok-r10.85701/",
+      "last_page_hint": 5,
+      "latest_ts": 1753045245,
+      "title": "[KoK] - R10"
+    },
+    "kok-r11-game-over.85703": {
+      "base_url": "https://www.rollspel.nu/threads/kok-r11-game-over.85703/",
+      "last_page_hint": 6,
+      "latest_ts": 1753176716,
+      "title": "[KoK] - R11 - GAME OVER"
+    },
+    "kok-r2.85678": {
+      "base_url": "https://www.rollspel.nu/threads/kok-r2.85678/",
+      "last_page_hint": 19,
+      "latest_ts": 1752609608,
+      "title": "[KoK] - R2"
+    },
+    "kok-r3.85683": {
+      "base_url": "https://www.rollspel.nu/threads/kok-r3.85683/",
+      "last_page_hint": 14,
+      "latest_ts": 1752701362,
+      "title": "[KoK] - R3"
+    },
+    "kok-r4.85687": {
+      "base_url": "https://www.rollspel.nu/threads/kok-r4.85687/",
+      "last_page_hint": 11,
+      "latest_ts": 1752775207,
+      "title": "[KoK] - R4"
+    },
+    "kok-r5.85689": {
+      "base_url": "https://www.rollspel.nu/threads/kok-r5.85689/",
+      "last_page_hint": 4,
+      "latest_ts": 1752849623,
+      "title": "[KoK] - R5"
+    },
+    "kok-r6.85692": {
+      "base_url": "https://www.rollspel.nu/threads/kok-r6.85692/",
+      "last_page_hint": 5,
+      "latest_ts": 1752872662,
+      "title": "[KoK] - R6"
+    },
+    "kok-r7.85693": {
+      "base_url": "https://www.rollspel.nu/threads/kok-r7.85693/",
+      "last_page_hint": 6,
+      "latest_ts": 1752926460,
+      "title": "[KoK] - R7"
+    },
+    "kok-r8.85695": {
+      "base_url": "https://www.rollspel.nu/threads/kok-r8.85695/",
+      "last_page_hint": 11,
+      "latest_ts": 1752958839,
+      "title": "[KoK] - R8"
+    },
+    "kok-r9.85699": {
+      "base_url": "https://www.rollspel.nu/threads/kok-r9.85699/",
+      "last_page_hint": 7,
+      "latest_ts": 1753013517,
+      "title": "[KoK] - R9"
+    },
+    "kungens-r%C3%A5d-andra-m%C3%B6tet.75244": {
+      "base_url": "https://www.rollspel.nu/threads/kungens-r%C3%A5d-andra-m%C3%B6tet.75244/",
+      "last_page_hint": 4,
+      "latest_ts": 1592164816,
+      "title": "Kungens råd - andra mötet"
+    },
+    "kungens-r%C3%A5d-f%C3%B6rsta-m%C3%B6tet.65202": {
+      "base_url": "https://www.rollspel.nu/threads/kungens-r%C3%A5d-f%C3%B6rsta-m%C3%B6tet.65202/",
+      "last_page_hint": 18,
+      "latest_ts": 1591995101,
+      "title": "Kungens råd - första mötet"
+    },
+    "kungens-r%C3%A5d-game-over.75250": {
+      "base_url": "https://www.rollspel.nu/threads/kungens-r%C3%A5d-game-over.75250/",
+      "last_page_hint": 2,
+      "latest_ts": 1592244382,
+      "title": "Kungens råd - GAME OVER"
+    },
+    "m%C3%A4ster-bybo-byr%C3%A5det-runda-1.80362": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%A4ster-bybo-byr%C3%A5det-runda-1.80362/",
+      "last_page_hint": 6,
+      "latest_ts": 1670961684,
+      "title": "Mäster Bybo: Byrådet - Runda 1"
+    },
+    "m%C3%A4ster-bybo-byr%C3%A5det-runda-2.80372": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%A4ster-bybo-byr%C3%A5det-runda-2.80372/",
+      "last_page_hint": 6,
+      "latest_ts": 1671135035,
+      "title": "Mäster Bybo: Byrådet - Runda 2"
+    },
+    "m%C3%A4ster-bybo-byr%C3%A5det-runda-3.80382": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%A4ster-bybo-byr%C3%A5det-runda-3.80382/",
+      "last_page_hint": 3,
+      "latest_ts": 1671225909,
+      "title": "Mäster Bybo: Byrådet - Runda 3"
+    },
+    "m%C3%A4ster-bybo-byr%C3%A5det-spelet-%C3%B6ver.80389": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%A4ster-bybo-byr%C3%A5det-spelet-%C3%B6ver.80389/",
+      "last_page_hint": 2,
+      "latest_ts": 1671367670,
+      "title": "Mäster Bybo: Byrådet - Spelet över"
+    },
+    "m%C3%A4ster-ulv-5-runda-1.82082": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%A4ster-ulv-5-runda-1.82082/",
+      "last_page_hint": 27,
+      "latest_ts": 1697639875,
+      "title": "[Mäster Ulv 5] - Runda 1"
+    },
+    "m%C3%A4ster-ulv-5-runda-2.82096": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%A4ster-ulv-5-runda-2.82096/",
+      "last_page_hint": 19,
+      "latest_ts": 1697659250,
+      "title": "[Mäster Ulv 5] - Runda 2"
+    },
+    "m%C3%A4ster-ulv-5-runda-3.82102": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%A4ster-ulv-5-runda-3.82102/",
+      "last_page_hint": 21,
+      "latest_ts": 1697967546,
+      "title": "[Mäster Ulv 5] - Runda 3"
+    },
+    "m%C3%A4ster-ulv-5-runda-4.82112": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%A4ster-ulv-5-runda-4.82112/",
+      "last_page_hint": 20,
+      "latest_ts": 1697907130,
+      "title": "[Mäster Ulv 5] - Runda 4"
+    },
+    "m%C3%A4ster-ulv-5-runda-5.82126": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%A4ster-ulv-5-runda-5.82126/",
+      "last_page_hint": 15,
+      "latest_ts": 1698001243,
+      "title": "[Mäster Ulv 5] - Runda 5"
+    },
+    "m%C3%A4ster-ulv-5-spelet-%C3%A4r-%C3%B6ver.82139": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%A4ster-ulv-5-spelet-%C3%A4r-%C3%B6ver.82139/",
+      "last_page_hint": 8,
+      "latest_ts": 1698218672,
+      "title": "[Mäster Ulv 5] - Spelet är över"
+    },
+    "m%C3%A4ster-ulv-game-over.78045": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%A4ster-ulv-game-over.78045/",
+      "last_page_hint": 4,
+      "latest_ts": 1634404010,
+      "title": "[Mäster Ulv] - Game over!"
+    },
+    "m%C3%A4ster-ulv-runda-1.66226": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%A4ster-ulv-runda-1.66226/",
+      "last_page_hint": 17,
+      "latest_ts": 1500018642,
+      "title": "[Mäster Ulv] - Runda 1"
+    },
+    "m%C3%A4ster-ulv-runda-1.78000": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%A4ster-ulv-runda-1.78000/",
+      "last_page_hint": 13,
+      "latest_ts": 1633690198,
+      "title": "[Mäster Ulv] - Runda 1"
+    },
+    "m%C3%A4ster-ulv-runda-2.66229": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%A4ster-ulv-runda-2.66229/",
+      "last_page_hint": 20,
+      "latest_ts": 1499112083,
+      "title": "[Mäster Ulv] - Runda 2"
+    },
+    "m%C3%A4ster-ulv-runda-2.78018": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%A4ster-ulv-runda-2.78018/",
+      "last_page_hint": 9,
+      "latest_ts": 1633893528,
+      "title": "[Mäster Ulv] - Runda 2"
+    },
+    "m%C3%A4ster-ulv-runda-3.66230": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%A4ster-ulv-runda-3.66230/",
+      "last_page_hint": 8,
+      "latest_ts": 1499287631,
+      "title": "Mäster Ulv - Runda 3"
+    },
+    "m%C3%A4ster-ulv-runda-3.78028": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%A4ster-ulv-runda-3.78028/",
+      "last_page_hint": 6,
+      "latest_ts": 1633978910,
+      "title": "[Mäster Ulv] - Runda 3"
+    },
+    "m%C3%A4ster-ulv-runda-4.66231": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%A4ster-ulv-runda-4.66231/",
+      "last_page_hint": 18,
+      "latest_ts": 1499631518,
+      "title": "Mäster Ulv - Runda 4"
+    },
+    "m%C3%A4ster-ulv-runda-4.78037": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%A4ster-ulv-runda-4.78037/",
+      "last_page_hint": 5,
+      "latest_ts": 1634065643,
+      "title": "[Mäster Ulv] - Runda 4"
+    },
+    "m%C3%A4ster-ulv-runda-5.66232": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%A4ster-ulv-runda-5.66232/",
+      "last_page_hint": 9,
+      "latest_ts": 1499803282,
+      "title": "Mäster Ulv - Runda 5"
+    },
+    "m%C3%A4ster-ulv-runda-6.66233": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%A4ster-ulv-runda-6.66233/",
+      "last_page_hint": 7,
+      "latest_ts": 1499976313,
+      "title": "Mäster Ulv -Runda 6"
+    },
+    "m%C3%A4ster-ulv-spelet-slut.66235": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%A4ster-ulv-spelet-slut.66235/",
+      "last_page_hint": 3,
+      "latest_ts": 1500682009,
+      "title": "Mäster Ulv - Spelet slut"
+    },
+    "m%C3%B6rket-mellan-stj%C3%A4rnorna-r7-runda-sju.78267": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%B6rket-mellan-stj%C3%A4rnorna-r7-runda-sju.78267/",
+      "last_page_hint": 2,
+      "latest_ts": 1637341359,
+      "title": "Mörket mellan Stjärnorna [R7] Runda sju"
+    },
+    "m%C3%B6rkret-mellan-stj%C3%A4rnorna-avslutning-och-guldfest.78273": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%B6rkret-mellan-stj%C3%A4rnorna-avslutning-och-guldfest.78273/",
+      "last_page_hint": 2,
+      "latest_ts": 1637423887,
+      "title": "Mörkret Mellan Stjärnorna: Avslutning och guldfest"
+    },
+    "m%C3%B6rkret-mellan-stj%C3%A4rnorna-r1-f%C3%B6rsta-rundan.78217": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%B6rkret-mellan-stj%C3%A4rnorna-r1-f%C3%B6rsta-rundan.78217/",
+      "last_page_hint": 10,
+      "latest_ts": 1636833632,
+      "title": "Mörkret Mellan Stjärnorna [R1] Första rundan"
+    },
+    "m%C3%B6rkret-mellan-stj%C3%A4rnorna-r2-andra-rundan.78229": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%B6rkret-mellan-stj%C3%A4rnorna-r2-andra-rundan.78229/",
+      "last_page_hint": 10,
+      "latest_ts": 1636920008,
+      "title": "Mörkret mellan stjärnorna {R2] Andra rundan"
+    },
+    "m%C3%B6rkret-mellan-stj%C3%A4rnorna-r3-tredje-rundan.78234": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%B6rkret-mellan-stj%C3%A4rnorna-r3-tredje-rundan.78234/",
+      "last_page_hint": 9,
+      "latest_ts": 1637006465,
+      "title": "Mörkret Mellan Stjärnorna [R3] Tredje rundan"
+    },
+    "m%C3%B6rkret-mellan-stj%C3%A4rnorna-r4-fj%C3%A4rde-rundan.78242": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%B6rkret-mellan-stj%C3%A4rnorna-r4-fj%C3%A4rde-rundan.78242/",
+      "last_page_hint": 4,
+      "latest_ts": 1637092831,
+      "title": "Mörkret Mellan Stjärnorna [R4] Fjärde rundan"
+    },
+    "m%C3%B6rkret-mellan-stj%C3%A4rnorna-r5-femte-rundan.78252": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%B6rkret-mellan-stj%C3%A4rnorna-r5-femte-rundan.78252/",
+      "last_page_hint": 2,
+      "latest_ts": 1637179311,
+      "title": "Mörkret Mellan Stjärnorna [R5] Femte rundan"
+    },
+    "m%C3%B6rkret-mellan-stj%C3%A4rnorna-r6-sj%C3%A4tte-rundan.78257": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%B6rkret-mellan-stj%C3%A4rnorna-r6-sj%C3%A4tte-rundan.78257/",
+      "last_page_hint": 3,
+      "latest_ts": 1637270316,
+      "title": "Mörkret Mellan Stjärnorna [R6] Sjätte rundan"
+    },
+    "m%C3%B6rkret-mellan-stj%C3%A4rnorna-runda-1.78206": {
+      "base_url": "https://www.rollspel.nu/threads/m%C3%B6rkret-mellan-stj%C3%A4rnorna-runda-1.78206/",
+      "last_page_hint": 3,
+      "latest_ts": 1636739348,
+      "title": "Mörkret mellan stjärnorna, runda 1"
+    },
+    "m-e-s-t-e-r-u-l-v-2-0-2-0-andra-rundan.75426": {
+      "base_url": "https://www.rollspel.nu/threads/m-e-s-t-e-r-u-l-v-2-0-2-0-andra-rundan.75426/",
+      "last_page_hint": 8,
+      "latest_ts": 1594288836,
+      "title": "M E S T E R U L V 2 0 2 0: Andra rundan"
+    },
+    "m-e-s-t-e-r-u-l-v-2-0-2-0-f%C3%B6rsta-rundan.75405": {
+      "base_url": "https://www.rollspel.nu/threads/m-e-s-t-e-r-u-l-v-2-0-2-0-f%C3%B6rsta-rundan.75405/",
+      "last_page_hint": 9,
+      "latest_ts": 1594202747,
+      "title": "M E S T E R U L V 2 0 2 0 Första rundan"
+    },
+    "m-e-s-t-e-r-u-l-v-2-0-2-0-game-over.75435": {
+      "base_url": "https://www.rollspel.nu/threads/m-e-s-t-e-r-u-l-v-2-0-2-0-game-over.75435/",
+      "last_page_hint": 2,
+      "latest_ts": 1594984353,
+      "title": "M E S T E R U L V 2 0 2 0: GAME OVER"
+    },
+    "m-e-s-t-e-r-u-l-v-2-0-2-0-tredje-rundan.75431": {
+      "base_url": "https://www.rollspel.nu/threads/m-e-s-t-e-r-u-l-v-2-0-2-0-tredje-rundan.75431/",
+      "last_page_hint": 4,
+      "latest_ts": 1594327255,
+      "title": "M E S T E R U L V 2 0 2 0: Tredje rundan"
+    },
+    "marinbiologkonferensen-vid-devil-reef-r1.85212": {
+      "base_url": "https://www.rollspel.nu/threads/marinbiologkonferensen-vid-devil-reef-r1.85212/",
+      "last_page_hint": 9,
+      "latest_ts": 1744397809,
+      "title": "Marinbiologkonferensen vid Devil Reef [R1]"
+    },
+    "marinbiologkonferensen-vid-devil-reef-r2.85216": {
+      "base_url": "https://www.rollspel.nu/threads/marinbiologkonferensen-vid-devil-reef-r2.85216/",
+      "last_page_hint": 5,
+      "latest_ts": 1744441206,
+      "title": "Marinbiologkonferensen vid Devil Reef [R2]"
+    },
+    "marinbiologkonferensen-vid-devil-reef-r3.85218": {
+      "base_url": "https://www.rollspel.nu/threads/marinbiologkonferensen-vid-devil-reef-r3.85218/",
+      "last_page_hint": 8,
+      "latest_ts": 1744477203,
+      "title": "Marinbiologkonferensen vid Devil Reef [R3]"
+    },
+    "marinbiologkonferensen-vid-devil-reef-r4.85222": {
+      "base_url": "https://www.rollspel.nu/threads/marinbiologkonferensen-vid-devil-reef-r4.85222/",
+      "last_page_hint": 4,
+      "latest_ts": 1744527631,
+      "title": "Marinbiologkonferensen vid Devil Reef [R4]"
+    },
+    "marinbiologkonferensen-vid-devil-reef-r5.85225": {
+      "base_url": "https://www.rollspel.nu/threads/marinbiologkonferensen-vid-devil-reef-r5.85225/",
+      "last_page_hint": 3,
+      "latest_ts": 1744563608,
+      "title": "Marinbiologkonferensen vid Devil Reef [R5]"
+    },
+    "marinbiologkonferensen-vid-devil-reef-r6.85229": {
+      "base_url": "https://www.rollspel.nu/threads/marinbiologkonferensen-vid-devil-reef-r6.85229/",
+      "last_page_hint": 2,
+      "latest_ts": 1744614005,
+      "title": "Marinbiologkonferensen vid Devil Reef [R6]"
+    },
+    "marinbiologkonferensen-vid-devil-reef-spelet-%C3%A4r-slut.85232": {
+      "base_url": "https://www.rollspel.nu/threads/marinbiologkonferensen-vid-devil-reef-spelet-%C3%A4r-slut.85232/",
+      "last_page_hint": 6,
+      "latest_ts": 1744873245,
+      "title": "Marinbiologkonferensen vid Devil Reef - Spelet är slut"
+    },
+    "minioner-runda-1.78574": {
+      "base_url": "https://www.rollspel.nu/threads/minioner-runda-1.78574/",
+      "last_page_hint": 13,
+      "latest_ts": 1642250647,
+      "title": "Minioner - Runda 1"
+    },
+    "minioner-runda-2.78585": {
+      "base_url": "https://www.rollspel.nu/threads/minioner-runda-2.78585/",
+      "last_page_hint": 7,
+      "latest_ts": 1642190400,
+      "title": "Minioner - Runda 2"
+    },
+    "minioner-runda-3.78593": {
+      "base_url": "https://www.rollspel.nu/threads/minioner-runda-3.78593/",
+      "last_page_hint": 7,
+      "latest_ts": 1642276834,
+      "title": "Minioner - Runda 3"
+    },
+    "minioner-spelet-slut.78598": {
+      "base_url": "https://www.rollspel.nu/threads/minioner-spelet-slut.78598/",
+      "last_page_hint": 2,
+      "latest_ts": 1642369131,
+      "title": "Minioner - Spelet slut"
+    },
+    "mordet-p%C3%A5-glockenspiel-game-over.75573": {
+      "base_url": "https://www.rollspel.nu/threads/mordet-p%C3%A5-glockenspiel-game-over.75573/",
+      "last_page_hint": 2,
+      "latest_ts": 1597576463,
+      "title": "Mordet på Glockenspiel - Game over"
+    },
+    "mordet-p%C3%A5-glockenspiel-speltr%C3%A5d.75540": {
+      "base_url": "https://www.rollspel.nu/threads/mordet-p%C3%A5-glockenspiel-speltr%C3%A5d.75540/",
+      "last_page_hint": 16,
+      "latest_ts": 1596892306,
+      "title": "[Mordet på Glockenspiel] - Speltråd"
+    },
+    "mortal-kombat-r1.84318": {
+      "base_url": "https://www.rollspel.nu/threads/mortal-kombat-r1.84318/",
+      "last_page_hint": 35,
+      "latest_ts": 1731441670,
+      "title": "MORTAL KOMBAT (R1)"
+    },
+    "mortal-kombat-r2.84331": {
+      "base_url": "https://www.rollspel.nu/threads/mortal-kombat-r2.84331/",
+      "last_page_hint": 5,
+      "latest_ts": 1731528014,
+      "title": "MORTAL KOMBAT R2"
+    },
+    "mortal-kombat-r3.84335": {
+      "base_url": "https://www.rollspel.nu/threads/mortal-kombat-r3.84335/",
+      "last_page_hint": 9,
+      "latest_ts": 1731614401,
+      "title": "MORTAL KOMBAT (R3)"
+    },
+    "mortal-kombat-spelet-slut-bybovinst.84342": {
+      "base_url": "https://www.rollspel.nu/threads/mortal-kombat-spelet-slut-bybovinst.84342/",
+      "last_page_hint": 5,
+      "latest_ts": 1731958555,
+      "title": "MORTAL KOMBAT: spelet slut, bybovinst!"
+    },
+    "mu4-runda-1.80090": {
+      "base_url": "https://www.rollspel.nu/threads/mu4-runda-1.80090/",
+      "last_page_hint": 9,
+      "latest_ts": 1666724741,
+      "title": "[MU4] - Runda 1"
+    },
+    "mu4-runda-2.80106": {
+      "base_url": "https://www.rollspel.nu/threads/mu4-runda-2.80106/",
+      "last_page_hint": 12,
+      "latest_ts": 1666897789,
+      "title": "[MU4] - Runda 2"
+    },
+    "mu4-runda-3.80120": {
+      "base_url": "https://www.rollspel.nu/threads/mu4-runda-3.80120/",
+      "last_page_hint": 9,
+      "latest_ts": 1667009638,
+      "title": "[MU4] - Runda 3"
+    },
+    "mu4-runda-4.80128": {
+      "base_url": "https://www.rollspel.nu/threads/mu4-runda-4.80128/",
+      "last_page_hint": 3,
+      "latest_ts": 1667073869,
+      "title": "[MU4] - Runda 4"
+    },
+    "mu4-runda-5.80134": {
+      "base_url": "https://www.rollspel.nu/threads/mu4-runda-5.80134/",
+      "last_page_hint": 4,
+      "latest_ts": 1667163657,
+      "title": "[MU4] - Runda 5"
+    },
+    "mu4-runda-6.80138": {
+      "base_url": "https://www.rollspel.nu/threads/mu4-runda-6.80138/",
+      "last_page_hint": 3,
+      "latest_ts": 1667246478,
+      "title": "[MU4] - Runda 6"
+    },
+    "mu4-spelet-%C3%A4r-%C3%B6ver.80146": {
+      "base_url": "https://www.rollspel.nu/threads/mu4-spelet-%C3%A4r-%C3%B6ver.80146/",
+      "last_page_hint": 5,
+      "latest_ts": 1667462215,
+      "title": "[MU4] - Spelet är över."
+    },
+    "mu6-r1.84211": {
+      "base_url": "https://www.rollspel.nu/threads/mu6-r1.84211/",
+      "last_page_hint": 30,
+      "latest_ts": 1729623932,
+      "title": "[MU6] - R1"
+    },
+    "mu6-r2.84224": {
+      "base_url": "https://www.rollspel.nu/threads/mu6-r2.84224/",
+      "last_page_hint": 24,
+      "latest_ts": 1729798474,
+      "title": "[MU6] - R2"
+    },
+    "mu6-r3.84231": {
+      "base_url": "https://www.rollspel.nu/threads/mu6-r3.84231/",
+      "last_page_hint": 18,
+      "latest_ts": 1729796539,
+      "title": "[MU6] - R3"
+    },
+    "mu6-r4.84238": {
+      "base_url": "https://www.rollspel.nu/threads/mu6-r4.84238/",
+      "last_page_hint": 18,
+      "latest_ts": 1729882805,
+      "title": "[MU6] - R4"
+    },
+    "mu6-r5.84242": {
+      "base_url": "https://www.rollspel.nu/threads/mu6-r5.84242/",
+      "last_page_hint": 8,
+      "latest_ts": 1730037777,
+      "title": "[MU6] - R5"
+    },
+    "paradise-ulvtell-18-kulceremonin.81842": {
+      "base_url": "https://www.rollspel.nu/threads/paradise-ulvtell-18-kulceremonin.81842/",
+      "last_page_hint": 5,
+      "latest_ts": 1694605307,
+      "title": "Paradise Ulvtell (18+) - Kulceremonin"
+    },
+    "paradise-ulvtell-18-parceremoni-r1.81777": {
+      "base_url": "https://www.rollspel.nu/threads/paradise-ulvtell-18-parceremoni-r1.81777/",
+      "last_page_hint": 1,
+      "latest_ts": 1693896267,
+      "title": "Paradise Ulvtell (18+) - Parceremoni R1"
+    },
+    "paradise-ulvtell-18-parceremoni-r2.81789": {
+      "base_url": "https://www.rollspel.nu/threads/paradise-ulvtell-18-parceremoni-r2.81789/",
+      "last_page_hint": 1,
+      "latest_ts": 1694011535,
+      "title": "Paradise Ulvtell (18+) - Parceremoni R2"
+    },
+    "paradise-ulvtell-18-parceremoni-r3.81803": {
+      "base_url": "https://www.rollspel.nu/threads/paradise-ulvtell-18-parceremoni-r3.81803/",
+      "last_page_hint": 1,
+      "latest_ts": 1694109300,
+      "title": "Paradise Ulvtell (18+) - Parceremoni R3"
+    },
+    "paradise-ulvtell-18-parceremoni-r4.81811": {
+      "base_url": "https://www.rollspel.nu/threads/paradise-ulvtell-18-parceremoni-r4.81811/",
+      "last_page_hint": 1,
+      "latest_ts": 1694237633,
+      "title": "Paradise Ulvtell (18+) - Parceremoni R4"
+    },
+    "paradise-ulvtell-18-parceremoni-r5.81818": {
+      "base_url": "https://www.rollspel.nu/threads/paradise-ulvtell-18-parceremoni-r5.81818/",
+      "last_page_hint": 1,
+      "latest_ts": 1694362141,
+      "title": "Paradise Ulvtell (18+) - Parceremoni R5"
+    },
+    "paradise-ulvtell-18-runda-1.81769": {
+      "base_url": "https://www.rollspel.nu/threads/paradise-ulvtell-18-runda-1.81769/",
+      "last_page_hint": 4,
+      "latest_ts": 1693850414,
+      "title": "Paradise Ulvtell (18+) - Runda 1"
+    },
+    "paradise-ulvtell-18-runda-2.81782": {
+      "base_url": "https://www.rollspel.nu/threads/paradise-ulvtell-18-runda-2.81782/",
+      "last_page_hint": 4,
+      "latest_ts": 1693983605,
+      "title": "Paradise Ulvtell (18+) - Runda 2"
+    },
+    "paradise-ulvtell-18-runda-3.81793": {
+      "base_url": "https://www.rollspel.nu/threads/paradise-ulvtell-18-runda-3.81793/",
+      "last_page_hint": 4,
+      "latest_ts": 1694098810,
+      "title": "Paradise Ulvtell (18+) - Runda 3"
+    },
+    "paradise-ulvtell-18-runda-4.81805": {
+      "base_url": "https://www.rollspel.nu/threads/paradise-ulvtell-18-runda-4.81805/",
+      "last_page_hint": 8,
+      "latest_ts": 1694196009,
+      "title": "Paradise Ulvtell (18+) - Runda 4"
+    },
+    "paradise-ulvtell-18-runda-5.81813": {
+      "base_url": "https://www.rollspel.nu/threads/paradise-ulvtell-18-runda-5.81813/",
+      "last_page_hint": 5,
+      "latest_ts": 1694325856,
+      "title": "Paradise Ulvtell (18+) - Runda 5"
+    },
+    "paradise-ulvtell-18-runda-6.81824": {
+      "base_url": "https://www.rollspel.nu/threads/paradise-ulvtell-18-runda-6.81824/",
+      "last_page_hint": 3,
+      "latest_ts": 1694448060,
+      "title": "Paradise Ulvtell (18+) - Runda 6"
+    },
+    "paradise-ulvtell-18-runda-7.81835": {
+      "base_url": "https://www.rollspel.nu/threads/paradise-ulvtell-18-runda-7.81835/",
+      "last_page_hint": 7,
+      "latest_ts": 1694539283,
+      "title": "Paradise Ulvtell (18+) - Runda 7"
+    },
+    "paradise-ulvtell-k%C3%A4rleksn%C3%A4stet-runda-1.83624": {
+      "base_url": "https://www.rollspel.nu/threads/paradise-ulvtell-k%C3%A4rleksn%C3%A4stet-runda-1.83624/",
+      "last_page_hint": 30,
+      "latest_ts": 1721152817,
+      "title": "Paradise Ulvtell - Kärleksnästet (Runda 1)"
+    },
+    "paradise-ulvtell-k%C3%A4rleksn%C3%A4stet-runda-2.83637": {
+      "base_url": "https://www.rollspel.nu/threads/paradise-ulvtell-k%C3%A4rleksn%C3%A4stet-runda-2.83637/",
+      "last_page_hint": 13,
+      "latest_ts": 1721237477,
+      "title": "Paradise Ulvtell - Kärleksnästet (Runda 2)"
+    },
+    "paradise-ulvtell-k%C3%A4rleksn%C3%A4stet-spelet-%C3%A4r-slut-ulvvinst.83645": {
+      "base_url": "https://www.rollspel.nu/threads/paradise-ulvtell-k%C3%A4rleksn%C3%A4stet-spelet-%C3%A4r-slut-ulvvinst.83645/",
+      "last_page_hint": 3,
+      "latest_ts": 1722446396,
+      "title": "Paradise Ulvtell - Kärleksnästet | Spelet är slut! - Ulvvinst"
+    },
+    "paris-aftermath.80582": {
+      "base_url": "https://www.rollspel.nu/threads/paris-aftermath.80582/",
+      "last_page_hint": 2,
+      "latest_ts": 1674745835,
+      "title": "Paris - Aftermath..."
+    },
+    "paris-part-deux-runda-1.84631": {
+      "base_url": "https://www.rollspel.nu/threads/paris-part-deux-runda-1.84631/",
+      "last_page_hint": 42,
+      "latest_ts": 1736715795,
+      "title": "Paris part deux - Runda 1"
+    },
+    "paris-part-deux-runda-2.84645": {
+      "base_url": "https://www.rollspel.nu/threads/paris-part-deux-runda-2.84645/",
+      "last_page_hint": 14,
+      "latest_ts": 1736800259,
+      "title": "Paris part deux - Runda 2"
+    },
+    "paris-part-deux-runda-3.84650": {
+      "base_url": "https://www.rollspel.nu/threads/paris-part-deux-runda-3.84650/",
+      "last_page_hint": 10,
+      "latest_ts": 1736886790,
+      "title": "Paris part deux - Runda 3"
+    },
+    "paris-part-deux-runda-4.84655": {
+      "base_url": "https://www.rollspel.nu/threads/paris-part-deux-runda-4.84655/",
+      "last_page_hint": 7,
+      "latest_ts": 1736973139,
+      "title": "Paris part deux - Runda 4"
+    },
+    "paris-part-deux-runda-5.84661": {
+      "base_url": "https://www.rollspel.nu/threads/paris-part-deux-runda-5.84661/",
+      "last_page_hint": 3,
+      "latest_ts": 1737059399,
+      "title": "Paris part deux - Runda 5"
+    },
+    "paris-part-deux-spelet-%C3%A4r-le-slut-nu.84671": {
+      "base_url": "https://www.rollspel.nu/threads/paris-part-deux-spelet-%C3%A4r-le-slut-nu.84671/",
+      "last_page_hint": 8,
+      "latest_ts": 1737650120,
+      "title": "Paris part deux - Spelet är le slut nu"
+    },
+    "paris-part-trois-le-runda-1.86848": {
+      "base_url": "https://www.rollspel.nu/threads/paris-part-trois-le-runda-1.86848/",
+      "last_page_hint": 19,
+      "latest_ts": 1768759252,
+      "title": "Paris part trois - Le Runda 1"
+    },
+    "paris-part-trois-le-runda-2.86863": {
+      "base_url": "https://www.rollspel.nu/threads/paris-part-trois-le-runda-2.86863/",
+      "last_page_hint": 14,
+      "latest_ts": 1768856738,
+      "title": "Paris part trois - Le Runda 2"
+    },
+    "paris-part-trois-le-runda-3.86870": {
+      "base_url": "https://www.rollspel.nu/threads/paris-part-trois-le-runda-3.86870/",
+      "last_page_hint": 5,
+      "latest_ts": 1768942995,
+      "title": "Paris part trois - Le Runda 3"
+    },
+    "paris-part-trois-le-runda-4.86876": {
+      "base_url": "https://www.rollspel.nu/threads/paris-part-trois-le-runda-4.86876/",
+      "last_page_hint": 5,
+      "latest_ts": 1769027430,
+      "title": "Paris part trois - Le Runda 4"
+    },
+    "paris-part-trois-le-slut-p%C3%A5-spelet.86883": {
+      "base_url": "https://www.rollspel.nu/threads/paris-part-trois-le-slut-p%C3%A5-spelet.86883/",
+      "last_page_hint": 6,
+      "latest_ts": 1769622631,
+      "title": "Paris part trois - Le Slut på spelet"
+    },
+    "paris-runda-1.80530": {
+      "base_url": "https://www.rollspel.nu/threads/paris-runda-1.80530/",
+      "last_page_hint": 4,
+      "latest_ts": 1673816668,
+      "title": "Paris - Runda 1"
+    },
+    "paris-runda-2.80537": {
+      "base_url": "https://www.rollspel.nu/threads/paris-runda-2.80537/",
+      "last_page_hint": 2,
+      "latest_ts": 1673988159,
+      "title": "Paris - Runda 2"
+    },
+    "paris-runda-3.80556": {
+      "base_url": "https://www.rollspel.nu/threads/paris-runda-3.80556/",
+      "last_page_hint": 2,
+      "latest_ts": 1674158436,
+      "title": "Paris - Runda 3"
+    },
+    "paris-runda-4.80563": {
+      "base_url": "https://www.rollspel.nu/threads/paris-runda-4.80563/",
+      "last_page_hint": 1,
+      "latest_ts": 1674334352,
+      "title": "Paris - Runda 4"
+    },
+    "paris-runda-5-final.80573": {
+      "base_url": "https://www.rollspel.nu/threads/paris-runda-5-final.80573/",
+      "last_page_hint": 1,
+      "latest_ts": 1674505924,
+      "title": "Paris - Runda 5 (Final)"
+    },
+    "patterns-patterns-patterns-regler.79652": {
+      "base_url": "https://www.rollspel.nu/threads/patterns-patterns-patterns-regler.79652/",
+      "last_page_hint": 1,
+      "latest_ts": 1659956952,
+      "title": "#Patterns #Patterns #Patterns - regler"
+    },
+    "patterns-patterns-patterns-runda-1.79659": {
+      "base_url": "https://www.rollspel.nu/threads/patterns-patterns-patterns-runda-1.79659/",
+      "last_page_hint": 7,
+      "latest_ts": 1660071628,
+      "title": "#Patterns #Patterns #Patterns Runda 1"
+    },
+    "patterns-patterns-patterns-runda-2.79669": {
+      "base_url": "https://www.rollspel.nu/threads/patterns-patterns-patterns-runda-2.79669/",
+      "last_page_hint": 6,
+      "latest_ts": 1660159120,
+      "title": "#Patterns #Patterns #Patterns - Runda 2"
+    },
+    "patterns-patterns-patterns-runda-3.79677": {
+      "base_url": "https://www.rollspel.nu/threads/patterns-patterns-patterns-runda-3.79677/",
+      "last_page_hint": 8,
+      "latest_ts": 1660244881,
+      "title": "#Patterns #Patterns #Patterns - Runda 3"
+    },
+    "patterns-patterns-patterns-runda-4.79683": {
+      "base_url": "https://www.rollspel.nu/threads/patterns-patterns-patterns-runda-4.79683/",
+      "last_page_hint": 6,
+      "latest_ts": 1660330909,
+      "title": "#Patterns #Patterns #Patterns - Runda 4"
+    },
+    "patterns-patterns-patterns-spelet-slut.79686": {
+      "base_url": "https://www.rollspel.nu/threads/patterns-patterns-patterns-spelet-slut.79686/",
+      "last_page_hint": 2,
+      "latest_ts": 1660425525,
+      "title": "#Patterns #Patterns #Patterns - Spelet slut!"
+    },
+    "prins-fiskes-f%C3%B6lje-timme-1.78861": {
+      "base_url": "https://www.rollspel.nu/threads/prins-fiskes-f%C3%B6lje-timme-1.78861/",
+      "last_page_hint": 2,
+      "latest_ts": 1646683313,
+      "title": "Prins Fiskes följe - Timme 1"
+    },
+    "prins-fiskes-f%C3%B6lje-timme-2.78868": {
+      "base_url": "https://www.rollspel.nu/threads/prins-fiskes-f%C3%B6lje-timme-2.78868/",
+      "last_page_hint": 1,
+      "latest_ts": 1646769682,
+      "title": "Prins Fiskes följe - Timme 2"
+    },
+    "prins-fiskes-f%C3%B6lje-timme-3.78877": {
+      "base_url": "https://www.rollspel.nu/threads/prins-fiskes-f%C3%B6lje-timme-3.78877/",
+      "last_page_hint": 2,
+      "latest_ts": 1646854862,
+      "title": "Prins Fiskes följe - Timme 3"
+    },
+    "prins-fiskes-f%C3%B6lje-timme-4.78881": {
+      "base_url": "https://www.rollspel.nu/threads/prins-fiskes-f%C3%B6lje-timme-4.78881/",
+      "last_page_hint": 1,
+      "latest_ts": 1646942592,
+      "title": "Prins Fiskes följe - Timme 4"
+    },
+    "prins-fiskes-f%C3%B6lje-timme-5.78892": {
+      "base_url": "https://www.rollspel.nu/threads/prins-fiskes-f%C3%B6lje-timme-5.78892/",
+      "last_page_hint": 2,
+      "latest_ts": 1647016851,
+      "title": "Prins Fiskes följe - Timme 5"
+    },
+    "prins-fiskes-f%C3%B6lje-timme-6.78899": {
+      "base_url": "https://www.rollspel.nu/threads/prins-fiskes-f%C3%B6lje-timme-6.78899/",
+      "last_page_hint": 1,
+      "latest_ts": 1647111079,
+      "title": "Prins Fiskes följe - Timme 6"
+    },
+    "prins-fiskes-f%C3%B6lje-timme-7.78905": {
+      "base_url": "https://www.rollspel.nu/threads/prins-fiskes-f%C3%B6lje-timme-7.78905/",
+      "last_page_hint": 1,
+      "latest_ts": 1647194206,
+      "title": "Prins Fiskes följe - Timme 7"
+    },
+    "prinsessan-magicas-f%C3%B6lje-timme-1.78860": {
+      "base_url": "https://www.rollspel.nu/threads/prinsessan-magicas-f%C3%B6lje-timme-1.78860/",
+      "last_page_hint": 3,
+      "latest_ts": 1646683280,
+      "title": "Prinsessan Magicas följe - Timme 1"
+    },
+    "prinsessan-magicas-f%C3%B6lje-timme-2.78867": {
+      "base_url": "https://www.rollspel.nu/threads/prinsessan-magicas-f%C3%B6lje-timme-2.78867/",
+      "last_page_hint": 2,
+      "latest_ts": 1646769652,
+      "title": "Prinsessan Magicas följe - Timme 2"
+    },
+    "prinsessan-magicas-f%C3%B6lje-timme-3.78878": {
+      "base_url": "https://www.rollspel.nu/threads/prinsessan-magicas-f%C3%B6lje-timme-3.78878/",
+      "last_page_hint": 2,
+      "latest_ts": 1646855419,
+      "title": "Prinsessan Magicas följe - Timme 3"
+    },
+    "prinsessan-magicas-f%C3%B6lje-timme-4.78882": {
+      "base_url": "https://www.rollspel.nu/threads/prinsessan-magicas-f%C3%B6lje-timme-4.78882/",
+      "last_page_hint": 2,
+      "latest_ts": 1646943337,
+      "title": "Prinsessan Magicas följe - Timme 4"
+    },
+    "prinsessan-magicas-f%C3%B6lje-timme-5.78891": {
+      "base_url": "https://www.rollspel.nu/threads/prinsessan-magicas-f%C3%B6lje-timme-5.78891/",
+      "last_page_hint": 2,
+      "latest_ts": 1647016452,
+      "title": "Prinsessan Magicas följe - Timme 5"
+    },
+    "prinsessan-magicas-f%C3%B6lje-timme-6.78900": {
+      "base_url": "https://www.rollspel.nu/threads/prinsessan-magicas-f%C3%B6lje-timme-6.78900/",
+      "last_page_hint": 1,
+      "latest_ts": 1647081780,
+      "title": "Prinsessan Magicas följe - Timme 6"
+    },
+    "prinsessan-magicas-f%C3%B6lje-timme-7.78906": {
+      "base_url": "https://www.rollspel.nu/threads/prinsessan-magicas-f%C3%B6lje-timme-7.78906/",
+      "last_page_hint": 1,
+      "latest_ts": 1647194958,
+      "title": "Prinsessan Magicas följe - Timme 7"
+    },
+    "prinsessan-magicas-och-prins-fiskes-f%C3%B6ljen-spelet-%C3%A4r-%C3%B6ver.78913": {
+      "base_url": "https://www.rollspel.nu/threads/prinsessan-magicas-och-prins-fiskes-f%C3%B6ljen-spelet-%C3%A4r-%C3%B6ver.78913/",
+      "last_page_hint": 2,
+      "latest_ts": 1647324777,
+      "title": "Prinsessan Magicas och prins Fiskes följen - Spelet är över"
+    },
+    "prisgala-2024-omr%C3%B6stningar.84527": {
+      "base_url": "https://www.rollspel.nu/threads/prisgala-2024-omr%C3%B6stningar.84527/",
+      "last_page_hint": 1,
+      "latest_ts": 1735397717,
+      "title": "PRISGALA 2024 - Omröstningar"
+    },
+    "r1-spionchefens-hemlighet.86088": {
+      "base_url": "https://www.rollspel.nu/threads/r1-spionchefens-hemlighet.86088/",
+      "last_page_hint": 23,
+      "latest_ts": 1758141944,
+      "title": "[R1] Spionchefens hemlighet"
+    },
+    "r1-utkante-en-liten-by-bland-drakar-och-demoner.82267": {
+      "base_url": "https://www.rollspel.nu/threads/r1-utkante-en-liten-by-bland-drakar-och-demoner.82267/",
+      "last_page_hint": 28,
+      "latest_ts": 1700424054,
+      "title": "[R1] Utkante - en liten by bland drakar och demoner"
+    },
+    "r2-spionchefens-hemlighet.86107": {
+      "base_url": "https://www.rollspel.nu/threads/r2-spionchefens-hemlighet.86107/",
+      "last_page_hint": 18,
+      "latest_ts": 1758140928,
+      "title": "[R2] Spionchefens hemlighet"
+    },
+    "r2-utkante-en-liten-by-bland-drakar-och-demoner.82285": {
+      "base_url": "https://www.rollspel.nu/threads/r2-utkante-en-liten-by-bland-drakar-och-demoner.82285/",
+      "last_page_hint": 19,
+      "latest_ts": 1700510414,
+      "title": "[R2] Utkante - en liten by bland drakar och demoner"
+    },
+    "r3-spionchefens-hemlighet.86114": {
+      "base_url": "https://www.rollspel.nu/threads/r3-spionchefens-hemlighet.86114/",
+      "last_page_hint": 8,
+      "latest_ts": 1758222219,
+      "title": "[R3] Spionchefens hemlighet"
+    },
+    "r3-utkante-en-liten-by-bland-drakar-och-demoner.82291": {
+      "base_url": "https://www.rollspel.nu/threads/r3-utkante-en-liten-by-bland-drakar-och-demoner.82291/",
+      "last_page_hint": 9,
+      "latest_ts": 1700596808,
+      "title": "[R3] Utkante - en liten by bland drakar och demoner"
+    },
+    "r4-spionchefens-hemlighet.86118": {
+      "base_url": "https://www.rollspel.nu/threads/r4-spionchefens-hemlighet.86118/",
+      "last_page_hint": 2,
+      "latest_ts": 1758276005,
+      "title": "[R4] Spionchefens hemlighet"
+    },
+    "r4-utkante-en-liten-by-bland-drakar-och-demoner.82302": {
+      "base_url": "https://www.rollspel.nu/threads/r4-utkante-en-liten-by-bland-drakar-och-demoner.82302/",
+      "last_page_hint": 3,
+      "latest_ts": 1700603869,
+      "title": "[R4] Utkante - en liten by bland drakar och demoner"
+    },
+    "r5-spionchefens-hemlighet.86119": {
+      "base_url": "https://www.rollspel.nu/threads/r5-spionchefens-hemlighet.86119/",
+      "last_page_hint": 4,
+      "latest_ts": 1758297602,
+      "title": "[R5] Spionchefens hemlighet"
+    },
+    "r6-varulvsblixt%E2%9A%A1%EF%B8%8F2-2025-slut.85517": {
+      "base_url": "https://www.rollspel.nu/threads/r6-varulvsblixt%E2%9A%A1%EF%B8%8F2-2025-slut.85517/",
+      "last_page_hint": 3,
+      "latest_ts": 1750060383,
+      "title": "R6 Varulvsblixt⚡️2 2025 SLUT"
+    },
+    "red-x-mas-1-tipp-tipp-tapp.61320": {
+      "base_url": "https://www.rollspel.nu/threads/red-x-mas-1-tipp-tipp-tapp.61320/",
+      "last_page_hint": 5,
+      "latest_ts": 1386709405,
+      "title": "[Red X-mas] - 1 - Tipp tipp tapp"
+    },
+    "red-x-mas-2-julegr%C3%B6t-%C3%A5-julegris.61345": {
+      "base_url": "https://www.rollspel.nu/threads/red-x-mas-2-julegr%C3%B6t-%C3%A5-julegris.61345/",
+      "last_page_hint": 4,
+      "latest_ts": 1386881679,
+      "title": "[Red X-mas] - 2 - Julegröt å julegris"
+    },
+    "red-x-mas-3-ute-%C3%A4r-m%C3%B6rkt-och-kallt.61368": {
+      "base_url": "https://www.rollspel.nu/threads/red-x-mas-3-ute-%C3%A4r-m%C3%B6rkt-och-kallt.61368/",
+      "last_page_hint": 3,
+      "latest_ts": 1387139122,
+      "title": "[Red X-mas] - 3 - Ute är mörkt och kallt"
+    },
+    "red-x-mas-4-en-liten-tid-vi-leva-h%C3%A4r.61390": {
+      "base_url": "https://www.rollspel.nu/threads/red-x-mas-4-en-liten-tid-vi-leva-h%C3%A4r.61390/",
+      "last_page_hint": 1,
+      "latest_ts": 1387311210,
+      "title": "[Red X-mas] - 4 - En liten tid vi leva här"
+    },
+    "red-x-mas-5-hej-tomtegubbar.61413": {
+      "base_url": "https://www.rollspel.nu/threads/red-x-mas-5-hej-tomtegubbar.61413/",
+      "last_page_hint": 2,
+      "latest_ts": 1387377560,
+      "title": "[Red X-mas] - 5 - Hej tomteGUBBAR?"
+    },
+    "revolouption-r1.81427": {
+      "base_url": "https://www.rollspel.nu/threads/revolouption-r1.81427/",
+      "last_page_hint": 25,
+      "latest_ts": 1689537608,
+      "title": "[REVOLOUPTION] - R1"
+    },
+    "revolouption-r2.81449": {
+      "base_url": "https://www.rollspel.nu/threads/revolouption-r2.81449/",
+      "last_page_hint": 11,
+      "latest_ts": 1689624084,
+      "title": "[REVOLOUPTION] - R2"
+    },
+    "revolouption-r3.81457": {
+      "base_url": "https://www.rollspel.nu/threads/revolouption-r3.81457/",
+      "last_page_hint": 5,
+      "latest_ts": 1689710435,
+      "title": "[REVOLOUPTION] - R3"
+    },
+    "revolouption-r4.81458": {
+      "base_url": "https://www.rollspel.nu/threads/revolouption-r4.81458/",
+      "last_page_hint": 3,
+      "latest_ts": 1689774188,
+      "title": "[REVOLOUPTION] - R4"
+    },
+    "revolouption-spelet-%C3%A4r-%C3%B6ver.81464": {
+      "base_url": "https://www.rollspel.nu/threads/revolouption-spelet-%C3%A4r-%C3%B6ver.81464/",
+      "last_page_hint": 3,
+      "latest_ts": 1689972428,
+      "title": "[REVOLOUPTION] - Spelet är över"
+    },
+    "revolt-emot-ulvimperiet-andra-rundan.77364": {
+      "base_url": "https://www.rollspel.nu/threads/revolt-emot-ulvimperiet-andra-rundan.77364/",
+      "last_page_hint": 7,
+      "latest_ts": 1623276453,
+      "title": "Revolt emot Ulvimperiet [Andra rundan]"
+    },
+    "revolt-emot-ulvimperiet-f%C3%B6rsta-rundan.77360": {
+      "base_url": "https://www.rollspel.nu/threads/revolt-emot-ulvimperiet-f%C3%B6rsta-rundan.77360/",
+      "last_page_hint": 17,
+      "latest_ts": 1623184008,
+      "title": "Revolt emot Ulvimperiet [Första rundan]"
+    },
+    "revolt-emot-ulvimperiet-femte-rundan.77385": {
+      "base_url": "https://www.rollspel.nu/threads/revolt-emot-ulvimperiet-femte-rundan.77385/",
+      "last_page_hint": 2,
+      "latest_ts": 1623607152,
+      "title": "Revolt emot Ulvimperiet [Femte rundan]"
+    },
+    "revolt-emot-ulvimperiet-fj%C3%A4rde-rundan.77381": {
+      "base_url": "https://www.rollspel.nu/threads/revolt-emot-ulvimperiet-fj%C3%A4rde-rundan.77381/",
+      "last_page_hint": 4,
+      "latest_ts": 1623515826,
+      "title": "Revolt emot Ulvimperiet [Fjärde rundan]"
+    },
+    "revolt-emot-ulvimperiet-slut-p%C3%A5-spelet.77387": {
+      "base_url": "https://www.rollspel.nu/threads/revolt-emot-ulvimperiet-slut-p%C3%A5-spelet.77387/",
+      "last_page_hint": 2,
+      "latest_ts": 1623866690,
+      "title": "Revolt emot Ulvimperiet [Slut på spelet]"
+    },
+    "revolt-emot-ulvimperiet-tredje-rundan.77373": {
+      "base_url": "https://www.rollspel.nu/threads/revolt-emot-ulvimperiet-tredje-rundan.77373/",
+      "last_page_hint": 11,
+      "latest_ts": 1623399050,
+      "title": "Revolt emot Ulvimperiet [Tredje rundan]"
+    },
+    "rollspel-du-r1.82825": {
+      "base_url": "https://www.rollspel.nu/threads/rollspel-du-r1.82825/",
+      "last_page_hint": 9,
+      "latest_ts": 1708291512,
+      "title": "rollspel.du - R1"
+    },
+    "rollspel-du-r2.82835": {
+      "base_url": "https://www.rollspel.nu/threads/rollspel-du-r2.82835/",
+      "last_page_hint": 11,
+      "latest_ts": 1708372841,
+      "title": "rollspel.du - R2"
+    },
+    "rollspel-du-r3.82843": {
+      "base_url": "https://www.rollspel.nu/threads/rollspel-du-r3.82843/",
+      "last_page_hint": 9,
+      "latest_ts": 1708459232,
+      "title": "rollspel.du - R3"
+    },
+    "rollspel-du-spelet-%C3%A4r-slut.82852": {
+      "base_url": "https://www.rollspel.nu/threads/rollspel-du-spelet-%C3%A4r-slut.82852/",
+      "last_page_hint": 5,
+      "latest_ts": 1708605223,
+      "title": "rollspel.du - spelet är slut"
+    },
+    "showdown-at-bad-pelt-gulch-runda-1.76665": {
+      "base_url": "https://www.rollspel.nu/threads/showdown-at-bad-pelt-gulch-runda-1.76665/",
+      "last_page_hint": 7,
+      "latest_ts": 1612900806,
+      "title": "Showdown at Bad Pelt Gulch - runda 1"
+    },
+    "showdown-at-bad-pelt-gulch-runda-2.76678": {
+      "base_url": "https://www.rollspel.nu/threads/showdown-at-bad-pelt-gulch-runda-2.76678/",
+      "last_page_hint": 6,
+      "latest_ts": 1613073673,
+      "title": "Showdown at Bad Pelt Gulch - runda 2"
+    },
+    "showdown-at-bad-pelt-gulch-runda-3.76689": {
+      "base_url": "https://www.rollspel.nu/threads/showdown-at-bad-pelt-gulch-runda-3.76689/",
+      "last_page_hint": 5,
+      "latest_ts": 1613246401,
+      "title": "Showdown at Bad Pelt Gulch - runda 3"
+    },
+    "showdown-at-bad-pelt-gulch-spelet-slut.76701": {
+      "base_url": "https://www.rollspel.nu/threads/showdown-at-bad-pelt-gulch-spelet-slut.76701/",
+      "last_page_hint": 2,
+      "latest_ts": 1613372459,
+      "title": "Showdown at Bad Pelt Gulch - spelet slut"
+    },
+    "snapphanarna-pre-game.80726": {
+      "base_url": "https://www.rollspel.nu/threads/snapphanarna-pre-game.80726/",
+      "last_page_hint": 1,
+      "latest_ts": 1677403499,
+      "title": "[Snapphanarna] Pre-game"
+    },
+    "snapphanarna-runda-1-1.80742": {
+      "base_url": "https://www.rollspel.nu/threads/snapphanarna-runda-1-1.80742/",
+      "last_page_hint": 5,
+      "latest_ts": 1677084125,
+      "title": "[Snapphanarna] Runda 1.1"
+    },
+    "snapphanarna-runda-1.80737": {
+      "base_url": "https://www.rollspel.nu/threads/snapphanarna-runda-1.80737/",
+      "last_page_hint": 4,
+      "latest_ts": 1676994804,
+      "title": "[Snapphanarna] Runda 1"
+    },
+    "snapphanarna-runda-2-1.80753": {
+      "base_url": "https://www.rollspel.nu/threads/snapphanarna-runda-2-1.80753/",
+      "last_page_hint": 5,
+      "latest_ts": 1677168869,
+      "title": "[Snapphanarna] Runda 2.1"
+    },
+    "snapphanarna-runda-2-2.80757": {
+      "base_url": "https://www.rollspel.nu/threads/snapphanarna-runda-2-2.80757/",
+      "last_page_hint": 2,
+      "latest_ts": 1677186503,
+      "title": "[Snapphanarna] Runda 2.2"
+    },
+    "snapphanarna-runda-2.80748": {
+      "base_url": "https://www.rollspel.nu/threads/snapphanarna-runda-2.80748/",
+      "last_page_hint": 6,
+      "latest_ts": 1677094957,
+      "title": "[Snapphanarna] Runda 2"
+    },
+    "snapphanarna-runda-3.80761": {
+      "base_url": "https://www.rollspel.nu/threads/snapphanarna-runda-3.80761/",
+      "last_page_hint": 10,
+      "latest_ts": 1677355081,
+      "title": "[Snapphanarna] Runda 3"
+    },
+    "snapphanarna-runda-4.80769": {
+      "base_url": "https://www.rollspel.nu/threads/snapphanarna-runda-4.80769/",
+      "last_page_hint": 4,
+      "latest_ts": 1677447394,
+      "title": "[Snapphanarna] Runda 4"
+    },
+    "snapphanarna-spelet-%C3%A4r-slut.80777": {
+      "base_url": "https://www.rollspel.nu/threads/snapphanarna-spelet-%C3%A4r-slut.80777/",
+      "last_page_hint": 3,
+      "latest_ts": 1677615909,
+      "title": "[Snapphanarna] Spelet är slut!"
+    },
+    "spionchefens-hemlighet-spelet-slut-bybovinst.86123": {
+      "base_url": "https://www.rollspel.nu/threads/spionchefens-hemlighet-spelet-slut-bybovinst.86123/",
+      "last_page_hint": 8,
+      "latest_ts": 1758616798,
+      "title": "Spionchefens hemlighet, spelet slut! Bybovinst!"
+    },
+    "springsmash23-avslutat-bybovinst.81065": {
+      "base_url": "https://www.rollspel.nu/threads/springsmash23-avslutat-bybovinst.81065/",
+      "last_page_hint": 2,
+      "latest_ts": 1682089142,
+      "title": "SpringSmash23 avslutat BYBOVINST"
+    },
+    "springsmash23-runda-1.81037": {
+      "base_url": "https://www.rollspel.nu/threads/springsmash23-runda-1.81037/",
+      "last_page_hint": 16,
+      "latest_ts": 1681844404,
+      "title": "SpringSmash23 - Runda 1"
+    },
+    "springsmash23-runda-2.81059": {
+      "base_url": "https://www.rollspel.nu/threads/springsmash23-runda-2.81059/",
+      "last_page_hint": 11,
+      "latest_ts": 1682008126,
+      "title": "SpringSmash23 - Runda 2"
+    },
+    "tjuv-och-polis-runda-1.79359": {
+      "base_url": "https://www.rollspel.nu/threads/tjuv-och-polis-runda-1.79359/",
+      "last_page_hint": 4,
+      "latest_ts": 1655060401,
+      "title": "[Tjuv och polis] Runda 1"
+    },
+    "tjuv-och-polis-runda-2.79367": {
+      "base_url": "https://www.rollspel.nu/threads/tjuv-och-polis-runda-2.79367/",
+      "last_page_hint": 3,
+      "latest_ts": 1655146802,
+      "title": "[Tjuv och polis] Runda 2"
+    },
+    "tjuv-och-polis-spelet-%C3%A4r-%C3%B6ver.79371": {
+      "base_url": "https://www.rollspel.nu/threads/tjuv-och-polis-spelet-%C3%A4r-%C3%B6ver.79371/",
+      "last_page_hint": 3,
+      "latest_ts": 1655234117,
+      "title": "[Tjuv och polis] Spelet är över"
+    },
+    "turnering.80858": {
+      "base_url": "https://www.rollspel.nu/threads/turnering.80858/",
+      "last_page_hint": 1,
+      "latest_ts": 1678901064,
+      "title": "Turnering?"
+    },
+    "ulvar-p%C3%A5-puben-r1.86465": {
+      "base_url": "https://www.rollspel.nu/threads/ulvar-p%C3%A5-puben-r1.86465/",
+      "last_page_hint": 9,
+      "latest_ts": 1763406004,
+      "title": "Ulvar på puben R1"
+    },
+    "ulvar-p%C3%A5-puben-r2.86480": {
+      "base_url": "https://www.rollspel.nu/threads/ulvar-p%C3%A5-puben-r2.86480/",
+      "last_page_hint": 9,
+      "latest_ts": 1763492919,
+      "title": "Ulvar på puben R2"
+    },
+    "ulvar-p%C3%A5-puben-r3.86484": {
+      "base_url": "https://www.rollspel.nu/threads/ulvar-p%C3%A5-puben-r3.86484/",
+      "last_page_hint": 5,
+      "latest_ts": 1763578829,
+      "title": "Ulvar på puben R3"
+    },
+    "ulvar-p%C3%A5-puben-spelet-%C3%A4r-slut.86486": {
+      "base_url": "https://www.rollspel.nu/threads/ulvar-p%C3%A5-puben-spelet-%C3%A4r-slut.86486/",
+      "last_page_hint": 8,
+      "latest_ts": 1764013577,
+      "title": "Ulvar på puben - Spelet är slut"
+    },
+    "ulvfellas-runda-1.83203": {
+      "base_url": "https://www.rollspel.nu/threads/ulvfellas-runda-1.83203/",
+      "last_page_hint": 15,
+      "latest_ts": 1713534956,
+      "title": "Ulvfellas - Runda 1"
+    },
+    "ulvfellas-runda-2.83206": {
+      "base_url": "https://www.rollspel.nu/threads/ulvfellas-runda-2.83206/",
+      "last_page_hint": 11,
+      "latest_ts": 1713463208,
+      "title": "Ulvfellas - Runda 2"
+    },
+    "ulvfellas-runda-3.83210": {
+      "base_url": "https://www.rollspel.nu/threads/ulvfellas-runda-3.83210/",
+      "last_page_hint": 18,
+      "latest_ts": 1713607201,
+      "title": "Ulvfellas - Runda 3"
+    },
+    "ulvfellas-runda-4.83218": {
+      "base_url": "https://www.rollspel.nu/threads/ulvfellas-runda-4.83218/",
+      "last_page_hint": 4,
+      "latest_ts": 1713693600,
+      "title": "Ulvfellas - Runda 4"
+    },
+    "ulvfellas-spelet-%C3%A4r-slut.83223": {
+      "base_url": "https://www.rollspel.nu/threads/ulvfellas-spelet-%C3%A4r-slut.83223/",
+      "last_page_hint": 4,
+      "latest_ts": 1713802684,
+      "title": "Ulvfellas - Spelet är slut"
+    },
+    "ulvg%C3%A5rdens-g%C3%A4stabud-r1.86276": {
+      "base_url": "https://www.rollspel.nu/threads/ulvg%C3%A5rdens-g%C3%A4stabud-r1.86276/",
+      "last_page_hint": 44,
+      "latest_ts": 1761073232,
+      "title": "Ulvgårdens gästabud - R1"
+    },
+    "ulvg%C3%A5rdens-g%C3%A4stabud-r2.86299": {
+      "base_url": "https://www.rollspel.nu/threads/ulvg%C3%A5rdens-g%C3%A4stabud-r2.86299/",
+      "last_page_hint": 23,
+      "latest_ts": 1761415342,
+      "title": "Ulvgårdens gästabud - R2"
+    },
+    "uscss-ohsht-mekanike-r-n-p%C3%A5-bordet-runda-1.80241": {
+      "base_url": "https://www.rollspel.nu/threads/uscss-ohsht-mekanike-r-n-p%C3%A5-bordet-runda-1.80241/",
+      "last_page_hint": 16,
+      "latest_ts": 1668974699,
+      "title": "USCSS OHSHT: Mekanike(r)n på bordet Runda 1"
+    },
+    "uscss-ohsht-mekanike-r-n-p%C3%A5-bordet-runda-2.80251": {
+      "base_url": "https://www.rollspel.nu/threads/uscss-ohsht-mekanike-r-n-p%C3%A5-bordet-runda-2.80251/",
+      "last_page_hint": 9,
+      "latest_ts": 1669147368,
+      "title": "USCSS OHSHT: Mekanike(r)n på bordet Runda 2"
+    },
+    "uscss-ohsht-mekanike-r-n-p%C3%A5-bordet-runda-3.80265": {
+      "base_url": "https://www.rollspel.nu/threads/uscss-ohsht-mekanike-r-n-p%C3%A5-bordet-runda-3.80265/",
+      "last_page_hint": 5,
+      "latest_ts": 1669320142,
+      "title": "USCSS OHSHT: Mekanike(r)n på bordet Runda 3"
+    },
+    "uscss-ohsht-mekanike-r-n-p%C3%A5-bordet-runda-4.80274": {
+      "base_url": "https://www.rollspel.nu/threads/uscss-ohsht-mekanike-r-n-p%C3%A5-bordet-runda-4.80274/",
+      "last_page_hint": 6,
+      "latest_ts": 1669492834,
+      "title": "USCSS OHSHT: Mekanike(r)n på bordet Runda 4"
+    },
+    "uscss-ohsht-mekanike-r-n-p%C3%A5-bordet-runda-5.80283": {
+      "base_url": "https://www.rollspel.nu/threads/uscss-ohsht-mekanike-r-n-p%C3%A5-bordet-runda-5.80283/",
+      "last_page_hint": 2,
+      "latest_ts": 1669579341,
+      "title": "USCSS OHSHT: Mekanike(r)n på bordet Runda 5"
+    },
+    "uscss-ohsht-mekanike-r-n-p%C3%A5-bordet-runda-6.80287": {
+      "base_url": "https://www.rollspel.nu/threads/uscss-ohsht-mekanike-r-n-p%C3%A5-bordet-runda-6.80287/",
+      "last_page_hint": 1,
+      "latest_ts": 1669662382,
+      "title": "USCSS OHSHT: Mekanike(r)n på bordet Runda 6"
+    },
+    "uscss-ohsht-mekanike-r-n-p%C3%A5-bordet-spelet-%C3%A4r-%C3%B6ver.80294": {
+      "base_url": "https://www.rollspel.nu/threads/uscss-ohsht-mekanike-r-n-p%C3%A5-bordet-spelet-%C3%A4r-%C3%B6ver.80294/",
+      "last_page_hint": 3,
+      "latest_ts": 1670007110,
+      "title": "USCSS OHSHT: Mekanike(r)n på bordet [Spelet är över]"
+    },
+    "uscss-ohsht-mekanike-r-n-p%C3%A5-bordet.80229": {
+      "base_url": "https://www.rollspel.nu/threads/uscss-ohsht-mekanike-r-n-p%C3%A5-bordet.80229/",
+      "last_page_hint": 1,
+      "latest_ts": 1668803974,
+      "title": "USCSS OHSHT: Mekanike(r)n på bordet"
+    },
+    "uscss-wrnu-runda-0.79189": {
+      "base_url": "https://www.rollspel.nu/threads/uscss-wrnu-runda-0.79189/",
+      "last_page_hint": 1,
+      "latest_ts": 1651868867,
+      "title": "[USCSS Wrnu] Runda 0"
+    },
+    "uscss-wrnu-runda-1.79193": {
+      "base_url": "https://www.rollspel.nu/threads/uscss-wrnu-runda-1.79193/",
+      "last_page_hint": 10,
+      "latest_ts": 1652123550,
+      "title": "[USCSS Wrnu] Runda 1"
+    },
+    "uscss-wrnu-runda-2.79202": {
+      "base_url": "https://www.rollspel.nu/threads/uscss-wrnu-runda-2.79202/",
+      "last_page_hint": 7,
+      "latest_ts": 1652295725,
+      "title": "[USCSS Wrnu] Runda 2"
+    },
+    "uscss-wrnu-runda-3.79208": {
+      "base_url": "https://www.rollspel.nu/threads/uscss-wrnu-runda-3.79208/",
+      "last_page_hint": 6,
+      "latest_ts": 1652382163,
+      "title": "[USCSS Wrnu] Runda 3"
+    },
+    "uscss-wrnu-runda-4.79214": {
+      "base_url": "https://www.rollspel.nu/threads/uscss-wrnu-runda-4.79214/",
+      "last_page_hint": 3,
+      "latest_ts": 1652468477,
+      "title": "[USCSS Wrnu] Runda 4"
+    },
+    "uscss-wrnu-runda-5.79218": {
+      "base_url": "https://www.rollspel.nu/threads/uscss-wrnu-runda-5.79218/",
+      "last_page_hint": 1,
+      "latest_ts": 1652555105,
+      "title": "[USCSS Wrnu] Runda 5"
+    },
+    "uscss-wrnu-spelet-avslutat.79222": {
+      "base_url": "https://www.rollspel.nu/threads/uscss-wrnu-spelet-avslutat.79222/",
+      "last_page_hint": 3,
+      "latest_ts": 1652689089,
+      "title": "[USCSS Wrnu] Spelet avslutat"
+    },
+    "utkante-2-r1.84006": {
+      "base_url": "https://www.rollspel.nu/threads/utkante-2-r1.84006/",
+      "last_page_hint": 26,
+      "latest_ts": 1726599627,
+      "title": "[Utkante 2] - R1"
+    },
+    "utkante-2-r2.84019": {
+      "base_url": "https://www.rollspel.nu/threads/utkante-2-r2.84019/",
+      "last_page_hint": 7,
+      "latest_ts": 1726686026,
+      "title": "[Utkante 2] - R2"
+    },
+    "utkante-2-r3.84025": {
+      "base_url": "https://www.rollspel.nu/threads/utkante-2-r3.84025/",
+      "last_page_hint": 4,
+      "latest_ts": 1726773341,
+      "title": "[Utkante 2] - R3"
+    },
+    "utkante-2-r4.84030": {
+      "base_url": "https://www.rollspel.nu/threads/utkante-2-r4.84030/",
+      "last_page_hint": 1,
+      "latest_ts": 1726858411,
+      "title": "[Utkante 2] - R4"
+    },
+    "utkante-2-remi.84041": {
+      "base_url": "https://www.rollspel.nu/threads/utkante-2-remi.84041/",
+      "last_page_hint": 3,
+      "latest_ts": 1726940170,
+      "title": "[Utkante 2] - Remi"
+    },
+    "utkante-spelet-slut-ulvvinst.82303": {
+      "base_url": "https://www.rollspel.nu/threads/utkante-spelet-slut-ulvvinst.82303/",
+      "last_page_hint": 9,
+      "latest_ts": 1700771398,
+      "title": "Utkante - SPELET SLUT: Ulvvinst!"
+    },
+    "vad-%C3%A4r-ett-varulvsspel-skrivet-ursprungligen-p%C3%A5-gamla-forumet-av-mukwa.71806": {
+      "base_url": "https://www.rollspel.nu/threads/vad-%C3%A4r-ett-varulvsspel-skrivet-ursprungligen-p%C3%A5-gamla-forumet-av-mukwa.71806/",
+      "last_page_hint": 1,
+      "latest_ts": 1492258648,
+      "title": "Vad är ett varulvsspel - skrivet ursprungligen på gamla forumet, av Mukwa"
+    },
+    "vad-%C3%A4r-ett-varulvsspel.55056": {
+      "base_url": "https://www.rollspel.nu/threads/vad-%C3%A4r-ett-varulvsspel.55056/",
+      "last_page_hint": 1,
+      "latest_ts": 1331031126,
+      "title": "Vad är ett varulvsspel?"
+    },
+    "valulv-runda-1.83832": {
+      "base_url": "https://www.rollspel.nu/threads/valulv-runda-1.83832/",
+      "last_page_hint": 32,
+      "latest_ts": 1724176927,
+      "title": "VALulv - Runda 1"
+    },
+    "valulv-runda-2.83842": {
+      "base_url": "https://www.rollspel.nu/threads/valulv-runda-2.83842/",
+      "last_page_hint": 24,
+      "latest_ts": 1724360995,
+      "title": "VALulv - Runda 2"
+    },
+    "valulv-runda-3.83850": {
+      "base_url": "https://www.rollspel.nu/threads/valulv-runda-3.83850/",
+      "last_page_hint": 11,
+      "latest_ts": 1724436062,
+      "title": "VALulv - Runda 3"
+    },
+    "valulv-runda-4.83858": {
+      "base_url": "https://www.rollspel.nu/threads/valulv-runda-4.83858/",
+      "last_page_hint": 15,
+      "latest_ts": 1724522405,
+      "title": "VALulv - runda 4"
+    },
+    "valulv-runda-5.83866": {
+      "base_url": "https://www.rollspel.nu/threads/valulv-runda-5.83866/",
+      "last_page_hint": 11,
+      "latest_ts": 1724924934,
+      "title": "VALulv -Runda 5"
+    },
+    "valvular-in-space-runda-1.62158": {
+      "base_url": "https://www.rollspel.nu/threads/valvular-in-space-runda-1.62158/",
+      "last_page_hint": 21,
+      "latest_ts": 1432214662,
+      "title": "Valvular in SPACE! Runda 1"
+    },
+    "vampyrernas-maskerad-r1.82626": {
+      "base_url": "https://www.rollspel.nu/threads/vampyrernas-maskerad-r1.82626/",
+      "last_page_hint": 33,
+      "latest_ts": 1705649186,
+      "title": "Vampyrernas maskerad - R1"
+    },
+    "vampyrernas-maskerad-r2.82639": {
+      "base_url": "https://www.rollspel.nu/threads/vampyrernas-maskerad-r2.82639/",
+      "last_page_hint": 26,
+      "latest_ts": 1705780801,
+      "title": "Vampyrernas maskerad - R2"
+    },
+    "vampyrernas-maskerad-r3.82645": {
+      "base_url": "https://www.rollspel.nu/threads/vampyrernas-maskerad-r3.82645/",
+      "last_page_hint": 17,
+      "latest_ts": 1705915809,
+      "title": "Vampyrernas maskerad - R3"
+    },
+    "vampyrernas-maskerad-r4.82652": {
+      "base_url": "https://www.rollspel.nu/threads/vampyrernas-maskerad-r4.82652/",
+      "last_page_hint": 11,
+      "latest_ts": 1705953626,
+      "title": "Vampyrernas maskerad - R4"
+    },
+    "vampyrernas-maskerad-r5.82655": {
+      "base_url": "https://www.rollspel.nu/threads/vampyrernas-maskerad-r5.82655/",
+      "last_page_hint": 10,
+      "latest_ts": 1706040003,
+      "title": "Vampyrernas maskerad - R5"
+    },
+    "vampyrernas-maskerad-r6.82659": {
+      "base_url": "https://www.rollspel.nu/threads/vampyrernas-maskerad-r6.82659/",
+      "last_page_hint": 5,
+      "latest_ts": 1706126401,
+      "title": "Vampyrernas maskerad - R6"
+    },
+    "vampyrernas-maskerad-spelet-%C3%A4r-slut.82668": {
+      "base_url": "https://www.rollspel.nu/threads/vampyrernas-maskerad-spelet-%C3%A4r-slut.82668/",
+      "last_page_hint": 6,
+      "latest_ts": 1706359553,
+      "title": "Vampyrernas maskerad - Spelet är slut"
+    },
+    "varbruari-3-m%C3%A5nf%C3%B6rm%C3%B6rkelse-runda-1.87044": {
+      "base_url": "https://www.rollspel.nu/threads/varbruari-3-m%C3%A5nf%C3%B6rm%C3%B6rkelse-runda-1.87044/",
+      "last_page_hint": 13,
+      "latest_ts": 1771268415,
+      "title": "Varbruari 3 Månförmörkelse: Runda 1"
+    },
+    "varbruari-3-m%C3%A5nf%C3%B6rm%C3%B6rkelse-runda-2.87054": {
+      "base_url": "https://www.rollspel.nu/threads/varbruari-3-m%C3%A5nf%C3%B6rm%C3%B6rkelse-runda-2.87054/",
+      "last_page_hint": 3,
+      "latest_ts": 1771354818,
+      "title": "Varbruari 3 Månförmörkelse: Runda 2"
+    },
+    "varbruari-3-m%C3%A5nf%C3%B6rm%C3%B6rkelse-runda-3.87058": {
+      "base_url": "https://www.rollspel.nu/threads/varbruari-3-m%C3%A5nf%C3%B6rm%C3%B6rkelse-runda-3.87058/",
+      "last_page_hint": 4,
+      "latest_ts": 1771441208,
+      "title": "Varbruari 3 Månförmörkelse: Runda 3"
+    },
+    "varbruari-3-m%C3%A5nf%C3%B6rm%C3%B6rkelse-runda-4.87061": {
+      "base_url": "https://www.rollspel.nu/threads/varbruari-3-m%C3%A5nf%C3%B6rm%C3%B6rkelse-runda-4.87061/",
+      "last_page_hint": 5,
+      "latest_ts": 1771527602,
+      "title": "Varbruari 3 Månförmörkelse: Runda 4"
+    },
+    "varbruari-3-m%C3%A5nf%C3%B6rm%C3%B6rkelse-runda-5.87067": {
+      "base_url": "https://www.rollspel.nu/threads/varbruari-3-m%C3%A5nf%C3%B6rm%C3%B6rkelse-runda-5.87067/",
+      "last_page_hint": 3,
+      "latest_ts": 1771614009,
+      "title": "Varbruari 3 Månförmörkelse: Runda 5"
+    },
+    "varbruari-3-m%C3%A5nf%C3%B6rm%C3%B6rkelse-runda-6.87080": {
+      "base_url": "https://www.rollspel.nu/threads/varbruari-3-m%C3%A5nf%C3%B6rm%C3%B6rkelse-runda-6.87080/",
+      "last_page_hint": 3,
+      "latest_ts": 1771700407,
+      "title": "Varbruari 3 Månförmörkelse: Runda 6"
+    },
+    "varbruari-3-m%C3%A5nf%C3%B6rm%C3%B6rkelse-spelet-%C3%A4r-slut.87087": {
+      "base_url": "https://www.rollspel.nu/threads/varbruari-3-m%C3%A5nf%C3%B6rm%C3%B6rkelse-spelet-%C3%A4r-slut.87087/",
+      "last_page_hint": 4,
+      "latest_ts": 1771754018,
+      "title": "Varbruari 3 Månförmörkelse: Spelet är slut"
+    },
+    "vargbruari-1-runda-1.86944": {
+      "base_url": "https://www.rollspel.nu/threads/vargbruari-1-runda-1.86944/",
+      "last_page_hint": 7,
+      "latest_ts": 1770058838,
+      "title": "Vargbruari 1: Runda 1"
+    },
+    "vargbruari-1-runda-2.86951": {
+      "base_url": "https://www.rollspel.nu/threads/vargbruari-1-runda-2.86951/",
+      "last_page_hint": 8,
+      "latest_ts": 1770145201,
+      "title": "Vargbruari 1: Runda 2"
+    },
+    "vargbruari-1-spelet-%C3%A4r-slut.86961": {
+      "base_url": "https://www.rollspel.nu/threads/vargbruari-1-spelet-%C3%A4r-slut.86961/",
+      "last_page_hint": 4,
+      "latest_ts": 1770480192,
+      "title": "Vargbruari 1: Spelet är slut"
+    },
+    "vargbruari-2-ny-m%C3%A5ne-runda-1.86993": {
+      "base_url": "https://www.rollspel.nu/threads/vargbruari-2-ny-m%C3%A5ne-runda-1.86993/",
+      "last_page_hint": 13,
+      "latest_ts": 1770663630,
+      "title": "Vargbruari 2 Ny måne: Runda 1"
+    },
+    "vargbruari-2-ny-m%C3%A5ne-runda-2.87003": {
+      "base_url": "https://www.rollspel.nu/threads/vargbruari-2-ny-m%C3%A5ne-runda-2.87003/",
+      "last_page_hint": 9,
+      "latest_ts": 1770749996,
+      "title": "Vargbruari 2 Ny måne: Runda 2"
+    },
+    "vargbruari-2-ny-m%C3%A5ne-runda-3.87014": {
+      "base_url": "https://www.rollspel.nu/threads/vargbruari-2-ny-m%C3%A5ne-runda-3.87014/",
+      "last_page_hint": 1,
+      "latest_ts": 1770750382,
+      "title": "Vargbruari 2 Ny måne: Runda 3"
+    },
+    "vargbruari-2-ny-m%C3%A5ne-spelet-%C3%A4r-slut-ulvvinst.87015": {
+      "base_url": "https://www.rollspel.nu/threads/vargbruari-2-ny-m%C3%A5ne-spelet-%C3%A4r-slut-ulvvinst.87015/",
+      "last_page_hint": 4,
+      "latest_ts": 1771108169,
+      "title": "Vargbruari 2 Ny måne: Spelet är slut (Ulvvinst!)"
+    },
+    "vargbruari-4-kn%C3%A4ckande-gryning-runda-1.87097": {
+      "base_url": "https://www.rollspel.nu/threads/vargbruari-4-kn%C3%A4ckande-gryning-runda-1.87097/",
+      "last_page_hint": 12,
+      "latest_ts": 1771839697,
+      "title": "Vargbruari 4 Knäckande gryning: Runda 1"
+    },
+    "varuivspei-game-over.79502": {
+      "base_url": "https://www.rollspel.nu/threads/varuivspei-game-over.79502/",
+      "last_page_hint": 1,
+      "latest_ts": 1657308967,
+      "title": "[VaruIvspeI] - Game over"
+    },
+    "varuivspei-r1.79461": {
+      "base_url": "https://www.rollspel.nu/threads/varuivspei-r1.79461/",
+      "last_page_hint": 7,
+      "latest_ts": 1656878468,
+      "title": "[VaruIvspeI] - R1"
+    },
+    "varuivspei-r2.79478": {
+      "base_url": "https://www.rollspel.nu/threads/varuivspei-r2.79478/",
+      "last_page_hint": 7,
+      "latest_ts": 1657051190,
+      "title": "[VaruIvspeI] - R2"
+    },
+    "varuivspei-r3.79495": {
+      "base_url": "https://www.rollspel.nu/threads/varuivspei-r3.79495/",
+      "last_page_hint": 3,
+      "latest_ts": 1657140065,
+      "title": "[VaruIvspeI] - R3"
+    },
+    "varuivspei-r4.79498": {
+      "base_url": "https://www.rollspel.nu/threads/varuivspei-r4.79498/",
+      "last_page_hint": 2,
+      "latest_ts": 1657224717,
+      "title": "[VaruIvspeI] - R4"
+    },
+    "varulv-som-app.71365": {
+      "base_url": "https://www.rollspel.nu/threads/varulv-som-app.71365/",
+      "last_page_hint": 1,
+      "latest_ts": 1589538192,
+      "title": "Varulv som app?"
+    },
+    "varulvar-p%C3%A5-en-b%C3%A5t-r1-istanbul-aten.76866": {
+      "base_url": "https://www.rollspel.nu/threads/varulvar-p%C3%A5-en-b%C3%A5t-r1-istanbul-aten.76866/",
+      "last_page_hint": 11,
+      "latest_ts": 1616006345,
+      "title": "[Varulvar på en båt] - R1: Istanbul-Aten"
+    },
+    "varulvar-p%C3%A5-en-b%C3%A5t-r2-aten-venedig.76871": {
+      "base_url": "https://www.rollspel.nu/threads/varulvar-p%C3%A5-en-b%C3%A5t-r2-aten-venedig.76871/",
+      "last_page_hint": 8,
+      "latest_ts": 1616011603,
+      "title": "[Varulvar på en båt] - R2: Aten-Venedig"
+    },
+    "varulvar-p%C3%A5-en-b%C3%A5t-r3-venedig-marseille.76881": {
+      "base_url": "https://www.rollspel.nu/threads/varulvar-p%C3%A5-en-b%C3%A5t-r3-venedig-marseille.76881/",
+      "last_page_hint": 7,
+      "latest_ts": 1616164967,
+      "title": "[Varulvar på en båt] R3: Venedig-Marseille"
+    },
+    "varulvar-p%C3%A5-en-b%C3%A5t-r4-marseille-gibraltar.76888": {
+      "base_url": "https://www.rollspel.nu/threads/varulvar-p%C3%A5-en-b%C3%A5t-r4-marseille-gibraltar.76888/",
+      "last_page_hint": 8,
+      "latest_ts": 1616338943,
+      "title": "[Varulvar på en båt] R4: Marseille-Gibraltar"
+    },
+    "varulvar-p%C3%A5-en-b%C3%A5t-r5-gibraltar-london.76895": {
+      "base_url": "https://www.rollspel.nu/threads/varulvar-p%C3%A5-en-b%C3%A5t-r5-gibraltar-london.76895/",
+      "last_page_hint": 7,
+      "latest_ts": 1616446114,
+      "title": "[Varulvar på en båt] R5: Gibraltar-London"
+    },
+    "varulvar-p%C3%A5-en-b%C3%A5t-spelet-slut.76901": {
+      "base_url": "https://www.rollspel.nu/threads/varulvar-p%C3%A5-en-b%C3%A5t-spelet-slut.76901/",
+      "last_page_hint": 4,
+      "latest_ts": 1616692934,
+      "title": "[Varulvar på en båt] - Spelet slut"
+    },
+    "varulvar-p%C3%A5-ett-flygplan-game-over.79043": {
+      "base_url": "https://www.rollspel.nu/threads/varulvar-p%C3%A5-ett-flygplan-game-over.79043/",
+      "last_page_hint": 4,
+      "latest_ts": 1649588837,
+      "title": "[Varulvar på ett flygplan] - Game over"
+    },
+    "varulvar-p%C3%A5-ett-flygplan-r1.79023": {
+      "base_url": "https://www.rollspel.nu/threads/varulvar-p%C3%A5-ett-flygplan-r1.79023/",
+      "last_page_hint": 7,
+      "latest_ts": 1649181632,
+      "title": "[Varulvar på ett flygplan] - R1"
+    },
+    "varulvar-p%C3%A5-ett-flygplan-r2.79028": {
+      "base_url": "https://www.rollspel.nu/threads/varulvar-p%C3%A5-ett-flygplan-r2.79028/",
+      "last_page_hint": 11,
+      "latest_ts": 1649354481,
+      "title": "[Varulvar på ett flygplan] - R2"
+    },
+    "varulvar-p%C3%A5-ett-flygplan-r3.79037": {
+      "base_url": "https://www.rollspel.nu/threads/varulvar-p%C3%A5-ett-flygplan-r3.79037/",
+      "last_page_hint": 3,
+      "latest_ts": 1649444424,
+      "title": "[Varulvar på ett flygplan] - R3"
+    },
+    "varulvar-p%C3%A5-ett-t%C3%A5g-game-over.76427": {
+      "base_url": "https://www.rollspel.nu/threads/varulvar-p%C3%A5-ett-t%C3%A5g-game-over.76427/",
+      "last_page_hint": 2,
+      "latest_ts": 1609617297,
+      "title": "[Varulvar på ett tåg] - Game over"
+    },
+    "varulvar-p%C3%A5-ett-t%C3%A5g-r1.76392": {
+      "base_url": "https://www.rollspel.nu/threads/varulvar-p%C3%A5-ett-t%C3%A5g-r1.76392/",
+      "last_page_hint": 9,
+      "latest_ts": 1609099292,
+      "title": "[Varulvar på ett tåg] - R1"
+    },
+    "varulvar-p%C3%A5-ett-t%C3%A5g-r2.76396": {
+      "base_url": "https://www.rollspel.nu/threads/varulvar-p%C3%A5-ett-t%C3%A5g-r2.76396/",
+      "last_page_hint": 7,
+      "latest_ts": 1609185635,
+      "title": "[Varulvar på ett tåg] - R2"
+    },
+    "varulvar-p%C3%A5-ett-t%C3%A5g-r3.76404": {
+      "base_url": "https://www.rollspel.nu/threads/varulvar-p%C3%A5-ett-t%C3%A5g-r3.76404/",
+      "last_page_hint": 7,
+      "latest_ts": 1609319348,
+      "title": "[Varulvar på ett tåg] - R3"
+    },
+    "varulvar-p%C3%A5-ett-t%C3%A5g-r4.76412": {
+      "base_url": "https://www.rollspel.nu/threads/varulvar-p%C3%A5-ett-t%C3%A5g-r4.76412/",
+      "last_page_hint": 9,
+      "latest_ts": 1609359556,
+      "title": "[Varulvar på ett tåg] - R4"
+    },
+    "varulvar-p%C3%A5-ett-t%C3%A5g-r5.76419": {
+      "base_url": "https://www.rollspel.nu/threads/varulvar-p%C3%A5-ett-t%C3%A5g-r5.76419/",
+      "last_page_hint": 4,
+      "latest_ts": 1609531365,
+      "title": "[Varulvar på ett tåg] - R5"
+    },
+    "varulvarnas-kyrkog%C3%A5rd-runda-1.75921": {
+      "base_url": "https://www.rollspel.nu/threads/varulvarnas-kyrkog%C3%A5rd-runda-1.75921/",
+      "last_page_hint": 19,
+      "latest_ts": 1603084399,
+      "title": "Varulvarnas kyrkogård - runda 1"
+    },
+    "varulvarnas-kyrkog%C3%A5rd-runda-2.75936": {
+      "base_url": "https://www.rollspel.nu/threads/varulvarnas-kyrkog%C3%A5rd-runda-2.75936/",
+      "last_page_hint": 16,
+      "latest_ts": 1602964826,
+      "title": "Varulvarnas kyrkogård - runda 2"
+    },
+    "varulvarnas-kyrkog%C3%A5rd-runda-3.75956": {
+      "base_url": "https://www.rollspel.nu/threads/varulvarnas-kyrkog%C3%A5rd-runda-3.75956/",
+      "last_page_hint": 10,
+      "latest_ts": 1603137600,
+      "title": "Varulvarnas kyrkogård - runda 3"
+    },
+    "varulvarnas-kyrkog%C3%A5rd-runda-4.75970": {
+      "base_url": "https://www.rollspel.nu/threads/varulvarnas-kyrkog%C3%A5rd-runda-4.75970/",
+      "last_page_hint": 8,
+      "latest_ts": 1603310400,
+      "title": "Varulvarnas kyrkogård - runda 4"
+    },
+    "varulvarnas-kyrkog%C3%A5rd-slutet.75980": {
+      "base_url": "https://www.rollspel.nu/threads/varulvarnas-kyrkog%C3%A5rd-slutet.75980/",
+      "last_page_hint": 3,
+      "latest_ts": 1603780654,
+      "title": "Varulvarnas kyrkogård - slutet"
+    },
+    "varulvsblixt%E2%9A%A1%EF%B8%8F2-r2.85511": {
+      "base_url": "https://www.rollspel.nu/threads/varulvsblixt%E2%9A%A1%EF%B8%8F2-r2.85511/",
+      "last_page_hint": 8,
+      "latest_ts": 1750006903,
+      "title": "Varulvsblixt⚡️2 R2"
+    },
+    "varulvsblixt%E2%9A%A1%EF%B8%8F2-r3.85512": {
+      "base_url": "https://www.rollspel.nu/threads/varulvsblixt%E2%9A%A1%EF%B8%8F2-r3.85512/",
+      "last_page_hint": 7,
+      "latest_ts": 1750010443,
+      "title": "Varulvsblixt⚡️2 R3"
+    },
+    "varulvsblixt%E2%9A%A1%EF%B8%8F2-r4.85513": {
+      "base_url": "https://www.rollspel.nu/threads/varulvsblixt%E2%9A%A1%EF%B8%8F2-r4.85513/",
+      "last_page_hint": 3,
+      "latest_ts": 1750014082,
+      "title": "Varulvsblixt⚡️2 R4"
+    },
+    "varulvsblixt%E2%9A%A1%EF%B8%8F2-r5.85514": {
+      "base_url": "https://www.rollspel.nu/threads/varulvsblixt%E2%9A%A1%EF%B8%8F2-r5.85514/",
+      "last_page_hint": 3,
+      "latest_ts": 1750017616,
+      "title": "Varulvsblixt⚡️2 R5"
+    },
+    "varulvsblixt%E2%9A%A1%EF%B8%8F2-r6.85516": {
+      "base_url": "https://www.rollspel.nu/threads/varulvsblixt%E2%9A%A1%EF%B8%8F2-r6.85516/",
+      "last_page_hint": 2,
+      "latest_ts": 1750019446,
+      "title": "Varulvsblixt⚡️2 R6"
+    },
+    "varulvsblixt%E2%9A%A1%EF%B8%8F2.85510": {
+      "base_url": "https://www.rollspel.nu/threads/varulvsblixt%E2%9A%A1%EF%B8%8F2.85510/",
+      "last_page_hint": 11,
+      "latest_ts": 1750003227,
+      "title": "Varulvsblixt⚡️2"
+    },
+    "varulvsblixt%E2%9A%A1%EF%B8%8F2024-r1.83531": {
+      "base_url": "https://www.rollspel.nu/threads/varulvsblixt%E2%9A%A1%EF%B8%8F2024-r1.83531/",
+      "last_page_hint": 8,
+      "latest_ts": 1719763216,
+      "title": "Varulvsblixt⚡️2024 R1"
+    },
+    "varulvsblixt%E2%9A%A1%EF%B8%8F2024-r2.83533": {
+      "base_url": "https://www.rollspel.nu/threads/varulvsblixt%E2%9A%A1%EF%B8%8F2024-r2.83533/",
+      "last_page_hint": 6,
+      "latest_ts": 1719766821,
+      "title": "Varulvsblixt⚡️2024 R2"
+    },
+    "varulvsblixt%E2%9A%A1%EF%B8%8F2024-r3.83534": {
+      "base_url": "https://www.rollspel.nu/threads/varulvsblixt%E2%9A%A1%EF%B8%8F2024-r3.83534/",
+      "last_page_hint": 7,
+      "latest_ts": 1719770447,
+      "title": "Varulvsblixt⚡️2024 R3"
+    },
+    "varulvsblixt%E2%9A%A1%EF%B8%8F2024-spelet-slut.83535": {
+      "base_url": "https://www.rollspel.nu/threads/varulvsblixt%E2%9A%A1%EF%B8%8F2024-spelet-slut.83535/",
+      "last_page_hint": 3,
+      "latest_ts": 1719834942,
+      "title": "Varulvsblixt⚡️2024 Spelet Slut"
+    },
+    "varulvsdisco-i-nora-game-over.60513": {
+      "base_url": "https://www.rollspel.nu/threads/varulvsdisco-i-nora-game-over.60513/",
+      "last_page_hint": 3,
+      "latest_ts": 1379928870,
+      "title": "[Varulvsdisco i Nora] - Game over"
+    },
+    "varulvsdisco-i-nora-runda-1.60374": {
+      "base_url": "https://www.rollspel.nu/threads/varulvsdisco-i-nora-runda-1.60374/",
+      "last_page_hint": 9,
+      "latest_ts": 1378410945,
+      "title": "[Varulvsdisco i Nora] - Runda 1"
+    },
+    "varulvsdisco-i-nora-runda-2.60409": {
+      "base_url": "https://www.rollspel.nu/threads/varulvsdisco-i-nora-runda-2.60409/",
+      "last_page_hint": 7,
+      "latest_ts": 1378670168,
+      "title": "[Varulvsdisco i Nora] - Runda 2"
+    },
+    "varulvsdisco-i-nora-runda-3.60434": {
+      "base_url": "https://www.rollspel.nu/threads/varulvsdisco-i-nora-runda-3.60434/",
+      "last_page_hint": 5,
+      "latest_ts": 1378843230,
+      "title": "[Varulvsdisco i Nora] - Runda 3"
+    },
+    "varulvsdisco-i-nora-runda-4.60463": {
+      "base_url": "https://www.rollspel.nu/threads/varulvsdisco-i-nora-runda-4.60463/",
+      "last_page_hint": 6,
+      "latest_ts": 1379016035,
+      "title": "[Varulvsdisco i Nora] - Runda 4"
+    },
+    "varulvsdisco-i-nora-runda-5.60483": {
+      "base_url": "https://www.rollspel.nu/threads/varulvsdisco-i-nora-runda-5.60483/",
+      "last_page_hint": 3,
+      "latest_ts": 1379275224,
+      "title": "[Varulvsdisco i Nora] - Runda 5"
+    },
+    "varulvsj%C3%A4garna-r1.79926": {
+      "base_url": "https://www.rollspel.nu/threads/varulvsj%C3%A4garna-r1.79926/",
+      "last_page_hint": 4,
+      "latest_ts": 1664132578,
+      "title": "Varulvsjägarna R1"
+    },
+    "varulvsj%C3%A4garna-r2.79931": {
+      "base_url": "https://www.rollspel.nu/threads/varulvsj%C3%A4garna-r2.79931/",
+      "last_page_hint": 3,
+      "latest_ts": 1664219659,
+      "title": "Varulvsjägarna R2"
+    },
+    "varulvsj%C3%A4garna-r3.79939": {
+      "base_url": "https://www.rollspel.nu/threads/varulvsj%C3%A4garna-r3.79939/",
+      "last_page_hint": 2,
+      "latest_ts": 1664305257,
+      "title": "Varulvsjägarna R3"
+    },
+    "varulvsj%C3%A4garna-r4.79946": {
+      "base_url": "https://www.rollspel.nu/threads/varulvsj%C3%A4garna-r4.79946/",
+      "last_page_hint": 1,
+      "latest_ts": 1664471093,
+      "title": "Varulvsjägarna R4"
+    },
+    "varulvsspel-7-runda-1.78744": {
+      "base_url": "https://www.rollspel.nu/threads/varulvsspel-7-runda-1.78744/",
+      "last_page_hint": 11,
+      "latest_ts": 1644350429,
+      "title": "[Varulvsspel 7] - Runda 1"
+    },
+    "varulvsspel-evolution-r1.66204": {
+      "base_url": "https://www.rollspel.nu/threads/varulvsspel-evolution-r1.66204/",
+      "last_page_hint": 1,
+      "latest_ts": 1453627111,
+      "title": "Varulvsspel Evolution - R1"
+    },
+    "varulvsspel-evolution-regler.66203": {
+      "base_url": "https://www.rollspel.nu/threads/varulvsspel-evolution-regler.66203/",
+      "last_page_hint": 1,
+      "latest_ts": 1453573101,
+      "title": "Varulvsspel Evolution - regler"
+    },
+    "varulvsspel7-runda-2.78755": {
+      "base_url": "https://www.rollspel.nu/threads/varulvsspel7-runda-2.78755/",
+      "last_page_hint": 5,
+      "latest_ts": 1644436889,
+      "title": "[Varulvsspel7] - Runda 2"
+    },
+    "varulvsspel7-runda-3.78762": {
+      "base_url": "https://www.rollspel.nu/threads/varulvsspel7-runda-3.78762/",
+      "last_page_hint": 3,
+      "latest_ts": 1644523215,
+      "title": "[Varulvsspel7] - Runda 3"
+    },
+    "varulvsspel7-spelet-%C3%A4r-%C3%B6ver.78769": {
+      "base_url": "https://www.rollspel.nu/threads/varulvsspel7-spelet-%C3%A4r-%C3%B6ver.78769/",
+      "last_page_hint": 3,
+      "latest_ts": 1645084738,
+      "title": "[Varulvsspel7] - Spelet är över"
+    },
+    "varulvsspelet-revolution-och-tandagnisslan-avslutat.71809": {
+      "base_url": "https://www.rollspel.nu/threads/varulvsspelet-revolution-och-tandagnisslan-avslutat.71809/",
+      "last_page_hint": 1,
+      "latest_ts": 1494153385,
+      "title": "Varulvsspelet Revolution och tandagnisslan avslutat"
+    },
+    "wy25-information-och-fr%C3%A5gor.86642": {
+      "base_url": "https://www.rollspel.nu/threads/wy25-information-och-fr%C3%A5gor.86642/",
+      "last_page_hint": 3,
+      "latest_ts": 1765832495,
+      "title": "[WY25] Information och frågor"
+    },
+    "wy25-runda-1.86652": {
+      "base_url": "https://www.rollspel.nu/threads/wy25-runda-1.86652/",
+      "last_page_hint": 26,
+      "latest_ts": 1765914760,
+      "title": "[WY25] Runda 1"
+    },
+    "wy25-runda-2.86658": {
+      "base_url": "https://www.rollspel.nu/threads/wy25-runda-2.86658/",
+      "last_page_hint": 11,
+      "latest_ts": 1765999822,
+      "title": "[WY25] Runda 2"
+    },
+    "wy25-runda-3.86666": {
+      "base_url": "https://www.rollspel.nu/threads/wy25-runda-3.86666/",
+      "last_page_hint": 12,
+      "latest_ts": 1766086216,
+      "title": "[WY25] Runda 3"
+    },
+    "wy25-runda-4.86672": {
+      "base_url": "https://www.rollspel.nu/threads/wy25-runda-4.86672/",
+      "last_page_hint": 4,
+      "latest_ts": 1766172632,
+      "title": "[WY25] Runda 4"
+    },
+    "wy25-runda-5.86678": {
+      "base_url": "https://www.rollspel.nu/threads/wy25-runda-5.86678/",
+      "last_page_hint": 6,
+      "latest_ts": 1766431822,
+      "title": "[WY25] Runda 5"
+    }
+  },
+  "version": 1
+}

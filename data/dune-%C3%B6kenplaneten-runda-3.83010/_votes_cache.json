@@ -1,0 +1,74 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "1239304",
+          "to": "Impetigo",
+          "ts": "2024-03-12T15:48:34+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Octagonal",
+          "page": 2,
+          "post": "1239310",
+          "to": "Vimes",
+          "ts": "2024-03-12T16:55:01+0100"
+        },
+        {
+          "from": "Impetigo",
+          "page": 2,
+          "post": "1239328",
+          "to": "Basenanji",
+          "ts": "2024-03-12T17:29:54+0100"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Sidd",
+          "page": 3,
+          "post": "1239374",
+          "to": "Impetigo",
+          "ts": "2024-03-12T18:38:58+0100"
+        }
+      ]
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 4,
+          "post": "1239460",
+          "to": "Octagonal",
+          "ts": "2024-03-12T22:06:18+0100"
+        }
+      ]
+    },
+    "5": {
+      "votes": [
+        {
+          "from": "Sidd",
+          "page": 5,
+          "post": "1239512",
+          "to": "Octagonal",
+          "ts": "2024-03-13T06:41:27+0100"
+        }
+      ]
+    },
+    "6": {
+      "votes": []
+    },
+    "7": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

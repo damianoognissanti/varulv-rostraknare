@@ -1,0 +1,130 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Mukwa",
+          "page": 1,
+          "post": "821389",
+          "to": "Pix",
+          "ts": "2013-10-26T02:13:53+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "821398",
+          "to": "Xyas",
+          "ts": "2013-10-26T10:07:51+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "821426",
+          "to": "Trasapa",
+          "ts": "2013-10-26T17:56:00+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "821428",
+          "to": "Trasapa",
+          "ts": "2013-10-26T17:56:25+0200"
+        },
+        {
+          "from": "RasmusL",
+          "page": 1,
+          "post": "821475",
+          "to": "Trasapa",
+          "ts": "2013-10-27T02:25:08+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Vimes",
+          "page": 2,
+          "post": "821533",
+          "to": "Ruga",
+          "ts": "2013-10-27T12:11:26+0100"
+        },
+        {
+          "from": "Recca",
+          "page": 2,
+          "post": "821535",
+          "to": "Mukwa",
+          "ts": "2013-10-27T12:41:58+0100"
+        },
+        {
+          "from": "Ruga",
+          "page": 2,
+          "post": "821542",
+          "to": "anth",
+          "ts": "2013-10-27T13:44:13+0100"
+        },
+        {
+          "from": "Trasapa",
+          "page": 2,
+          "post": "821545",
+          "to": "Mukwa",
+          "ts": "2013-10-27T14:26:43+0100"
+        },
+        {
+          "from": "Vimes",
+          "page": 2,
+          "post": "821557",
+          "to": "anth",
+          "ts": "2013-10-27T17:07:23+0100"
+        },
+        {
+          "from": "Basenanji",
+          "page": 2,
+          "post": "821585",
+          "to": "anth",
+          "ts": "2013-10-27T19:15:27+0100"
+        },
+        {
+          "from": "Trasapa",
+          "page": 2,
+          "post": "821592",
+          "to": "så enbart legitima röster är räknade",
+          "ts": "2013-10-27T19:31:03+0100"
+        },
+        {
+          "from": "Xyas",
+          "page": 2,
+          "post": "821610",
+          "to": "anth",
+          "ts": "2013-10-27T20:07:57+0100"
+        },
+        {
+          "from": "Pixie",
+          "page": 2,
+          "post": "821620",
+          "to": "Trasapa",
+          "ts": "2013-10-27T20:22:53+0100"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Trasapa",
+          "page": 3,
+          "post": "821632",
+          "to": "anth",
+          "ts": "2013-10-27T21:30:11+0100"
+        },
+        {
+          "from": "anth",
+          "page": 3,
+          "post": "821635",
+          "to": "Xyas",
+          "ts": "2013-10-27T21:46:14+0100"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,140 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Brynolf",
+          "page": 1,
+          "post": "828786",
+          "to": "KK",
+          "ts": "2013-12-10T23:11:13+0100"
+        },
+        {
+          "from": "Trasapa",
+          "page": 1,
+          "post": "828787",
+          "to": "strong choice",
+          "ts": "2013-12-10T23:22:28+0100"
+        },
+        {
+          "from": "Mukwa",
+          "page": 1,
+          "post": "828800",
+          "to": "Arvidos",
+          "ts": "2013-12-11T03:59:13+0100"
+        },
+        {
+          "from": "Sodivra",
+          "page": 1,
+          "post": "828813",
+          "to": "Brynolf",
+          "ts": "2013-12-11T08:56:29+0100"
+        },
+        {
+          "from": "Sodivra",
+          "page": 1,
+          "post": "828817",
+          "to": "!Paxen",
+          "ts": "2013-12-11T09:19:48+0100"
+        },
+        {
+          "from": "Xyas",
+          "page": 1,
+          "post": "828820",
+          "to": "Brynolf",
+          "ts": "2013-12-11T09:34:49+0100"
+        },
+        {
+          "from": "Konrad Konvalj",
+          "page": 1,
+          "post": "828838",
+          "to": "Trasapa",
+          "ts": "2013-12-11T11:39:00+0100"
+        },
+        {
+          "from": "Brynolf",
+          "page": 1,
+          "post": "828840",
+          "to": "Paxen",
+          "ts": "2013-12-11T12:04:11+0100"
+        },
+        {
+          "from": "Konrad Konvalj",
+          "page": 1,
+          "post": "828868",
+          "to": "Trasapa",
+          "ts": "2013-12-11T15:33:35+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Sodivra",
+          "page": 2,
+          "post": "829020",
+          "to": "Trasapa",
+          "ts": "2013-12-12T15:22:09+0100"
+        },
+        {
+          "from": "Konrad Konvalj",
+          "page": 2,
+          "post": "829023",
+          "to": "Trasapa",
+          "ts": "2013-12-12T15:52:38+0100"
+        },
+        {
+          "from": "Mukwa",
+          "page": 2,
+          "post": "829039",
+          "to": "Brynolf",
+          "ts": "2013-12-12T17:32:32+0100"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Xyas",
+          "page": 3,
+          "post": "829078",
+          "to": "Brynolf",
+          "ts": "2013-12-12T19:12:49+0100"
+        },
+        {
+          "from": "Sodivra",
+          "page": 3,
+          "post": "829094",
+          "to": "Brynolf",
+          "ts": "2013-12-12T20:10:04+0100"
+        },
+        {
+          "from": "Brynolf",
+          "page": 3,
+          "post": "829106",
+          "to": "Trasapa",
+          "ts": "2013-12-12T21:05:52+0100"
+        },
+        {
+          "from": "!Paxen",
+          "page": 3,
+          "post": "829113",
+          "to": "Xyas",
+          "ts": "2013-12-12T21:20:37+0100"
+        },
+        {
+          "from": "Konrad Konvalj",
+          "page": 3,
+          "post": "829120",
+          "to": "Trasapa",
+          "ts": "2013-12-12T21:49:43+0100"
+        }
+      ]
+    },
+    "4": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

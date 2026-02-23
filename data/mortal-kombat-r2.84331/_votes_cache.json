@@ -1,0 +1,88 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Sysp",
+          "page": 1,
+          "post": "1283805",
+          "to": "Big Mama",
+          "ts": "2024-11-12T21:44:32+0100"
+        },
+        {
+          "from": "Big Mama",
+          "page": 1,
+          "post": "1283813",
+          "to": "Sysp",
+          "ts": "2024-11-12T22:10:25+0100"
+        },
+        {
+          "from": "Hägerstrand",
+          "page": 1,
+          "post": "1283814",
+          "to": "Big Mama",
+          "ts": "2024-11-12T22:10:45+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Sidd",
+          "page": 2,
+          "post": "1283818",
+          "to": "fjodorsenuba",
+          "ts": "2024-11-12T22:27:17+0100"
+        },
+        {
+          "from": "Octagonal",
+          "page": 2,
+          "post": "1283820",
+          "to": "Big Mama",
+          "ts": "2024-11-12T22:38:08+0100"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Sidd",
+          "page": 3,
+          "post": "1283848",
+          "to": "Big Mama",
+          "ts": "2024-11-12T23:30:34+0100"
+        },
+        {
+          "from": "Vimes",
+          "page": 3,
+          "post": "1283860",
+          "to": "Big Mama",
+          "ts": "2024-11-13T07:17:55+0100"
+        },
+        {
+          "from": "fjodorsenuba",
+          "page": 3,
+          "post": "1283867",
+          "to": "Big Mama",
+          "ts": "2024-11-13T08:17:28+0100"
+        }
+      ]
+    },
+    "4": {
+      "votes": []
+    },
+    "5": {
+      "votes": [
+        {
+          "from": "Big Mama",
+          "page": 5,
+          "post": "1283977",
+          "to": "Hägerstrand",
+          "ts": "2024-11-13T20:35:23+0100"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

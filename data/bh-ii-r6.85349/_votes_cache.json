@@ -1,0 +1,87 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "BiobunkerVII",
+          "page": 1,
+          "post": "1318701",
+          "to": "Octagonal",
+          "ts": "2025-05-10T21:01:57+0200"
+        },
+        {
+          "from": "BiobunkerVII",
+          "page": 1,
+          "post": "1318705",
+          "to": "Sysp",
+          "ts": "2025-05-10T21:11:20+0200"
+        },
+        {
+          "from": "BiobunkerVII",
+          "page": 1,
+          "post": "1318706",
+          "to": "damogn",
+          "ts": "2025-05-10T21:11:53+0200"
+        },
+        {
+          "from": "Octagonal",
+          "page": 1,
+          "post": "1318709",
+          "to": "Big Mama",
+          "ts": "2025-05-10T21:26:09+0200"
+        },
+        {
+          "from": "BiobunkerVII",
+          "page": 1,
+          "post": "1318712",
+          "to": "Sysp",
+          "ts": "2025-05-10T21:45:06+0200"
+        },
+        {
+          "from": "Octagonal",
+          "page": 1,
+          "post": "1318714",
+          "to": "Vimes",
+          "ts": "2025-05-10T22:01:26+0200"
+        },
+        {
+          "from": "Octagonal",
+          "page": 1,
+          "post": "1318715",
+          "to": "Sysp",
+          "ts": "2025-05-10T22:01:57+0200"
+        },
+        {
+          "from": "Big Mama",
+          "page": 1,
+          "post": "1318719",
+          "to": "Octagonal",
+          "ts": "2025-05-10T22:48:42+0200"
+        },
+        {
+          "from": "Sömniga Isaac",
+          "page": 1,
+          "post": "1318726",
+          "to": "Sysp",
+          "ts": "2025-05-11T00:17:40+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Sysp",
+          "page": 2,
+          "post": "1318738",
+          "to": "BiobunkerVII",
+          "ts": "2025-05-11T08:38:03+0200"
+        }
+      ]
+    },
+    "3": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

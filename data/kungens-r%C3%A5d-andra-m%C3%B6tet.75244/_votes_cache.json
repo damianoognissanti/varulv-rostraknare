@@ -1,0 +1,105 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Xyas",
+          "page": 1,
+          "post": "1017791",
+          "to": "Khan",
+          "ts": "2020-06-12T22:48:59+0200"
+        },
+        {
+          "from": "Björn den gode",
+          "page": 1,
+          "post": "1017793",
+          "to": "Khan",
+          "ts": "2020-06-12T22:50:39+0200"
+        },
+        {
+          "from": "Stövelkatten",
+          "page": 1,
+          "post": "1017797",
+          "to": "Khan",
+          "ts": "2020-06-12T22:53:22+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 1,
+          "post": "1017800",
+          "to": "Stövelkatten",
+          "ts": "2020-06-12T23:07:53+0200"
+        },
+        {
+          "from": "Halo9000",
+          "page": 1,
+          "post": "1017804",
+          "to": "Stövelkatten",
+          "ts": "2020-06-12T23:27:53+0200"
+        },
+        {
+          "from": "Khan",
+          "page": 1,
+          "post": "1017818",
+          "to": "LJSLarsson",
+          "ts": "2020-06-13T08:14:26+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 1,
+          "post": "1017822",
+          "to": "Khan",
+          "ts": "2020-06-13T09:47:41+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Stövelkatten",
+          "page": 2,
+          "post": "1017858",
+          "to": "Björn den gode",
+          "ts": "2020-06-13T18:04:53+0200"
+        },
+        {
+          "from": "Stövelkatten",
+          "page": 2,
+          "post": "1017863",
+          "to": "Khan",
+          "ts": "2020-06-13T19:27:42+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 2,
+          "post": "1017869",
+          "to": "Björn den gode",
+          "ts": "2020-06-13T20:48:32+0200"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Halo9000",
+          "page": 3,
+          "post": "1017897",
+          "to": "Khan",
+          "ts": "2020-06-14T11:50:34+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 3,
+          "post": "1017905",
+          "to": "Khan",
+          "ts": "2020-06-14T14:35:03+0200"
+        }
+      ]
+    },
+    "4": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

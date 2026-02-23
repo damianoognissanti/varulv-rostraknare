@@ -1,0 +1,254 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Björn den gode",
+          "page": 1,
+          "post": "814391",
+          "to": "Xyas",
+          "ts": "2013-09-10T22:33:41+0200"
+        },
+        {
+          "from": "Konrad Konvalj",
+          "page": 1,
+          "post": "814397",
+          "to": "Brynolf",
+          "ts": "2013-09-10T23:17:59+0200"
+        },
+        {
+          "from": "Recca",
+          "page": 1,
+          "post": "814400",
+          "to": "Brynolf",
+          "ts": "2013-09-10T23:42:20+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "814415",
+          "to": "Arvidos",
+          "ts": "2013-09-11T05:34:39+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 1,
+          "post": "814439",
+          "to": "Dragonborn",
+          "ts": "2013-09-11T09:24:20+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Björn den gode",
+          "page": 2,
+          "post": "814463",
+          "to": "Dragonborn",
+          "ts": "2013-09-11T12:16:30+0200"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 3,
+          "post": "814532",
+          "to": "Arvid",
+          "ts": "2013-09-11T17:46:29+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 3,
+          "post": "814532",
+          "to": "Arvid",
+          "ts": "2013-09-11T17:46:29+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 3,
+          "post": "814532",
+          "to": "Arvid",
+          "ts": "2013-09-11T17:46:29+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 3,
+          "post": "814532",
+          "to": "Arvid",
+          "ts": "2013-09-11T17:46:29+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 3,
+          "post": "814532",
+          "to": "Arvid",
+          "ts": "2013-09-11T17:46:29+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 3,
+          "post": "814532",
+          "to": "Arvid",
+          "ts": "2013-09-11T17:46:29+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 3,
+          "post": "814532",
+          "to": "Arvid",
+          "ts": "2013-09-11T17:46:29+0200"
+        },
+        {
+          "from": "Brynolf",
+          "page": 3,
+          "post": "814538",
+          "to": "Dragonborn",
+          "ts": "2013-09-11T18:15:48+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 3,
+          "post": "814544",
+          "to": "Arvid",
+          "ts": "2013-09-11T18:52:54+0200"
+        },
+        {
+          "from": "Sodivra",
+          "page": 3,
+          "post": "814549",
+          "to": "LJSLarsson",
+          "ts": "2013-09-11T19:09:26+0200"
+        },
+        {
+          "from": "Recca",
+          "page": 3,
+          "post": "814559",
+          "to": "Bassenanji",
+          "ts": "2013-09-11T19:50:16+0200"
+        }
+      ]
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "Sodivra",
+          "page": 4,
+          "post": "814591",
+          "to": "Basenanji",
+          "ts": "2013-09-11T23:57:52+0200"
+        },
+        {
+          "from": "Björn den gode",
+          "page": 4,
+          "post": "814594",
+          "to": "Basenanji",
+          "ts": "2013-09-12T00:13:54+0200"
+        },
+        {
+          "from": "Recca",
+          "page": 4,
+          "post": "814595",
+          "to": "KK och Basse",
+          "ts": "2013-09-12T00:21:02+0200"
+        },
+        {
+          "from": "Recca",
+          "page": 4,
+          "post": "814596",
+          "to": "KK och Basse",
+          "ts": "2013-09-12T00:23:38+0200"
+        },
+        {
+          "from": "Brynolf",
+          "page": 4,
+          "post": "814601",
+          "to": "Basse så länge",
+          "ts": "2013-09-12T01:09:37+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 4,
+          "post": "814603",
+          "to": "Dragonborn",
+          "ts": "2013-09-12T01:40:02+0200"
+        },
+        {
+          "from": "Xyas",
+          "page": 4,
+          "post": "814614",
+          "to": "Brynolf",
+          "ts": "2013-09-12T09:03:31+0200"
+        }
+      ]
+    },
+    "5": {
+      "votes": [
+        {
+          "from": "LJSLarsson",
+          "page": 5,
+          "post": "814616",
+          "to": "Basse",
+          "ts": "2013-09-12T09:03:49+0200"
+        },
+        {
+          "from": "Recca",
+          "page": 5,
+          "post": "814648",
+          "to": "Basenanji",
+          "ts": "2013-09-12T11:25:45+0200"
+        },
+        {
+          "from": "Konrad Konvalj",
+          "page": 5,
+          "post": "814682",
+          "to": "Brynolf",
+          "ts": "2013-09-12T13:37:49+0200"
+        },
+        {
+          "from": "Brynolf",
+          "page": 5,
+          "post": "814685",
+          "to": "Basse om jag missade det igår",
+          "ts": "2013-09-12T13:49:24+0200"
+        },
+        {
+          "from": "Konrad Konvalj",
+          "page": 5,
+          "post": "814704",
+          "to": "Larsson",
+          "ts": "2013-09-12T15:40:36+0200"
+        },
+        {
+          "from": "Konrad Konvalj",
+          "page": 5,
+          "post": "814705",
+          "to": "Brynolf",
+          "ts": "2013-09-12T15:41:24+0200"
+        }
+      ]
+    },
+    "6": {
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 6,
+          "post": "814749",
+          "to": "Brynolf",
+          "ts": "2013-09-12T20:18:55+0200"
+        },
+        {
+          "from": "Recca",
+          "page": 6,
+          "post": "814755",
+          "to": "Basenanji",
+          "ts": "2013-09-12T20:39:14+0200"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

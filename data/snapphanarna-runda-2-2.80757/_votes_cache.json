@@ -1,0 +1,84 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "RasmusL",
+          "page": 1,
+          "post": "1170746",
+          "to": "JA - Vilket innebär att ni stödjer korpralens förslag",
+          "ts": "2023-02-23T15:41:27+0100"
+        },
+        {
+          "from": "RasmusL",
+          "page": 1,
+          "post": "1170746",
+          "to": "NEJ - Vilket innebär att ni motsätter er korpralens förslag",
+          "ts": "2023-02-23T15:41:27+0100"
+        },
+        {
+          "from": "Impetigo",
+          "page": 1,
+          "post": "1170773",
+          "to": "JA",
+          "ts": "2023-02-23T16:43:07+0100"
+        },
+        {
+          "from": "Octagonal",
+          "page": 1,
+          "post": "1170774",
+          "to": "JA",
+          "ts": "2023-02-23T16:56:44+0100"
+        },
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "1170777",
+          "to": "NEJ",
+          "ts": "2023-02-23T17:16:32+0100"
+        },
+        {
+          "from": "Martin3",
+          "page": 1,
+          "post": "1170779",
+          "to": "nej",
+          "ts": "2023-02-23T17:26:21+0100"
+        },
+        {
+          "from": "Sidd",
+          "page": 1,
+          "post": "1170782",
+          "to": "JA",
+          "ts": "2023-02-23T17:41:22+0100"
+        },
+        {
+          "from": "BiobunkerVII",
+          "page": 1,
+          "post": "1170785",
+          "to": "Ja",
+          "ts": "2023-02-23T17:49:18+0100"
+        },
+        {
+          "from": "Vimes",
+          "page": 1,
+          "post": "1170791",
+          "to": "JA",
+          "ts": "2023-02-23T18:02:31+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Andersson",
+          "page": 2,
+          "post": "1170831",
+          "to": "JA",
+          "ts": "2023-02-23T21:47:41+0100"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

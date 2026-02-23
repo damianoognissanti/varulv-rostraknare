@@ -1,0 +1,49 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Impetigo",
+          "page": 1,
+          "post": "1114310",
+          "to": "Stora salen",
+          "ts": "2022-03-10T22:38:47+0100"
+        },
+        {
+          "from": "Sidd",
+          "page": 1,
+          "post": "1114324",
+          "to": "Duvslaget",
+          "ts": "2022-03-11T07:34:37+0100"
+        },
+        {
+          "from": "Sidd",
+          "page": 1,
+          "post": "1114380",
+          "to": "Stora Salen",
+          "ts": "2022-03-11T13:03:07+0100"
+        },
+        {
+          "from": "Empiricus",
+          "page": 1,
+          "post": "1114385",
+          "to": "Stora Salen",
+          "ts": "2022-03-11T13:27:00+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "fjodorsenuba",
+          "page": 2,
+          "post": "1114415",
+          "to": "Stora Salen",
+          "ts": "2022-03-11T16:47:44+0100"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

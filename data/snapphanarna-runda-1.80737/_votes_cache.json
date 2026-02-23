@@ -1,0 +1,120 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "RasmusL",
+          "page": 1,
+          "post": "1169931",
+          "to": "JA - Vilket innebär att ni stödjer Impetigos förslag",
+          "ts": "2023-02-20T18:35:37+0100"
+        },
+        {
+          "from": "RasmusL",
+          "page": 1,
+          "post": "1169931",
+          "to": "NEJ - Vilket innebär att ni motsätter er Impetigos förslag",
+          "ts": "2023-02-20T18:35:37+0100"
+        },
+        {
+          "from": "Sidd",
+          "page": 1,
+          "post": "1169996",
+          "to": "JA",
+          "ts": "2023-02-20T23:24:44+0100"
+        },
+        {
+          "from": "Genesis",
+          "page": 1,
+          "post": "1170014",
+          "to": "NEJ",
+          "ts": "2023-02-21T07:58:45+0100"
+        },
+        {
+          "from": "Vimes",
+          "page": 1,
+          "post": "1170018",
+          "to": "NEJ",
+          "ts": "2023-02-21T08:46:34+0100"
+        },
+        {
+          "from": "Martin3",
+          "page": 1,
+          "post": "1170022",
+          "to": "Ja",
+          "ts": "2023-02-21T09:25:42+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Andersson",
+          "page": 2,
+          "post": "1170037",
+          "to": "JA",
+          "ts": "2023-02-21T10:28:44+0100"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Sidd",
+          "page": 3,
+          "post": "1170101",
+          "to": "Nej",
+          "ts": "2023-02-21T14:19:22+0100"
+        },
+        {
+          "from": "Sidd",
+          "page": 3,
+          "post": "1170103",
+          "to": "NEJ",
+          "ts": "2023-02-21T14:22:03+0100"
+        }
+      ]
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "Octagonal",
+          "page": 4,
+          "post": "1170126",
+          "to": "NEJ",
+          "ts": "2023-02-21T15:39:48+0100"
+        },
+        {
+          "from": "Octagonal",
+          "page": 4,
+          "post": "1170128",
+          "to": "JA",
+          "ts": "2023-02-21T15:50:00+0100"
+        },
+        {
+          "from": "Basenanji",
+          "page": 4,
+          "post": "1170129",
+          "to": "NEJ",
+          "ts": "2023-02-21T15:52:15+0100"
+        },
+        {
+          "from": "Octagonal",
+          "page": 4,
+          "post": "1170130",
+          "to": "NEJ",
+          "ts": "2023-02-21T15:53:45+0100"
+        },
+        {
+          "from": "Andersson",
+          "page": 4,
+          "post": "1170138",
+          "to": "NEJ",
+          "ts": "2023-02-21T16:33:04+0100"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,280 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Vimes",
+          "page": 1,
+          "post": "1053577",
+          "to": "Vimes",
+          "ts": "2021-03-15T12:14:38+0100"
+        },
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "1053585",
+          "to": "LJS Larsson",
+          "ts": "2021-03-15T12:53:10+0100"
+        },
+        {
+          "from": "Impetigo",
+          "page": 1,
+          "post": "1053638",
+          "to": "Halo9000",
+          "ts": "2021-03-15T15:07:28+0100"
+        }
+      ]
+    },
+    "10": {
+      "votes": []
+    },
+    "11": {
+      "votes": [
+        {
+          "from": "Empiricus",
+          "page": 11,
+          "post": "1054223",
+          "to": "Basenanji",
+          "ts": "2021-03-17T19:39:05+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 2,
+          "post": "1053642",
+          "to": "Björn den gode",
+          "ts": "2021-03-15T15:22:59+0100"
+        },
+        {
+          "from": "Hellzon",
+          "page": 2,
+          "post": "1053644",
+          "to": "Empiricus",
+          "ts": "2021-03-15T15:28:00+0100"
+        },
+        {
+          "from": "Hellzon",
+          "page": 2,
+          "post": "1053673",
+          "to": "Ingen",
+          "ts": "2021-03-15T17:05:43+0100"
+        },
+        {
+          "from": "Björn den gode",
+          "page": 2,
+          "post": "1053694",
+          "to": "KrilleW",
+          "ts": "2021-03-15T18:32:26+0100"
+        },
+        {
+          "from": "Björn den gode",
+          "page": 2,
+          "post": "1053694",
+          "to": "Ingen och ni som kan rösta på KrilleW",
+          "ts": "2021-03-15T18:32:26+0100"
+        },
+        {
+          "from": "Genesis",
+          "page": 2,
+          "post": "1053702",
+          "to": "Stövelkatten",
+          "ts": "2021-03-15T19:49:07+0100"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 3,
+          "post": "1053704",
+          "to": "Ingen",
+          "ts": "2021-03-15T19:53:42+0100"
+        },
+        {
+          "from": "Korpa",
+          "page": 3,
+          "post": "1053706",
+          "to": "Stövelkatten",
+          "ts": "2021-03-15T19:57:13+0100"
+        },
+        {
+          "from": "Björn den gode",
+          "page": 3,
+          "post": "1053739",
+          "to": "Stövelkatten",
+          "ts": "2021-03-15T21:20:54+0100"
+        },
+        {
+          "from": "Sidd",
+          "page": 3,
+          "post": "1053746",
+          "to": "KrilleW",
+          "ts": "2021-03-15T21:41:04+0100"
+        },
+        {
+          "from": "Impetigo",
+          "page": 3,
+          "post": "1053747",
+          "to": "Basenanji",
+          "ts": "2021-03-15T21:44:16+0100"
+        }
+      ]
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "Empiricus",
+          "page": 4,
+          "post": "1053761",
+          "to": "Hellzon",
+          "ts": "2021-03-15T22:21:10+0100"
+        },
+        {
+          "from": "Korpa",
+          "page": 4,
+          "post": "1053779",
+          "to": "Sidd",
+          "ts": "2021-03-15T23:43:17+0100"
+        },
+        {
+          "from": "KrilleW",
+          "page": 4,
+          "post": "1053783",
+          "to": "Ingen",
+          "ts": "2021-03-16T00:52:23+0100"
+        },
+        {
+          "from": "Empiricus",
+          "page": 4,
+          "post": "1053787",
+          "to": "Impetigo",
+          "ts": "2021-03-16T06:32:44+0100"
+        }
+      ]
+    },
+    "5": {
+      "votes": [
+        {
+          "from": "Xyas",
+          "page": 5,
+          "post": "1053803",
+          "to": "Ingen",
+          "ts": "2021-03-16T08:11:13+0100"
+        },
+        {
+          "from": "Sidd",
+          "page": 5,
+          "post": "1053815",
+          "to": "Xyas",
+          "ts": "2021-03-16T08:37:38+0100"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 5,
+          "post": "1053822",
+          "to": "Hellzon",
+          "ts": "2021-03-16T08:57:04+0100"
+        },
+        {
+          "from": "Björn den gode",
+          "page": 5,
+          "post": "1053824",
+          "to": "Hellzon",
+          "ts": "2021-03-16T09:04:21+0100"
+        },
+        {
+          "from": "Halo9000",
+          "page": 5,
+          "post": "1053827",
+          "to": "Impetigo",
+          "ts": "2021-03-16T09:12:16+0100"
+        },
+        {
+          "from": "Korpa",
+          "page": 5,
+          "post": "1053833",
+          "to": "Impetigo",
+          "ts": "2021-03-16T09:32:08+0100"
+        }
+      ]
+    },
+    "6": {
+      "votes": [
+        {
+          "from": "Hellzon",
+          "page": 6,
+          "post": "1053837",
+          "to": "Stövelkatten",
+          "ts": "2021-03-16T09:39:40+0100"
+        },
+        {
+          "from": "michael",
+          "page": 6,
+          "post": "1053859",
+          "to": "ingen",
+          "ts": "2021-03-16T11:27:10+0100"
+        },
+        {
+          "from": "Basenanji",
+          "page": 6,
+          "post": "1053889",
+          "to": "Genesis",
+          "ts": "2021-03-16T14:28:49+0100"
+        }
+      ]
+    },
+    "7": {
+      "votes": [
+        {
+          "from": "michael",
+          "page": 7,
+          "post": "1053900",
+          "to": "Xyas",
+          "ts": "2021-03-16T16:16:17+0100"
+        },
+        {
+          "from": "Björn den gode",
+          "page": 7,
+          "post": "1053907",
+          "to": "Stövelkatten",
+          "ts": "2021-03-16T16:43:59+0100"
+        }
+      ]
+    },
+    "8": {
+      "votes": [
+        {
+          "from": "Stövelkatten",
+          "page": 8,
+          "post": "1053924",
+          "to": "Hellzon",
+          "ts": "2021-03-16T17:36:02+0100"
+        }
+      ]
+    },
+    "9": {
+      "votes": [
+        {
+          "from": "KrilleW",
+          "page": 9,
+          "post": "1053953",
+          "to": "Xyas",
+          "ts": "2021-03-16T19:52:26+0100"
+        },
+        {
+          "from": "Basenanji",
+          "page": 9,
+          "post": "1053957",
+          "to": "Stövelkatten",
+          "ts": "2021-03-16T19:59:36+0100"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

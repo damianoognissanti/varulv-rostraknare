@@ -1,0 +1,48 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Impetigo",
+          "page": 1,
+          "post": "1113989",
+          "to": "Lavatoriet",
+          "ts": "2022-03-08T23:01:29+0100"
+        },
+        {
+          "from": "Sidd",
+          "page": 1,
+          "post": "1113994",
+          "to": "Parken",
+          "ts": "2022-03-09T06:22:27+0100"
+        },
+        {
+          "from": "Empiricus",
+          "page": 1,
+          "post": "1113995",
+          "to": "Parken",
+          "ts": "2022-03-09T06:45:58+0100"
+        },
+        {
+          "from": "fjodorsenuba",
+          "page": 1,
+          "post": "1113996",
+          "to": "Parken",
+          "ts": "2022-03-09T07:09:31+0100"
+        },
+        {
+          "from": "Impetigo",
+          "page": 1,
+          "post": "1113998",
+          "to": "Parken",
+          "ts": "2022-03-09T07:14:11+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

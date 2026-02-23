@@ -1,0 +1,472 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Lukas",
+          "page": 1,
+          "post": "1067727",
+          "to": "Namn",
+          "ts": "2021-06-07T10:37:07+0200"
+        },
+        {
+          "from": "Vimes",
+          "page": 1,
+          "post": "1067734",
+          "to": "LJSLarsson",
+          "ts": "2021-06-07T11:00:59+0200"
+        },
+        {
+          "from": "Xyas",
+          "page": 1,
+          "post": "1067741",
+          "to": "RasmusL",
+          "ts": "2021-06-07T11:16:32+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "1067744",
+          "to": "Vimes",
+          "ts": "2021-06-07T11:42:53+0200"
+        },
+        {
+          "from": "Hellzon",
+          "page": 1,
+          "post": "1067769",
+          "to": "RasmusL",
+          "ts": "2021-06-07T12:50:29+0200"
+        },
+        {
+          "from": "Genesis",
+          "page": 1,
+          "post": "1067774",
+          "to": "Impetigo",
+          "ts": "2021-06-07T13:05:35+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 1,
+          "post": "1067775",
+          "to": "Xyas",
+          "ts": "2021-06-07T13:06:13+0200"
+        }
+      ]
+    },
+    "10": {
+      "votes": [
+        {
+          "from": "Martin3",
+          "page": 10,
+          "post": "1068040",
+          "to": "Basse",
+          "ts": "2021-06-08T12:53:50+0200"
+        },
+        {
+          "from": "RasmusL",
+          "page": 10,
+          "post": "1068075",
+          "to": "Hellzon",
+          "ts": "2021-06-08T15:03:40+0200"
+        }
+      ]
+    },
+    "11": {
+      "votes": [
+        {
+          "from": "Genesis",
+          "page": 11,
+          "post": "1068084",
+          "to": "Hellzon",
+          "ts": "2021-06-08T15:57:12+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 11,
+          "post": "1068099",
+          "to": "Basse",
+          "ts": "2021-06-08T16:53:47+0200"
+        }
+      ]
+    },
+    "12": {
+      "votes": []
+    },
+    "13": {
+      "votes": [
+        {
+          "from": "Genesis",
+          "page": 13,
+          "post": "1068150",
+          "to": "RasmusL",
+          "ts": "2021-06-08T18:54:45+0200"
+        },
+        {
+          "from": "Impetigo",
+          "page": 13,
+          "post": "1068155",
+          "to": "RasmusL",
+          "ts": "2021-06-08T19:05:03+0200"
+        }
+      ]
+    },
+    "14": {
+      "votes": [
+        {
+          "from": "Genesis",
+          "page": 14,
+          "post": "1068186",
+          "to": "Basenanji",
+          "ts": "2021-06-08T21:07:30+0200"
+        },
+        {
+          "from": "Hellzon",
+          "page": 14,
+          "post": "1068191",
+          "to": "RasmusL",
+          "ts": "2021-06-08T21:20:14+0200"
+        },
+        {
+          "from": "RasmusL",
+          "page": 14,
+          "post": "1068193",
+          "to": "Ingen",
+          "ts": "2021-06-08T21:22:05+0200"
+        },
+        {
+          "from": "RasmusL",
+          "page": 14,
+          "post": "1068194",
+          "to": "Khan",
+          "ts": "2021-06-08T21:24:34+0200"
+        }
+      ]
+    },
+    "15": {
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 15,
+          "post": "1068205",
+          "to": "Khan",
+          "ts": "2021-06-08T21:39:20+0200"
+        },
+        {
+          "from": "Impetigo",
+          "page": 15,
+          "post": "1068213",
+          "to": "Hellzon",
+          "ts": "2021-06-08T21:42:46+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 15,
+          "post": "1068219",
+          "to": "Khan",
+          "ts": "2021-06-08T21:46:23+0200"
+        }
+      ]
+    },
+    "16": {
+      "votes": [
+        {
+          "from": "RasmusL",
+          "page": 16,
+          "post": "1068239",
+          "to": "Hellzon",
+          "ts": "2021-06-08T21:58:41+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 16,
+          "post": "1068251",
+          "to": "Hellzon",
+          "ts": "2021-06-08T22:03:44+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 16,
+          "post": "1068252",
+          "to": "Hellzon",
+          "ts": "2021-06-08T22:04:03+0200"
+        }
+      ]
+    },
+    "17": {
+      "votes": [
+        {
+          "from": "Hellzon",
+          "page": 17,
+          "post": "1068268",
+          "to": "Basenanji",
+          "ts": "2021-06-08T22:14:13+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Sidd",
+          "page": 2,
+          "post": "1067794",
+          "to": "Xyas",
+          "ts": "2021-06-07T13:40:53+0200"
+        },
+        {
+          "from": "Martin3",
+          "page": 2,
+          "post": "1067808",
+          "to": "Vimes",
+          "ts": "2021-06-07T14:30:08+0200"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "RasmusL",
+          "page": 3,
+          "post": "1067822",
+          "to": "Hellzon",
+          "ts": "2021-06-07T15:23:56+0200"
+        },
+        {
+          "from": "Vimes",
+          "page": 3,
+          "post": "1067831",
+          "to": "Basenanji",
+          "ts": "2021-06-07T16:51:45+0200"
+        },
+        {
+          "from": "Genesis",
+          "page": 3,
+          "post": "1067832",
+          "to": "Basenanji",
+          "ts": "2021-06-07T16:53:20+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 3,
+          "post": "1067852",
+          "to": "Genesis",
+          "ts": "2021-06-07T17:38:42+0200"
+        },
+        {
+          "from": "Sidd",
+          "page": 3,
+          "post": "1067856",
+          "to": "Basenanji",
+          "ts": "2021-06-07T17:57:57+0200"
+        }
+      ]
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "RasmusL",
+          "page": 4,
+          "post": "1067864",
+          "to": "Xyas",
+          "ts": "2021-06-07T18:50:12+0200"
+        },
+        {
+          "from": "Impetigo",
+          "page": 4,
+          "post": "1067870",
+          "to": "Basenanji",
+          "ts": "2021-06-07T19:31:03+0200"
+        },
+        {
+          "from": "Impetigo",
+          "page": 4,
+          "post": "1067870",
+          "to": "Bassenanji",
+          "ts": "2021-06-07T19:31:03+0200"
+        },
+        {
+          "from": "Impetigo",
+          "page": 4,
+          "post": "1067872",
+          "to": "Basenanji",
+          "ts": "2021-06-07T19:36:38+0200"
+        },
+        {
+          "from": "Xyas",
+          "page": 4,
+          "post": "1067882",
+          "to": "Basenanji",
+          "ts": "2021-06-07T20:15:39+0200"
+        },
+        {
+          "from": "Khan",
+          "page": 4,
+          "post": "1067887",
+          "to": "Basenanji",
+          "ts": "2021-06-07T20:20:11+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 4,
+          "post": "1067899",
+          "to": "Basse",
+          "ts": "2021-06-07T20:51:26+0200"
+        }
+      ]
+    },
+    "5": {
+      "votes": [
+        {
+          "from": "RasmusL",
+          "page": 5,
+          "post": "1067918",
+          "to": "Hellzon",
+          "ts": "2021-06-07T21:56:40+0200"
+        },
+        {
+          "from": "RasmusL",
+          "page": 5,
+          "post": "1067922",
+          "to": "Empiricus",
+          "ts": "2021-06-07T21:58:34+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 5,
+          "post": "1067926",
+          "to": "Empiricus",
+          "ts": "2021-06-07T22:03:01+0200"
+        }
+      ]
+    },
+    "6": {
+      "votes": [
+        {
+          "from": "Xyas",
+          "page": 6,
+          "post": "1067949",
+          "to": "Empiricus",
+          "ts": "2021-06-07T22:58:08+0200"
+        },
+        {
+          "from": "Impetigo",
+          "page": 6,
+          "post": "1067953",
+          "to": "Empiricus",
+          "ts": "2021-06-07T23:59:07+0200"
+        },
+        {
+          "from": "Empiricus",
+          "page": 6,
+          "post": "1067954",
+          "to": "Basenanji",
+          "ts": "2021-06-07T23:59:43+0200"
+        },
+        {
+          "from": "Impetigo",
+          "page": 6,
+          "post": "1067962",
+          "to": "Basenanji",
+          "ts": "2021-06-08T07:07:25+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 6,
+          "post": "1067963",
+          "to": "Khan",
+          "ts": "2021-06-08T07:19:42+0200"
+        },
+        {
+          "from": "Genesis",
+          "page": 6,
+          "post": "1067965",
+          "to": "Khan",
+          "ts": "2021-06-08T07:31:13+0200"
+        }
+      ]
+    },
+    "7": {
+      "votes": [
+        {
+          "from": "Genesis",
+          "page": 7,
+          "post": "1067968",
+          "to": "Hellzon",
+          "ts": "2021-06-08T07:45:21+0200"
+        },
+        {
+          "from": "Xyas",
+          "page": 7,
+          "post": "1067970",
+          "to": "Hellzon",
+          "ts": "2021-06-08T07:55:14+0200"
+        },
+        {
+          "from": "Vimes",
+          "page": 7,
+          "post": "1067974",
+          "to": "Hellzon",
+          "ts": "2021-06-08T08:25:32+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 7,
+          "post": "1067977",
+          "to": "Hellzon",
+          "ts": "2021-06-08T08:29:01+0200"
+        },
+        {
+          "from": "Hellzon",
+          "page": 7,
+          "post": "1067982",
+          "to": "Genesis",
+          "ts": "2021-06-08T08:52:12+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 7,
+          "post": "1067988",
+          "to": "Genesis",
+          "ts": "2021-06-08T09:33:47+0200"
+        }
+      ]
+    },
+    "8": {
+      "votes": [
+        {
+          "from": "Impetigo",
+          "page": 8,
+          "post": "1067989",
+          "to": "RasmusL",
+          "ts": "2021-06-08T09:36:52+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 8,
+          "post": "1067998",
+          "to": "Genesis",
+          "ts": "2021-06-08T10:30:30+0200"
+        },
+        {
+          "from": "Genesis",
+          "page": 8,
+          "post": "1068000",
+          "to": "Basenanji",
+          "ts": "2021-06-08T10:36:41+0200"
+        }
+      ]
+    },
+    "9": {
+      "votes": [
+        {
+          "from": "Impetigo",
+          "page": 9,
+          "post": "1068015",
+          "to": "Hellzon",
+          "ts": "2021-06-08T11:24:55+0200"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

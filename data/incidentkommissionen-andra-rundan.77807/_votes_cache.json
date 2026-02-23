@@ -1,0 +1,127 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "1080811",
+          "to": "Impetigo",
+          "ts": "2021-09-04T10:06:07+0200"
+        },
+        {
+          "from": "Empiricus",
+          "page": 1,
+          "post": "1080817",
+          "to": "Impetigo",
+          "ts": "2021-09-04T10:19:41+0200"
+        },
+        {
+          "from": "Sidd",
+          "page": 1,
+          "post": "1080822",
+          "to": "Impetigo",
+          "ts": "2021-09-04T10:28:33+0200"
+        },
+        {
+          "from": "Vimes",
+          "page": 1,
+          "post": "1080866",
+          "to": "Impetigo",
+          "ts": "2021-09-04T12:00:44+0200"
+        },
+        {
+          "from": "Impetigo",
+          "page": 1,
+          "post": "1080935",
+          "to": "LJSLarsson",
+          "ts": "2021-09-04T16:10:00+0200"
+        },
+        {
+          "from": "Impetigo",
+          "page": 1,
+          "post": "1080936",
+          "to": "Sidd",
+          "ts": "2021-09-04T16:11:59+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "LJSLarsson",
+          "page": 2,
+          "post": "1080972",
+          "to": "Impetigo",
+          "ts": "2021-09-04T19:11:22+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 2,
+          "post": "1081187",
+          "to": "INGEN",
+          "ts": "2021-09-05T12:03:24+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 2,
+          "post": "1081201",
+          "to": "Sidd",
+          "ts": "2021-09-05T12:24:53+0200"
+        },
+        {
+          "from": "Vimes",
+          "page": 2,
+          "post": "1081204",
+          "to": "Sidd",
+          "ts": "2021-09-05T12:39:33+0200"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "RasmusL",
+          "page": 3,
+          "post": "1081219",
+          "to": "Sidd",
+          "ts": "2021-09-05T13:38:33+0200"
+        },
+        {
+          "from": "RasmusL",
+          "page": 3,
+          "post": "1081245",
+          "to": "Impetigo",
+          "ts": "2021-09-05T15:56:39+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 3,
+          "post": "1081251",
+          "to": "Impetigo",
+          "ts": "2021-09-05T16:35:38+0200"
+        },
+        {
+          "from": "Vimes",
+          "page": 3,
+          "post": "1081254",
+          "to": "Impetigo",
+          "ts": "2021-09-05T16:53:44+0200"
+        }
+      ]
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "Impetigo",
+          "page": 4,
+          "post": "1081324",
+          "to": "LJSLarsson",
+          "ts": "2021-09-05T20:59:52+0200"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

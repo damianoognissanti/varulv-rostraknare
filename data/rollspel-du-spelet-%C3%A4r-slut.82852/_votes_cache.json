@@ -1,0 +1,36 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": []
+    },
+    "2": {
+      "votes": []
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Brynolf",
+          "page": 3,
+          "post": "1234709",
+          "to": "Genesis",
+          "ts": "2024-02-21T15:20:07+0100"
+        },
+        {
+          "from": "Basenanji",
+          "page": 3,
+          "post": "1234723",
+          "to": "Hägerstrand",
+          "ts": "2024-02-21T15:47:16+0100"
+        }
+      ]
+    },
+    "4": {
+      "votes": []
+    },
+    "5": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,55 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "1114102",
+          "to": "Bageri",
+          "ts": "2022-03-09T22:12:19+0100"
+        },
+        {
+          "from": "Lukas",
+          "page": 1,
+          "post": "1114107",
+          "to": "Köket",
+          "ts": "2022-03-09T23:12:13+0100"
+        },
+        {
+          "from": "Xyas",
+          "page": 1,
+          "post": "1114117",
+          "to": "Visthusboden",
+          "ts": "2022-03-10T08:25:10+0100"
+        },
+        {
+          "from": "Martin3",
+          "page": 1,
+          "post": "1114119",
+          "to": "Kapell",
+          "ts": "2022-03-10T08:48:03+0100"
+        },
+        {
+          "from": "Martin3",
+          "page": 1,
+          "post": "1114134",
+          "to": "Visthusboden",
+          "ts": "2022-03-10T10:22:19+0100"
+        },
+        {
+          "from": "Vimes",
+          "page": 1,
+          "post": "1114139",
+          "to": "Visthusboden",
+          "ts": "2022-03-10T10:33:32+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

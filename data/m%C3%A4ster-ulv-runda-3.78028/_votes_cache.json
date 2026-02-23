@@ -1,0 +1,141 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "RasmusL",
+          "page": 1,
+          "post": "1087481",
+          "to": "Sidd",
+          "ts": "2021-10-10T21:37:16+0200"
+        },
+        {
+          "from": "Empiricus",
+          "page": 1,
+          "post": "1087488",
+          "to": "fjodorsenuba",
+          "ts": "2021-10-10T21:45:44+0200"
+        },
+        {
+          "from": "fjodorsenuba",
+          "page": 1,
+          "post": "1087492",
+          "to": "Martin3",
+          "ts": "2021-10-10T21:50:11+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "RasmusL",
+          "page": 2,
+          "post": "1087507",
+          "to": "lade in dem i Excel och sorterade på vem som röstats på",
+          "ts": "2021-10-10T22:13:52+0200"
+        },
+        {
+          "from": "Korpa",
+          "page": 2,
+          "post": "1087515",
+          "to": "Martin3",
+          "ts": "2021-10-10T22:43:15+0200"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Sidd",
+          "page": 3,
+          "post": "1087528",
+          "to": "Martin3",
+          "ts": "2021-10-10T23:39:26+0200"
+        },
+        {
+          "from": "Empiricus",
+          "page": 3,
+          "post": "1087534",
+          "to": "Basenanji",
+          "ts": "2021-10-11T06:51:10+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 3,
+          "post": "1087537",
+          "to": "fjodorsenuba",
+          "ts": "2021-10-11T06:58:03+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 3,
+          "post": "1087539",
+          "to": "Empiricus",
+          "ts": "2021-10-11T07:00:26+0200"
+        },
+        {
+          "from": "Martin3",
+          "page": 3,
+          "post": "1087540",
+          "to": "Basenanji",
+          "ts": "2021-10-11T07:04:50+0200"
+        }
+      ]
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "Sidd",
+          "page": 4,
+          "post": "1087554",
+          "to": "Basenanj",
+          "ts": "2021-10-11T07:39:14+0200"
+        },
+        {
+          "from": "RasmusL",
+          "page": 4,
+          "post": "1087557",
+          "to": "Basenanji",
+          "ts": "2021-10-11T07:59:39+0200"
+        },
+        {
+          "from": "Korpa",
+          "page": 4,
+          "post": "1087565",
+          "to": "Basenanji",
+          "ts": "2021-10-11T08:53:03+0200"
+        },
+        {
+          "from": "Konrad Konvalj",
+          "page": 4,
+          "post": "1087576",
+          "to": "Basse",
+          "ts": "2021-10-11T09:46:35+0200"
+        },
+        {
+          "from": "Sidd",
+          "page": 4,
+          "post": "1087581",
+          "to": "inte vill ligga på samma tåg som kompanjonen Martin med röst på mig",
+          "ts": "2021-10-11T10:35:14+0200"
+        }
+      ]
+    },
+    "5": {
+      "votes": [
+        {
+          "from": "fjodorsenuba",
+          "page": 5,
+          "post": "1087585",
+          "to": "Basenanji",
+          "ts": "2021-10-11T11:35:18+0200"
+        }
+      ]
+    },
+    "6": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

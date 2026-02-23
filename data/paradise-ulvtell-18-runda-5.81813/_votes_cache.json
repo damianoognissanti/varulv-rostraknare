@@ -1,0 +1,29 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": []
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Waterhouse",
+          "page": 2,
+          "post": "1201192",
+          "to": "WH Basse",
+          "ts": "2023-09-09T18:07:57+0200"
+        }
+      ]
+    },
+    "3": {
+      "votes": []
+    },
+    "4": {
+      "votes": []
+    },
+    "5": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,26 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": []
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Sidd",
+          "page": 2,
+          "post": "1336699",
+          "to": "Älskar när bybo Anth slänger in en röst EFTER deadline",
+          "ts": "2025-08-19T21:05:26+0200"
+        }
+      ]
+    },
+    "3": {
+      "votes": []
+    },
+    "4": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

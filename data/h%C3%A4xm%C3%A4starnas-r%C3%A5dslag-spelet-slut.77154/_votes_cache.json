@@ -1,0 +1,23 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": []
+    },
+    "2": {
+      "votes": []
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 3,
+          "post": "1062773",
+          "to": "Basenanji",
+          "ts": "2021-05-04T08:33:31+0200"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,367 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Genesis",
+          "page": 1,
+          "post": "1060402",
+          "to": "Genesis",
+          "ts": "2021-04-26T05:43:30+0200"
+        },
+        {
+          "from": "Impetigo",
+          "page": 1,
+          "post": "1060407",
+          "to": "Korpa",
+          "ts": "2021-04-26T06:40:10+0200"
+        },
+        {
+          "from": "Empiricus",
+          "page": 1,
+          "post": "1060411",
+          "to": "Basenanji",
+          "ts": "2021-04-26T06:46:45+0200"
+        },
+        {
+          "from": "Halo9000",
+          "page": 1,
+          "post": "1060412",
+          "to": "Korpa",
+          "ts": "2021-04-26T06:51:10+0200"
+        },
+        {
+          "from": "Halo9000",
+          "page": 1,
+          "post": "1060421",
+          "to": "Empiricus",
+          "ts": "2021-04-26T07:14:51+0200"
+        },
+        {
+          "from": "Empiricus",
+          "page": 1,
+          "post": "1060441",
+          "to": "Halo9000",
+          "ts": "2021-04-26T07:54:50+0200"
+        },
+        {
+          "from": "Vimes",
+          "page": 1,
+          "post": "1060450",
+          "to": "Empiricus",
+          "ts": "2021-04-26T08:15:44+0200"
+        }
+      ]
+    },
+    "10": {
+      "votes": [
+        {
+          "from": "Xyas",
+          "page": 10,
+          "post": "1060796",
+          "to": "Halo9000",
+          "ts": "2021-04-27T15:52:51+0200"
+        },
+        {
+          "from": "Halo9000",
+          "page": 10,
+          "post": "1060807",
+          "to": "LJS Larsson",
+          "ts": "2021-04-27T16:35:34+0200"
+        }
+      ]
+    },
+    "11": {
+      "votes": [
+        {
+          "from": "Sidd",
+          "page": 11,
+          "post": "1060809",
+          "to": "LJSLarsson",
+          "ts": "2021-04-27T16:43:58+0200"
+        },
+        {
+          "from": "Halo9000",
+          "page": 11,
+          "post": "1060810",
+          "to": "LJSLarsson",
+          "ts": "2021-04-27T16:44:09+0200"
+        },
+        {
+          "from": "Korpa",
+          "page": 11,
+          "post": "1060814",
+          "to": "LJSLarsson",
+          "ts": "2021-04-27T17:05:18+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 11,
+          "post": "1060824",
+          "to": "Halo9000",
+          "ts": "2021-04-27T17:20:55+0200"
+        }
+      ]
+    },
+    "12": {
+      "votes": [
+        {
+          "from": "Hellzon",
+          "page": 12,
+          "post": "1060844",
+          "to": "Korpa",
+          "ts": "2021-04-27T18:03:57+0200"
+        },
+        {
+          "from": "Impetigo",
+          "page": 12,
+          "post": "1060859",
+          "to": "Empiricus",
+          "ts": "2021-04-27T18:30:30+0200"
+        },
+        {
+          "from": "Impetigo",
+          "page": 12,
+          "post": "1060861",
+          "to": "Empiricus",
+          "ts": "2021-04-27T18:31:17+0200"
+        }
+      ]
+    },
+    "13": {
+      "votes": [
+        {
+          "from": "Korpa",
+          "page": 13,
+          "post": "1060867",
+          "to": "Empiricus",
+          "ts": "2021-04-27T18:42:56+0200"
+        },
+        {
+          "from": "Kim Nolemo",
+          "page": 13,
+          "post": "1060888",
+          "to": "Empiricus",
+          "ts": "2021-04-27T19:45:12+0200"
+        }
+      ]
+    },
+    "14": {
+      "votes": [
+        {
+          "from": "Hellzon",
+          "page": 14,
+          "post": "1060915",
+          "to": "Empiricus",
+          "ts": "2021-04-27T20:34:16+0200"
+        }
+      ]
+    },
+    "15": {
+      "votes": [
+        {
+          "from": "Vimes",
+          "page": 15,
+          "post": "1061000",
+          "to": "Björn den gode",
+          "ts": "2021-04-28T07:55:26+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 2,
+          "post": "1060457",
+          "to": "Kim Nolemo",
+          "ts": "2021-04-26T08:39:50+0200"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Impetigo",
+          "page": 3,
+          "post": "1060519",
+          "to": "Hellzon",
+          "ts": "2021-04-26T12:55:32+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 3,
+          "post": "1060530",
+          "to": "Vimes",
+          "ts": "2021-04-26T13:42:48+0200"
+        },
+        {
+          "from": "Sidd",
+          "page": 3,
+          "post": "1060543",
+          "to": "Hellzon",
+          "ts": "2021-04-26T14:37:19+0200"
+        },
+        {
+          "from": "Björn den gode",
+          "page": 3,
+          "post": "1060548",
+          "to": "Hellzon",
+          "ts": "2021-04-26T14:51:22+0200"
+        }
+      ]
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 4,
+          "post": "1060572",
+          "to": "Halo9000",
+          "ts": "2021-04-26T15:55:24+0200"
+        },
+        {
+          "from": "Vimes",
+          "page": 4,
+          "post": "1060591",
+          "to": "Björn den gode",
+          "ts": "2021-04-26T16:51:08+0200"
+        }
+      ]
+    },
+    "5": {
+      "votes": [
+        {
+          "from": "Halo9000",
+          "page": 5,
+          "post": "1060613",
+          "to": "Hellzon",
+          "ts": "2021-04-26T18:27:07+0200"
+        }
+      ]
+    },
+    "6": {
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 6,
+          "post": "1060638",
+          "to": "Ingen",
+          "ts": "2021-04-26T21:03:03+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 6,
+          "post": "1060643",
+          "to": "Kim Nolemo",
+          "ts": "2021-04-26T21:24:59+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 6,
+          "post": "1060654",
+          "to": "Kim Nolemo",
+          "ts": "2021-04-26T22:14:53+0200"
+        },
+        {
+          "from": "Korpa",
+          "page": 6,
+          "post": "1060661",
+          "to": "Kim Nolemo",
+          "ts": "2021-04-26T22:42:16+0200"
+        }
+      ]
+    },
+    "7": {
+      "votes": [
+        {
+          "from": "Kim Nolemo",
+          "page": 7,
+          "post": "1060671",
+          "to": "Hellzon",
+          "ts": "2021-04-27T03:18:04+0200"
+        },
+        {
+          "from": "Empiricus",
+          "page": 7,
+          "post": "1060677",
+          "to": "Björn den gode",
+          "ts": "2021-04-27T06:32:52+0200"
+        },
+        {
+          "from": "Impetigo",
+          "page": 7,
+          "post": "1060682",
+          "to": "Halo9000",
+          "ts": "2021-04-27T07:14:12+0200"
+        },
+        {
+          "from": "Hellzon",
+          "page": 7,
+          "post": "1060691",
+          "to": "Basenanji",
+          "ts": "2021-04-27T08:04:37+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 7,
+          "post": "1060696",
+          "to": "Halo9000",
+          "ts": "2021-04-27T08:23:25+0200"
+        }
+      ]
+    },
+    "8": {
+      "votes": [
+        {
+          "from": "Björn den gode",
+          "page": 8,
+          "post": "1060704",
+          "to": "Empiricus",
+          "ts": "2021-04-27T09:19:29+0200"
+        },
+        {
+          "from": "Vimes",
+          "page": 8,
+          "post": "1060708",
+          "to": "Empiricus",
+          "ts": "2021-04-27T09:39:19+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 8,
+          "post": "1060712",
+          "to": "Vimes",
+          "ts": "2021-04-27T09:58:39+0200"
+        },
+        {
+          "from": "Halo9000",
+          "page": 8,
+          "post": "1060732",
+          "to": "Vimes",
+          "ts": "2021-04-27T11:32:44+0200"
+        },
+        {
+          "from": "Korpa",
+          "page": 8,
+          "post": "1060740",
+          "to": "Sidd",
+          "ts": "2021-04-27T11:50:45+0200"
+        }
+      ]
+    },
+    "9": {
+      "votes": [
+        {
+          "from": "Sidd",
+          "page": 9,
+          "post": "1060748",
+          "to": "Ingen",
+          "ts": "2021-04-27T12:25:09+0200"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

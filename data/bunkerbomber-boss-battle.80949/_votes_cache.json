@@ -1,0 +1,31 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": []
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "fjodorsenuba",
+          "page": 2,
+          "post": "1176540",
+          "to": "sjukdom",
+          "ts": "2023-03-31T07:33:06+0200"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Sidd",
+          "page": 3,
+          "post": "1176570",
+          "to": "MZ Cava",
+          "ts": "2023-03-31T12:05:38+0200"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

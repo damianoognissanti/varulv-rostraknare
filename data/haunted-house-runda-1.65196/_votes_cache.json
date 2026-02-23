@@ -1,0 +1,382 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Feuflux",
+          "page": 1,
+          "post": "887525",
+          "to": "Feuflux",
+          "ts": "2020-03-30T22:01:57+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 1,
+          "post": "860815",
+          "to": "Khan",
+          "ts": "2020-03-30T23:11:17+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 1,
+          "post": "860817",
+          "to": "Xyas",
+          "ts": "2020-03-31T11:56:05+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "924225",
+          "to": "Vimes",
+          "ts": "2020-03-31T14:18:15+0200"
+        },
+        {
+          "from": "Vimes",
+          "page": 1,
+          "post": "902763",
+          "to": "RasmusL",
+          "ts": "2020-03-31T15:12:24+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 1,
+          "post": "860818",
+          "to": "Stövelkatten",
+          "ts": "2020-03-31T16:17:13+0200"
+        },
+        {
+          "from": "Stövelkatten",
+          "page": 1,
+          "post": "888518",
+          "to": "113",
+          "ts": "2020-03-31T17:03:03+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "924226",
+          "to": "Ingen",
+          "ts": "2020-03-31T17:18:05+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "924227",
+          "to": "Rasmus L",
+          "ts": "2020-03-31T17:19:07+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 1,
+          "post": "860819",
+          "to": "113",
+          "ts": "2020-03-31T18:37:13+0200"
+        },
+        {
+          "from": "Khan",
+          "page": 1,
+          "post": "974950",
+          "to": "113",
+          "ts": "2020-03-31T19:35:10+0200"
+        }
+      ]
+    },
+    "10": {
+      "votes": [
+        {
+          "from": "Sodivra",
+          "page": 10,
+          "post": "985657",
+          "to": "Xyas",
+          "ts": "2020-04-02T22:00:10+0200"
+        },
+        {
+          "from": "RasmusL",
+          "page": 10,
+          "post": "883776",
+          "to": "Xyas",
+          "ts": "2020-04-02T22:00:34+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Xyas",
+          "page": 2,
+          "post": "966710",
+          "to": "RasmusL",
+          "ts": "2020-03-31T21:28:28+0200"
+        },
+        {
+          "from": "Stövelkatten",
+          "page": 2,
+          "post": "888521",
+          "to": "RasmusL",
+          "ts": "2020-03-31T22:28:20+0200"
+        },
+        {
+          "from": "RasmusL",
+          "page": 2,
+          "post": "883746",
+          "to": "Vimes",
+          "ts": "2020-03-31T23:50:39+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 2,
+          "post": "860821",
+          "to": "Basenanji",
+          "ts": "2020-04-01T06:23:28+0200"
+        },
+        {
+          "from": "Vimes",
+          "page": 2,
+          "post": "902766",
+          "to": "SJSLarsson - motivering",
+          "ts": "2020-04-01T12:36:26+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 2,
+          "post": "924229",
+          "to": "LJSLarsson",
+          "ts": "2020-04-01T12:41:35+0200"
+        },
+        {
+          "from": "Xyas",
+          "page": 2,
+          "post": "966713",
+          "to": "LJSLarsson",
+          "ts": "2020-04-01T15:30:55+0200"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "RasmusL",
+          "page": 3,
+          "post": "883752",
+          "to": "113",
+          "ts": "2020-04-01T18:28:13+0200"
+        },
+        {
+          "from": "Khan",
+          "page": 3,
+          "post": "974953",
+          "to": "RasmusL",
+          "ts": "2020-04-01T18:51:23+0200"
+        },
+        {
+          "from": "Stövelkatten",
+          "page": 3,
+          "post": "888523",
+          "to": "Xyaz",
+          "ts": "2020-04-01T21:13:49+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 3,
+          "post": "860825",
+          "to": "Basenanji",
+          "ts": "2020-04-01T23:01:38+0200"
+        },
+        {
+          "from": "Stövelkatten",
+          "page": 3,
+          "post": "888524",
+          "to": "Xyas",
+          "ts": "2020-04-01T23:16:21+0200"
+        },
+        {
+          "from": "Stövelkatten",
+          "page": 3,
+          "post": "888525",
+          "to": "Xyas",
+          "ts": "2020-04-01T23:18:53+0200"
+        },
+        {
+          "from": "Khan",
+          "page": 3,
+          "post": "974956",
+          "to": "RasmusL",
+          "ts": "2020-04-02T08:05:36+0200"
+        }
+      ]
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "Vimes",
+          "page": 4,
+          "post": "902771",
+          "to": "LJSLarsson",
+          "ts": "2020-04-02T08:29:04+0200"
+        },
+        {
+          "from": "Vimes",
+          "page": 4,
+          "post": "902773",
+          "to": "Xyas",
+          "ts": "2020-04-02T08:55:44+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 4,
+          "post": "860832",
+          "to": "Xyas",
+          "ts": "2020-04-02T09:43:51+0200"
+        },
+        {
+          "from": "Vimes",
+          "page": 4,
+          "post": "902774",
+          "to": "Basenanji",
+          "ts": "2020-04-02T11:57:23+0200"
+        }
+      ]
+    },
+    "5": {
+      "votes": [
+        {
+          "from": "RasmusL",
+          "page": 5,
+          "post": "883761",
+          "to": "LJSLarsson",
+          "ts": "2020-04-02T17:52:33+0200"
+        },
+        {
+          "from": "Stövelkatten",
+          "page": 5,
+          "post": "888526",
+          "to": "Xyas",
+          "ts": "2020-04-02T18:16:39+0200"
+        }
+      ]
+    },
+    "6": {
+      "votes": [
+        {
+          "from": "Vimes",
+          "page": 6,
+          "post": "902777",
+          "to": "RasmusL",
+          "ts": "2020-04-02T20:07:23+0200"
+        },
+        {
+          "from": "Xyas",
+          "page": 6,
+          "post": "966720",
+          "to": "Ingen",
+          "ts": "2020-04-02T20:28:34+0200"
+        },
+        {
+          "from": "Sodivra",
+          "page": 6,
+          "post": "985642",
+          "to": "Stövelkatten",
+          "ts": "2020-04-02T20:55:56+0200"
+        }
+      ]
+    },
+    "7": {
+      "votes": [
+        {
+          "from": "Xyas",
+          "page": 7,
+          "post": "966723",
+          "to": "Sodivra",
+          "ts": "2020-04-02T21:20:58+0200"
+        },
+        {
+          "from": "Khan",
+          "page": 7,
+          "post": "974962",
+          "to": "RasmusL",
+          "ts": "2020-04-02T21:30:24+0200"
+        },
+        {
+          "from": "Xyas",
+          "page": 7,
+          "post": "966724",
+          "to": "RasmusL",
+          "ts": "2020-04-02T21:30:45+0200"
+        },
+        {
+          "from": "Vimes",
+          "page": 7,
+          "post": "902781",
+          "to": "Stövelkatten",
+          "ts": "2020-04-02T21:40:14+0200"
+        }
+      ]
+    },
+    "8": {
+      "votes": [
+        {
+          "from": "Stövelkatten",
+          "page": 8,
+          "post": "888533",
+          "to": "Xyas",
+          "ts": "2020-04-02T21:49:09+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 8,
+          "post": "860836",
+          "to": "RasmusL",
+          "ts": "2020-04-02T21:49:13+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 8,
+          "post": "860838",
+          "to": "Xyas",
+          "ts": "2020-04-02T21:50:17+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 8,
+          "post": "860839",
+          "to": "RasmusL",
+          "ts": "2020-04-02T21:52:12+0200"
+        },
+        {
+          "from": "RasmusL",
+          "page": 8,
+          "post": "883771",
+          "to": "Xyas",
+          "ts": "2020-04-02T21:53:23+0200"
+        }
+      ]
+    },
+    "9": {
+      "votes": [
+        {
+          "from": "RasmusL",
+          "page": 9,
+          "post": "883773",
+          "to": "LJSLarsson",
+          "ts": "2020-04-02T21:57:58+0200"
+        },
+        {
+          "from": "Vimes",
+          "page": 9,
+          "post": "902790",
+          "to": "Xyas",
+          "ts": "2020-04-02T21:59:37+0200"
+        },
+        {
+          "from": "RasmusL",
+          "page": 9,
+          "post": "883775",
+          "to": "Xyas",
+          "ts": "2020-04-02T22:00:03+0200"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,206 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "LJSLarsson",
+          "page": 1,
+          "post": "1032818",
+          "to": "Spelarnamn",
+          "ts": "2020-10-19T22:11:07+0200"
+        },
+        {
+          "from": "Stövelkatten",
+          "page": 1,
+          "post": "1032820",
+          "to": "Tant Ragnar",
+          "ts": "2020-10-19T22:14:33+0200"
+        },
+        {
+          "from": "Hellzon",
+          "page": 1,
+          "post": "1032827",
+          "to": "Tant Ragnar",
+          "ts": "2020-10-19T22:29:48+0200"
+        },
+        {
+          "from": "Empiricus",
+          "page": 1,
+          "post": "1032835",
+          "to": "Stövelkatten",
+          "ts": "2020-10-19T22:53:38+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Hellzon",
+          "page": 2,
+          "post": "1032850",
+          "to": "Halo9000",
+          "ts": "2020-10-20T00:06:25+0200"
+        },
+        {
+          "from": "Tant Ragnar",
+          "page": 2,
+          "post": "1032855",
+          "to": "Stövelkatten",
+          "ts": "2020-10-20T06:55:14+0200"
+        },
+        {
+          "from": "Halo9000",
+          "page": 2,
+          "post": "1032857",
+          "to": "Hellzon",
+          "ts": "2020-10-20T07:02:43+0200"
+        },
+        {
+          "from": "Halo9000",
+          "page": 2,
+          "post": "1032895",
+          "to": "Ingen",
+          "ts": "2020-10-20T09:11:50+0200"
+        },
+        {
+          "from": "Hellzon",
+          "page": 2,
+          "post": "1032898",
+          "to": "Genesis",
+          "ts": "2020-10-20T09:19:21+0200"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Vimes",
+          "page": 3,
+          "post": "1032912",
+          "to": "Hellzon",
+          "ts": "2020-10-20T10:47:09+0200"
+        },
+        {
+          "from": "Halo9000",
+          "page": 3,
+          "post": "1032921",
+          "to": "Hellzon",
+          "ts": "2020-10-20T11:39:20+0200"
+        }
+      ]
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "Vimes",
+          "page": 4,
+          "post": "1032955",
+          "to": "Empiricus",
+          "ts": "2020-10-20T15:16:55+0200"
+        },
+        {
+          "from": "Xyas",
+          "page": 4,
+          "post": "1032956",
+          "to": "Empiricus",
+          "ts": "2020-10-20T15:18:08+0200"
+        },
+        {
+          "from": "Halo9000",
+          "page": 4,
+          "post": "1032974",
+          "to": "Empiricus",
+          "ts": "2020-10-20T16:38:09+0200"
+        },
+        {
+          "from": "Genesis",
+          "page": 4,
+          "post": "1032976",
+          "to": "Empiricus",
+          "ts": "2020-10-20T16:51:04+0200"
+        }
+      ]
+    },
+    "5": {
+      "votes": [
+        {
+          "from": "Stövelkatten",
+          "page": 5,
+          "post": "1033016",
+          "to": "Empiricus",
+          "ts": "2020-10-20T21:15:31+0200"
+        },
+        {
+          "from": "Tant Ragnar",
+          "page": 5,
+          "post": "1033018",
+          "to": "Halo9000",
+          "ts": "2020-10-20T21:25:21+0200"
+        },
+        {
+          "from": "Hellzon",
+          "page": 5,
+          "post": "1033026",
+          "to": "Tant Ragnar",
+          "ts": "2020-10-20T23:50:14+0200"
+        }
+      ]
+    },
+    "6": {
+      "votes": [
+        {
+          "from": "Xyas",
+          "page": 6,
+          "post": "1033042",
+          "to": "Tant Ragnar",
+          "ts": "2020-10-21T09:01:43+0200"
+        },
+        {
+          "from": "Xyas",
+          "page": 6,
+          "post": "1033095",
+          "to": "Empiricus",
+          "ts": "2020-10-21T19:18:25+0200"
+        }
+      ]
+    },
+    "7": {
+      "votes": [
+        {
+          "from": "Halo9000",
+          "page": 7,
+          "post": "1033109",
+          "to": "Tant Ragnar",
+          "ts": "2020-10-21T20:08:24+0200"
+        },
+        {
+          "from": "Vimes",
+          "page": 7,
+          "post": "1033115",
+          "to": "Empiricus",
+          "ts": "2020-10-21T20:28:14+0200"
+        },
+        {
+          "from": "Hellzon",
+          "page": 7,
+          "post": "1033121",
+          "to": "Empiricus",
+          "ts": "2020-10-21T20:41:53+0200"
+        }
+      ]
+    },
+    "8": {
+      "votes": [
+        {
+          "from": "Halo9000",
+          "page": 8,
+          "post": "1033144",
+          "to": "Empiricus",
+          "ts": "2020-10-21T21:38:56+0200"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

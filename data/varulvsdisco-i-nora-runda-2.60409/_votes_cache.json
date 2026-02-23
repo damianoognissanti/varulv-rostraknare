@@ -1,0 +1,158 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": []
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Brynolf",
+          "page": 2,
+          "post": "813612",
+          "to": "Dragonborn",
+          "ts": "2013-09-05T23:33:19+0200"
+        },
+        {
+          "from": "Patient Beta",
+          "page": 2,
+          "post": "813614",
+          "to": "Dragonborn",
+          "ts": "2013-09-05T23:40:50+0200"
+        },
+        {
+          "from": "Xyas",
+          "page": 2,
+          "post": "813627",
+          "to": "Pix",
+          "ts": "2013-09-06T05:51:26+0200"
+        },
+        {
+          "from": "Basenanji",
+          "page": 2,
+          "post": "813637",
+          "to": "Pix",
+          "ts": "2013-09-06T08:06:26+0200"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "LJSLarsson",
+          "page": 3,
+          "post": "813658",
+          "to": "Xyas",
+          "ts": "2013-09-06T10:26:33+0200"
+        },
+        {
+          "from": "shaithan",
+          "page": 3,
+          "post": "813661",
+          "to": "Pix",
+          "ts": "2013-09-06T10:40:09+0200"
+        },
+        {
+          "from": "Recca",
+          "page": 3,
+          "post": "813668",
+          "to": "Xyas",
+          "ts": "2013-09-06T11:33:01+0200"
+        }
+      ]
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "Björn den gode",
+          "page": 4,
+          "post": "813712",
+          "to": "Pix",
+          "ts": "2013-09-06T16:06:08+0200"
+        },
+        {
+          "from": "Sodivra",
+          "page": 4,
+          "post": "813740",
+          "to": "Pix",
+          "ts": "2013-09-06T18:24:54+0200"
+        },
+        {
+          "from": "Konrad Konvalj",
+          "page": 4,
+          "post": "813748",
+          "to": "Pix",
+          "ts": "2013-09-06T19:56:27+0200"
+        },
+        {
+          "from": "Brynolf",
+          "page": 4,
+          "post": "813752",
+          "to": "Pix",
+          "ts": "2013-09-06T20:36:32+0200"
+        },
+        {
+          "from": "Recca",
+          "page": 4,
+          "post": "813756",
+          "to": "Pix",
+          "ts": "2013-09-06T22:00:59+0200"
+        },
+        {
+          "from": "LJSLarsson",
+          "page": 4,
+          "post": "813759",
+          "to": "Pix",
+          "ts": "2013-09-06T22:22:56+0200"
+        }
+      ]
+    },
+    "5": {
+      "votes": [
+        {
+          "from": "Konrad Konvalj",
+          "page": 5,
+          "post": "813814",
+          "to": "Lu-kaazh",
+          "ts": "2013-09-07T15:58:41+0200"
+        },
+        {
+          "from": "Patient Beta",
+          "page": 5,
+          "post": "813843",
+          "to": "Pix",
+          "ts": "2013-09-07T21:35:21+0200"
+        },
+        {
+          "from": "Tyr",
+          "page": 5,
+          "post": "813906",
+          "to": "Pix",
+          "ts": "2013-09-08T16:00:11+0200"
+        },
+        {
+          "from": "Recca",
+          "page": 5,
+          "post": "813926",
+          "to": "Pix",
+          "ts": "2013-09-08T18:08:20+0200"
+        }
+      ]
+    },
+    "6": {
+      "votes": [
+        {
+          "from": "Konrad Konvalj",
+          "page": 6,
+          "post": "813932",
+          "to": "Pix",
+          "ts": "2013-09-08T18:37:16+0200"
+        }
+      ]
+    },
+    "7": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

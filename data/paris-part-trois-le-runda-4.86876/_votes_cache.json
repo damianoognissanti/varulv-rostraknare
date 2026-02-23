@@ -1,0 +1,51 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Hägerstrand",
+          "page": 1,
+          "post": "1372273",
+          "to": "StradhLestat",
+          "ts": "2026-01-20T22:22:13+0100"
+        },
+        {
+          "from": "StradhLestat",
+          "page": 1,
+          "post": "1372291",
+          "to": "Sidd",
+          "ts": "2026-01-21T07:11:17+0100"
+        },
+        {
+          "from": "Sidd",
+          "page": 1,
+          "post": "1372302",
+          "to": "StradhLestat",
+          "ts": "2026-01-21T08:09:19+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": []
+    },
+    "3": {
+      "votes": []
+    },
+    "4": {
+      "votes": [
+        {
+          "from": "Hägerstrand",
+          "page": 4,
+          "post": "1372471",
+          "to": "Sidd",
+          "ts": "2026-01-21T17:57:02+0100"
+        }
+      ]
+    },
+    "5": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

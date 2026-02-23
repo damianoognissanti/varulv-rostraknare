@@ -1,0 +1,49 @@
+{
+  "mode": "old",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Hellzon",
+          "page": 1,
+          "post": "1094224",
+          "to": "Genesis",
+          "ts": "2021-11-16T23:25:18+0100"
+        },
+        {
+          "from": "Empiricus",
+          "page": 1,
+          "post": "1094232",
+          "to": "Genesis",
+          "ts": "2021-11-17T06:23:50+0100"
+        },
+        {
+          "from": "fjodorsenuba",
+          "page": 1,
+          "post": "1094237",
+          "to": "Genesis",
+          "ts": "2021-11-17T07:00:12+0100"
+        },
+        {
+          "from": "Sidd",
+          "page": 1,
+          "post": "1094244",
+          "to": "Empiricus",
+          "ts": "2021-11-17T07:37:39+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Sidd",
+          "page": 2,
+          "post": "1094375",
+          "to": "Genesis",
+          "ts": "2021-11-17T18:05:06+0100"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

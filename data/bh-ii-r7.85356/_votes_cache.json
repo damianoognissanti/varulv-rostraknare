@@ -1,0 +1,62 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Big Mama",
+          "page": 1,
+          "post": "1318815",
+          "to": "Octagonal",
+          "ts": "2025-05-11T21:12:01+0200"
+        },
+        {
+          "from": "Sömniga Isaac",
+          "page": 1,
+          "post": "1318816",
+          "to": "BiobunkerVII",
+          "ts": "2025-05-11T21:15:20+0200"
+        },
+        {
+          "from": "Octagonal",
+          "page": 1,
+          "post": "1318817",
+          "to": "BiobunkerVII",
+          "ts": "2025-05-11T21:16:38+0200"
+        },
+        {
+          "from": "Sömniga Isaac",
+          "page": 1,
+          "post": "1318831",
+          "to": "Octagonal",
+          "ts": "2025-05-11T21:48:30+0200"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Sömniga Isaac",
+          "page": 2,
+          "post": "1318840",
+          "to": "BiobunkerVII",
+          "ts": "2025-05-11T21:59:39+0200"
+        },
+        {
+          "from": "BiobunkerVII",
+          "page": 2,
+          "post": "1318875",
+          "to": "Octagonal",
+          "ts": "2025-05-12T07:37:35+0200"
+        }
+      ]
+    },
+    "3": {
+      "votes": []
+    },
+    "4": {
+      "votes": []
+    }
+  },
+  "version": 1
+}

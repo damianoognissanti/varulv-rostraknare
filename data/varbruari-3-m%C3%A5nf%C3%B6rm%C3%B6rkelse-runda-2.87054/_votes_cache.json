@@ -1,0 +1,95 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Big Mama",
+          "page": 1,
+          "post": "1379036",
+          "to": "Big Mama",
+          "ts": "2026-02-16T20:43:51+0100"
+        },
+        {
+          "from": "Big Mama",
+          "page": 1,
+          "post": "1379047",
+          "to": "Ingen",
+          "ts": "2026-02-16T21:28:10+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Vimes",
+          "page": 2,
+          "post": "1379099",
+          "to": "Big Mama",
+          "ts": "2026-02-17T08:30:43+0100"
+        },
+        {
+          "from": "Sysp",
+          "page": 2,
+          "post": "1379100",
+          "to": "Big Mama",
+          "ts": "2026-02-17T08:32:59+0100"
+        },
+        {
+          "from": "Impetigo",
+          "page": 2,
+          "post": "1379102",
+          "to": "Big Mama",
+          "ts": "2026-02-17T08:38:06+0100"
+        },
+        {
+          "from": "Sidd",
+          "page": 2,
+          "post": "1379106",
+          "to": "Big Mama",
+          "ts": "2026-02-17T08:55:52+0100"
+        },
+        {
+          "from": "Big Mama",
+          "page": 2,
+          "post": "1379108",
+          "to": "Big Mama",
+          "ts": "2026-02-17T09:11:32+0100"
+        },
+        {
+          "from": "fjodorsenuba",
+          "page": 2,
+          "post": "1379119",
+          "to": "Big Mama",
+          "ts": "2026-02-17T09:41:31+0100"
+        }
+      ]
+    },
+    "3": {
+      "votes": [
+        {
+          "from": "Sidd",
+          "page": 3,
+          "post": "1379284",
+          "to": "Octagonal",
+          "ts": "2026-02-17T19:41:52+0100"
+        },
+        {
+          "from": "Sidd",
+          "page": 3,
+          "post": "1379288",
+          "to": "BiobunkerVII",
+          "ts": "2026-02-17T19:52:34+0100"
+        },
+        {
+          "from": "Sidd",
+          "page": 3,
+          "post": "1379290",
+          "to": "Big Mama",
+          "ts": "2026-02-17T20:00:00+0100"
+        }
+      ]
+    }
+  },
+  "version": 1
+}
