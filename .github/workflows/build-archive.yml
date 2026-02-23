@@ -54,11 +54,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          if git diff --quiet -- archive.json; then
-            echo "No changes in archive.json"
+          git add data archive.json
+
+          if git diff --cached --quiet; then
+            echo "No changes"
             exit 0
           fi
 
-          git add archive.json
-          git commit -m "Update archive.json"
+          git commit -m "Update data and archive.json"
           git push
