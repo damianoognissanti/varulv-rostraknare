@@ -59,7 +59,15 @@
       ]
     },
     "11": {
-      "votes": []
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 11,
+          "post": "1245838",
+          "to": "Octagonal",
+          "ts": "2024-04-19T16:01:03+0200"
+        }
+      ]
     },
     "12": {
       "votes": []
@@ -91,6 +99,13 @@
     },
     "16": {
       "votes": [
+        {
+          "from": "Basenanji",
+          "page": 16,
+          "post": "1245970",
+          "to": "Brynolf",
+          "ts": "2024-04-20T09:17:12+0200"
+        },
         {
           "from": "RasmusL",
           "page": 16,
@@ -161,7 +176,15 @@
       ]
     },
     "7": {
-      "votes": []
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 7,
+          "post": "1245717",
+          "to": "Ingen",
+          "ts": "2024-04-19T09:30:01+0200"
+        }
+      ]
     },
     "8": {
       "votes": []

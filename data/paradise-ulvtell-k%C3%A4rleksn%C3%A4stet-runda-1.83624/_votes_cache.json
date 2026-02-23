@@ -277,7 +277,15 @@
       "votes": []
     },
     "6": {
-      "votes": []
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 6,
+          "post": "1257777",
+          "to": "Impetigo",
+          "ts": "2024-07-15T16:08:47+0200"
+        }
+      ]
     },
     "7": {
       "votes": []
@@ -301,7 +309,15 @@
       ]
     },
     "9": {
-      "votes": []
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 9,
+          "post": "1257884",
+          "to": "Big Mama",
+          "ts": "2024-07-15T19:08:45+0200"
+        }
+      ]
     }
   },
   "version": 1

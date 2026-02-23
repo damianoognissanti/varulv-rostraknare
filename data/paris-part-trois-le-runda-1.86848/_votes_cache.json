@@ -1,5 +1,5 @@
 {
-  "mode": "old",
+  "mode": "tag",
   "pages": {
     "1": {
       "votes": []
@@ -42,7 +42,7 @@
           "from": "Anthrox",
           "page": 11,
           "post": "1371303",
-          "to": "Basenanji base",
+          "to": "Basenanji",
           "ts": "2026-01-18T14:24:00+0100"
         }
       ]
@@ -171,7 +171,15 @@
       ]
     },
     "2": {
-      "votes": []
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 2,
+          "post": "1370816",
+          "to": "Hägerstrand",
+          "ts": "2026-01-16T22:05:50+0100"
+        }
+      ]
     },
     "3": {
       "votes": []
@@ -214,7 +222,7 @@
           "from": "Vimes",
           "page": 5,
           "post": "1371032",
-          "to": "Anthrox - lökigt smulat",
+          "to": "Anthrox",
           "ts": "2026-01-17T16:33:12+0100"
         }
       ]

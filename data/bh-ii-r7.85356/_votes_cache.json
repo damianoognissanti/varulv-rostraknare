@@ -52,7 +52,15 @@
       ]
     },
     "3": {
-      "votes": []
+      "votes": [
+        {
+          "from": "Sömniga Isaac",
+          "page": 3,
+          "post": "1318981",
+          "to": "Octagonal",
+          "ts": "2025-05-12T20:11:32+0200"
+        }
+      ]
     },
     "4": {
       "votes": []
