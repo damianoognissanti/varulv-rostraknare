@@ -1,8 +1,8 @@
 {
   "forum": {
     "forum_last_page": 21,
-    "last_crawl_unix": 1771855561,
-    "limit_threads": 10,
+    "last_crawl_unix": 1771857825,
+    "limit_threads": 1,
     "thread_count": 407
   },
   "threads": {
@@ -2085,7 +2085,7 @@
     "vargbruari-4-kn%C3%A4ckande-gryning-runda-1.87097": {
       "base_url": "https://www.rollspel.nu/threads/vargbruari-4-kn%C3%A4ckande-gryning-runda-1.87097/",
       "last_page_hint": 16,
-      "latest_ts": 1771855438,
+      "latest_ts": 1771856760,
       "title": "Vargbruari 4 Knäckande gryning: Runda 1"
     },
     "varuivspei-game-over.79502": {
