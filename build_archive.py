@@ -99,7 +99,8 @@ def extract_votes_tagmode(html: str, page_num: int):
             continue
         content_html = msg.decode_contents()
         for line in _split_html_lines(content_html):
-            if not VOTE_START.search(line):
+            plain = BeautifulSoup(line, "html.parser").get_text(" ", strip=False)
+            if not VOTE_START.search(plain):
                 continue
             m = USER_TAG.search(line)
             if not m:
@@ -123,9 +124,10 @@ def extract_votes_oldmode(html: str, page_num: int, known_cf: set, canon: dict):
             continue
         content_html = msg.decode_contents()
         for line in _split_html_lines(content_html):
-            if not VOTE_START.search(line):
+            plain = BeautifulSoup(line, "html.parser").get_text(" ", strip=False)
+            if not VOTE_START.search(plain):
                 continue
-            m = OLD_VOTE.search(line)
+            m = OLD_VOTE.search(plain)
             if not m:
                 continue
             raw = m.group(1) or ""
