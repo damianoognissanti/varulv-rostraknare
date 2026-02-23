@@ -1,33 +1,59 @@
-name: Automatisk hämtning av tråd
-
+name: Sync rollspel.nu -> archive.json
 on:
   schedule:
-    #- cron: '*/30 * * * *'  # var 30:e minut
-    - cron: '0 0 1 1 *'  # en gång per år (stoppa temporärt)
-  workflow_dispatch:     # valfritt: för manuell körning
-
+    - cron: "*/10 * * * *"   # var 10:e minut (best effort)
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: sync-archive
+  cancel-in-progress: true
 jobs:
-  download-thread:
+  sync:
     runs-on: ubuntu-latest
-
+    timeout-minutes: 15
     steps:
-      - name: Klona repo
-        uses: actions/checkout@v3
-
-      - name: Installera beroenden
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install deps
         run: |
-          pip install requests beautifulsoup4
-
-      - name: Hämta tråd
-        env:
-          THREAD_URL: https://www.rollspel.nu/threads/bh-ii-r7.85356
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      # Cache:a hela data/ så vi slipper nerladdning från noll varje gång
+      - name: Restore data cache
+        uses: actions/cache@v4
+        with:
+          path: data
+          key: data-cache-v1
+          restore-keys: |
+            data-cache-v1
+      - name: Fetch forum changes
         run: |
-          python fetch_thread.py
-
-      - name: Committa ändringar
+          python fetch_varulvsspel.py --output data --limit-threads 5 --delay 1.25
+      - name: Build archive.json (changed-only)
         run: |
-          git config user.name "GitHub Action"
-          git config user.email "actions@github.com"
-          git add data/
-          git commit -m "Automatiskt uppdaterad tråd" || echo "Inga ändringar"
+          python build_archive.py --data data --out docs/archive.json
+      # Commita bara om docs/archive.json faktiskt ändrats
+      - name: Commit & push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- docs/archive.json; then
+            echo "No changes in docs/archive.json"
+            exit 0
+          fi
+          git add docs/archive.json
+          git commit -m "Update archive.json"
           git push
+      # Cache:a uppdaterade data/ igen (samma key = overwrite)
+      - name: Save data cache
+        uses: actions/cache@v4
+        with:
+          path: data
+          key: data-cache-v1
