@@ -43,22 +43,22 @@ jobs:
 
       - name: Fetch forum changes
         run: |
-          python fetch_varulvsspel.py --output data --limit-threads 5 --delay 1.25
+          python fetch_varulvsspel.py --limit-threads 5 --delay 1.25
 
       - name: Build archive.json (changed-only)
         run: |
-          python build_archive.py --data data --out docs/archive.json
+          python build_archive.py
 
       - name: Commit & push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          if git diff --quiet -- docs/archive.json; then
-            echo "No changes in docs/archive.json"
+          if git diff --quiet -- archive.json; then
+            echo "No changes in archive.json"
             exit 0
           fi
 
-          git add docs/archive.json
+          git add archive.json
           git commit -m "Update archive.json"
           git push
