@@ -2,7 +2,7 @@ name: Sync rollspel.nu -> archive.json
 
 on:
   schedule:
-    - cron: "3,13,23,33,43,53 * * * *"
+    - cron: "* * * * *"
   workflow_dispatch: {}
 
 permissions:
