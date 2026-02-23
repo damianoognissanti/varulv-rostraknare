@@ -28,38 +28,44 @@ jobs:
         with:
           python-version: "3.11"
 
+      # Cacha pip (inte data/)
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            pip-${{ runner.os }}-
+
       - name: Install deps
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Restore data cache
-        uses: actions/cache@v4
-        with:
-          path: data
-          key: data-cache-v1-${{ github.run_id }}
-          restore-keys: |
-            data-cache-v1-
-
       - name: Fetch forum changes
         run: |
-          python fetch_varulvsspel.py --limit-threads 5 --delay 1.25
+          python fetch_varulvsspel.py --output data --limit-threads 5 --delay 1.25
 
       - name: Build archive.json (changed-only)
         run: |
-          python build_archive.py
+          python build_archive.py --data data --out archive.json
 
       - name: Commit & push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add data archive.json
+          # Lägg till både data/ och archive.json
+          git add -A data archive.json
 
+          # Inget att committa? Avsluta.
           if git diff --cached --quiet; then
             echo "No changes"
             exit 0
           fi
 
           git commit -m "Update data and archive.json"
+
+          # Skydda mot race om två runs hinner nära varandra
+          git pull --rebase
           git push
