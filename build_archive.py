@@ -102,7 +102,8 @@ def extract_votes_tagmode(html: str, page_num: int):
             plain = re.sub(r"<[^>]+>", " ", line)
             if not VOTE_START.search(plain):
                 continue
-            m = USER_TAG.search(line)
+            tail = re.sub(r"[\s\S]*?\bröst\s*:\s*", "", line, count=1, flags=re.I)
+            m = USER_TAG.search(tail)
             if not m:
                 continue
             to_user = (m.group(1) or "").lstrip("@").strip()
