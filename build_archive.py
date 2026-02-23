@@ -238,7 +238,7 @@ def rebuild_threads_list(by_slug: Dict[str, Dict]) -> List[Dict]:
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--data", default="data", help="Var trådmapparna ligger (default: data)")
-    ap.add_argument("--out", default="docs/archive.json", help="Vart archive.json ska skrivas (default: docs/archive.json)")
+    ap.add_argument("--out", default="archive.json", help="Vart archive.json ska skrivas (default: archive.json)")
     ap.add_argument("--changed-file", default="", help="Fil med ändrade slugs (default: data/_changed_threads.json)")
     ap.add_argument("--all", action="store_true", help="Bygg alla trådar (ignorera changed-lista)")
     ap.add_argument("--quiet", action="store_true", help="Mindre utskrift")
