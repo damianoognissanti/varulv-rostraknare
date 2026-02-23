@@ -200,6 +200,59 @@
     "23": {
       "votes": []
     },
+    "24": {
+      "votes": [
+        {
+          "from": "fjodorsenuba",
+          "page": 24,
+          "post": "1381584",
+          "to": "fjodorsenuba",
+          "ts": "2026-02-23T19:31:28+0100"
+        }
+      ]
+    },
+    "25": {
+      "votes": []
+    },
+    "26": {
+      "votes": [
+        {
+          "from": "Octagonal",
+          "page": 26,
+          "post": "1381626",
+          "to": "Impetigo",
+          "ts": "2026-02-23T19:45:47+0100"
+        },
+        {
+          "from": "fjodorsenuba",
+          "page": 26,
+          "post": "1381645",
+          "to": "Impetigo",
+          "ts": "2026-02-23T19:53:43+0100"
+        }
+      ]
+    },
+    "27": {
+      "votes": [
+        {
+          "from": "fjodorsenuba",
+          "page": 27,
+          "post": "1381648",
+          "to": "Octagonal",
+          "ts": "2026-02-23T19:54:47+0100"
+        },
+        {
+          "from": "Octagonal",
+          "page": 27,
+          "post": "1381653",
+          "to": "fjodorsenuba",
+          "ts": "2026-02-23T19:55:51+0100"
+        }
+      ]
+    },
+    "28": {
+      "votes": []
+    },
     "3": {
       "votes": [
         {

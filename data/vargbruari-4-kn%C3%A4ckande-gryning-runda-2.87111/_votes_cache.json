@@ -1,0 +1,45 @@
+{
+  "mode": "tag",
+  "pages": {
+    "1": {
+      "votes": [
+        {
+          "from": "Basenanji",
+          "page": 1,
+          "post": "1381697",
+          "to": "Sidd",
+          "ts": "2026-02-23T20:26:04+0100"
+        },
+        {
+          "from": "Anthrox",
+          "page": 1,
+          "post": "1381700",
+          "to": "StradhLestat",
+          "ts": "2026-02-23T20:28:19+0100"
+        }
+      ]
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Sidd",
+          "page": 2,
+          "post": "1381713",
+          "to": "StradhLestat",
+          "ts": "2026-02-23T20:34:10+0100"
+        },
+        {
+          "from": "Octagonal",
+          "page": 2,
+          "post": "1381716",
+          "to": "Anthrox",
+          "ts": "2026-02-23T20:35:47+0100"
+        }
+      ]
+    },
+    "3": {
+      "votes": []
+    }
+  },
+  "version": 1
+}
