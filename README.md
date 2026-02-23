@@ -1,9 +1,20 @@
-Sidan med datat i mappen data ovan finns på
+Sidan finns på:
 https://damianoognissanti.github.io/varulv-rostraknare/
 
-Om du vill köra lokalt kan du ladda ner repot och i det lokala repot köra:
+## Köra lokalt
+1) Klona/ladda ner repot  
+2) Starta en lokal webbserver i repo-roten:
+```bash
+python -m http.server 8000
+```
+3) Öppna i webbläsaren: http://localhost:8000/
 
-`python fetch_all_threads.py` - för att fylla datamappen<br>
-`python verify_pages.py` - för att gå igenom och se att html-filerna är sunda<br>
-`python create_archive.py` - för att skapa ett nytt arkiv (index.html)
- 
+## Uppdatera datat (valfritt)
+Hämta/synka trådar till `data`:
+```bash
+python fetch_varulvsspel.py
+```
+Bygg eller uppdatera archive.json:
+```bash
+python build_archive.py
+```
