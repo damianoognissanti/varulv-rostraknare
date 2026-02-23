@@ -1,59 +1,64 @@
 name: Sync rollspel.nu -> archive.json
+
 on:
   schedule:
-    - cron: "*/10 * * * *"   # var 10:e minut (best effort)
+    - cron: "*/10 * * * *"
   workflow_dispatch: {}
+
 permissions:
   contents: write
+
 concurrency:
   group: sync-archive
   cancel-in-progress: true
+
 jobs:
   sync:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+
       - name: Install deps
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-      # Cache:a hela data/ så vi slipper nerladdning från noll varje gång
+
       - name: Restore data cache
         uses: actions/cache@v4
         with:
           path: data
-          key: data-cache-v1
+          key: data-cache-v1-${{ github.run_id }}
           restore-keys: |
-            data-cache-v1
+            data-cache-v1-
+
       - name: Fetch forum changes
         run: |
           python fetch_varulvsspel.py --output data --limit-threads 5 --delay 1.25
+
       - name: Build archive.json (changed-only)
         run: |
           python build_archive.py --data data --out docs/archive.json
-      # Commita bara om docs/archive.json faktiskt ändrats
+
       - name: Commit & push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
           if git diff --quiet -- docs/archive.json; then
             echo "No changes in docs/archive.json"
             exit 0
           fi
+
           git add docs/archive.json
           git commit -m "Update archive.json"
           git push
-      # Cache:a uppdaterade data/ igen (samma key = overwrite)
-      - name: Save data cache
-        uses: actions/cache@v4
-        with:
-          path: data
-          key: data-cache-v1
