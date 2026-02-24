@@ -35,14 +35,15 @@ function readURL(){
   };
 }
 function applyURL(){
-  const p=urlp();
-  if(st.slug) p.set("thread",st.slug); else p.delete("thread");
-  p.set("view",curView());
-  p.set("delay",String(parseInt(els.delay.value||"200",10)||200));
-  p.set("slider",String(st.pct));
-  if(st.fp) p.set("fp",st.fp); else p.delete("fp");
-  if(st.sort) p.set("sort",st.sort); else p.delete("sort");
-  history.replaceState(null,"",`${location.pathname}?${p.toString()}`);
+  const p = new URLSearchParams();
+  if (st.slug) p.set("thread", st.slug);
+  p.set("view", curView());
+  p.set("delay", String(parseInt(els.delay.value || "200", 10) || 200));
+  p.set("slider", String(st.pct));
+  if (st.fp) p.set("fp", st.fp);
+  if (st.sort) p.set("sort", st.sort);
+  const qs = p.toString();
+  history.replaceState(null, "", qs ? `${location.pathname}?${qs}` : location.pathname);
 }
 function fillThreads(){
   els.th.innerHTML='<option value="">Välj...</option>';
@@ -64,7 +65,13 @@ function loadThread(slug, skipURL){
   const ts=st.votes.map(v=>+new Date(v.ts)).filter(x=>!isNaN(x)).sort((a,b)=>a-b);
   st.range={min:ts[0]?new Date(ts[0]):null,max:ts[ts.length-1]?new Date(ts[ts.length-1]):null};
   els.th.value=st.slug;
-  els.src.innerHTML=st.slug?`Källa: <a target="_blank" href="https://www.rollspel.nu/threads/${st.slug}/">https://www.rollspel.nu/threads/${enc(st.slug)}/</a>`:"";
+  if(st.slug){
+    const urlname = `https://www.rollspel.nu/threads/${st.slug}/`;
+    const href = `https://www.rollspel.nu/threads/${encodeURI(st.slug)}/`;
+    els.src.innerHTML = `Källa: <a target="_blank" href="${href}">${urlname}</a>`;
+  } else {
+    els.src.innerHTML = "";
+  } 
   els.fp.innerHTML='<option value="">Alla</option>';
   st.players.slice().sort((a,b)=>a.localeCompare(b,"sv")).forEach(n=>{
     const o=document.createElement("option");
@@ -148,7 +155,7 @@ function render(vsOverride=null){
     const chain=hist[v.from].map((n,i,a)=>{
       const c=GC(n), safe=enc(n);
       if(i===a.length-1){
-        const href=`https://www.rollspel.nu/threads/${st.slug}/post-${v.post}`;
+        const href = `https://www.rollspel.nu/threads/${encodeURI(st.slug)}/post-${v.post}`;
         return `<a target="_blank" href="${href}" style="color:${c};font-weight:bold">${safe}</a>`;
       }
       return `<span style="color:${c}">${safe}</span>`;

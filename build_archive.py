@@ -6,6 +6,7 @@ import re
 import time
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
+from urllib.parse import unquote
 from bs4 import BeautifulSoup
 # ---- Filnamn som sync använder ----
 SYNC_META_FILE = "_meta.json"                 # per tråd, från fetch_varulvsspel
@@ -178,7 +179,8 @@ def update_thread(thread_dir: Path, verbose: bool = True) -> Optional[Dict]:
     pages = pages_in_dir(thread_dir)
     if not pages:
         return None
-    slug = thread_dir.name
+    slug_raw = thread_dir.name          # mappnamn, kan innehålla %C3%A4
+    slug = unquote(slug_raw)            # mänsklig url med åäö
     # Läs/spara per-tråd cache/state
     votes_cache = _load_json(thread_dir / VOTES_CACHE_FILE, {"version": 1, "mode": None, "pages": {}})
     votes_state = _load_json(thread_dir / VOTES_STATE_FILE, {"version": 1, "page_hash": {}})
@@ -224,6 +226,7 @@ def update_thread(thread_dir: Path, verbose: bool = True) -> Optional[Dict]:
             print(f"  {slug}: inga ändringar -> {len(all_votes)} röster")
     return {
         "slug": slug,
+        "slug_raw": slug_raw,
         "name": title,
         "players": players,
         "range": rng,
