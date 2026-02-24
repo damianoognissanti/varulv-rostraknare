@@ -4,7 +4,7 @@ INTERVAL="${1:-60}"
 while true; do
   git fetch origin
   git pull --rebase --abort 2>/dev/null || true
-  git reset --hard
+  git reset --hard origin/main
   git clean -fd
   python3 fetch_varulvsspel.py --limit-threads 5
   python3 build_archive.py
