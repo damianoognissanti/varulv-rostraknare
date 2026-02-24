@@ -240,6 +240,12 @@ def rebuild_threads_list(by_slug: Dict[str, Dict]) -> List[Dict]:
     threads = [{"slug": slug, "name": obj.get("name", slug)} for slug, obj in by_slug.items()]
     threads.sort(key=lambda x: x["name"].lower())
     return threads
+def _same_thread(a: Dict, b: Dict) -> bool:
+    if not isinstance(a, dict) or not isinstance(b, dict):
+        return False
+    # jämför bara det som påverkar resultatet
+    keys = ["name", "players", "range", "votes", "mode", "slug", "slug_raw"]
+    return all(a.get(k) == b.get(k) for k in keys)
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--data", default="data", help="Var trådmapparna ligger (default: data)")
@@ -294,8 +300,15 @@ def main():
         info = update_thread(td, verbose=not args.quiet)
         if not info:
             continue
+        prev = by_slug.get(info["slug"])
+        if prev is not None and _same_thread(prev, info):
+            continue  # inga röständringar i denna tråd -> rör inte archive
         by_slug[info["slug"]] = info
         updated += 1
+    if updated == 0:
+        if not args.quiet:
+            print("Kaptenen: inga röständringar -> skriver inte archive.json")
+        return
     archive["bySlug"] = by_slug
     archive["threads"] = rebuild_threads_list(by_slug)
     archive["builtAt"] = int(time.time())
