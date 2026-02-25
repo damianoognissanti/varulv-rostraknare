@@ -115,7 +115,7 @@ function rebuildSlider(skipURL) {
   if (st.sliderIndex < 0) st.sliderIndex = 0;
   els.slider.value = String(st.sliderIndex);
   st.lim = st.timeline[st.sliderIndex];
-  els.sliderLbl.textContent = fmt(st.lim);
+  els.sliderLbl.textContent = `${st.sliderIndex + 1}/${st.timeline.length} röster (${fmt(st.lim)})`;
   if (!skipURL) { render(); applyURL(); }
 }
 function onSlider(skipURL) {
@@ -131,7 +131,7 @@ function onSlider(skipURL) {
   if (st.sliderIndex < 0) st.sliderIndex = 0;
   if (st.sliderIndex > max) st.sliderIndex = max;
   st.lim = st.timeline[st.sliderIndex];
-  els.sliderLbl.textContent = fmt(st.lim);
+  els.sliderLbl.textContent = `${st.sliderIndex + 1}/${st.timeline.length} röster (${fmt(st.lim)})`;
   if (skipURL) return;
   render();
   applyURL();
