@@ -55,8 +55,10 @@ function readURL() {
   const view = p.get("view") === "all" ? "all" : "latest";
   const delay = parseInt(p.get("delay") || "200", 10);
   const slider = parseInt(p.get("slider") || "", 10);
+  // tar bort mellanslag och slashes från thread
+  const thread = (p.get("thread") || "").trim().replace(/\/+$/, "");
   return {
-    thread: p.get("thread") || "",
+    thread,
     view,
     delay: isNaN(delay) ? 200 : delay,
     slider: isNaN(slider) ? null : slider, // saknas => max
