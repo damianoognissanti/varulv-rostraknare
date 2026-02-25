@@ -306,7 +306,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   els.slider.addEventListener("input", () => onSlider(false));
   els.fp.addEventListener("change", () => {
     st.fp = els.fp.value || "";
-    rebuildSliderFromData(false, true); // behåll index om möjligt
+    rebuildSliderFromData(false, false); // hoppa alltid till max
   });
   els.ths.forEach(th => {
     const k = th.dataset.sort; if (!k) return;
