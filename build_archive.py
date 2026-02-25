@@ -134,6 +134,7 @@ def extract_votes_oldmode(html: str, page_num: int, known_cf: set, canon: dict):
                 continue
             raw = m.group(1) or ""
             raw = _normalize_spaces(raw)
+            raw = raw.lstrip("@")
             if not raw:
                 continue
             best = _best_prefix_known(raw, known_cf)
