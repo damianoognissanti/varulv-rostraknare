@@ -152,8 +152,7 @@ def extract_votes_oldmode(html: str, page_num: int, known_cf: set, canon: dict):
                 out.append({"from": from_user, "to": to_user, "ts": ts, "post": pid, "page": page_num})
     return out
 def _detect_mode(thread_dir: Path, pages: List[Tuple[int, Path]]) -> str:
-    # Snabbt: prova tag-mode på första 1-2 sidor
-    for page_num, p in pages[:2]:
+    for page_num, p in pages:
         html = p.read_text(encoding="utf-8", errors="ignore")
         if extract_votes_tagmode(html, page_num):
             return "tag"
@@ -187,11 +186,18 @@ def update_thread(thread_dir: Path, verbose: bool = True) -> Optional[Dict]:
     # Trådtitel från page1 (billigt)
     html1 = pages[0][1].read_text(encoding="utf-8", errors="ignore")
     title = thread_title_from_html(html1) or slug
-    # Mode låses per tråd
-    mode = votes_cache.get("mode")
-    if not mode:
-        mode = _detect_mode(thread_dir, pages)
-        votes_cache["mode"] = mode
+    # Mode kan ändras när tråden växer: uppgradera old -> tag vid rebuild
+    detected = _detect_mode(thread_dir, pages)
+    cached = votes_cache.get("mode")
+    if cached != "tag" and detected == "tag":
+        votes_cache["mode"] = "tag"
+        votes_cache["pages"] = {}
+        votes_state["page_hash"] = {}
+    elif not cached:
+        votes_cache["mode"] = detected
+    # Mode låses per tråd (men kan uppgraderas ovan)
+    mode = votes_cache.get("mode") or detected
+    votes_cache["mode"] = mode
     known_cf = None
     canon = None
     reparsed = 0
