@@ -15,6 +15,7 @@
   <br>
   <label><input type="radio" name="voteView" value="latest" checked> Endast senaste röst</label>
   <label><input type="radio" name="voteView" value="all"> Alla röster</label>
+  <label><select id="playerFilter"></select> Filter per spelare</label>
   <br>
   <button id="animateBtn" type="button">Animera röster</button>
   <label>Hastighet:
@@ -31,8 +32,6 @@
   <canvas id="chart" width="520" height="225"></canvas>
   <div class="votesHeader">
     <h2 style="margin:0">Röster</h2>
-    <label class="playerLabel" for="playerFilter">Filter per spelare</label>
-    <select id="playerFilter"></select>
   </div>
   <table id="voteTable">
     <thead>
