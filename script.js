@@ -298,8 +298,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
   els.exp.addEventListener("click", exportCSV);
   els.view.forEach(r => r.addEventListener("change", () => {
-    if (st.animTimer) { clearTimeout(st.animTimer); st.animTimer = null; st.anim = false; }
-    rebuildSliderFromData(false, true); // behåll index om möjligt
+  if (st.animTimer) { clearTimeout(st.animTimer); st.animTimer = null; st.anim = false; }
+    rebuildSliderFromData(false, false); // hoppa alltid till max
   }));
   els.animBtn.addEventListener("click", () => { if (!st.slug) return; play(); });
   els.delay.addEventListener("input", applyURL);
