@@ -1,25 +1,39 @@
 async function loadArchive() {
-  // Cache-bust så GH Pages inte serverar gammal archive.json
   const url = `archive.json?ts=${Date.now()}`;
   const r = await fetch(url, { cache: "no-store" });
   if (!r.ok) throw new Error(`Kunde inte ladda archive.json (${r.status})`);
   return await r.json();
 }
 let A = null;
-const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
 const els = {
-  th: $("#threadSelect"), exp: $("#exportBtn"), src: $("#sourceLine"),
-  view: $$('input[name="voteView"]'), animBtn: $("#animateBtn"), delay: $("#liveDelayInput"),
-  slider: $("#timeSlider"), ticks: $("#sliderTicks"), sliderLbl: $("#sliderTimeLabel"),
-  summary: $("#summary"), tbody: $("#voteTable tbody"), fp: $("#playerFilter"),
-  ths: $$('#voteTable thead th'), cv: $("#chart")
+  th: $("#threadSelect"),
+  exp: $("#exportBtn"),
+  src: $("#sourceLine"),
+  view: $$('input[name="voteView"]'),
+  animBtn: $("#animateBtn"),
+  delay: $("#liveDelayInput"),
+  slider: $("#timeSlider"),
+  ticks: $("#sliderTicks"),
+  sliderLbl: $("#sliderTimeLabel"),
+  summary: $("#summary"),
+  tbody: $("#voteTable tbody"),
+  fp: $("#playerFilter"),
+  ths: $$("#voteTable thead th"),
+  cv: $("#chart")
 };
 const st = {
-  slug: "", votes: [], players: [], colors: {}, fp: "", sort: "",
-  anim: false, animTimer: null,
-  sliderIndex: 1e9, // default: hoppa till sista när tråd laddas
-  timeline: [],     // Date[] i stegordning
-  lim: null         // Date eller null
+  slug: "",
+  votes: [],
+  players: [],
+  colors: {},
+  fp: "",
+  sort: "",
+  animTimer: null,
+  sliderIndex: null, // null => hoppa till max vid rebuild
+  timeline: [],
+  lim: null
 };
 const curView = () => els.view.find(r => r.checked)?.value || "latest";
 const fmt = t => t ? new Date(t).toLocaleString("sv-SE", { dateStyle: "short", timeStyle: "short" }) : "–";
@@ -40,12 +54,12 @@ function readURL() {
   const p = urlp();
   const view = p.get("view") === "all" ? "all" : "latest";
   const delay = parseInt(p.get("delay") || "200", 10);
-  const slider = parseInt(p.get("slider") || "", 10); // index (0..N-1)
+  const slider = parseInt(p.get("slider") || "", 10);
   return {
     thread: p.get("thread") || "",
     view,
     delay: isNaN(delay) ? 200 : delay,
-    slider: isNaN(slider) ? 1e9 : slider, // saknas => hoppa till sista
+    slider: isNaN(slider) ? null : slider, // saknas => max
     fp: p.get("fp") || "",
     sort: p.get("sort") || ""
   };
@@ -55,7 +69,7 @@ function applyURL() {
   if (st.slug) p.set("thread", st.slug);
   p.set("view", curView());
   p.set("delay", String(parseInt(els.delay.value || "200", 10) || 200));
-  p.set("slider", String(st.sliderIndex));
+  if (st.sliderIndex != null) p.set("slider", String(st.sliderIndex));
   if (st.fp) p.set("fp", st.fp);
   if (st.sort) p.set("sort", st.sort);
   const qs = p.toString();
@@ -70,18 +84,12 @@ function fillThreads() {
     els.th.appendChild(o);
   });
 }
-// --- Slider byggs av “bas-röster” (view + fp) ---
-function sliderBaseVotes() {
-  let vs = st.votes;
-  if (st.fp) vs = vs.filter(v => v.from === st.fp);
-  if (curView() === "latest") vs = getLatest(vs);
-  return vs
+// Slider ticks = ALLA rösttider (st.votes), oavsett view/filter
+function rebuildSlider(skipURL) {
+  const base = st.votes
     .filter(v => v.ts && !isNaN(+new Date(v.ts)))
     .slice()
     .sort((a, b) => +new Date(a.ts) - +new Date(b.ts));
-}
-function rebuildSliderFromData(skipURL, keepIndex) {
-  const base = sliderBaseVotes();
   st.timeline = base.map(v => new Date(v.ts));
   els.ticks.innerHTML = "";
   if (!st.timeline.length) {
@@ -102,20 +110,18 @@ function rebuildSliderFromData(skipURL, keepIndex) {
     o.value = String(i);
     els.ticks.appendChild(o);
   });
-  if (!keepIndex) st.sliderIndex = max;
-  if (st.sliderIndex > max) st.sliderIndex = max;
+  // null eller utanför => max
+  if (st.sliderIndex == null || st.sliderIndex > max) st.sliderIndex = max;
   if (st.sliderIndex < 0) st.sliderIndex = 0;
   els.slider.value = String(st.sliderIndex);
   st.lim = st.timeline[st.sliderIndex];
   els.sliderLbl.textContent = fmt(st.lim);
-  if (skipURL) return;
-  render();
-  applyURL();
+  if (!skipURL) { render(); applyURL(); }
 }
 function onSlider(skipURL) {
-  if (st.animTimer) { clearTimeout(st.animTimer); st.animTimer = null; st.anim = false; }
+  if (st.animTimer) { clearTimeout(st.animTimer); st.animTimer = null; }
   st.sliderIndex = parseInt(els.slider.value || "0", 10) || 0;
-  if (!st.timeline || !st.timeline.length) {
+  if (!st.timeline.length) {
     st.lim = null;
     els.sliderLbl.textContent = "–";
     if (!skipURL) { render(); applyURL(); }
@@ -130,8 +136,8 @@ function onSlider(skipURL) {
   render();
   applyURL();
 }
-function loadThread(slug, skipURL, keepSliderIndex) {
-  if (st.animTimer) { clearTimeout(st.animTimer); st.animTimer = null; st.anim = false; }
+function loadThread(slug, skipURL) {
+  if (st.animTimer) { clearTimeout(st.animTimer); st.animTimer = null; }
   const j = A.bySlug[slug];
   if (!j) return;
   st.slug = slug;
@@ -149,15 +155,20 @@ function loadThread(slug, skipURL, keepSliderIndex) {
   els.fp.innerHTML = '<option value="">Alla</option>';
   st.players.slice().sort((a, b) => a.localeCompare(b, "sv")).forEach(n => {
     const o = document.createElement("option");
-    o.value = n; o.textContent = n;
+    o.value = n;
+    o.textContent = n;
     o.style.color = st.colors[n] || "#000";
     o.style.fontWeight = "bold";
     els.fp.appendChild(o);
   });
-  // Viktigt: återställ fp-select till st.fp (om den finns i listan)
-  els.fp.value = st.fp || "";
-  rebuildSliderFromData(true, !!keepSliderIndex);
-  render();
+  // Återställ filter och slider när man byter tråd (minskar förvirring)
+  if (!skipURL) {
+    st.fp = "";
+    els.fp.value = "";
+    st.sliderIndex = null; // => max
+  }
+  rebuildSlider(skipURL);
+  if (skipURL) render();
   if (!skipURL) applyURL();
 }
 function subset() {
@@ -181,8 +192,9 @@ function bars(entries) {
     const c = st.colors[name] || "#999";
     const val = "" + dat[i];
     const tw = ctx.measureText(val).width;
-    ctx.fillStyle = c; ctx.fillText(name, pad, y + barH - 2);
-    ctx.fillStyle = c; ctx.fillRect(left, y, w, barH);
+    ctx.fillStyle = c;
+    ctx.fillText(name, pad, y + barH - 2);
+    ctx.fillRect(left, y, w, barH);
     ctx.fillStyle = "#fff";
     ctx.fillText(val, Math.max(left + 4, left + w - tw - 4), y + barH - 2);
   });
@@ -194,25 +206,37 @@ function sortApply() {
   const k = st.sort.split("-")[0];
   rows.sort((a, b) => {
     if (k === "from") {
-      const A = a.children[0].textContent.trim(), B = b.children[0].textContent.trim();
+      const A = a.children[0].textContent.trim();
+      const B = b.children[0].textContent.trim();
       return asc ? A.localeCompare(B, "sv") : B.localeCompare(A, "sv");
     }
-    const A = a.dataset.ts || "", B = b.dataset.ts || "";
+    const A = a.dataset.ts || "";
+    const B = b.dataset.ts || "";
     return asc ? A.localeCompare(B) : B.localeCompare(A);
   });
   els.tbody.innerHTML = "";
   rows.forEach(r => els.tbody.appendChild(r));
 }
 function render(vsOverride = null) {
-  const vs = vsOverride ?? subset();
-  if (!vs.length) {
+  const tableVotes = vsOverride ?? subset();
+  // Staplar: alltid objektivt röstläge (ignorera fp), men följer slider-lim.
+  // Under animation: använd override för att staplarna ska “leva”.
+  let chartVotes;
+  if (vsOverride) {
+    chartVotes = getLatest(vsOverride);
+  } else {
+    chartVotes = st.votes;
+    if (st.lim) chartVotes = chartVotes.filter(v => +new Date(v.ts) <= +st.lim);
+    chartVotes = getLatest(chartVotes);
+  }
+  if (!chartVotes.length) {
     els.summary.textContent = "Inga röster att visa.";
     els.tbody.innerHTML = "";
     els.cv.getContext("2d").clearRect(0, 0, els.cv.width, els.cv.height);
     return;
   }
   const cnt = {}, first = {};
-  vs.slice().sort((a, b) => +new Date(a.ts) - +new Date(b.ts)).forEach(v => {
+  chartVotes.slice().sort((a, b) => +new Date(a.ts) - +new Date(b.ts)).forEach(v => {
     cnt[v.to] = (cnt[v.to] || 0) + 1;
     if (!first[v.to] || +new Date(v.ts) < +new Date(first[v.to])) first[v.to] = v.ts;
   });
@@ -220,12 +244,14 @@ function render(vsOverride = null) {
     b[1] - a[1] || (+new Date(first[a[0]]) - +new Date(first[b[0]]))
   );
   const [danger, dCnt] = ord[0] || ["Ingen", 0];
-  const last = vs.reduce((acc, v) => !acc || +new Date(v.ts) > +new Date(acc) ? v.ts : acc, null);
+  const last = tableVotes.length
+    ? tableVotes.reduce((acc, v) => !acc || +new Date(v.ts) > +new Date(acc) ? v.ts : acc, null)
+    : null;
   els.summary.textContent =
     `⚠️ Risk för utröstning: ${danger} (${dCnt} röster, sedan ${fmt(first[danger])}). Senast röst lagd ${fmt(last)}.`;
   els.tbody.innerHTML = "";
   const hist = {}, run = {}, GC = n => st.colors[n] || "#000";
-  vs.slice().sort((a, b) => +new Date(a.ts) - +new Date(b.ts)).forEach(v => {
+  tableVotes.slice().sort((a, b) => +new Date(a.ts) - +new Date(b.ts)).forEach(v => {
     run[v.to] = (run[v.to] || 0) + 1;
     const stand = Object.entries(run).sort((x, y) => y[1] - x[1]);
     const leader = stand[0] ? `${stand[0][0]} (${stand[0][1]})` : "–";
@@ -256,15 +282,14 @@ function render(vsOverride = null) {
 }
 function play() {
   if (st.animTimer) { clearTimeout(st.animTimer); st.animTimer = null; }
-  st.anim = true;
   const d = parseInt(els.delay.value || "200", 10);
   const lim = st.lim;
-  const all = (A.bySlug[st.slug].votes || [])
+  const all = st.votes
     .filter(v => !lim || +new Date(v.ts) <= +lim)
     .sort((a, b) => +new Date(a.ts) - +new Date(b.ts));
   let i = 0;
   (function step() {
-    if (i > all.length) { st.anim = false; st.animTimer = null; return; }
+    if (i > all.length) { st.animTimer = null; return; }
     const sub = all.slice(0, i);
     let show = (curView() === "all") ? sub : getLatest(sub);
     if (st.fp) show = show.filter(v => v.from === st.fp);
@@ -289,36 +314,52 @@ document.addEventListener("DOMContentLoaded", async () => {
   els.delay.value = String(init.delay || 200);
   st.fp = init.fp || "";
   st.sort = init.sort || "";
-  st.sliderIndex = init.slider; // index från URL (eller 1e9 => sista)
+  st.sliderIndex = init.slider;
   const rv = els.view.find(r => r.value === init.view);
   if (rv) rv.checked = true;
   els.th.addEventListener("change", () => {
     const s = els.th.value || "";
-    if (s) loadThread(s, false, false);
+    if (s) loadThread(s, false);
   });
   els.exp.addEventListener("click", exportCSV);
+  // Byt view => hoppa till max
   els.view.forEach(r => r.addEventListener("change", () => {
-  if (st.animTimer) { clearTimeout(st.animTimer); st.animTimer = null; st.anim = false; }
-    rebuildSliderFromData(false, false); // hoppa alltid till max
+    if (st.animTimer) {
+      clearTimeout(st.animTimer);
+      st.animTimer = null;
+    }
+    st.sliderIndex = null;
+    rebuildSlider(false);
   }));
   els.animBtn.addEventListener("click", () => { if (!st.slug) return; play(); });
   els.delay.addEventListener("input", applyURL);
   els.slider.addEventListener("input", () => onSlider(false));
+  // Byt filter => hoppa till max
   els.fp.addEventListener("change", () => {
+    if (st.animTimer) {
+      clearTimeout(st.animTimer);
+      st.animTimer = null;
+    }
     st.fp = els.fp.value || "";
-    rebuildSliderFromData(false, false); // hoppa alltid till max
+    st.sliderIndex = null;
+    rebuildSlider(false);
   });
   els.ths.forEach(th => {
-    const k = th.dataset.sort; if (!k) return;
+    const k = th.dataset.sort;
+    if (!k) return;
     th.addEventListener("click", () => {
       const cur = st.sort || `${k}-asc`;
       const desc = cur.startsWith(k) && cur.endsWith("-asc");
       st.sort = `${k}-${desc ? "desc" : "asc"}`;
-      render(); applyURL();
+      render();
+      applyURL();
     });
   });
   if (init.thread && A.bySlug[init.thread]) {
-    loadThread(init.thread, true, true); // keepSliderIndex=true
+    // Behåll URL-läget vid direktlänkad load:
+    // - fp/sort/view/sliderIndex från URL respekteras
+    // - men rebuild klämmer sliderIndex till max om den saknas/är för stor
+    loadThread(init.thread, true);
     applyURL();
   } else {
     applyURL();
