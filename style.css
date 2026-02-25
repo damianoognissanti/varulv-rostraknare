@@ -9,4 +9,5 @@ th{background:#3c8dbc;color:#fff;cursor:pointer}
 .sliderRow{display:flex;align-items:center;gap:10px;margin:8px 0}
 .votesHeader{display:flex;align-items:baseline;gap:10px;margin-top:18px}
 #voteTable td:last-child,#voteTable th:last-child{padding-right:18px}
+#chart{max-width:520px;width:100%;height:auto}
 .small{font-size:12px;opacity:.8}
