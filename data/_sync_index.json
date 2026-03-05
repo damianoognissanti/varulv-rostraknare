@@ -1,7 +1,7 @@
 {
   "forum": {
     "forum_last_page": 21,
-    "last_crawl_unix": 1772132879,
+    "last_crawl_unix": 1772705284,
     "limit_threads": 5,
     "thread_count": 407
   },
@@ -2042,8 +2042,8 @@
     },
     "vargbruari-%C3%84r-%C3%96ver.87129": {
       "base_url": "https://www.rollspel.nu/threads/vargbruari-%C3%84r-%C3%96ver.87129/",
-      "last_page_hint": 1,
-      "latest_ts": 1772132868,
+      "last_page_hint": 4,
+      "latest_ts": 1772562625,
       "title": "VARGBRUARI ÄR ÖVER"
     },
     "vargbruari-1-runda-1.86944": {
