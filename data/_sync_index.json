@@ -1,7 +1,7 @@
 {
   "forum": {
     "forum_last_page": 21,
-    "last_crawl_unix": 1773662656,
+    "last_crawl_unix": 1773669193,
     "limit_threads": 5,
     "thread_count": 407
   },
@@ -1412,8 +1412,8 @@
     },
     "r1-den-stora-konstutst%C3%A4llningen.87248": {
       "base_url": "https://www.rollspel.nu/threads/r1-den-stora-konstutst%C3%A4llningen.87248/",
-      "last_page_hint": 3,
-      "latest_ts": 1773662636,
+      "last_page_hint": 4,
+      "latest_ts": 1773669122,
       "title": "[R1] Den stora konstutställningen"
     },
     "r1-spionchefens-hemlighet.86088": {
