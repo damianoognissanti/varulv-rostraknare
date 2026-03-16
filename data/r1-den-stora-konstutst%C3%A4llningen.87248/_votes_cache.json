@@ -1,8 +1,19 @@
 {
-  "mode": "old",
+  "mode": "tag",
   "pages": {
     "1": {
       "votes": []
+    },
+    "2": {
+      "votes": [
+        {
+          "from": "Hägerstrand",
+          "page": 2,
+          "post": "1387461",
+          "to": "Anthrox",
+          "ts": "2026-03-16T11:12:04+0100"
+        }
+      ]
     }
   },
   "version": 1
