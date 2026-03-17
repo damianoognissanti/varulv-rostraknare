@@ -1,7 +1,7 @@
 {
   "forum": {
     "forum_last_page": 21,
-    "last_crawl_unix": 1773777041,
+    "last_crawl_unix": 1773778193,
     "limit_threads": 5,
     "thread_count": 407
   },
@@ -1430,8 +1430,8 @@
     },
     "r2-den-stora-konstutst%C3%A4llningen.87253": {
       "base_url": "https://www.rollspel.nu/threads/r2-den-stora-konstutst%C3%A4llningen.87253/",
-      "last_page_hint": 13,
-      "latest_ts": 1773777028,
+      "last_page_hint": 14,
+      "latest_ts": 1773777694,
       "title": "[R2] Den stora konstutställningen"
     },
     "r2-spionchefens-hemlighet.86107": {
@@ -1445,6 +1445,12 @@
       "last_page_hint": 19,
       "latest_ts": 1700510414,
       "title": "[R2] Utkante - en liten by bland drakar och demoner"
+    },
+    "r3-den-stora-konstutst%C3%A4llningen.87259": {
+      "base_url": "https://www.rollspel.nu/threads/r3-den-stora-konstutst%C3%A4llningen.87259/",
+      "last_page_hint": 1,
+      "latest_ts": 1773778138,
+      "title": "[R3] Den stora konstutställningen"
     },
     "r3-spionchefens-hemlighet.86114": {
       "base_url": "https://www.rollspel.nu/threads/r3-spionchefens-hemlighet.86114/",
