@@ -1,7 +1,7 @@
 {
   "forum": {
     "forum_last_page": 21,
-    "last_crawl_unix": 1774001320,
+    "last_crawl_unix": 1774030412,
     "limit_threads": 5,
     "thread_count": 407
   },
@@ -1484,8 +1484,8 @@
     },
     "r5-den-stora-konstutst%C3%A4llningen.87287": {
       "base_url": "https://www.rollspel.nu/threads/r5-den-stora-konstutst%C3%A4llningen.87287/",
-      "last_page_hint": 2,
-      "latest_ts": 1774001276,
+      "last_page_hint": 5,
+      "latest_ts": 1774029653,
       "title": "[R5] Den stora konstutställningen"
     },
     "r5-spionchefens-hemlighet.86119": {
@@ -1493,6 +1493,12 @@
       "last_page_hint": 4,
       "latest_ts": 1758297602,
       "title": "[R5] Spionchefens hemlighet"
+    },
+    "r6-den-l%C3%A5nga-konstutst%C3%A4llningen.87293": {
+      "base_url": "https://www.rollspel.nu/threads/r6-den-l%C3%A5nga-konstutst%C3%A4llningen.87293/",
+      "last_page_hint": 1,
+      "latest_ts": 1774030385,
+      "title": "[R6] Den långa konstutställningen"
     },
     "r6-varulvsblixt%E2%9A%A1%EF%B8%8F2-2025-slut.85517": {
       "base_url": "https://www.rollspel.nu/threads/r6-varulvsblixt%E2%9A%A1%EF%B8%8F2-2025-slut.85517/",
