@@ -1,7 +1,7 @@
 {
   "forum": {
     "forum_last_page": 21,
-    "last_crawl_unix": 1774032851,
+    "last_crawl_unix": 1774033926,
     "limit_threads": 5,
     "thread_count": 407
   },
@@ -239,6 +239,12 @@
       "last_page_hint": 5,
       "latest_ts": 1734773670,
       "title": "Bybornas hövding - Spelet slut"
+    },
+    "bybovinst-den-stora-konstutst%C3%A4llningen-spelet-slut.87295": {
+      "base_url": "https://www.rollspel.nu/threads/bybovinst-den-stora-konstutst%C3%A4llningen-spelet-slut.87295/",
+      "last_page_hint": 1,
+      "latest_ts": 1774033915,
+      "title": "[Bybovinst] Den stora konstutställningen Spelet slut!"
     },
     "carmilla-vs-dracula-runda-1.84792": {
       "base_url": "https://www.rollspel.nu/threads/carmilla-vs-dracula-runda-1.84792/",
@@ -1496,8 +1502,8 @@
     },
     "r6-den-l%C3%A5nga-konstutst%C3%A4llningen.87293": {
       "base_url": "https://www.rollspel.nu/threads/r6-den-l%C3%A5nga-konstutst%C3%A4llningen.87293/",
-      "last_page_hint": 1,
-      "latest_ts": 1774032797,
+      "last_page_hint": 2,
+      "latest_ts": 1774033183,
       "title": "[R6] Den långa konstutställningen"
     },
     "r6-varulvsblixt%E2%9A%A1%EF%B8%8F2-2025-slut.85517": {
