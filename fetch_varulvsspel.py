@@ -349,7 +349,7 @@ def conditional_headers_for_page(meta: Dict, page_num: int) -> Dict[str, str]:
     return headers
 def save_changed_threads(output_dir: str, slugs: List[str]) -> None:
     path = os.path.join(output_dir, CHANGED_THREADS_FILENAME)
-    obj = {"builtAt": int(time.time()), "slugs": sorted(set(slugs))}
+    obj = {"slugs": sorted(set(slugs))}
     tmp = path + ".tmp"
     with open(tmp, "w", encoding="utf-8") as f:
         json.dump(obj, f, ensure_ascii=False, indent=2)
