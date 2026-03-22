@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -e
+set -euo pipefail
 INTERVAL="${1:-60}"
 while true; do
   git fetch origin
@@ -8,12 +8,14 @@ while true; do
   git clean -fd
   python3 fetch_varulvsspel.py --limit-threads 5
   python3 build_archive.py
-  if ! git diff --quiet -- archive.json; then
+  if ! git diff --quiet -- archive.json || \
+     ! grep -q '"slugs": \[\]' data/_changed_threads.json
+  then
     git add data archive.json
     git commit -m "uppdaterar röster"
     git push
   else
-    echo "archive.json oförändrad. Skippar commit/push"
+    echo "Inga ändrade trådar och archive.json oförändrad. Skippar commit/push"
   fi
   sleep "$INTERVAL"
 done
