@@ -1,7 +1,7 @@
 {
   "forum": {
     "forum_last_page": 21,
-    "last_crawl_unix": 1774033926,
+    "last_crawl_unix": 1774165782,
     "limit_threads": 5,
     "thread_count": 407
   },
@@ -242,8 +242,8 @@
     },
     "bybovinst-den-stora-konstutst%C3%A4llningen-spelet-slut.87295": {
       "base_url": "https://www.rollspel.nu/threads/bybovinst-den-stora-konstutst%C3%A4llningen-spelet-slut.87295/",
-      "last_page_hint": 1,
-      "latest_ts": 1774033915,
+      "last_page_hint": 3,
+      "latest_ts": 1774085880,
       "title": "[Bybovinst] Den stora konstutställningen Spelet slut!"
     },
     "carmilla-vs-dracula-runda-1.84792": {
